@@ -1,0 +1,24 @@
+{
+  "name": "search_cjk",
+  "description": "CJK (Chinese, Japanese, Korean) script handling and substring boundary testing",
+  "query": "人工知能",
+  "expectedMatchCount": 2,
+  "expectedIndices": [0, 2],
+  "segments": [
+    {
+      "timestamp": "0:02",
+      "startSeconds": 2,
+      "text": "本日は人工知能の基本概念について詳しく解説していきます。"
+    },
+    {
+      "timestamp": "0:09",
+      "startSeconds": 9,
+      "text": "機械学習とディープラーニングの違いを理解することが重要です。"
+    },
+    {
+      "timestamp": "0:15",
+      "startSeconds": 15,
+      "text": "次世代の人工知能技術がもたらす社会の変革を見ていきましょう。"
+    }
+  ]
+}

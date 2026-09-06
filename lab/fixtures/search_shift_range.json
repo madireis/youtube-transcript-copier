@@ -1,0 +1,14 @@
+{
+  "name": "search_shift_range",
+  "description": "Shift-select bi-directional range slicing (upward and downward indices)",
+  "query": "segment",
+  "expectedMatchCount": 5,
+  "expectedIndices": [0, 1, 2, 3, 4],
+  "segments": [
+    { "timestamp": "0:01", "startSeconds": 1, "text": "First segment introducing the topic." },
+    { "timestamp": "0:05", "startSeconds": 5, "text": "Second segment developing key arguments." },
+    { "timestamp": "0:10", "startSeconds": 10, "text": "Third segment presenting evidence." },
+    { "timestamp": "0:15", "startSeconds": 15, "text": "Fourth segment evaluating tradeoffs." },
+    { "timestamp": "0:20", "startSeconds": 20, "text": "Fifth segment concluding the overview." }
+  ]
+}

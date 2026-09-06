@@ -1,0 +1,20 @@
+{
+  "name": "youtube-transcript-copier",
+  "version": "2.7.0",
+  "description": "YouTube Transcript Copier Chrome Extension with DOM-resistant multi-strategy extraction and offline test suite",
+  "private": true,
+  "scripts": {
+    "test": "node lab/ci_runner.js",
+    "lab": "node lab/lab_runner.js",
+    "lab:report": "node lab/lab_report.js"
+  },
+  "keywords": [
+    "youtube",
+    "transcript",
+    "chrome-extension",
+    "subtitles",
+    "captions"
+  ],
+  "author": "",
+  "license": "ISC"
+}

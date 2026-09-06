@@ -1,0 +1,131 @@
+{
+  "fixtureName": "workspace_state_machine",
+  "description": "Validates VIEW_MODE transitions, playback visibility resolution when moments are hidden by filters, and storage quota pruning",
+  "testQuery": "neural network",
+  "expectedMatches": 2,
+  "expectedIndices": [
+    2,
+    5
+  ],
+  "segments": [
+    {
+      "timestamp": "00:10",
+      "startSeconds": 10,
+      "text": "Welcome everyone to our deep dive into modern artificial intelligence."
+    },
+    {
+      "timestamp": "01:15",
+      "startSeconds": 75,
+      "text": "First let us review how gradient descent updates parameter weights."
+    },
+    {
+      "timestamp": "02:30",
+      "startSeconds": 150,
+      "text": "A neural network consists of layers of interconnected artificial neurons."
+    },
+    {
+      "timestamp": "03:45",
+      "startSeconds": 225,
+      "text": "Overfitting happens when the model memorizes noise in the training set."
+    },
+    {
+      "timestamp": "05:00",
+      "startSeconds": 300,
+      "text": "Regularization techniques like dropout help prevent memorization."
+    },
+    {
+      "timestamp": "07:20",
+      "startSeconds": 440,
+      "text": "When training a deep neural network, batch normalization stabilizes gradients."
+    },
+    {
+      "timestamp": "09:50",
+      "startSeconds": 590,
+      "text": "Attention mechanisms allow models to focus on relevant context tokens."
+    },
+    {
+      "timestamp": "12:10",
+      "startSeconds": 730,
+      "text": "Transformers revolutionized natural language processing across all benchmarks."
+    }
+  ],
+  "markedIndices": [
+    1,
+    4,
+    7
+  ],
+  "expectedMarkedCount": 3,
+  "stateMachineTests": [
+    {
+      "name": "Playback at 10s (segment 0) while in ALL mode",
+      "currentSeconds": 10,
+      "viewMode": "ALL",
+      "visibleIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "expectedFullIndex": 0,
+      "expectedIsVisible": true
+    },
+    {
+      "name": "Playback at 10s (segment 0) while in BOOKMARKS mode",
+      "currentSeconds": 10,
+      "viewMode": "BOOKMARKS",
+      "visibleIndices": [
+        1,
+        4,
+        7
+      ],
+      "expectedFullIndex": 0,
+      "expectedIsVisible": false
+    },
+    {
+      "name": "Playback at 75s (segment 1) while in BOOKMARKS mode",
+      "currentSeconds": 75,
+      "viewMode": "BOOKMARKS",
+      "visibleIndices": [
+        1,
+        4,
+        7
+      ],
+      "expectedFullIndex": 1,
+      "expectedIsVisible": true
+    },
+    {
+      "name": "Playback at 150s (segment 2) while in SEARCH mode for neural network",
+      "currentSeconds": 150,
+      "viewMode": "SEARCH",
+      "visibleIndices": [
+        2,
+        5
+      ],
+      "expectedFullIndex": 2,
+      "expectedIsVisible": true
+    },
+    {
+      "name": "Playback at 225s (segment 3) while in SEARCH mode for neural network",
+      "currentSeconds": 225,
+      "viewMode": "SEARCH",
+      "visibleIndices": [
+        2,
+        5
+      ],
+      "expectedFullIndex": 3,
+      "expectedIsVisible": false
+    }
+  ],
+  "quotaPruningTests": {
+    "totalInitialWorkspaces": 35,
+    "maxAllowed": 30,
+    "starredCount": 10,
+    "unstarredCount": 25,
+    "expectedPreservedStarred": 10,
+    "expectedFinalCount": 30
+  }
+}

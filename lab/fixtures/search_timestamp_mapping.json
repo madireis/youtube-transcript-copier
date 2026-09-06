@@ -1,0 +1,13 @@
+{
+  "testQuery": "target milestone",
+  "expectedMatches": 1,
+  "expectedIndices": [2],
+  "expectedTimestamp": "27:18",
+  "expectedSeconds": 1638,
+  "segments": [
+    { "timestamp": "0:15", "startSeconds": 15, "text": "Opening remarks and agenda overview." },
+    { "timestamp": "12:41", "startSeconds": 761, "text": "Reviewing initial performance benchmarks." },
+    { "timestamp": "27:18", "startSeconds": 1638, "text": "We reached the target milestone ahead of schedule." },
+    { "timestamp": "45:00", "startSeconds": 2700, "text": "Concluding Q&A session with attendees." }
+  ]
+}

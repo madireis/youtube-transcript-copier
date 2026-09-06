@@ -1,0 +1,24 @@
+{
+  "name": "search_cyrillic",
+  "description": "Cyrillic script search with case insensitivity and mixed punctuation",
+  "query": "нейронные сети",
+  "expectedMatchCount": 2,
+  "expectedIndices": [0, 1],
+  "segments": [
+    {
+      "timestamp": "0:04",
+      "startSeconds": 4,
+      "text": "Сегодня мы рассмотрим, как работают современные нейронные сети."
+    },
+    {
+      "timestamp": "0:11",
+      "startSeconds": 11,
+      "text": "Глубокие НЕЙРОННЫЕ СЕТИ произвели революцию в обработке данных."
+    },
+    {
+      "timestamp": "0:18",
+      "startSeconds": 18,
+      "text": "Архитектура трансформеров стала новым стандартом в индустрии."
+    }
+  ]
+}

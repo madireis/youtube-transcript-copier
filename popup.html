@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YouTube Transcript Copier</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="popup-container">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="2" y="3" width="20" height="15" rx="4" fill="url(#logo-grad)" stroke="#ff4e50" stroke-width="1.2"/>
+          <polygon points="10,7.5 16,10.5 10,13.5" fill="#ffffff"/>
+          <path d="M5 21h14M8 18h8" stroke="#ff8a5c" stroke-width="1.6" stroke-linecap="round"/>
+          <defs>
+            <linearGradient id="logo-grad" x1="2" y1="3" x2="22" y2="18" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#ff4e50"/>
+              <stop offset="1" stop-color="#e02e30"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="logo-text" data-i18n="appTitle">Transcript Copier</span>
+      </div>
+      <div class="header-controls">
+        <div class="lang-picker">
+          <svg class="lang-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+          <select id="lang-select" class="lang-select" title="Change application language">
+            <option value="en">English (EN)</option>
+            <option value="es">Español (ES)</option>
+            <option value="pt">Português (PT)</option>
+            <option value="tr">Türkçe (TR)</option>
+            <option value="fr">Français (FR)</option>
+            <option value="de">Deutsch (DE)</option>
+            <option value="ar">العربية (AR)</option>
+          </select>
+        </div>
+        <span class="version-badge">v2.7.0</span>
+      </div>
+    </header>
+
+    <!-- Mode Tabs -->
+    <div class="mode-tabs">
+      <button class="mode-tab active" id="tab-single" data-mode="single">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="5 3 19 12 5 21 5 3"/>
+        </svg>
+        <span data-i18n="tabSingle">Single Video</span>
+      </button>
+      <button class="mode-tab" id="tab-batch" data-mode="batch">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="3" width="20" height="7" rx="2"/>
+          <rect x="2" y="14" width="20" height="7" rx="2"/>
+          <line x1="6" y1="6.5" x2="6.01" y2="6.5"/>
+          <line x1="6" y1="17.5" x2="6.01" y2="17.5"/>
+        </svg>
+        <span data-i18n="tabBatch">Batch Mode</span>
+      </button>
+    </div>
+
+    <!-- Batch Mode Panel (hidden by default) -->
+    <div id="batch-panel" class="batch-panel hidden">
+      <!-- Batch Status Bar -->
+      <div class="batch-status-bar">
+        <div class="batch-status-info">
+          <span id="batch-page-type" class="batch-page-badge">—</span>
+          <span id="batch-video-count" class="batch-count-text" data-i18n="batchNoVideos">No videos detected</span>
+        </div>
+        <div class="batch-actions-row">
+          <button id="batch-scan-btn" class="batch-action-btn" title="Scan page for videos">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="1.8"/><path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <span data-i18n="batchScanBtn">Scan Page</span>
+          </button>
+          <button id="batch-overlay-btn" class="batch-action-btn" title="Show checkboxes on YouTube page">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.8"/><path d="M8 12l3 3 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span data-i18n="batchOverlayBtn">Page Overlay</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Video List -->
+      <div class="batch-video-list-container">
+        <div class="batch-list-header">
+          <label class="batch-select-all-row">
+            <input type="checkbox" id="batch-select-all" />
+            <span class="batch-select-all-label" data-i18n="batchSelectAll">Select All</span>
+          </label>
+          <span id="batch-selected-count" class="batch-selected-text">0 selected</span>
+        </div>
+        <div id="batch-video-list" class="batch-video-list">
+          <p class="batch-placeholder" data-i18n="batchPlaceholder">Click "Scan Page" to detect videos on this YouTube page.</p>
+        </div>
+      </div>
+
+      <!-- Batch Formatting Options -->
+      <div class="batch-format-section collapsed">
+        <div class="batch-format-header" id="batch-format-toggle">
+          <div class="batch-format-header-left">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/>
+              <line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/>
+              <line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/>
+              <line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/>
+              <line x1="17" y1="16" x2="23" y2="16"/>
+            </svg>
+            <span data-i18n="batchFormatOptions">Format &amp; Options</span>
+          </div>
+          <svg class="batch-format-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none">
+            <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="batch-format-body" id="batch-format-body">
+          <!-- Output Style -->
+          <div class="option-row">
+            <span class="option-label" data-i18n="outputStyle">Output style</span>
+            <div class="segmented-control" id="batch-format-control">
+              <button class="seg-btn active" data-value="lines" title="Each segment on its own line">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                <span data-i18n="btnLines">Lines</span>
+              </button>
+              <button class="seg-btn" data-value="paragraph" title="All text merged into one paragraph">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 10h16M4 14h16M4 18h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                <span data-i18n="btnParagraph">Paragraph</span>
+              </button>
+              <button class="seg-btn" data-value="compact" title="Sentences grouped, no blank lines">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M7 8h10M7 12h10M7 16h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                <span data-i18n="btnBlocks">Blocks</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Toggles -->
+          <label class="toggle-row">
+            <div class="toggle-label">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span data-i18n="toggleTimestamps">Include timestamps</span>
+            </div>
+            <input type="checkbox" id="batch-include-timestamps" checked />
+            <span class="toggle-track"><span class="toggle-thumb"></span></span>
+          </label>
+
+          <label class="toggle-row">
+            <div class="toggle-label">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+              <span data-i18n="toggleTitle">Include video title</span>
+            </div>
+            <input type="checkbox" id="batch-include-title" checked />
+            <span class="toggle-track"><span class="toggle-thumb"></span></span>
+          </label>
+
+          <label class="toggle-row">
+            <div class="toggle-label">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+                <path d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.243 4.243a4.5 4.5 0 11-6.364-6.364l1.06-1.06" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                <path d="M10.81 15.312a4.5 4.5 0 01-1.242-7.244l4.243-4.243a4.5 4.5 0 116.364 6.364l-1.06 1.06" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+              <span data-i18n="toggleUrl">Include video URL</span>
+            </div>
+            <input type="checkbox" id="batch-include-url" checked />
+            <span class="toggle-track"><span class="toggle-thumb"></span></span>
+          </label>
+
+          <label class="toggle-row">
+            <div class="toggle-label">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 4l16 16M9 4h9a2 2 0 012 2v9M15 20H6a2 2 0 01-2-2V9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              <span data-i18n="toggleDuplicates">Clean duplicates</span>
+            </div>
+            <input type="checkbox" id="batch-clean-duplicates" />
+            <span class="toggle-track"><span class="toggle-thumb"></span></span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Batch Progress -->
+      <div id="batch-progress" class="batch-progress hidden">
+        <div class="batch-progress-header">
+          <span id="batch-progress-text" data-i18n="batchExtracting">Extracting transcripts...</span>
+          <button id="batch-cancel-btn" class="batch-cancel-btn" title="Cancel">&times;</button>
+        </div>
+        <div class="batch-progress-bar-track">
+          <div id="batch-progress-bar" class="batch-progress-bar-fill" style="width:0%"></div>
+        </div>
+        <span id="batch-progress-detail" class="batch-progress-detail">0 / 0</span>
+        <!-- Batch Lifecycle Controls -->
+        <div class="batch-controls-row">
+          <button id="batch-pause-btn" class="batch-ctrl-btn pause" title="Pause / Stop batch extraction">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+              <rect x="6" y="4" width="4" height="16" rx="1"/>
+              <rect x="14" y="4" width="4" height="16" rx="1"/>
+            </svg>
+            <span data-i18n="batchPauseBtn">Stop</span>
+          </button>
+          <button id="batch-resume-btn" class="batch-ctrl-btn resume hidden" title="Continue extraction">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+              <polygon points="6,4 20,12 6,20"/>
+            </svg>
+            <span data-i18n="batchResumeBtn">Continue</span>
+          </button>
+          <button id="batch-stop-btn" class="batch-ctrl-btn stop" title="Stop and finalize results">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+              <rect x="5" y="5" width="14" height="14" rx="2"/>
+            </svg>
+            <span data-i18n="batchFinishBtn">Finish &amp; Export</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Batch Export Options -->
+      <div class="batch-export-options">
+        <div class="batch-export-row">
+          <span class="batch-export-label" data-i18n="batchExportAs">Export as:</span>
+          <select id="batch-export-mode" class="batch-export-select">
+            <option value="single" data-i18n="batchSingleMerged">Single Merged File</option>
+            <option value="separate" data-i18n="batchSeparateZip">Separate Files (ZIP)</option>
+          </select>
+        </div>
+        <div class="batch-export-row">
+          <span class="batch-export-label" data-i18n="batchFileType">File type:</span>
+          <select id="batch-file-format" class="batch-export-select">
+            <option value="txt">.txt</option>
+            <option value="srt">.srt</option>
+            <option value="vtt">.vtt</option>
+            <option value="md">.md</option>
+            <option value="json">.json</option>
+            <option value="csv">.csv</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Batch Action Buttons -->
+      <div class="batch-actions-bottom">
+        <button id="batch-extract-btn" class="btn primary" disabled>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="6,4 20,12 6,20"/></svg>
+          <span id="batch-extract-btn-text" data-i18n="batchStartExtract">Start Extraction (0)</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- AI Token Warning Modal -->
+    <div id="ai-token-modal" class="modal-overlay hidden">
+      <div class="modal-card">
+        <div class="modal-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" stroke="#f59e0b" stroke-width="1.8"/><path d="M12 9v4M12 17h.01" stroke="#f59e0b" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h3 class="modal-title" data-i18n="aiTokenTitle">Large Transcript Warning</h3>
+        <p id="ai-token-msg" class="modal-text" data-i18n="aiTokenMsg">The combined transcript exceeds ~100,000 characters. This may be truncated by the AI model.</p>
+        <div class="modal-buttons">
+          <button id="ai-token-cancel" class="modal-btn modal-btn-cancel" data-i18n="cancelBtn">Cancel</button>
+          <button id="ai-token-send" class="modal-btn modal-btn-confirm" data-i18n="sendAnywayBtn">Send Anyway</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Single Video Panel -->
+    <div id="single-panel" class="single-panel">
+    <!-- Status area -->
+    <div id="status-area" class="status-area">
+      <div id="idle-state" class="state">
+        <p class="hint" data-i18n="idleHint">Navigate to any YouTube video and click the button below to copy its transcript.</p>
+      </div>
+
+      <div id="loading-state" class="state hidden">
+        <div class="spinner"></div>
+        <p class="loading-text" data-i18n="loadingText">Opening transcript &amp; extracting…</p>
+      </div>
+
+      <div id="success-state" class="state hidden">
+        <div class="success-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M8 12.5l2.5 2.5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <p id="success-msg" class="success-msg"></p>
+      </div>
+
+      <div id="error-state" class="state hidden">
+        <div class="error-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M15 9l-6 6M9 9l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <p id="error-msg" class="error-msg"></p>
+      </div>
+    </div>
+
+    <!-- Formatting Options -->
+    <div class="section-label">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="4" y1="21" x2="4" y2="14"/>
+        <line x1="4" y1="10" x2="4" y2="3"/>
+        <line x1="12" y1="21" x2="12" y2="12"/>
+        <line x1="12" y1="8" x2="12" y2="3"/>
+        <line x1="20" y1="21" x2="20" y2="16"/>
+        <line x1="20" y1="12" x2="20" y2="3"/>
+        <line x1="1" y1="14" x2="7" y2="14"/>
+        <line x1="9" y1="8" x2="15" y2="8"/>
+        <line x1="17" y1="16" x2="23" y2="16"/>
+      </svg>
+      <span data-i18n="formatSection">Format</span>
+    </div>
+
+    <div class="options-group">
+      <!-- Output Format -->
+      <div class="option-row">
+        <span class="option-label" data-i18n="outputStyle">Output style</span>
+        <div class="segmented-control" id="format-control">
+          <button class="seg-btn active" data-value="lines" title="Each segment on its own line">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+              <path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <span data-i18n="btnLines">Lines</span>
+          </button>
+          <button class="seg-btn" data-value="paragraph" title="All text merged into one paragraph">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+              <path d="M4 6h16M4 10h16M4 14h16M4 18h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+            <span data-i18n="btnParagraph">Paragraph</span>
+          </button>
+          <button class="seg-btn" data-value="compact" title="Sentences grouped, no blank lines">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+              <rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M7 8h10M7 12h10M7 16h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <span data-i18n="btnBlocks">Blocks</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Toggles -->
+      <label class="toggle-row">
+        <div class="toggle-label">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M12 7v5l3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span data-i18n="toggleTimestamps">Include timestamps</span>
+        </div>
+        <input type="checkbox" id="include-timestamps" checked />
+        <span class="toggle-track"><span class="toggle-thumb"></span></span>
+      </label>
+
+      <label class="toggle-row">
+        <div class="toggle-label">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+            <path d="M4 6h16M4 12h8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+          <span data-i18n="toggleTitle">Include video title</span>
+        </div>
+        <input type="checkbox" id="include-title" checked />
+        <span class="toggle-track"><span class="toggle-thumb"></span></span>
+      </label>
+
+      <label class="toggle-row">
+        <div class="toggle-label">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+            <path d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.243 4.243a4.5 4.5 0 11-6.364-6.364l1.06-1.06" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M10.81 15.312a4.5 4.5 0 01-1.242-7.244l4.243-4.243a4.5 4.5 0 116.364 6.364l-1.06 1.06" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+          <span data-i18n="toggleUrl">Include video URL</span>
+        </div>
+        <input type="checkbox" id="include-url" />
+        <span class="toggle-track"><span class="toggle-thumb"></span></span>
+      </label>
+
+      <label class="toggle-row">
+        <div class="toggle-label">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+            <path d="M4 4l16 16M9 4h9a2 2 0 012 2v9M15 20H6a2 2 0 01-2-2V9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+          <span data-i18n="toggleDuplicates">Clean duplicates</span>
+        </div>
+        <input type="checkbox" id="clean-duplicates" />
+        <span class="toggle-track"><span class="toggle-thumb"></span></span>
+      </label>
+
+      <!-- Auto Copy Toggle -->
+      <label class="toggle-row">
+        <div class="toggle-label">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+            <path d="M13 10V3L4 14h7v7l9-11h-7z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span data-i18n="toggleAutoCopy">Auto-copy on video load</span>
+        </div>
+        <input type="checkbox" id="auto-copy" />
+        <span class="toggle-track"><span class="toggle-thumb"></span></span>
+      </label>
+
+      <!-- Prompt Prepend with Preset Selector -->
+      <div class="option-row prompt-row">
+        <div class="option-label-row" style="justify-content: space-between;">
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+              <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span data-i18n="togglePrompt">Prompt prepend</span>
+          </div>
+          <select id="prompt-preset" class="preset-select" title="Preset Templates">
+            <option value="" data-i18n="promptNoneCustom">None / Custom...</option>
+            <option value="Summarize this transcript in 5 concise bullet points:" data-i18n="presetSummarize">Summarize (5 Bullets)</option>
+            <option value="Extract the main key takeaways and action items from this transcript:" data-i18n="presetTakeaways">Key Takeaways</option>
+            <option value="Create a timestamped outline and chapter summary from this transcript:" data-i18n="presetOutline">Chapter Outline</option>
+            <option value="Give me a 2-sentence TL;DR summary of this transcript:" data-i18n="presetTldr">TL;DR Summary</option>
+          </select>
+        </div>
+        <div class="prompt-input-group">
+          <input type="text" id="prompt-prepend" class="prompt-input" data-i18n-placeholder="promptPlaceholder" placeholder="e.g. Summarize this transcript:" />
+          <button id="save-prompt-btn" class="save-prompt-btn" title="Save current custom prompt to presets">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none">
+              <path d="M19 21H5a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v11a2 2 0 01-2 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M17 21v-8H7v8M7 3v5h8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span data-i18n="saveBtn">Save</span>
+          </button>
+          <button id="delete-prompt-btn" class="save-prompt-btn delete-btn" title="Delete current custom prompt from presets">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none">
+              <path d="M3 6h18M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span data-i18n="deleteBtn">Delete</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- AI Web Bridge Bar (Directly under Prompt Prepend) -->
+      <div class="ai-bridge-section">
+        <span class="ai-bridge-label" data-i18n="aiBridgeLabel">Send Prompt + Transcript to AI:</span>
+        <div class="ai-bridge-buttons">
+          <button id="ai-chatgpt" class="ai-btn chatgpt" title="Open in ChatGPT with transcript">
+            <img src="icons/chatgpt.svg" alt="ChatGPT" class="ai-icon-img" width="14" height="14" />
+            <span>ChatGPT</span>
+          </button>
+          <button id="ai-claude" class="ai-btn claude" title="Open in Claude with transcript">
+            <img src="icons/claude.svg" alt="Claude" class="ai-icon-img" width="14" height="14" />
+            <span>Claude</span>
+          </button>
+          <button id="ai-gemini" class="ai-btn gemini" title="Open in Gemini with transcript">
+            <img src="icons/gemini.svg" alt="Gemini" class="ai-icon-img" width="14" height="14" />
+            <span>Gemini</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Transcript Search & Navigation Workspace -->
+    <div class="workspace-header-bar">
+      <div class="workspace-title-row">
+        <div style="display: flex; align-items: center; gap: 6px;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+            <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+          <span data-i18n="previewSection">Transcript Workspace</span>
+        </div>
+        <div class="workspace-header-right" style="display: flex; align-items: center; gap: 6px;">
+          <div id="transcript-lang-container" class="transcript-lang-container hidden" title="Transcript Language">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="2" y1="12" x2="22" y2="12"/>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            <select id="transcript-lang-select" class="transcript-lang-select" aria-label="Select transcript language"></select>
+          </div>
+          <div class="workspace-quick-tools">
+          <button id="btn-saved-drawer" class="ws-tool-btn" title="View Saved Transcripts">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            <span data-i18n="savedBtn">Saved</span>
+            <span id="saved-count-badge" class="ws-count-badge hidden">0</span>
+          </button>
+          <button id="toggle-follow-playback" class="ws-tool-btn" title="Toggle Auto-Follow Playback (Sync with YouTube video)">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            <span data-i18n="followBtn">Follow</span>
+            <span id="follow-indicator" class="follow-dot"></span>
+          </button>
+          <button id="filter-marked-btn" class="ws-tool-btn" title="Filter to show only Bookmarked (⭐) moments">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <span id="marked-count-badge">0</span>
+          </button>
+          <button id="btn-clip-notes" class="ws-tool-btn" title="Create Clip Notes from Bookmarked moments">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            <span data-i18n="notesBtn">Notes</span>
+            <span id="notes-count-badge" class="ws-count-badge hidden">0</span>
+          </button>
+        </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Hidden Playback Notification Pill -->
+    <div id="playback-hidden-indicator" class="playback-hidden-pill hidden" title="Current playing moment is filtered out. Click to view all segments.">
+      <div style="display:flex; align-items:center; gap:5px;">
+        <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor">
+          <polygon points="5 3 19 12 5 21 5 3"/>
+        </svg>
+        <span>Playing <b id="playback-hidden-time">00:00</b> (hidden by filter)</span>
+      </div>
+      <span class="pill-action" data-i18n="showAll">Show All</span>
+    </div>
+
+    <div class="search-bar">
+      <svg class="search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none">
+        <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="1.8"/>
+        <path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+      <input type="text" id="search-input" class="search-input" data-i18n-placeholder="searchPlaceholder" placeholder="Search transcript... [/]" />
+      <span id="search-count" class="search-count hidden"></span>
+      <div class="search-nav-btns hidden" id="search-nav-group">
+        <button id="search-prev-btn" class="search-nav-btn" title="Previous match (Shift+Enter)">
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+        </button>
+        <button id="search-next-btn" class="search-nav-btn" title="Next match (Enter)">
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+      </div>
+      <button id="search-clear" class="search-clear hidden" title="Clear search (Esc)">&times;</button>
+    </div>
+
+    <!-- Multi-Segment Selection Action Bar (visible when 1+ segments selected) -->
+    <div id="selection-bar" class="selection-bar hidden">
+      <div class="selection-info">
+        <span id="selection-count" class="selection-count-badge">0 selected</span>
+      </div>
+      <div class="selection-actions">
+        <button id="copy-selection-ts-btn" class="sel-btn primary" title="Copy selected segments with timestamps">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span data-i18n="copyTime">Copy (+ Time)</span>
+        </button>
+        <button id="copy-selection-text-btn" class="sel-btn secondary" title="Copy selected text only">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          <span data-i18n="copyText">Copy Text</span>
+        </button>
+        <button id="mark-selection-btn" class="sel-btn star" title="Bookmark all selected segments">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <span data-i18n="markBtn">Mark</span>
+        </button>
+        <div class="selection-ai-dropdown">
+          <button id="ai-selection-btn" class="sel-btn ai-action" title="AI actions on selected segments">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/></svg>
+            <span data-i18n="aiBtn">AI</span>
+          </button>
+          <div id="selection-ai-menu" class="selection-ai-menu hidden">
+            <button class="sel-ai-item" data-action="summarize">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              <span data-i18n="summarizeSelected">Summarize Selected</span>
+            </button>
+            <button class="sel-ai-item" data-action="explain">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 22h4M15 9a3 3 0 00-6 0c0 1.5.8 2.5 1.5 3.5.5.7.5 1.5.5 2.5h4c0-1 .1-1.8.5-2.5.7-1 1.5-2 1.5-3.5z"/></svg>
+              <span data-i18n="explainSelected">Explain Selected</span>
+            </button>
+            <button class="sel-ai-item" data-action="action_items">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+              <span data-i18n="actionItems">Action Items</span>
+            </button>
+            <button class="sel-ai-item" data-action="translate">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              <span data-i18n="translateSelected">Translate</span>
+            </button>
+          </div>
+        </div>
+        <button id="clear-selection-btn" class="sel-btn text-only" title="Deselect all" data-i18n="clearBtn">
+          Clear
+        </button>
+      </div>
+    </div>
+
+    <div class="preview-box" id="preview-box">
+      <p class="preview-placeholder" data-i18n="previewPlaceholder">Click copy to see a preview here</p>
+    </div>
+
+    <!-- Actions -->
+    <div class="actions">
+      <button id="copy-btn" class="btn primary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+          <rect x="8" y="2" width="12" height="16" rx="2" stroke="currentColor" stroke-width="2"/>
+          <path d="M4 8v10a2 2 0 002 2h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span id="copy-btn-text" data-i18n="copyBtnText">Copy Transcript</span>
+      </button>
+      <button id="save-workspace-btn" class="btn secondary save-ws-btn" title="Save this transcript locally to access anytime offline">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+          <path d="M19 21H5a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v11a2 2 0 01-2 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M17 21v-8H7v8M7 3v5h8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span data-i18n="saveBtn">Save</span>
+      </button>
+      <div class="download-group">
+        <select id="export-format" class="export-select" title="Export Format">
+          <option value="txt">.txt</option>
+          <option value="srt">.srt</option>
+          <option value="vtt">.vtt</option>
+          <option value="md">.md</option>
+          <option value="json">.json</option>
+          <option value="csv">.csv</option>
+        </select>
+        <button id="download-btn" class="btn secondary" title="Download File">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+            <path d="M12 3v12m0 0l-4-4m4 4l4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    </div>
+
+    <!-- Rating & Support Prompt Modal (v2.7.1) -->
+    <div id="rating-prompt-overlay" class="modal-overlay rating-modal-overlay hidden">
+      <div id="rating-prompt-card" class="rating-modal-card">
+        <div class="rating-prompt-header">
+          <div class="rating-prompt-title">
+            <span class="rating-stars">★★★★★</span>
+            <span data-i18n="ratingTitle">Enjoying Transcript Copier?</span>
+          </div>
+          <button id="rating-btn-close" class="rating-prompt-close" title="Dismiss" aria-label="Close">&times;</button>
+        </div>
+        <p class="rating-prompt-text" data-i18n="ratingText">
+          If this extension saves you time, please take a quick moment to leave a rating on the Chrome Web Store! It helps us keep improving and adding new features.
+        </p>
+        <div class="rating-prompt-actions">
+          <button id="rating-btn-yes" class="rating-btn-primary" title="Rate 5 stars on Chrome Web Store">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+            <span data-i18n="ratingBtnYes">Yes, I will</span>
+          </button>
+          <button id="rating-btn-no" class="rating-btn-secondary" title="Not right now">
+            <span data-i18n="ratingBtnNo">No thanks</span>
+          </button>
+        </div>
+        <div class="rating-prompt-footer">
+          <button id="rating-btn-never" class="rating-btn-dismiss" title="Never show this reminder again">
+            <span data-i18n="ratingBtnNever">Don't show again</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+      <a id="feedback-link" class="feedback-btn" title="Report a bug or send feedback">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none">
+          <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span data-i18n="feedbackBtn">Feedback &amp; Bugs</span>
+      </a>
+      <span class="footer-dot">·</span>
+      <a id="collab-link" class="feedback-btn" title="Want to collaborate?">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none">
+          <path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          <circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="1.8"/>
+          <path d="M19 8v6M22 11h-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+        <span data-i18n="collabBtn">Collaborate</span>
+      </a>
+
+    </footer>
+
+    <!-- Saved Transcripts Modal -->
+    <div id="saved-modal" class="modal-overlay hidden">
+      <div class="saved-modal-content">
+        <div class="saved-modal-header">
+          <div style="display:flex; align-items:center; gap:6px;">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            <span style="font-size:12.5px; font-weight:700; color:var(--text);" data-i18n="savedModalTitle">Saved Workspaces</span>
+          </div>
+          <button id="saved-modal-close" class="saved-close-btn" title="Close">&times;</button>
+        </div>
+        <div class="saved-search-box">
+          <input type="text" id="saved-search-input" class="saved-search-input" data-i18n-placeholder="savedSearchPlaceholder" placeholder="Search saved transcripts..." />
+        </div>
+        <div id="saved-list" class="saved-list">
+          <p class="empty-saved-placeholder" data-i18n="savedEmptyPlaceholder">No saved transcripts yet.<br>Click "Save" on any transcript to store it locally.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Clip Notes Modal (v2.6.0) -->
+    <div id="clip-notes-modal" class="modal-overlay hidden">
+      <div class="saved-modal-content clip-notes-content">
+        <div class="saved-modal-header">
+          <div style="display:flex; align-items:center; gap:6px;">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            <span style="font-size:12.5px; font-weight:700; color:var(--text);" data-i18n="clipNotesTitle">Clip Notes</span>
+            <span id="clip-notes-badge" class="selection-count-badge" style="margin-left:4px;">0 moments</span>
+          </div>
+          <button id="clip-notes-close" class="saved-close-btn" title="Close">&times;</button>
+        </div>
+        <div class="clip-notes-body">
+          <textarea id="clip-notes-text" class="clip-notes-textarea" spellcheck="false" data-i18n-placeholder="clipNotesPlaceholder" placeholder="No bookmarked moments yet. Bookmark moments to compile Clip Notes."></textarea>
+        </div>
+        <div class="clip-notes-footer">
+          <div class="clip-notes-actions-left">
+            <button id="clip-notes-copy-btn" class="sel-btn primary" title="Copy Clip Notes">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              <span data-i18n="copyBtn">Copy</span>
+            </button>
+            <button id="clip-notes-download-btn" class="sel-btn secondary" title="Download Markdown (.md)">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span>.md</span>
+            </button>
+          </div>
+          <div class="clip-notes-ai-buttons">
+            <span style="font-size:10px; color:var(--text-muted); margin-right:4px;" data-i18n="synthesize">Synthesize:</span>
+            <button id="clip-ai-chatgpt" class="ai-mini-btn chatgpt" title="Synthesize in ChatGPT">ChatGPT</button>
+            <button id="clip-ai-claude" class="ai-mini-btn claude" title="Synthesize in Claude">Claude</button>
+            <button id="clip-ai-gemini" class="ai-mini-btn gemini" title="Synthesize in Gemini">Gemini</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="storage_vault.js"></script>
+  <script src="ai_workspace_engine.js"></script>
+  <script src="popup.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+{
+  "testQuery": "cafe",
+  "expectedMatches": 2,
+  "expectedIndices": [0, 1],
+  "segments": [
+    { "timestamp": "0:10", "startSeconds": 10, "text": "We met at the local café in downtown Paris." },
+    { "timestamp": "0:40", "startSeconds": 40, "text": "Another nice cafe was open late across the street." },
+    { "timestamp": "1:15", "startSeconds": 75, "text": "Drinking tea in the library." }
+  ]
+}

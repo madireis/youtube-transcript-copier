@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<transcript>
+  <text start="0.5" dur="3.2">This is segment one
+with an embedded newline and &amp;amp; entities.</text>
+  <text start="3.7" dur="4.1">Line two also has
+a newline
+inside the caption text.</text>
+  <text start="7.8" dur="2.5">Final segment with clean text.</text>
+</transcript>

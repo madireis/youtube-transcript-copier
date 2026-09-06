@@ -1,0 +1,55 @@
+{
+  "fixtureName": "clip_notes_generator",
+  "description": "Validates structured Clip Notes generation with timestamped links and markdown headers",
+  "testQuery": "transformers",
+  "expectedMatches": 1,
+  "expectedIndices": [
+    2
+  ],
+  "metadata": {
+    "title": "Deep Learning Foundations 2026",
+    "url": "https://www.youtube.com/watch?v=DL_LECTURE_01"
+  },
+  "segments": [
+    {
+      "timestamp": "01:00",
+      "startSeconds": 60,
+      "text": "Introduction to neural network architectures and objective functions."
+    },
+    {
+      "timestamp": "05:30",
+      "startSeconds": 330,
+      "text": "Backpropagation calculates partial derivatives using the chain rule."
+    },
+    {
+      "timestamp": "14:15",
+      "startSeconds": 855,
+      "text": "Self-attention in transformers eliminates recurrent bottlenecks."
+    },
+    {
+      "timestamp": "28:40",
+      "startSeconds": 1720,
+      "text": "Residual connections allow signals to propagate through hundreds of layers."
+    },
+    {
+      "timestamp": "42:10",
+      "startSeconds": 2530,
+      "text": "Summary of experimental results across vision and language benchmarks."
+    }
+  ],
+  "markedIndices": [
+    1,
+    2,
+    4
+  ],
+  "expectedMarkedCount": 3,
+  "expectedClipNotesElements": [
+    "# 📝 Clip Notes: Deep Learning Foundations 2026",
+    "> **Source:** [Deep Learning Foundations 2026](https://www.youtube.com/watch?v=DL_LECTURE_01)",
+    "> **Marked Moments:** 3",
+    "## Key Moments",
+    "[⏱️ 05:30](https://www.youtube.com/watch?v=DL_LECTURE_01&t=330s) Backpropagation calculates partial derivatives",
+    "[⏱️ 14:15](https://www.youtube.com/watch?v=DL_LECTURE_01&t=855s) Self-attention in transformers eliminates recurrent bottlenecks.",
+    "[⏱️ 42:10](https://www.youtube.com/watch?v=DL_LECTURE_01&t=2530s) Summary of experimental results across vision and language benchmarks."
+  ]
+}

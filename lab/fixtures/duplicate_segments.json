@@ -1,0 +1,50 @@
+{
+  "wireMagic": "pb3",
+  "events": [
+    {
+      "tStartMs": 0,
+      "dDurationMs": 2000,
+      "segs": [
+        {
+          "utf8": "First unique segment."
+        }
+      ]
+    },
+    {
+      "tStartMs": 2000,
+      "dDurationMs": 2000,
+      "segs": [
+        {
+          "utf8": "Repeating caption line."
+        }
+      ]
+    },
+    {
+      "tStartMs": 4000,
+      "dDurationMs": 2000,
+      "segs": [
+        {
+          "utf8": "Repeating caption line."
+        }
+      ]
+    },
+    {
+      "tStartMs": 6000,
+      "dDurationMs": 2000,
+      "segs": [
+        {
+          "utf8": "repeating caption line."
+        }
+      ]
+    },
+    {
+      "tStartMs": 8000,
+      "dDurationMs": 2000,
+      "segs": [
+        {
+          "utf8": "Final distinct conclusion segment."
+        }
+      ]
+    }
+  ]
+}

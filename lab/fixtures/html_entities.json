@@ -1,0 +1,32 @@
+{
+  "wireMagic": "pb3",
+  "events": [
+    {
+      "tStartMs": 1000,
+      "dDurationMs": 2500,
+      "segs": [
+        {
+          "utf8": "&quot;Hello &amp; welcome!&quot; Let&#39;s test &lt;strong&gt;HTML&lt;/strong&gt; entities."
+        }
+      ]
+    },
+    {
+      "tStartMs": 3500,
+      "dDurationMs": 3000,
+      "segs": [
+        {
+          "utf8": "Testing &lt;script&gt;alert(&#39;xss&#39;)&lt;/script&gt; and math symbols: 5 &lt; 10 &amp; 20 &gt; 15."
+        }
+      ]
+    },
+    {
+      "tStartMs": 6500,
+      "dDurationMs": 2000,
+      "segs": [
+        {
+          "utf8": "Non-breaking space&nbsp;and double escaped &amp;amp; symbols &amp;quot;quotes&amp;quot;."
+        }
+      ]
+    }
+  ]
+}

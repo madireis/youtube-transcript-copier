@@ -1,0 +1,11 @@
+{
+  "testQuery": "YOUTUBE TRANSCRIPT",
+  "expectedMatches": 3,
+  "expectedIndices": [0, 1, 2],
+  "segments": [
+    { "timestamp": "0:05", "startSeconds": 5, "text": "This youtube transcript allows fast extraction." },
+    { "timestamp": "0:30", "startSeconds": 30, "text": "You can copy any YouTube Transcript with one click." },
+    { "timestamp": "1:00", "startSeconds": 60, "text": "Here is our official YOUTUBE TRANSCRIPT guide." },
+    { "timestamp": "1:30", "startSeconds": 90, "text": "Other video platforms use different formats." }
+  ]
+}

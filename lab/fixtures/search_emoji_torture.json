@@ -1,0 +1,24 @@
+{
+  "name": "search_emoji_torture",
+  "description": "Unicode surrogate pairs, emojis, and mixed character boundary torture test",
+  "query": "rocket",
+  "expectedMatchCount": 2,
+  "expectedIndices": [0, 2],
+  "segments": [
+    {
+      "timestamp": "0:01",
+      "startSeconds": 1,
+      "text": "Welcome to the channel! 🚀 Rocket launch sequence starts in T-minus 10 seconds. 🔥"
+    },
+    {
+      "timestamp": "0:08",
+      "startSeconds": 8,
+      "text": "Payload telemetry verified: 🛰️ Orbit stabilization confirmed 100%."
+    },
+    {
+      "timestamp": "0:14",
+      "startSeconds": 14,
+      "text": "Second stage separation completed for the ROCKET booster. ✨🎉"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "fixtureName": "ai_workspace_context",
+  "description": "Validates context-aware AI payload building across selection, marks, single segment, and full transcript scopes",
+  "testQuery": "artificial intelligence",
+  "expectedMatches": 1,
+  "expectedIndices": [
+    0
+  ],
+  "segments": [
+    {
+      "timestamp": "00:10",
+      "startSeconds": 10,
+      "text": "Welcome to our lecture on artificial intelligence systems."
+    },
+    {
+      "timestamp": "01:25",
+      "startSeconds": 85,
+      "text": "We start with stochastic gradient descent and momentum optimization."
+    },
+    {
+      "timestamp": "03:40",
+      "startSeconds": 220,
+      "text": "Convolutional networks excel at visual feature representations."
+    },
+    {
+      "timestamp": "06:15",
+      "startSeconds": 375,
+      "text": "Attention mechanisms allow transformers to process entire sequences in parallel."
+    },
+    {
+      "timestamp": "09:50",
+      "startSeconds": 590,
+      "text": "In conclusion, modern models scale with compute and parameter size."
+    }
+  ],
+  "aiContextTests": [
+    {
+      "name": "Selection scope with 'summarize' action",
+      "scope": "selection",
+      "selectedIndices": [
+        1,
+        3
+      ],
+      "actionKey": "summarize",
+      "expectedSegmentCount": 2,
+      "expectedMustContain": [
+        "Summarize the following transcript excerpt in concise, high-impact bullet points:",
+        "[01:25] We start with stochastic gradient descent",
+        "[06:15] Attention mechanisms allow transformers"
+      ],
+      "expectedMustNotContain": [
+        "Convolutional networks excel at visual"
+      ]
+    },
+    {
+      "name": "Marks scope with 'explain' action",
+      "scope": "marks",
+      "markedIndices": [
+        2
+      ],
+      "actionKey": "explain",
+      "expectedSegmentCount": 1,
+      "expectedMustContain": [
+        "Explain the key concepts and arguments discussed in this excerpt",
+        "[03:40] Convolutional networks excel at visual feature representations."
+      ]
+    },
+    {
+      "name": "Single segment scope with 'action_items' action",
+      "scope": "segment",
+      "singleIndex": 4,
+      "actionKey": "action_items",
+      "expectedSegmentCount": 1,
+      "expectedMustContain": [
+        "Extract all actionable steps, recommendations, and key takeaways",
+        "[09:50] In conclusion, modern models scale"
+      ]
+    },
+    {
+      "name": "Full scope with custom prompt directive",
+      "scope": "full",
+      "customPrompt": "Generate 3 study flashcards from this lecture:",
+      "expectedSegmentCount": 5,
+      "expectedMustContain": [
+        "Generate 3 study flashcards from this lecture:",
+        "[00:10] Welcome to our lecture on artificial intelligence systems.",
+        "[09:50] In conclusion, modern models scale with compute and parameter size."
+      ]
+    }
+  ]
+}

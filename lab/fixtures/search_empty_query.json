@@ -1,0 +1,10 @@
+{
+  "testQuery": "   ",
+  "expectedMatches": 3,
+  "expectedIndices": [0, 1, 2],
+  "segments": [
+    { "timestamp": "0:01", "startSeconds": 1, "text": "First segment untouched." },
+    { "timestamp": "0:15", "startSeconds": 15, "text": "Second segment untouched." },
+    { "timestamp": "0:30", "startSeconds": 30, "text": "Third segment untouched." }
+  ]
+}

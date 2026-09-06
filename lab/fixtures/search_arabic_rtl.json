@@ -1,0 +1,10 @@
+{
+  "testQuery": "الذكاء الاصطناعي",
+  "expectedMatches": 2,
+  "expectedIndices": [0, 2],
+  "segments": [
+    { "timestamp": "0:12", "startSeconds": 12, "text": "مرحبا بكم في عالم الذكاء الاصطناعي الحديث." },
+    { "timestamp": "0:45", "startSeconds": 45, "text": "نتحدث عن البرمجة وتطوير البرمجيات." },
+    { "timestamp": "1:10", "startSeconds": 70, "text": "تطبيقات الذكاء الاصطناعي تغير العالم كل يوم." }
+  ]
+}

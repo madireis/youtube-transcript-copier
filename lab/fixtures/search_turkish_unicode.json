@@ -1,0 +1,24 @@
+{
+  "name": "search_turkish_unicode",
+  "description": "Turkish character normalization torture test (dotted uppercase İ, dotless lowercase ı, ş, ğ, ç)",
+  "query": "istanbul",
+  "expectedMatchCount": 2,
+  "expectedIndices": [0, 2],
+  "segments": [
+    {
+      "timestamp": "0:05",
+      "startSeconds": 5,
+      "text": "İstanbul boğazında muhteşem bir gün başlıyor."
+    },
+    {
+      "timestamp": "0:12",
+      "startSeconds": 12,
+      "text": "Ankara ve İzmir şehirlerinde hava durumu oldukça ılık ve güneşli."
+    },
+    {
+      "timestamp": "0:20",
+      "startSeconds": 20,
+      "text": "İSTANBUL tarihi yarımadası ziyaretçilerini ağırlıyor."
+    }
+  ]
+}

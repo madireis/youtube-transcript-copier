@@ -1,0 +1,41 @@
+{
+  "wireMagic": "pb3",
+  "events": [
+    {
+      "tStartMs": 0,
+      "dDurationMs": 3200,
+      "segs": [
+        {
+          "utf8": "Hello world, and welcome to this test tutorial."
+        }
+      ]
+    },
+    {
+      "tStartMs": 3200,
+      "dDurationMs": 2800,
+      "segs": [
+        {
+          "utf8": "Today we are testing transcript extraction &amp; formatting."
+        }
+      ]
+    },
+    {
+      "tStartMs": 6000,
+      "dDurationMs": 4100,
+      "segs": [
+        {
+          "utf8": "It should handle timestamps, quotes like &quot;this&quot;, and apostrophes like don&#39;t."
+        }
+      ]
+    },
+    {
+      "tStartMs": 10100,
+      "dDurationMs": 3000,
+      "segs": [
+        {
+          "utf8": "Deduplication should keep distinct lines intact."
+        }
+      ]
+    }
+  ]
+}

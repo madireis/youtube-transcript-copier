@@ -1,0 +1,41 @@
+{
+  "wireMagic": "pb3",
+  "events": [
+    {
+      "tStartMs": 0,
+      "dDurationMs": 4000,
+      "segs": [
+        {
+          "utf8": "First long overlapping segment starting at zero."
+        }
+      ]
+    },
+    {
+      "tStartMs": 2000,
+      "dDurationMs": 3500,
+      "segs": [
+        {
+          "utf8": "Second segment starting mid-way through first segment."
+        }
+      ]
+    },
+    {
+      "tStartMs": 4500,
+      "dDurationMs": 0,
+      "segs": [
+        {
+          "utf8": "Zero duration instantaneous caption event."
+        }
+      ]
+    },
+    {
+      "tStartMs": 5000,
+      "dDurationMs": 2500,
+      "segs": [
+        {
+          "utf8": "Third segment continuing normally."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "testQuery": "data",
+  "expectedMatches": 2,
+  "expectedIndices": [0, 1],
+  "expectedTotalOccurrences": 4,
+  "segments": [
+    { "timestamp": "0:05", "startSeconds": 5, "text": "Big data pipelines collect structured data and raw streams." },
+    { "timestamp": "0:35", "startSeconds": 35, "text": "Clean data produces clean data models." },
+    { "timestamp": "1:00", "startSeconds": 60, "text": "Unrelated segment discussing algorithmic theory." }
+  ]
+}

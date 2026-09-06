@@ -1,0 +1,21 @@
+{
+  "name": "workspace_marks_playback",
+  "description": "Validation for playback synchronization, bookmarking (marks), and summary exports",
+  "testQuery": "neural network",
+  "expectedMatches": 2,
+  "expectedIndices": [1, 3],
+  "playbackTests": [
+    { "currentSeconds": 15, "expectedActiveIndex": 0 },
+    { "currentSeconds": 35, "expectedActiveIndex": 1 },
+    { "currentSeconds": 90, "expectedActiveIndex": 3 }
+  ],
+  "markedIndices": [1, 3],
+  "expectedMarkedCount": 2,
+  "segments": [
+    { "timestamp": "0:10", "startSeconds": 10, "text": "Welcome everyone to our deep dive seminar on computational intelligence." },
+    { "timestamp": "0:30", "startSeconds": 30, "text": "A convolutional neural network excels at spatial representation learning." },
+    { "timestamp": "0:55", "startSeconds": 55, "text": "Gradient descent optimization minimizes loss over millions of weights." },
+    { "timestamp": "1:20", "startSeconds": 80, "text": "A recurrent neural network captures temporal patterns across time steps." },
+    { "timestamp": "1:50", "startSeconds": 110, "text": "In the next lecture we will examine transformer self-attention mechanisms." }
+  ]
+}
