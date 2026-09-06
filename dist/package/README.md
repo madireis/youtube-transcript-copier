@@ -1,71 +1,154 @@
-🎬 YouTube Transcript Copier - Store Listing (v2.3.0)
+# 🎬 YouTube Transcript Copier
 
-📌 Short Description (Max 132 Characters):
-One-click YouTube transcript copier & exporter with persistent Side Panel drawer, custom AI presets & 1-click bridge to ChatGPT, Claude & Gemini!
+<p align="center">
+  <img src="icons/icon128.png" alt="YouTube Transcript Copier Logo" width="80" height="80" />
+</p>
+
+<p align="center">
+  <strong>Fast, intelligent, and versatile YouTube transcript extraction with Side Panel persistence, batch processing, and 1-click AI workflow.</strong>
+</p>
+
+<p align="center">
+  <a href="https://chromewebstore.google.com/detail/youtube-transcript-copier/khbenieolkkkjjokcfklaokfpdblkgbn"><img src="https://img.shields.io/badge/Chrome%20Web%20Store-v2.7.0-brightgreen?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Chrome Web Store" /></a>
+  <img src="https://img.shields.io/badge/Manifest-V3-blue?style=for-the-badge" alt="Manifest V3" />
+  <img src="https://img.shields.io/badge/Languages-7%20Supported-purple?style=for-the-badge" alt="7 Languages" />
+  <img src="https://img.shields.io/badge/Privacy-100%25%20Local-success?style=for-the-badge" alt="100% Local" />
+</p>
+
+<p align="center">
+  <img src="promo/feature_graphic_1280x800.jpg" alt="YouTube Transcript Copier Banner" width="100%" />
+</p>
 
 ---
 
-🌟 Detailed Description:
+## 🌟 Overview
 
-YouTube Transcript Copier v2.3.0 transforms video transcription into a seamless 1-click AI workflow. Extract clean, formatted YouTube transcripts instantly, export them in multiple formats, watch side-by-side with the persistent browser Side Panel drawer, and automatically bridge your text into ChatGPT, Claude, or Gemini with automated prompt injection!
+**YouTube Transcript Copier** is a privacy-first browser extension engineered to extract, format, and export YouTube transcripts in milliseconds. Built with a resilient multi-strategy extraction engine, it bypasses DOM volatility and provides seamless integration with modern AI tools like ChatGPT, Claude, and Gemini.
 
-Whether you are a student, researcher, content creator, developer, or busy professional, YouTube Transcript Copier saves you hours of manual copying, scrolling, and formatting.
+Whether you are a student, researcher, developer, or creator, YouTube Transcript Copier saves hours of manual copying and formatting.
 
+---
 
-🔥 Key Features & Capabilities:
+## ✨ Features
 
-📌 Persistent Side Panel Drawer & Flexible Popup
-- Open transcripts in a persistent right-hand browser Side Panel drawer (Chrome 114+) to scroll and search transcripts live alongside playing videos.
-- Automatic fallback to classic popup window on older Chrome versions or browsers without Side Panel support.
+### 1. ⚡ 1-Click Native Player Button & Auto-Copy
+- **Native Player Integration**: Adds an unobtrusive "Copy Transcript" button right next to YouTube's Like/Share buttons and inside YouTube Shorts reels.
+- **Auto-Copy on Video Load**: Toggle auto-copy in settings to automatically grab transcripts the instant any video opens.
+- **Global Shortcut**: Press `Ctrl + Shift + Y` (Windows/Linux) or `Cmd + Shift + Y` (macOS) to copy without touching your mouse.
 
-⚡ 1-Click Instant Transcript Extraction
-- Works on any YouTube video or YouTube Short.
-- Automatically opens the native YouTube transcript sidebar and extracts text in milliseconds.
-- Keyboard shortcut support: Ctrl + Shift + Y (Windows/Linux) or Cmd + Shift + Y (Mac).
+---
 
-🤖 Automated AI Web Bridge
-- Direct Bridge to AI: Click ChatGPT, Claude, or Gemini to instantly copy your transcript and prompt and open your favorite AI web chatbot.
-- Automated Text Insertion: The extension automatically detects the chat input field on ChatGPT, Claude, or Gemini and pastes your prompt and transcript right into the box!
+### 2. 🚀 Batch Multi-Video & Playlist Extraction
+<p align="center">
+  <img src="promo/batch_playlist_feature_graphic_1280x800.jpg" alt="Batch Mode & Playlist Extraction" width="100%" />
+</p>
 
-💾 Custom Prompt Presets & Management
-- Built-in Presets: Quickly select popular prompts like Summarize (5 Bullets), Key Takeaways, Chapter Outline, or TL;DR Summary.
-- Save Your Custom Prompts: Type any custom prompt and click Save to keep it in your dropdown presets.
-- Delete Prompts: Effortlessly delete custom prompts with the Delete button.
+- **Automated Scanner**: Detects playlists, recommended queues, and channel uploads directly from the active tab.
+- **Queue Controls**: Extract dozens of transcripts in sequence with live progress, pause, resume, and stop controls.
+- **Token Safety Alert**: Live character and token counter alerts you when extractions approach LLM context limits.
+- **Bulk ZIP Download**: Export entire playlist transcriptions in a single neatly organized archive.
 
-📁 Versatile File Exporter
-- Flexible Export Options: Save transcripts into text documents, subtitle files, markdown notes, spreadsheet tables, or structured data files for easy integration into existing workflows.
+---
 
-🔍 Live Search & Click-to-Seek Timestamps
-- Live Highlight Search: Filter transcript lines live with query matching.
-- Click-to-Seek: Click any timestamp in the preview box to jump the YouTube video player to that exact second!
+### 3. 🤖 1-Click Free AI Web Bridge (with Auto-Paste)
+<p align="center">
+  <img src="promo/ai_export_feature_graphic_1280x800.jpg" alt="Free AI Web Bridge" width="100%" />
+</p>
 
-🌍 Multilingual & Native RTL Support
-- Full UI localized in 7 languages: English, Spanish, Portuguese, Turkish, French, German, and Arabic.
-- Native Right-to-Left (RTL) layout support for Arabic users.
+- **Direct Export**: One click launches **ChatGPT**, **Claude**, or **Gemini** in a new tab.
+- **Automated Text Insertion**: The extension automatically types your chosen prompt and the full transcript directly into the chat prompt box.
+- **Custom Prompt Library**: Use ready-made presets (*Summarize 5 Bullets*, *Key Takeaways*, *Chapter Outline*, *TL;DR*) or save and manage your own custom prompts.
 
-🔒 Privacy-First & Zero Server
-- 100% client-side local execution.
-- No external server tracking, no remote API key requirements, no analytics tracking, and no paid subscriptions.
+---
 
+### 4. 📁 Multi-Format Exporter
+<p align="center">
+  <img src="promo/export_formats_feature_graphic_1280x800.jpg" alt="Export Formats" width="100%" />
+</p>
 
-🔒 Permissions Justification (For Chrome Web Store Reviewers):
-- activeTab: Required to interact with the currently active YouTube tab when the user clicks the extension button.
-- scripting: Required to execute the light transcript extraction script on YouTube and to jump video playback to clicked timestamps.
-- storage: Required to store user settings (formatting preferences, custom saved prompts) locally in extension storage.
-- contextMenus: Required to provide right-click transcript extraction on YouTube video links.
-- sidePanel: Required to provide the persistent side drawer UI alongside YouTube video playback.
-- host_permissions (youtube.com, chatgpt.com, claude.ai, gemini.google.com): Required for the automated AI web bridge to insert transcripts into target AI chat inputs.
+Export clean transcriptions formatted for your exact workflow:
+- **SRT (`.srt`)**: SubRip format for video editors (Premiere, Final Cut, DaVinci Resolve).
+- **VTT (`.vtt`)**: WebVTT format for web players.
+- **Markdown (`.md`)**: Structured notes for Obsidian, Notion, and Logseq.
+- **JSON (`.json`)**: Raw timestamps and text objects for developers and data analysis.
+- **CSV (`.csv`)**: Structured tables for Excel and Google Sheets.
+- **Plain Text (`.txt`)**: Clean paragraph or line-by-line format.
 
+---
 
-🆕 What is New in Version 2.3.0:
-- Decoupled Multi-Strategy Extraction Engine (Tab Player Data, TimedText API, DOM Panel Scraper).
-- Failure-proof resilience against YouTube frontend UI changes.
-- Added Chrome Side Panel API support for persistent right-hand drawer side-by-side transcript reading.
-- Dual-mode automatic fallback to classic popup window for older browsers.
-- Added 1-click Free AI Web Bridges for ChatGPT, Claude, and Gemini.
-- Added automated DOM text auto-pasting.
-- Integrated official vector SVG logos for ChatGPT, Claude, and Gemini.
-- Added Save Prompt and Delete Prompt management.
-- Added versatile file export options for subtitles, documents, and data workflows.
-- Live interactive search and click-to-seek video timestamp jumping.
+### 5. 🔍 Live Search & Click-to-Seek Navigation
+<p align="center">
+  <img src="promo/search_feature_graphic_1280x800.jpg" alt="Search and Seek Timestamps" width="100%" />
+</p>
 
+- **Instant Highlighting**: Filter through long transcripts with real-time text matching.
+- **Interactive Timestamps**: Click any timestamp in the side panel or popup to seek video playback directly to that exact second.
+
+---
+
+### 6. 🌍 7 Languages with Full RTL Support
+<p align="center">
+  <img src="promo/multilingual_feature_graphic_1280x800.jpg" alt="7 Languages & RTL" width="100%" />
+</p>
+
+Fully translated interface with instant switching across **7 languages**:
+- 🇺🇸 English
+- 🇪🇸 Spanish (Español)
+- 🇧🇷 Portuguese (Português)
+- 🇹🇷 Turkish (Türkçe)
+- 🇫🇷 French (Français)
+- 🇩🇪 German (Deutsch)
+- 🇸🇦 Arabic (العربية) with native **Right-to-Left (RTL)** layout.
+
+---
+
+### 7. 📑 Persistent Side Panel & Workspace Vault
+<p align="center">
+  <img src="promo/study_notes_feature_graphic_1280x800.jpg" alt="Study Notes and Workspaces" width="100%" />
+</p>
+
+- **Chrome Side Panel**: Read and search transcripts in Chrome's dedicated side panel drawer without popup auto-closing.
+- **Saved Workspaces**: Bookmark clips, take timestamped notes, and save transcripts locally for offline review.
+
+---
+
+## 🔒 Privacy First
+
+- **100% Client-Side**: All transcript processing, formatting, and storage happens entirely on your machine.
+- **Zero Telemetry**: No tracking, no user profiling, and no third-party analytics scripts.
+- **Zero API Keys**: No accounts, logins, or paid subscription keys required.
+
+---
+
+## 🚀 Installation
+
+### Option 1: Chrome Web Store (Recommended)
+Install with one click from the [Chrome Web Store](https://chromewebstore.google.com/detail/youtube-transcript-copier/khbenieolkkkjjokcfklaokfpdblkgbn).
+
+### Option 2: Load Unpacked (Developer Mode)
+1. Clone or download this repository:
+   ```bash
+   git clone https://github.com/madireis/youtube-transcript-copier.git
+   ```
+2. Navigate to `chrome://extensions/` in your browser.
+3. Enable **Developer mode** in the upper-right corner.
+4. Click **Load unpacked** and select the extension folder.
+
+---
+
+## ⌨️ Shortcuts
+
+| Shortcut | Action |
+| :--- | :--- |
+| `Ctrl + Shift + Y` (Windows/Linux) | Copy formatted transcript to clipboard |
+| `Cmd + Shift + Y` (macOS) | Copy formatted transcript to clipboard |
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+<p align="center">
+  Made with care by <a href="https://github.com/madireis">@madireis</a>
+</p>
