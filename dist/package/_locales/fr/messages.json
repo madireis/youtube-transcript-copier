@@ -1,0 +1,331 @@
+{
+  "extensionName": {
+    "message": "Copieur de Transcription YouTube",
+    "description": "Manifest string: extensionName"
+  },
+  "extensionDescription": {
+    "message": "Copiez les transcriptions YouTube en un clic. Détection automatique, horodatages, mode paragraphe et intégration IA.",
+    "description": "Manifest string: extensionDescription"
+  },
+  "actionTitle": {
+    "message": "Copier la Transcription YouTube",
+    "description": "Manifest string: actionTitle"
+  },
+  "commandCopyTranscript": {
+    "message": "Copier la transcription YouTube dans le presse-papiers",
+    "description": "Manifest string: commandCopyTranscript"
+  },
+  "contextMenuCopyTranscript": {
+    "message": "Copier la Transcription",
+    "description": "Manifest string: contextMenuCopyTranscript"
+  },
+  "appTitle": {
+    "message": "Copieur de Transcription"
+  },
+  "tabSingle": {
+    "message": "Vidéo Unique"
+  },
+  "tabBatch": {
+    "message": "Mode Lot"
+  },
+  "batchNoVideos": {
+    "message": "Aucune vidéo détectée"
+  },
+  "batchScanBtn": {
+    "message": "Scanner la Page"
+  },
+  "batchOverlayBtn": {
+    "message": "Superposition"
+  },
+  "batchSelectAll": {
+    "message": "Tout Sélectionner"
+  },
+  "batchSelected": {
+    "message": "sélectionnés"
+  },
+  "batchPlaceholder": {
+    "message": "Cliquez sur \"Scanner la Page\" pour détecter les vidéos de cette page."
+  },
+  "batchFormatOptions": {
+    "message": "Format et Options"
+  },
+  "outputStyle": {
+    "message": "Style de sortie"
+  },
+  "btnLines": {
+    "message": "Lignes"
+  },
+  "btnParagraph": {
+    "message": "Paragraphe"
+  },
+  "btnBlocks": {
+    "message": "Blocs"
+  },
+  "toggleTimestamps": {
+    "message": "Inclure l'horodatage"
+  },
+  "toggleTitle": {
+    "message": "Inclure le titre de la vidéo"
+  },
+  "toggleUrl": {
+    "message": "Inclure l'URL de la vidéo"
+  },
+  "toggleDuplicates": {
+    "message": "Nettoyer les doublons"
+  },
+  "batchExtracting": {
+    "message": "Extraction des transcriptions..."
+  },
+  "batchPauseBtn": {
+    "message": "Arrêter"
+  },
+  "batchResumeBtn": {
+    "message": "Continuer"
+  },
+  "batchFinishBtn": {
+    "message": "Terminer et Exporter"
+  },
+  "batchExportAs": {
+    "message": "Exporter comme :"
+  },
+  "batchSingleMerged": {
+    "message": "Fichier Unique Fusionné"
+  },
+  "batchSeparateZip": {
+    "message": "Fichiers Séparés (ZIP)"
+  },
+  "batchFileType": {
+    "message": "Type de fichier :"
+  },
+  "batchStartExtract": {
+    "message": "Démarrer l'Extraction"
+  },
+  "batchPlaylistGroup": {
+    "message": "Playlist :"
+  },
+  "batchOtherGroup": {
+    "message": "Autres Vidéos (Recommandations)"
+  },
+  "batchVideos": {
+    "message": "vidéos"
+  },
+  "batchScanning": {
+    "message": "Analyse de la page YouTube..."
+  },
+  "batchProgressProcessing": {
+    "message": "Traitement de la vidéo"
+  },
+  "batchNavToYouTube": {
+    "message": "Veuillez naviguer vers une chaîne, playlist ou vidéo YouTube d'abord."
+  },
+  "batchNoVideosFound": {
+    "message": "Aucune vidéo trouvée. Faites défiler vers le bas pour charger plus."
+  },
+  "batchScanFailed": {
+    "message": "Échec de l'analyse. Essayez d'actualiser YouTube."
+  },
+  "batchOverlayInjected": {
+    "message": "Superposition activée ! Sélectionnez les vidéos sur la page."
+  },
+  "idleHint": {
+    "message": "Accédez à une vidéo YouTube et cliquez sur le bouton pour copier sa transcription."
+  },
+  "loadingText": {
+    "message": "Ouverture de la transcription et extraction…"
+  },
+  "formatSection": {
+    "message": "Format"
+  },
+  "toggleAutoCopy": {
+    "message": "Copie automatique au chargement"
+  },
+  "togglePrompt": {
+    "message": "Préfixe d'instruction"
+  },
+  "promptNoneCustom": {
+    "message": "Aucun / Personnalisé..."
+  },
+  "presetSummarize": {
+    "message": "Résumer (5 Points)"
+  },
+  "presetTakeaways": {
+    "message": "Points Clés"
+  },
+  "presetOutline": {
+    "message": "Plan des Chapitres"
+  },
+  "presetTldr": {
+    "message": "Résumé Rapide"
+  },
+  "promptPlaceholder": {
+    "message": "ex. : Résumez cette transcription :"
+  },
+  "saveBtn": {
+    "message": "Enregistrer"
+  },
+  "deleteBtn": {
+    "message": "Supprimer"
+  },
+  "aiBridgeLabel": {
+    "message": "Envoyer l'instruction + transcription à l'IA :"
+  },
+  "previewSection": {
+    "message": "Espace de Transcription"
+  },
+  "savedBtn": {
+    "message": "Enregistrés"
+  },
+  "followBtn": {
+    "message": "Suivre"
+  },
+  "notesBtn": {
+    "message": "Notes"
+  },
+  "showAll": {
+    "message": "Afficher Tout"
+  },
+  "searchPlaceholder": {
+    "message": "Rechercher dans le texte... [/]"
+  },
+  "copyTime": {
+    "message": "Copier (+ Heure)"
+  },
+  "copyText": {
+    "message": "Copier le Texte"
+  },
+  "markBtn": {
+    "message": "Marquer"
+  },
+  "aiBtn": {
+    "message": "IA"
+  },
+  "summarizeSelected": {
+    "message": "Résumer la Sélection"
+  },
+  "explainSelected": {
+    "message": "Expliquer la Sélection"
+  },
+  "actionItems": {
+    "message": "Actions à Mener"
+  },
+  "translateSelected": {
+    "message": "Traduire"
+  },
+  "clearBtn": {
+    "message": "Effacer"
+  },
+  "previewPlaceholder": {
+    "message": "Cliquez sur copier pour voir un aperçu ici"
+  },
+  "copyBtnText": {
+    "message": "Copier la Transcription"
+  },
+  "copyBtn": {
+    "message": "Copier"
+  },
+  "moments": {
+    "message": "moments"
+  },
+  "synthesize": {
+    "message": "Synthétiser :"
+  },
+  "savedModalTitle": {
+    "message": "Espaces Enregistrés"
+  },
+  "savedSearchPlaceholder": {
+    "message": "Rechercher dans les enregistrements..."
+  },
+  "savedEmptyPlaceholder": {
+    "message": "Aucune transcription enregistrée pour le moment.\nCliquez sur \"Enregistrer\" pour la stocker localement."
+  },
+  "clipNotesTitle": {
+    "message": "Notes d'Extraits"
+  },
+  "clipNotesPlaceholder": {
+    "message": "Aucun moment marqué. Marquez des passages pour compiler vos Notes."
+  },
+  "ratingTitle": {
+    "message": "Vous appréciez Transcript Copier ?"
+  },
+  "ratingText": {
+    "message": "Si cette extension vous fait gagner du temps, prenez un instant pour laisser un avis sur le Chrome Web Store ! Cela nous aide énormément."
+  },
+  "ratingBtnYes": {
+    "message": "Oui, avec plaisir"
+  },
+  "ratingBtnNo": {
+    "message": "Non merci"
+  },
+  "ratingBtnNever": {
+    "message": "Ne plus afficher"
+  },
+  "aiTokenTitle": {
+    "message": "Avertissement : Transcription Volumineuse"
+  },
+  "aiTokenMsg": {
+    "message": "La transcription combinée dépasse ~100 000 caractères. Elle risque d'être tronquée par l'IA."
+  },
+  "cancelBtn": {
+    "message": "Annuler"
+  },
+  "sendAnywayBtn": {
+    "message": "Envoyer quand même"
+  },
+  "feedbackBtn": {
+    "message": "Avis & Bugs"
+  },
+  "collabBtn": {
+    "message": "Collaborer"
+  },
+  "copiedSuccess": {
+    "message": "$COUNT$ lignes copiées dans le presse-papiers !",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "errors_not_youtube": {
+    "message": "Veuillez naviguer vers une vidéo YouTube."
+  },
+  "errors_no_active_tab": {
+    "message": "Aucun onglet YouTube actif trouvé."
+  },
+  "errors_tab_query_failed": {
+    "message": "Impossible de requêter les onglets."
+  },
+  "errors_restricted_page": {
+    "message": "Impossible de s'exécuter sur cette page."
+  },
+  "errors_no_button": {
+    "message": "Bouton de transcription introuvable."
+  },
+  "errors_no_transcript": {
+    "message": "Aucun segment de transcription trouvé."
+  },
+  "errors_empty_transcript": {
+    "message": "Le panneau de transcription est vide."
+  },
+  "errors_panel_timeout": {
+    "message": "Le panneau ne s'est pas ouvert à temps."
+  },
+  "errors_injection_failed": {
+    "message": "Impossible d'accéder à la page."
+  },
+  "errors_script_error": {
+    "message": "Une erreur interne est survenue."
+  },
+  "errors_attestation_required": {
+    "message": "YouTube requiert une vérification pour cette vidéo. Ouvrez-la dans votre onglet actif et réessayez."
+  },
+  "errors_video_unavailable": {
+    "message": "Cette vidéo est privée, supprimée ou indisponible."
+  },
+  "errors_age_restricted": {
+    "message": "Cette vidéo est soumise à une limite d'âge. Connectez-vous à YouTube pour voir la transcription."
+  },
+  "errors_no_captions_available": {
+    "message": "Aucun sous-titre ni transcription n'existe pour cette vidéo."
+  }
+}

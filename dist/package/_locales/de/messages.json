@@ -1,0 +1,331 @@
+{
+  "extensionName": {
+    "message": "YouTube Transkript Kopierer",
+    "description": "Manifest string: extensionName"
+  },
+  "extensionDescription": {
+    "message": "Ein-Klick-Kopieren von YouTube-Transkripten. Automatische Erkennung, Zeitstempel, Absatzmodus und KI-Integration.",
+    "description": "Manifest string: extensionDescription"
+  },
+  "actionTitle": {
+    "message": "YouTube-Transkript kopieren",
+    "description": "Manifest string: actionTitle"
+  },
+  "commandCopyTranscript": {
+    "message": "YouTube-Transkript in die Zwischenablage kopieren",
+    "description": "Manifest string: commandCopyTranscript"
+  },
+  "contextMenuCopyTranscript": {
+    "message": "Transkript kopieren",
+    "description": "Manifest string: contextMenuCopyTranscript"
+  },
+  "appTitle": {
+    "message": "Transkript-Kopierer"
+  },
+  "tabSingle": {
+    "message": "Einzelnes Video"
+  },
+  "tabBatch": {
+    "message": "Stapelmodus"
+  },
+  "batchNoVideos": {
+    "message": "Keine Videos erkannt"
+  },
+  "batchScanBtn": {
+    "message": "Seite scannen"
+  },
+  "batchOverlayBtn": {
+    "message": "Seiten-Overlay"
+  },
+  "batchSelectAll": {
+    "message": "Alle auswählen"
+  },
+  "batchSelected": {
+    "message": "ausgewählt"
+  },
+  "batchPlaceholder": {
+    "message": "Klicken Sie auf \"Seite scannen\", um Videos auf dieser Seite zu erkennen."
+  },
+  "batchFormatOptions": {
+    "message": "Format & Optionen"
+  },
+  "outputStyle": {
+    "message": "Ausgabestil"
+  },
+  "btnLines": {
+    "message": "Zeilen"
+  },
+  "btnParagraph": {
+    "message": "Absatz"
+  },
+  "btnBlocks": {
+    "message": "Blöcke"
+  },
+  "toggleTimestamps": {
+    "message": "Zeitstempel einschließen"
+  },
+  "toggleTitle": {
+    "message": "Videotitel einschließen"
+  },
+  "toggleUrl": {
+    "message": "Video-URL einschließen"
+  },
+  "toggleDuplicates": {
+    "message": "Duplikate entfernen"
+  },
+  "batchExtracting": {
+    "message": "Transkripte werden extrahiert..."
+  },
+  "batchPauseBtn": {
+    "message": "Anhalten"
+  },
+  "batchResumeBtn": {
+    "message": "Fortsetzen"
+  },
+  "batchFinishBtn": {
+    "message": "Fertigstellen & Exportieren"
+  },
+  "batchExportAs": {
+    "message": "Exportieren als:"
+  },
+  "batchSingleMerged": {
+    "message": "Einzelne zusammengeführte Datei"
+  },
+  "batchSeparateZip": {
+    "message": "Separate Dateien (ZIP)"
+  },
+  "batchFileType": {
+    "message": "Dateityp:"
+  },
+  "batchStartExtract": {
+    "message": "Extraktion starten"
+  },
+  "batchPlaylistGroup": {
+    "message": "Wiedergabeliste:"
+  },
+  "batchOtherGroup": {
+    "message": "Weitere Videos (Empfehlungen)"
+  },
+  "batchVideos": {
+    "message": "Videos"
+  },
+  "batchScanning": {
+    "message": "YouTube-Seite wird gescannt..."
+  },
+  "batchProgressProcessing": {
+    "message": "Video wird verarbeitet"
+  },
+  "batchNavToYouTube": {
+    "message": "Bitte zuerst zu einem YouTube-Kanal, einer Playlist oder einem Video navigieren."
+  },
+  "batchNoVideosFound": {
+    "message": "Keine Videos gefunden. Scrollen Sie nach unten, um mehr zu laden."
+  },
+  "batchScanFailed": {
+    "message": "Seite konnte nicht gescannt werden. Aktualisieren Sie YouTube."
+  },
+  "batchOverlayInjected": {
+    "message": "Overlay aktiviert! Wählen Sie Videos auf der YouTube-Seite aus."
+  },
+  "idleHint": {
+    "message": "Navigieren Sie zu einem YouTube-Video und klicken Sie unten auf Kopieren."
+  },
+  "loadingText": {
+    "message": "Transkript wird geöffnet und extrahiert…"
+  },
+  "formatSection": {
+    "message": "Format"
+  },
+  "toggleAutoCopy": {
+    "message": "Beim Laden automatisch kopieren"
+  },
+  "togglePrompt": {
+    "message": "Prompt-Präfix"
+  },
+  "promptNoneCustom": {
+    "message": "Kein / Benutzerdefiniert..."
+  },
+  "presetSummarize": {
+    "message": "Zusammenfassen (5 Punkte)"
+  },
+  "presetTakeaways": {
+    "message": "Wichtigste Erkenntnisse"
+  },
+  "presetOutline": {
+    "message": "Kapitelgliederung"
+  },
+  "presetTldr": {
+    "message": "Kurzzusammenfassung"
+  },
+  "promptPlaceholder": {
+    "message": "z.B. Fasse dieses Transkript zusammen:"
+  },
+  "saveBtn": {
+    "message": "Speichern"
+  },
+  "deleteBtn": {
+    "message": "Löschen"
+  },
+  "aiBridgeLabel": {
+    "message": "Prompt + Transkript an KI senden:"
+  },
+  "previewSection": {
+    "message": "Transkript-Arbeitsbereich"
+  },
+  "savedBtn": {
+    "message": "Gespeichert"
+  },
+  "followBtn": {
+    "message": "Folgen"
+  },
+  "notesBtn": {
+    "message": "Notizen"
+  },
+  "showAll": {
+    "message": "Alle anzeigen"
+  },
+  "searchPlaceholder": {
+    "message": "Transkript durchsuchen... [/]"
+  },
+  "copyTime": {
+    "message": "Kopieren (+ Zeit)"
+  },
+  "copyText": {
+    "message": "Text kopieren"
+  },
+  "markBtn": {
+    "message": "Markieren"
+  },
+  "aiBtn": {
+    "message": "KI"
+  },
+  "summarizeSelected": {
+    "message": "Auswahl zusammenfassen"
+  },
+  "explainSelected": {
+    "message": "Auswahl erklären"
+  },
+  "actionItems": {
+    "message": "Aktionspunkte"
+  },
+  "translateSelected": {
+    "message": "Übersetzen"
+  },
+  "clearBtn": {
+    "message": "Löschen"
+  },
+  "previewPlaceholder": {
+    "message": "Klicken Sie auf Kopieren für eine Vorschau"
+  },
+  "copyBtnText": {
+    "message": "Transkript kopieren"
+  },
+  "copyBtn": {
+    "message": "Kopieren"
+  },
+  "moments": {
+    "message": "Momente"
+  },
+  "synthesize": {
+    "message": "Zusammenfassen:"
+  },
+  "savedModalTitle": {
+    "message": "Gespeicherte Arbeitsbereiche"
+  },
+  "savedSearchPlaceholder": {
+    "message": "Gespeicherte Transkripte durchsuchen..."
+  },
+  "savedEmptyPlaceholder": {
+    "message": "Noch keine Transkripte gespeichert.\nKlicken Sie auf \"Speichern\", um sie lokal abzuspeichern."
+  },
+  "clipNotesTitle": {
+    "message": "Clip-Notizen"
+  },
+  "clipNotesPlaceholder": {
+    "message": "Noch keine Momente markiert. Markieren Sie Momente für Notizen."
+  },
+  "ratingTitle": {
+    "message": "Gefällt Ihnen Transcript Copier?"
+  },
+  "ratingText": {
+    "message": "Wenn diese Erweiterung Ihnen Zeit spart, hinterlassen Sie bitte eine kurze Bewertung im Chrome Web Store! Es hilft uns bei Verbesserungen."
+  },
+  "ratingBtnYes": {
+    "message": "Ja, gerne bewerten"
+  },
+  "ratingBtnNo": {
+    "message": "Nein danke"
+  },
+  "ratingBtnNever": {
+    "message": "Nicht mehr anzeigen"
+  },
+  "aiTokenTitle": {
+    "message": "Warnung: Großes Transkript"
+  },
+  "aiTokenMsg": {
+    "message": "Das kombinierte Transkript überschreitet ~100.000 Zeichen. Es könnte von der KI gekürzt werden."
+  },
+  "cancelBtn": {
+    "message": "Abbrechen"
+  },
+  "sendAnywayBtn": {
+    "message": "Trotzdem senden"
+  },
+  "feedbackBtn": {
+    "message": "Feedback & Fehler"
+  },
+  "collabBtn": {
+    "message": "Zusammenarbeiten"
+  },
+  "copiedSuccess": {
+    "message": "$COUNT$ Zeilen in die Zwischenablage kopiert!",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "errors_not_youtube": {
+    "message": "Bitte zuerst zu einem YouTube-Video navigieren."
+  },
+  "errors_no_active_tab": {
+    "message": "Kein aktiver YouTube-Tab gefunden."
+  },
+  "errors_tab_query_failed": {
+    "message": "Fehler beim Abfragen der Tabs."
+  },
+  "errors_restricted_page": {
+    "message": "Auf dieser Seite nicht verfügbar."
+  },
+  "errors_no_button": {
+    "message": "Transkript-Schaltfläche nicht gefunden."
+  },
+  "errors_no_transcript": {
+    "message": "Keine Transkript-Segmente gefunden."
+  },
+  "errors_empty_transcript": {
+    "message": "Transkript-Bereich ist leer."
+  },
+  "errors_panel_timeout": {
+    "message": "Transkript-Bereich öffnete nicht rechtzeitig."
+  },
+  "errors_injection_failed": {
+    "message": "Zugriff auf die Seite fehlgeschlagen."
+  },
+  "errors_script_error": {
+    "message": "Ein interner Fehler ist aufgetreten."
+  },
+  "errors_attestation_required": {
+    "message": "YouTube erfordert eine Verifizierung für dieses Video. Öffnen Sie das Video direkt im aktiven Tab und versuchen Sie es erneut."
+  },
+  "errors_video_unavailable": {
+    "message": "Dieses Video ist privat, entfernt oder nicht verfügbar."
+  },
+  "errors_age_restricted": {
+    "message": "Dieses Video ist altersbeschränkt. Melden Sie sich bei YouTube an, um das Transkript anzuzeigen."
+  },
+  "errors_no_captions_available": {
+    "message": "Für dieses Video existieren keine Untertitel oder Transkripte."
+  }
+}

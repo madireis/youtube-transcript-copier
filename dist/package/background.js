@@ -15,7 +15,7 @@
 chrome.runtime.onInstalled.addListener(() => {
   chrome.contextMenus.create({
     id: 'copy-transcript',
-    title: 'Copy Transcript',
+    title: (typeof chrome !== 'undefined' && chrome.i18n && chrome.i18n.getMessage('contextMenuCopyTranscript')) || 'Copy Transcript',
     contexts: ['page', 'video'],
     documentUrlPatterns: [
       '*://*.youtube.com/watch*',

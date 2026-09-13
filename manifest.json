@@ -6,11 +6,12 @@
          "48": "icons/icon48.png"
       },
       "default_popup": "popup.html",
-      "default_title": "Copy YouTube Transcript"
+      "default_title": "__MSG_actionTitle__"
    },
    "background": {
       "service_worker": "background.js"
    },
+   "default_locale": "en",
    "browser_specific_settings": {
       "gecko": {
          "id": "yt-transcript-copier@example.com",
@@ -23,13 +24,13 @@
             "default": "Ctrl+Shift+Y",
             "mac": "Command+Shift+Y"
          },
-         "description": "Copy YouTube transcript to clipboard"
+         "description": "__MSG_commandCopyTranscript__"
       }
    },
    "content_security_policy": {
       "extension_pages": "script-src 'self'; object-src 'self'"
    },
-   "description": "One-click YouTube transcript copier. Auto-opens transcripts, copies formatted text with timestamps, paragraph mode, and more.",
+   "description": "__MSG_extensionDescription__",
    "host_permissions": [
       "*://*.youtube.com/*",
       "https://chatgpt.com/*",
@@ -59,7 +60,7 @@
    },
    "manifest_version": 3,
    "minimum_chrome_version": "102",
-   "name": "YouTube Transcript Copier",
+   "name": "__MSG_extensionName__",
    "permissions": [ "activeTab", "scripting", "contextMenus", "storage", "sidePanel", "downloads", "clipboardWrite" ],
    "side_panel": {
       "default_path": "popup.html"

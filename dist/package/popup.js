@@ -958,9 +958,21 @@ const TRANSLATIONS = {
 
 let currentLang = 'en';
 
-function getTranslation(key) {
+function getTranslation(key, placeholders = []) {
   const dict = TRANSLATIONS[currentLang] || TRANSLATIONS.en;
-  return dict[key] || TRANSLATIONS.en[key] || '';
+  const val = dict[key];
+  if (typeof val === 'function') {
+    return val(...placeholders);
+  }
+  if (val) return val;
+
+  // Fallback to chrome.i18n.getMessage
+  if (typeof chrome !== 'undefined' && chrome.i18n && typeof chrome.i18n.getMessage === 'function') {
+    const msg = chrome.i18n.getMessage(key, placeholders);
+    if (msg) return msg;
+  }
+
+  return TRANSLATIONS.en[key] || '';
 }
 
 function setLanguage(lang) {
@@ -1019,7 +1031,10 @@ function initLanguage() {
   if (saved && TRANSLATIONS[saved]) {
     currentLang = saved;
   } else {
-    const browserLang = (navigator.language || '').slice(0, 2).toLowerCase();
+    const uiLang = (typeof chrome !== 'undefined' && chrome.i18n && typeof chrome.i18n.getUILanguage === 'function')
+      ? chrome.i18n.getUILanguage()
+      : (navigator.language || '');
+    const browserLang = (uiLang || '').slice(0, 2).toLowerCase();
     if (TRANSLATIONS[browserLang]) {
       currentLang = browserLang;
     }

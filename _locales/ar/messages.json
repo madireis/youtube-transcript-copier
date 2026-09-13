@@ -1,0 +1,331 @@
+{
+  "extensionName": {
+    "message": "ناسخ نصوص يوتيوب - YouTube Transcript Copier",
+    "description": "Manifest string: extensionName"
+  },
+  "extensionDescription": {
+    "message": "نسخ نصوص وتفريغ يوتيوب بنقرة واحدة. دعم الطوابع الزمنية، نمط الفقرات، والربط بالذكاء الاصطناعي.",
+    "description": "Manifest string: extensionDescription"
+  },
+  "actionTitle": {
+    "message": "نسخ نص يوتيوب",
+    "description": "Manifest string: actionTitle"
+  },
+  "commandCopyTranscript": {
+    "message": "نسخ نص يوتيوب إلى الحافظة",
+    "description": "Manifest string: commandCopyTranscript"
+  },
+  "contextMenuCopyTranscript": {
+    "message": "نسخ النص",
+    "description": "Manifest string: contextMenuCopyTranscript"
+  },
+  "appTitle": {
+    "message": "نسخ نص الفيديو"
+  },
+  "tabSingle": {
+    "message": "فيديو فردي"
+  },
+  "tabBatch": {
+    "message": "الوضع المتعدد"
+  },
+  "batchNoVideos": {
+    "message": "لم يتم العثور على مقاطع"
+  },
+  "batchScanBtn": {
+    "message": "فحص الصفحة"
+  },
+  "batchOverlayBtn": {
+    "message": "تراكب الصفحة"
+  },
+  "batchSelectAll": {
+    "message": "تحديد الكل"
+  },
+  "batchSelected": {
+    "message": "محدد"
+  },
+  "batchPlaceholder": {
+    "message": "انقر على \"فحص الصفحة\" لاكتشاف الفيديوهات على هذه الصفحة."
+  },
+  "batchFormatOptions": {
+    "message": "التنسيق والخيارات"
+  },
+  "outputStyle": {
+    "message": "نمط الإخراج"
+  },
+  "btnLines": {
+    "message": "أسطر"
+  },
+  "btnParagraph": {
+    "message": "فقرة"
+  },
+  "btnBlocks": {
+    "message": "كتل"
+  },
+  "toggleTimestamps": {
+    "message": "تضمين الطوابع الزمنية"
+  },
+  "toggleTitle": {
+    "message": "تضمين عنوان الفيديو"
+  },
+  "toggleUrl": {
+    "message": "تضمين رابط الفيديو"
+  },
+  "toggleDuplicates": {
+    "message": "إزالة التكرار"
+  },
+  "batchExtracting": {
+    "message": "جاري استخراج النصوص..."
+  },
+  "batchPauseBtn": {
+    "message": "إيقاف"
+  },
+  "batchResumeBtn": {
+    "message": "استئناف"
+  },
+  "batchFinishBtn": {
+    "message": "إنهاء وتصدير"
+  },
+  "batchExportAs": {
+    "message": "تصدير كـ:"
+  },
+  "batchSingleMerged": {
+    "message": "ملف مدمج واحد"
+  },
+  "batchSeparateZip": {
+    "message": "ملفات منفصلة (ZIP)"
+  },
+  "batchFileType": {
+    "message": "نوع الملف:"
+  },
+  "batchStartExtract": {
+    "message": "بدء الاستخراج"
+  },
+  "batchPlaylistGroup": {
+    "message": "قائمة التشغيل:"
+  },
+  "batchOtherGroup": {
+    "message": "مقاطع فيديو أخرى (المقترحات)"
+  },
+  "batchVideos": {
+    "message": "فيديوهات"
+  },
+  "batchScanning": {
+    "message": "جاري فحص صفحة YouTube..."
+  },
+  "batchProgressProcessing": {
+    "message": "جاري معالجة الفيديو"
+  },
+  "batchNavToYouTube": {
+    "message": "يرجى الانتقال إلى قناة أو قائمة تشغيل أو فيديو YouTube أولاً."
+  },
+  "batchNoVideosFound": {
+    "message": "لم يتم العثور على أي مقاطع. قم بالتمرير لأسفل لتحميل المزيد."
+  },
+  "batchScanFailed": {
+    "message": "تعذر فحص الصفحة. حاول تحديث صفحة YouTube."
+  },
+  "batchOverlayInjected": {
+    "message": "تم تفعيل تراكب الصفحة! اختر الفيديوهات مباشرة من الصفحة."
+  },
+  "idleHint": {
+    "message": "افتح أي فيديو على YouTube وانقر على الزر أدناه لنسخ نص الفيديو."
+  },
+  "loadingText": {
+    "message": "جاري فتح النص واستخراجه…"
+  },
+  "formatSection": {
+    "message": "التنسيق"
+  },
+  "toggleAutoCopy": {
+    "message": "نسخ تلقائي عند تشغيل الفيديو"
+  },
+  "togglePrompt": {
+    "message": "بادئة التوجيه (Prompt)"
+  },
+  "promptNoneCustom": {
+    "message": "لا يوجد / مخصص..."
+  },
+  "presetSummarize": {
+    "message": "تلخيص (5 نقاط)"
+  },
+  "presetTakeaways": {
+    "message": "أهم النقاط والفوائد"
+  },
+  "presetOutline": {
+    "message": "مخطط الفصول"
+  },
+  "presetTldr": {
+    "message": "ملخص سريع وموجز"
+  },
+  "promptPlaceholder": {
+    "message": "مثال: لخص هذا النص في 5 نقاط:"
+  },
+  "saveBtn": {
+    "message": "حفظ"
+  },
+  "deleteBtn": {
+    "message": "حذف"
+  },
+  "aiBridgeLabel": {
+    "message": "إرسال التوجيه والنص إلى الذكاء الاصطناعي:"
+  },
+  "previewSection": {
+    "message": "مساحة عمل النص"
+  },
+  "savedBtn": {
+    "message": "المحفوظات"
+  },
+  "followBtn": {
+    "message": "متابعة"
+  },
+  "notesBtn": {
+    "message": "ملاحظات"
+  },
+  "showAll": {
+    "message": "عرض الكل"
+  },
+  "searchPlaceholder": {
+    "message": "البحث في النص... [/]"
+  },
+  "copyTime": {
+    "message": "نسخ (+ الوقت)"
+  },
+  "copyText": {
+    "message": "نسخ النص"
+  },
+  "markBtn": {
+    "message": "تمييز"
+  },
+  "aiBtn": {
+    "message": "ذكاء اصطناعي"
+  },
+  "summarizeSelected": {
+    "message": "تلخيص المحدد"
+  },
+  "explainSelected": {
+    "message": "شرح المحدد"
+  },
+  "actionItems": {
+    "message": "نقاط العمل"
+  },
+  "translateSelected": {
+    "message": "ترجمة"
+  },
+  "clearBtn": {
+    "message": "مسح"
+  },
+  "previewPlaceholder": {
+    "message": "انقر على نسخ لرؤية المعاينة هنا"
+  },
+  "copyBtnText": {
+    "message": "نسخ نص الفيديو"
+  },
+  "copyBtn": {
+    "message": "نسخ"
+  },
+  "moments": {
+    "message": "لحظات"
+  },
+  "synthesize": {
+    "message": "تجميع وتلخيص:"
+  },
+  "savedModalTitle": {
+    "message": "مساحات العمل المحفوظة"
+  },
+  "savedSearchPlaceholder": {
+    "message": "البحث في النصوص المحفوظة..."
+  },
+  "savedEmptyPlaceholder": {
+    "message": "لا توجد نصوص محفوظة حتى الآن.\nانقر على \"حفظ\" لتخزين أي نص محلياً."
+  },
+  "clipNotesTitle": {
+    "message": "ملاحظات المقاطع"
+  },
+  "clipNotesPlaceholder": {
+    "message": "لا توجد لحظات مميزة حتى الآن. قم بتمييز اللحظات لتجميع الملاحظات."
+  },
+  "ratingTitle": {
+    "message": "هل يعجبك ناسخ النصوص؟"
+  },
+  "ratingText": {
+    "message": "إذا وفرت لك هذه الإضافة الوقت، يُرجى تقييمنا على سوق Chrome الإلكتروني! تقييمك يساعدنا على التطوير وإضافة ميزات جديدة."
+  },
+  "ratingBtnYes": {
+    "message": "نعم، بكل سرور"
+  },
+  "ratingBtnNo": {
+    "message": "ليس الآن"
+  },
+  "ratingBtnNever": {
+    "message": "عدم الإظهار مجدداً"
+  },
+  "aiTokenTitle": {
+    "message": "تحذير: نص كبير الحجم"
+  },
+  "aiTokenMsg": {
+    "message": "يتجاوز النص المجمع 100,000 حرف. قد يقوم نموذج الذكاء الاصطناعي باقتطاعه."
+  },
+  "cancelBtn": {
+    "message": "إلغاء"
+  },
+  "sendAnywayBtn": {
+    "message": "إرسال على أي حال"
+  },
+  "feedbackBtn": {
+    "message": "آراء وبلاغ عن خطأ"
+  },
+  "collabBtn": {
+    "message": "التعاون معنا"
+  },
+  "copiedSuccess": {
+    "message": "تم نسخ $COUNT$ مقطع بنجاح إلى الحافظة!",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "errors_not_youtube": {
+    "message": "يرجى الانتقال إلى فيديو YouTube أولاً."
+  },
+  "errors_no_active_tab": {
+    "message": "لم يتم العثور على تبويب YouTube نشط."
+  },
+  "errors_tab_query_failed": {
+    "message": "تعذر الاستعلام عن تبويبات المتصفح."
+  },
+  "errors_restricted_page": {
+    "message": "لا يمكن التشغيل على هذه الصفحة."
+  },
+  "errors_no_button": {
+    "message": "لم يتم العثور على زر التفرغ النصي."
+  },
+  "errors_no_transcript": {
+    "message": "لم يتم العثور على أي مقاطع نصية."
+  },
+  "errors_empty_transcript": {
+    "message": "لوحة النص فارغة."
+  },
+  "errors_panel_timeout": {
+    "message": "لم تفتح لوحة النص في الوقت المحدد."
+  },
+  "errors_injection_failed": {
+    "message": "تعذر الوصول إلى الصفحة."
+  },
+  "errors_script_error": {
+    "message": "حدث خطأ داخلي. حاول تحديث الصفحة."
+  },
+  "errors_attestation_required": {
+    "message": "يتطلب YouTube التحقق من هذا الفيديو. افتح الفيديو مباشرة في علامة التبويب النشطة وحاول مرة أخرى."
+  },
+  "errors_video_unavailable": {
+    "message": "هذا الفيديو خاص أو تم حذفه أو غير متوفر."
+  },
+  "errors_age_restricted": {
+    "message": "هذا الفيديو يخضع لقيود العمر. سجّل الدخول إلى YouTube لعرض النص."
+  },
+  "errors_no_captions_available": {
+    "message": "لا توجد ترجمات أو نصوص متاحة لهذا الفيديو."
+  }
+}

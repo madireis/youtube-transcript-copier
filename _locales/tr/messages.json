@@ -1,0 +1,331 @@
+{
+  "extensionName": {
+    "message": "YouTube Transkript Kopyalayıcı",
+    "description": "Manifest string: extensionName"
+  },
+  "extensionDescription": {
+    "message": "Tek tıkla YouTube transkript kopyalama. Otomatik açma, zaman damgaları, paragraf modu ve yapay zeka entegrasyonu.",
+    "description": "Manifest string: extensionDescription"
+  },
+  "actionTitle": {
+    "message": "YouTube Transkriptini Kopyala",
+    "description": "Manifest string: actionTitle"
+  },
+  "commandCopyTranscript": {
+    "message": "YouTube transkriptini panoya kopyala",
+    "description": "Manifest string: commandCopyTranscript"
+  },
+  "contextMenuCopyTranscript": {
+    "message": "Transkripti Kopyala",
+    "description": "Manifest string: contextMenuCopyTranscript"
+  },
+  "appTitle": {
+    "message": "Transkript Kopyalayıcı"
+  },
+  "tabSingle": {
+    "message": "Tek Video"
+  },
+  "tabBatch": {
+    "message": "Toplu Mod"
+  },
+  "batchNoVideos": {
+    "message": "Video bulunamadı"
+  },
+  "batchScanBtn": {
+    "message": "Sayfayı Tara"
+  },
+  "batchOverlayBtn": {
+    "message": "Sayfa Katmanı"
+  },
+  "batchSelectAll": {
+    "message": "Tümünü Seç"
+  },
+  "batchSelected": {
+    "message": "seçildi"
+  },
+  "batchPlaceholder": {
+    "message": "Bu sayfadaki videoları bulmak için \"Sayfayı Tara\" butonuna tıklayın."
+  },
+  "batchFormatOptions": {
+    "message": "Biçim ve Seçenekler"
+  },
+  "outputStyle": {
+    "message": "Çıkartma stili"
+  },
+  "btnLines": {
+    "message": "Satırlar"
+  },
+  "btnParagraph": {
+    "message": "Paragraf"
+  },
+  "btnBlocks": {
+    "message": "Bloklar"
+  },
+  "toggleTimestamps": {
+    "message": "Zaman damgalarını ekle"
+  },
+  "toggleTitle": {
+    "message": "Video başlığını ekle"
+  },
+  "toggleUrl": {
+    "message": "Video bağlantısını ekle"
+  },
+  "toggleDuplicates": {
+    "message": "Yinelenenleri temizle"
+  },
+  "batchExtracting": {
+    "message": "Transkriptler çıkarılıyor..."
+  },
+  "batchPauseBtn": {
+    "message": "Durdur"
+  },
+  "batchResumeBtn": {
+    "message": "Devam Et"
+  },
+  "batchFinishBtn": {
+    "message": "Bitir ve Dışa Aktar"
+  },
+  "batchExportAs": {
+    "message": "Farklı aktar:"
+  },
+  "batchSingleMerged": {
+    "message": "Tek Birleştirilmiş Dosya"
+  },
+  "batchSeparateZip": {
+    "message": "Ayrı Dosyalar (ZIP)"
+  },
+  "batchFileType": {
+    "message": "Dosya türü:"
+  },
+  "batchStartExtract": {
+    "message": "Çıkarmayı Başlat"
+  },
+  "batchPlaylistGroup": {
+    "message": "Oynatma Listesi:"
+  },
+  "batchOtherGroup": {
+    "message": "Diğer Videolar (Öneriler)"
+  },
+  "batchVideos": {
+    "message": "video"
+  },
+  "batchScanning": {
+    "message": "YouTube sayfası taranıyor..."
+  },
+  "batchProgressProcessing": {
+    "message": "İşlenen video"
+  },
+  "batchNavToYouTube": {
+    "message": "Önce bir YouTube kanalına, oynatma listesine veya videoya gidin."
+  },
+  "batchNoVideosFound": {
+    "message": "Bu sayfada video bulunamadı. Daha fazlası için aşağı kaydırın."
+  },
+  "batchScanFailed": {
+    "message": "Sayfa taranamadı. YouTube sayfasını yenileyin."
+  },
+  "batchOverlayInjected": {
+    "message": "Katman eklendi! Videoları YouTube sayfasından seçin."
+  },
+  "idleHint": {
+    "message": "Herhangi bir YouTube videosuna gidin ve transkriptini kopyalamak için aşağıdaki butona tıklayın."
+  },
+  "loadingText": {
+    "message": "Transkript açılıyor ve çıkarılıyor…"
+  },
+  "formatSection": {
+    "message": "Biçim"
+  },
+  "toggleAutoCopy": {
+    "message": "Video açıldığında otomatik kopyala"
+  },
+  "togglePrompt": {
+    "message": "İstem ön eki"
+  },
+  "promptNoneCustom": {
+    "message": "Hiçbiri / Özel..."
+  },
+  "presetSummarize": {
+    "message": "Özetle (5 Madde)"
+  },
+  "presetTakeaways": {
+    "message": "Önemli Çıkarımlar"
+  },
+  "presetOutline": {
+    "message": "Bölüm Özeti"
+  },
+  "presetTldr": {
+    "message": "Kısa Özet (TL;DR)"
+  },
+  "promptPlaceholder": {
+    "message": "ör. Bu transkripti özetle:"
+  },
+  "saveBtn": {
+    "message": "Kaydet"
+  },
+  "deleteBtn": {
+    "message": "Sil"
+  },
+  "aiBridgeLabel": {
+    "message": "İstemi ve Transkripti Yapay Zekaya Gönder:"
+  },
+  "previewSection": {
+    "message": "Transkript Çalışma Alanı"
+  },
+  "savedBtn": {
+    "message": "Kayıtlılar"
+  },
+  "followBtn": {
+    "message": "Takip Et"
+  },
+  "notesBtn": {
+    "message": "Notlar"
+  },
+  "showAll": {
+    "message": "Tümünü Göster"
+  },
+  "searchPlaceholder": {
+    "message": "Transkriptte ara... [/]"
+  },
+  "copyTime": {
+    "message": "Kopyala (+ Zaman)"
+  },
+  "copyText": {
+    "message": "Metni Kopyala"
+  },
+  "markBtn": {
+    "message": "İşaretle"
+  },
+  "aiBtn": {
+    "message": "YZ"
+  },
+  "summarizeSelected": {
+    "message": "Seçilenleri Özetle"
+  },
+  "explainSelected": {
+    "message": "Seçilenleri Açıkla"
+  },
+  "actionItems": {
+    "message": "Eylem Maddeleri"
+  },
+  "translateSelected": {
+    "message": "Çevir"
+  },
+  "clearBtn": {
+    "message": "Temizle"
+  },
+  "previewPlaceholder": {
+    "message": "Önizlemeyi görmek için kopyala butonuna tıklayın"
+  },
+  "copyBtnText": {
+    "message": "Transkripti Kopyala"
+  },
+  "copyBtn": {
+    "message": "Kopyala"
+  },
+  "moments": {
+    "message": "an"
+  },
+  "synthesize": {
+    "message": "Özetle / Birleştir:"
+  },
+  "savedModalTitle": {
+    "message": "Kayıtlı Çalışma Alanları"
+  },
+  "savedSearchPlaceholder": {
+    "message": "Kayıtlı transkriptlerde ara..."
+  },
+  "savedEmptyPlaceholder": {
+    "message": "Henüz kaydedilmiş transkript yok.\nYerel olarak saklamak için \"Kaydet\"e tıklayın."
+  },
+  "clipNotesTitle": {
+    "message": "Klip Notları"
+  },
+  "clipNotesPlaceholder": {
+    "message": "Henüz işaretlenmiş an yok. Not oluşturmak için anları işaretleyin."
+  },
+  "ratingTitle": {
+    "message": "Transcript Copier'ı sevdiniz mi?"
+  },
+  "ratingText": {
+    "message": "Bu uzantı size zaman kazandırıyorsa, lütfen Chrome Web Mağazası'nda değerlendirme yaparak bizi destekleyin! Geliştirmemize çok yardımcı olur."
+  },
+  "ratingBtnYes": {
+    "message": "Evet, değerlendireceğim"
+  },
+  "ratingBtnNo": {
+    "message": "Şimdi değil"
+  },
+  "ratingBtnNever": {
+    "message": "Tekrar gösterme"
+  },
+  "aiTokenTitle": {
+    "message": "Büyük Transkript Uyarısı"
+  },
+  "aiTokenMsg": {
+    "message": "Birleştirilmiş transkript ~100.000 karakteri aşıyor. Yapay zeka modeli metni kısaltabilir."
+  },
+  "cancelBtn": {
+    "message": "İptal"
+  },
+  "sendAnywayBtn": {
+    "message": "Yine de Gönder"
+  },
+  "feedbackBtn": {
+    "message": "Geri Bildirim & Hata"
+  },
+  "collabBtn": {
+    "message": "İşbirliği Yap"
+  },
+  "copiedSuccess": {
+    "message": "$COUNT$ satır panoya kopyalandı!",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "errors_not_youtube": {
+    "message": "Önce bir YouTube videosuna gidin."
+  },
+  "errors_no_active_tab": {
+    "message": "Aktif YouTube sekmesi bulunamadı."
+  },
+  "errors_tab_query_failed": {
+    "message": "Sekmeler sorgulanamadı."
+  },
+  "errors_restricted_page": {
+    "message": "Bu sayfada çalıştırılamaz."
+  },
+  "errors_no_button": {
+    "message": "Transkript butonu bulunamadı."
+  },
+  "errors_no_transcript": {
+    "message": "Transkript metni bulunamadı."
+  },
+  "errors_empty_transcript": {
+    "message": "Transkript paneli boş."
+  },
+  "errors_panel_timeout": {
+    "message": "Transkript paneli zamanında açılmadı."
+  },
+  "errors_injection_failed": {
+    "message": "Sayfaya erişilemedi. Sayfayı yenileyin."
+  },
+  "errors_script_error": {
+    "message": "Dahili bir hata oluştu."
+  },
+  "errors_attestation_required": {
+    "message": "YouTube bu video için doğrulama istiyor. Videoyu aktif sekmede açıp tekrar deneyin."
+  },
+  "errors_video_unavailable": {
+    "message": "Bu video gizli, kaldırılmış veya kullanılamıyor."
+  },
+  "errors_age_restricted": {
+    "message": "Bu videoda yaş kısıtlaması var. Transkripti görmek için YouTube oturumu açın."
+  },
+  "errors_no_captions_available": {
+    "message": "Bu video için altyazı veya transkript bulunmuyor."
+  }
+}

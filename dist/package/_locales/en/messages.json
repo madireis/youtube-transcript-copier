@@ -1,0 +1,331 @@
+{
+  "extensionName": {
+    "message": "YouTube Transcript Copier",
+    "description": "Manifest string: extensionName"
+  },
+  "extensionDescription": {
+    "message": "One-click YouTube transcript copier. Auto-opens transcripts, copies formatted text with timestamps, paragraph mode, and more.",
+    "description": "Manifest string: extensionDescription"
+  },
+  "actionTitle": {
+    "message": "Copy YouTube Transcript",
+    "description": "Manifest string: actionTitle"
+  },
+  "commandCopyTranscript": {
+    "message": "Copy YouTube transcript to clipboard",
+    "description": "Manifest string: commandCopyTranscript"
+  },
+  "contextMenuCopyTranscript": {
+    "message": "Copy Transcript",
+    "description": "Manifest string: contextMenuCopyTranscript"
+  },
+  "appTitle": {
+    "message": "Transcript Copier"
+  },
+  "tabSingle": {
+    "message": "Single Video"
+  },
+  "tabBatch": {
+    "message": "Batch Mode"
+  },
+  "batchNoVideos": {
+    "message": "No videos detected"
+  },
+  "batchScanBtn": {
+    "message": "Scan Page"
+  },
+  "batchOverlayBtn": {
+    "message": "Page Overlay"
+  },
+  "batchSelectAll": {
+    "message": "Select All"
+  },
+  "batchSelected": {
+    "message": "selected"
+  },
+  "batchPlaceholder": {
+    "message": "Click \"Scan Page\" to detect videos on this YouTube page."
+  },
+  "batchFormatOptions": {
+    "message": "Format & Options"
+  },
+  "outputStyle": {
+    "message": "Output style"
+  },
+  "btnLines": {
+    "message": "Lines"
+  },
+  "btnParagraph": {
+    "message": "Paragraph"
+  },
+  "btnBlocks": {
+    "message": "Blocks"
+  },
+  "toggleTimestamps": {
+    "message": "Include timestamps"
+  },
+  "toggleTitle": {
+    "message": "Include video title"
+  },
+  "toggleUrl": {
+    "message": "Include video URL"
+  },
+  "toggleDuplicates": {
+    "message": "Clean duplicates"
+  },
+  "batchExtracting": {
+    "message": "Extracting transcripts..."
+  },
+  "batchPauseBtn": {
+    "message": "Stop"
+  },
+  "batchResumeBtn": {
+    "message": "Continue"
+  },
+  "batchFinishBtn": {
+    "message": "Finish & Export"
+  },
+  "batchExportAs": {
+    "message": "Export as:"
+  },
+  "batchSingleMerged": {
+    "message": "Single Merged File"
+  },
+  "batchSeparateZip": {
+    "message": "Separate Files (ZIP)"
+  },
+  "batchFileType": {
+    "message": "File type:"
+  },
+  "batchStartExtract": {
+    "message": "Start Extraction"
+  },
+  "batchPlaylistGroup": {
+    "message": "Playlist:"
+  },
+  "batchOtherGroup": {
+    "message": "Other Videos (Bottom / Recommendations)"
+  },
+  "batchVideos": {
+    "message": "videos"
+  },
+  "batchScanning": {
+    "message": "Scanning YouTube page..."
+  },
+  "batchProgressProcessing": {
+    "message": "Processing video"
+  },
+  "batchNavToYouTube": {
+    "message": "Navigate to a YouTube channel, playlist, or video first."
+  },
+  "batchNoVideosFound": {
+    "message": "No videos found on this page. Try scrolling down to load more."
+  },
+  "batchScanFailed": {
+    "message": "Failed to scan page. Try refreshing YouTube."
+  },
+  "batchOverlayInjected": {
+    "message": "Overlay injected! Select videos on the YouTube page."
+  },
+  "idleHint": {
+    "message": "Navigate to any YouTube video and click the button below to copy its transcript."
+  },
+  "loadingText": {
+    "message": "Opening transcript & extracting…"
+  },
+  "formatSection": {
+    "message": "Format"
+  },
+  "toggleAutoCopy": {
+    "message": "Auto-copy on video load"
+  },
+  "togglePrompt": {
+    "message": "Prompt prepend"
+  },
+  "promptNoneCustom": {
+    "message": "None / Custom..."
+  },
+  "presetSummarize": {
+    "message": "Summarize (5 Bullets)"
+  },
+  "presetTakeaways": {
+    "message": "Key Takeaways"
+  },
+  "presetOutline": {
+    "message": "Chapter Outline"
+  },
+  "presetTldr": {
+    "message": "TL;DR Summary"
+  },
+  "promptPlaceholder": {
+    "message": "e.g. Summarize this transcript:"
+  },
+  "saveBtn": {
+    "message": "Save"
+  },
+  "deleteBtn": {
+    "message": "Delete"
+  },
+  "aiBridgeLabel": {
+    "message": "Send Prompt + Transcript to AI:"
+  },
+  "previewSection": {
+    "message": "Transcript Workspace"
+  },
+  "savedBtn": {
+    "message": "Saved"
+  },
+  "followBtn": {
+    "message": "Follow"
+  },
+  "notesBtn": {
+    "message": "Notes"
+  },
+  "showAll": {
+    "message": "Show All"
+  },
+  "searchPlaceholder": {
+    "message": "Search transcript... [/]"
+  },
+  "copyTime": {
+    "message": "Copy (+ Time)"
+  },
+  "copyText": {
+    "message": "Copy Text"
+  },
+  "markBtn": {
+    "message": "Mark"
+  },
+  "aiBtn": {
+    "message": "AI"
+  },
+  "summarizeSelected": {
+    "message": "Summarize Selected"
+  },
+  "explainSelected": {
+    "message": "Explain Selected"
+  },
+  "actionItems": {
+    "message": "Action Items"
+  },
+  "translateSelected": {
+    "message": "Translate"
+  },
+  "clearBtn": {
+    "message": "Clear"
+  },
+  "previewPlaceholder": {
+    "message": "Click copy to see a preview here"
+  },
+  "copyBtnText": {
+    "message": "Copy Transcript"
+  },
+  "copyBtn": {
+    "message": "Copy"
+  },
+  "moments": {
+    "message": "moments"
+  },
+  "synthesize": {
+    "message": "Synthesize:"
+  },
+  "savedModalTitle": {
+    "message": "Saved Workspaces"
+  },
+  "savedSearchPlaceholder": {
+    "message": "Search saved transcripts..."
+  },
+  "savedEmptyPlaceholder": {
+    "message": "No saved transcripts yet.\nClick \"Save\" on any transcript to store it locally."
+  },
+  "clipNotesTitle": {
+    "message": "Clip Notes"
+  },
+  "clipNotesPlaceholder": {
+    "message": "No bookmarked moments yet. Bookmark moments to compile Clip Notes."
+  },
+  "ratingTitle": {
+    "message": "Enjoying Transcript Copier?"
+  },
+  "ratingText": {
+    "message": "If this extension saves you time, please take a quick moment to leave a rating on the Chrome Web Store! It helps us keep improving and adding new features."
+  },
+  "ratingBtnYes": {
+    "message": "Yes, I will"
+  },
+  "ratingBtnNo": {
+    "message": "No thanks"
+  },
+  "ratingBtnNever": {
+    "message": "Don't show again"
+  },
+  "aiTokenTitle": {
+    "message": "Large Transcript Warning"
+  },
+  "aiTokenMsg": {
+    "message": "The combined transcript exceeds ~100,000 characters. This may be truncated by the AI model."
+  },
+  "cancelBtn": {
+    "message": "Cancel"
+  },
+  "sendAnywayBtn": {
+    "message": "Send Anyway"
+  },
+  "feedbackBtn": {
+    "message": "Feedback & Bugs"
+  },
+  "collabBtn": {
+    "message": "Collaborate"
+  },
+  "copiedSuccess": {
+    "message": "Copied $COUNT$ lines to clipboard!",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "errors_not_youtube": {
+    "message": "Navigate to a YouTube video first."
+  },
+  "errors_no_active_tab": {
+    "message": "No active tab found. Click on a YouTube tab and try again."
+  },
+  "errors_tab_query_failed": {
+    "message": "Could not query browser tabs. Try closing and reopening the extension."
+  },
+  "errors_restricted_page": {
+    "message": "Cannot run on this page. Navigate to a youtube.com video."
+  },
+  "errors_no_button": {
+    "message": "Could not find \"Show transcript\" button. Try opening description manually."
+  },
+  "errors_no_transcript": {
+    "message": "No transcript segments found on this video."
+  },
+  "errors_empty_transcript": {
+    "message": "Transcript panel opened but contains no text."
+  },
+  "errors_panel_timeout": {
+    "message": "Clicked transcript button but panel didn't open in time."
+  },
+  "errors_injection_failed": {
+    "message": "Could not access the page. Try refreshing the YouTube tab."
+  },
+  "errors_script_error": {
+    "message": "An internal error occurred. Try refreshing YouTube."
+  },
+  "errors_attestation_required": {
+    "message": "YouTube requires verification for this video. Open the video directly in your active tab and try again."
+  },
+  "errors_video_unavailable": {
+    "message": "This video is private, removed, or unavailable."
+  },
+  "errors_age_restricted": {
+    "message": "This video is age-restricted. Sign in to YouTube in your browser to view its transcript."
+  },
+  "errors_no_captions_available": {
+    "message": "No captions or transcript exist for this video."
+  }
+}
