@@ -1,0 +1,331 @@
+{
+  "extensionName": {
+    "message": "Kopiera YouTube-transkription - Transcript Copier",
+    "description": "Manifest string: extensionName"
+  },
+  "extensionDescription": {
+    "message": "Kopiera och exportera transkriptioner från YouTube med 1 klick. Tidsstämplar, styckesläge och AI-koppling.",
+    "description": "Manifest string: extensionDescription"
+  },
+  "actionTitle": {
+    "message": "Kopiera YouTube-transkription",
+    "description": "Manifest string: actionTitle"
+  },
+  "commandCopyTranscript": {
+    "message": "Kopiera YouTube-transkription till urklipp",
+    "description": "Manifest string: commandCopyTranscript"
+  },
+  "contextMenuCopyTranscript": {
+    "message": "Kopiera transkription",
+    "description": "Manifest string: contextMenuCopyTranscript"
+  },
+  "appTitle": {
+    "message": "Transkriptionskopierare"
+  },
+  "tabSingle": {
+    "message": "Enskild video"
+  },
+  "tabBatch": {
+    "message": "Batchläge"
+  },
+  "batchNoVideos": {
+    "message": "Inga videor upptäcktes"
+  },
+  "batchScanBtn": {
+    "message": "Skanna sida"
+  },
+  "batchOverlayBtn": {
+    "message": "Sidöverlägg"
+  },
+  "batchSelectAll": {
+    "message": "Välj alla"
+  },
+  "batchSelected": {
+    "message": "valda"
+  },
+  "batchPlaceholder": {
+    "message": "Klicka på \"Skanna sida\" för att upptäcka videor på denna YouTube-sida."
+  },
+  "batchFormatOptions": {
+    "message": "Format & Alternativ"
+  },
+  "outputStyle": {
+    "message": "Utdatastil"
+  },
+  "btnLines": {
+    "message": "Rader"
+  },
+  "btnParagraph": {
+    "message": "Stycke"
+  },
+  "btnBlocks": {
+    "message": "Block"
+  },
+  "toggleTimestamps": {
+    "message": "Inkludera tidsstämplar"
+  },
+  "toggleTitle": {
+    "message": "Inkludera videotitel"
+  },
+  "toggleUrl": {
+    "message": "Inkludera video-URL"
+  },
+  "toggleDuplicates": {
+    "message": "Rensa dubbletter"
+  },
+  "toggleAutoCopy": {
+    "message": "Automatisk kopiering vid videoladdning"
+  },
+  "togglePrompt": {
+    "message": "Lägg till prompt"
+  },
+  "promptNoneCustom": {
+    "message": "Ingen / Anpassad..."
+  },
+  "presetSummarize": {
+    "message": "Sammanfatta (5 punkter)"
+  },
+  "presetTakeaways": {
+    "message": "Huvudsakliga slutsatser"
+  },
+  "presetOutline": {
+    "message": "Kapitelöversikt"
+  },
+  "presetTldr": {
+    "message": "Kort TL;DR sammanfattning"
+  },
+  "saveBtn": {
+    "message": "Spara"
+  },
+  "deleteBtn": {
+    "message": "Ta bort"
+  },
+  "aiBridgeLabel": {
+    "message": "Skicka prompt och transkription till AI:"
+  },
+  "previewSection": {
+    "message": "Transkriptionsarbetsyta"
+  },
+  "savedBtn": {
+    "message": "Sparade"
+  },
+  "followBtn": {
+    "message": "Följ"
+  },
+  "notesBtn": {
+    "message": "Anteckningar"
+  },
+  "showAll": {
+    "message": "Visa alla"
+  },
+  "searchPlaceholder": {
+    "message": "Sök i transkription... [/]"
+  },
+  "copyTime": {
+    "message": "Kopiera (+tid)"
+  },
+  "copyText": {
+    "message": "Kopiera endast text"
+  },
+  "markBtn": {
+    "message": "Markera"
+  },
+  "aiBtn": {
+    "message": "AI"
+  },
+  "summarizeSelected": {
+    "message": "Sammanfatta markering"
+  },
+  "explainSelected": {
+    "message": "Förklara markering"
+  },
+  "actionItems": {
+    "message": "Åtgärdspunkter"
+  },
+  "translateSelected": {
+    "message": "Översätt"
+  },
+  "clearBtn": {
+    "message": "Rensa"
+  },
+  "previewPlaceholder": {
+    "message": "Klicka på Kopiera transkription för att förhandsgranska här"
+  },
+  "copyBtnText": {
+    "message": "Kopiera videotranskription"
+  },
+  "copyBtn": {
+    "message": "Kopiera"
+  },
+  "moments": {
+    "message": "markeringar"
+  },
+  "synthesize": {
+    "message": "Syntetisera & sammanfatta:"
+  },
+  "savedModalTitle": {
+    "message": "Sparade arbetsytor"
+  },
+  "savedSearchPlaceholder": {
+    "message": "Sök i sparade..."
+  },
+  "savedEmptyPlaceholder": {
+    "message": "Inga sparade transkriptioner ännu."
+  },
+  "clipNotesTitle": {
+    "message": "Klippanteckningar"
+  },
+  "clipNotesPlaceholder": {
+    "message": "Inga markerade ögonblick ännu."
+  },
+  "ratingTitle": {
+    "message": "Gillar du YouTube Transcript Copier?"
+  },
+  "ratingText": {
+    "message": "Om tillägget sparar dig tid, lämna gärna ett omdöme i Chrome Web Store!"
+  },
+  "ratingBtnYes": {
+    "message": "Ja, ge betyg"
+  },
+  "ratingBtnNo": {
+    "message": "Inte nu"
+  },
+  "ratingBtnNever": {
+    "message": "Visa inte igen"
+  },
+  "aiTokenTitle": {
+    "message": "Varning: Mycket lång transkription"
+  },
+  "aiTokenMsg": {
+    "message": "Texten överskrider 100 000 tecken och kan trunkeras i AI."
+  },
+  "cancelBtn": {
+    "message": "Avbryt"
+  },
+  "sendAnywayBtn": {
+    "message": "Skicka ändå"
+  },
+  "feedbackBtn": {
+    "message": "Feedback / Rapportera fel"
+  },
+  "collabBtn": {
+    "message": "Samarbete"
+  },
+  "batchExtracting": {
+    "message": "Extraherar transkriptioner..."
+  },
+  "batchPauseBtn": {
+    "message": "Pausa"
+  },
+  "batchResumeBtn": {
+    "message": "Återuppta"
+  },
+  "batchFinishBtn": {
+    "message": "Slutför & exportera"
+  },
+  "batchExportAs": {
+    "message": "Exportera som:"
+  },
+  "batchSingleMerged": {
+    "message": "Enkel sammanslagen fil"
+  },
+  "batchSeparateZip": {
+    "message": "Separata filer (ZIP)"
+  },
+  "batchFileType": {
+    "message": "Filtyp:"
+  },
+  "batchStartExtract": {
+    "message": "Starta extraktion"
+  },
+  "batchPlaylistGroup": {
+    "message": "Spellista:"
+  },
+  "batchOtherGroup": {
+    "message": "Andra videor"
+  },
+  "batchVideos": {
+    "message": "videor"
+  },
+  "batchScanning": {
+    "message": "Skannar YouTube-sida..."
+  },
+  "batchProgressProcessing": {
+    "message": "Bearbetar video"
+  },
+  "batchNavToYouTube": {
+    "message": "Öppna en YouTube-video eller spellista först."
+  },
+  "copiedSuccess": {
+    "message": "$COUNT$ rader kopierade till urklipp!",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "batchNoVideosFound": {
+    "message": "No videos found on this page. Try scrolling down to load more."
+  },
+  "batchScanFailed": {
+    "message": "Failed to scan page. Try refreshing YouTube."
+  },
+  "batchOverlayInjected": {
+    "message": "Overlay injected! Select videos on the YouTube page."
+  },
+  "idleHint": {
+    "message": "Navigate to any YouTube video and click the button below to copy its transcript."
+  },
+  "loadingText": {
+    "message": "Opening transcript & extracting…"
+  },
+  "formatSection": {
+    "message": "Format"
+  },
+  "promptPlaceholder": {
+    "message": "e.g. Summarize this transcript:"
+  },
+  "errors_not_youtube": {
+    "message": "Navigate to a YouTube video first."
+  },
+  "errors_no_active_tab": {
+    "message": "No active tab found. Click on a YouTube tab and try again."
+  },
+  "errors_tab_query_failed": {
+    "message": "Could not query browser tabs. Try closing and reopening the extension."
+  },
+  "errors_restricted_page": {
+    "message": "Cannot run on this page. Navigate to a youtube.com video."
+  },
+  "errors_no_button": {
+    "message": "Could not find \"Show transcript\" button. Try opening description manually."
+  },
+  "errors_no_transcript": {
+    "message": "No transcript segments found on this video."
+  },
+  "errors_empty_transcript": {
+    "message": "Transcript panel opened but contains no text."
+  },
+  "errors_panel_timeout": {
+    "message": "Clicked transcript button but panel didn't open in time."
+  },
+  "errors_injection_failed": {
+    "message": "Could not access the page. Try refreshing the YouTube tab."
+  },
+  "errors_script_error": {
+    "message": "An internal error occurred. Try refreshing YouTube."
+  },
+  "errors_attestation_required": {
+    "message": "YouTube requires verification for this video. Open the video directly in your active tab and try again."
+  },
+  "errors_video_unavailable": {
+    "message": "This video is private, removed, or unavailable."
+  },
+  "errors_age_restricted": {
+    "message": "This video is age-restricted. Sign in to YouTube in your browser to view its transcript."
+  },
+  "errors_no_captions_available": {
+    "message": "No captions or transcript exist for this video."
+  }
+}

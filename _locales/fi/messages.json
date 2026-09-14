@@ -1,0 +1,331 @@
+{
+  "extensionName": {
+    "message": "Kopioi YouTube-tekstitys - Transcript Copier",
+    "description": "Manifest string: extensionName"
+  },
+  "extensionDescription": {
+    "message": "Kopioi ja vie YouTube-tekstitykset yhdellä napsautuksella. Aikaleimat, kappaletila ja AI-yhteys.",
+    "description": "Manifest string: extensionDescription"
+  },
+  "actionTitle": {
+    "message": "Kopioi YouTube-tekstitys",
+    "description": "Manifest string: actionTitle"
+  },
+  "commandCopyTranscript": {
+    "message": "Kopioi YouTube-tekstitys leikepöydälle",
+    "description": "Manifest string: commandCopyTranscript"
+  },
+  "contextMenuCopyTranscript": {
+    "message": "Kopioi tekstitys",
+    "description": "Manifest string: contextMenuCopyTranscript"
+  },
+  "appTitle": {
+    "message": "Tekstityksen kopioija"
+  },
+  "tabSingle": {
+    "message": "Yksittäinen video"
+  },
+  "tabBatch": {
+    "message": "Erätila"
+  },
+  "batchNoVideos": {
+    "message": "Videoita ei havaittu"
+  },
+  "batchScanBtn": {
+    "message": "Skannaa sivu"
+  },
+  "batchOverlayBtn": {
+    "message": "Sivun peittokuva"
+  },
+  "batchSelectAll": {
+    "message": "Valitse kaikki"
+  },
+  "batchSelected": {
+    "message": "valittu"
+  },
+  "batchPlaceholder": {
+    "message": "Hae videoita tältä sivulta napsauttamalla \"Skannaa sivu\"."
+  },
+  "batchFormatOptions": {
+    "message": "Muotoilu ja asetukset"
+  },
+  "outputStyle": {
+    "message": "Tulostustyyli"
+  },
+  "btnLines": {
+    "message": "Rivit"
+  },
+  "btnParagraph": {
+    "message": "Kappale"
+  },
+  "btnBlocks": {
+    "message": "Lohkot"
+  },
+  "toggleTimestamps": {
+    "message": "Sisällytä aikaleimat"
+  },
+  "toggleTitle": {
+    "message": "Sisällytä videon otsikko"
+  },
+  "toggleUrl": {
+    "message": "Sisällytä videon linkki"
+  },
+  "toggleDuplicates": {
+    "message": "Poista päällekkäisyydet"
+  },
+  "toggleAutoCopy": {
+    "message": "Automaattinen kopiointi ladattaessa"
+  },
+  "togglePrompt": {
+    "message": "Lisää kehote"
+  },
+  "promptNoneCustom": {
+    "message": "Ei mitään / Mukautettu..."
+  },
+  "presetSummarize": {
+    "message": "Tiivistä (5 pääkohtaa)"
+  },
+  "presetTakeaways": {
+    "message": "Tärkeimmät havainnot"
+  },
+  "presetOutline": {
+    "message": "Lukujäsennys"
+  },
+  "presetTldr": {
+    "message": "Lyhyt TL;DR -tiivistelmä"
+  },
+  "saveBtn": {
+    "message": "Tallenna"
+  },
+  "deleteBtn": {
+    "message": "Poista"
+  },
+  "aiBridgeLabel": {
+    "message": "Lähetä kehote ja teksti tekoälylle:"
+  },
+  "previewSection": {
+    "message": "Työtila"
+  },
+  "savedBtn": {
+    "message": "Tallennetut"
+  },
+  "followBtn": {
+    "message": "Seuraa"
+  },
+  "notesBtn": {
+    "message": "Muistiinpanot"
+  },
+  "showAll": {
+    "message": "Näytä kaikki"
+  },
+  "searchPlaceholder": {
+    "message": "Hae tekstityksestä... [/]"
+  },
+  "copyTime": {
+    "message": "Kopioi (+aika)"
+  },
+  "copyText": {
+    "message": "Vain teksti"
+  },
+  "markBtn": {
+    "message": "Merkitse"
+  },
+  "aiBtn": {
+    "message": "AI"
+  },
+  "summarizeSelected": {
+    "message": "Tiivistä valinta"
+  },
+  "explainSelected": {
+    "message": "Selitä valinta"
+  },
+  "actionItems": {
+    "message": "Toimenpiteet"
+  },
+  "translateSelected": {
+    "message": "Käännä"
+  },
+  "clearBtn": {
+    "message": "Tyhjennä"
+  },
+  "previewPlaceholder": {
+    "message": "Napsauta Kopioi tekstitys nähdäksesi esikatselun"
+  },
+  "copyBtnText": {
+    "message": "Kopioi videon tekstitys"
+  },
+  "copyBtn": {
+    "message": "Kopioi"
+  },
+  "moments": {
+    "message": "merkintää"
+  },
+  "synthesize": {
+    "message": "Yhdistä & tiivistä:"
+  },
+  "savedModalTitle": {
+    "message": "Tallennetut työtilat"
+  },
+  "savedSearchPlaceholder": {
+    "message": "Hae tallennetuista..."
+  },
+  "savedEmptyPlaceholder": {
+    "message": "Ei tallennettuja tekstityksiä."
+  },
+  "clipNotesTitle": {
+    "message": "Leikemuistiinpanot"
+  },
+  "clipNotesPlaceholder": {
+    "message": "Ei vielä merkittyjä kohtia."
+  },
+  "ratingTitle": {
+    "message": "Pidätkö sovelluksesta?"
+  },
+  "ratingText": {
+    "message": "Jos tämä laajennus säästää aikaasi, arvostele meidät Chrome Web Storessa!"
+  },
+  "ratingBtnYes": {
+    "message": "Kyllä, arvioi"
+  },
+  "ratingBtnNo": {
+    "message": "Ei nyt"
+  },
+  "ratingBtnNever": {
+    "message": "Älä näytä uudelleen"
+  },
+  "aiTokenTitle": {
+    "message": "Varoitus: Erittäin pitkä teksti"
+  },
+  "aiTokenMsg": {
+    "message": "Teksti ylittää 100 000 merkkiä."
+  },
+  "cancelBtn": {
+    "message": "Peruuta"
+  },
+  "sendAnywayBtn": {
+    "message": "Lähetä silti"
+  },
+  "feedbackBtn": {
+    "message": "Palaute / Ilmoita virheestä"
+  },
+  "collabBtn": {
+    "message": "Yhteistyö"
+  },
+  "batchExtracting": {
+    "message": "Puretaan tekstityksiä..."
+  },
+  "batchPauseBtn": {
+    "message": "Tauko"
+  },
+  "batchResumeBtn": {
+    "message": "Jatka"
+  },
+  "batchFinishBtn": {
+    "message": "Valmis ja vie"
+  },
+  "batchExportAs": {
+    "message": "Vie muodossa:"
+  },
+  "batchSingleMerged": {
+    "message": "Yksi yhdistetty tiedosto"
+  },
+  "batchSeparateZip": {
+    "message": "Erilliset tiedostot (ZIP)"
+  },
+  "batchFileType": {
+    "message": "Tiedostotyyppi:"
+  },
+  "batchStartExtract": {
+    "message": "Aloita purku"
+  },
+  "batchPlaylistGroup": {
+    "message": "Soittolista:"
+  },
+  "batchOtherGroup": {
+    "message": "Muut videot"
+  },
+  "batchVideos": {
+    "message": "videota"
+  },
+  "batchScanning": {
+    "message": "Skannataan YouTube-sivua..."
+  },
+  "batchProgressProcessing": {
+    "message": "Käsitellään videota"
+  },
+  "batchNavToYouTube": {
+    "message": "Siirry ensin YouTube-videoon tai soittolistaan."
+  },
+  "copiedSuccess": {
+    "message": "$COUNT$ riviä kopioitu leikepöydälle!",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "batchNoVideosFound": {
+    "message": "No videos found on this page. Try scrolling down to load more."
+  },
+  "batchScanFailed": {
+    "message": "Failed to scan page. Try refreshing YouTube."
+  },
+  "batchOverlayInjected": {
+    "message": "Overlay injected! Select videos on the YouTube page."
+  },
+  "idleHint": {
+    "message": "Navigate to any YouTube video and click the button below to copy its transcript."
+  },
+  "loadingText": {
+    "message": "Opening transcript & extracting…"
+  },
+  "formatSection": {
+    "message": "Format"
+  },
+  "promptPlaceholder": {
+    "message": "e.g. Summarize this transcript:"
+  },
+  "errors_not_youtube": {
+    "message": "Navigate to a YouTube video first."
+  },
+  "errors_no_active_tab": {
+    "message": "No active tab found. Click on a YouTube tab and try again."
+  },
+  "errors_tab_query_failed": {
+    "message": "Could not query browser tabs. Try closing and reopening the extension."
+  },
+  "errors_restricted_page": {
+    "message": "Cannot run on this page. Navigate to a youtube.com video."
+  },
+  "errors_no_button": {
+    "message": "Could not find \"Show transcript\" button. Try opening description manually."
+  },
+  "errors_no_transcript": {
+    "message": "No transcript segments found on this video."
+  },
+  "errors_empty_transcript": {
+    "message": "Transcript panel opened but contains no text."
+  },
+  "errors_panel_timeout": {
+    "message": "Clicked transcript button but panel didn't open in time."
+  },
+  "errors_injection_failed": {
+    "message": "Could not access the page. Try refreshing the YouTube tab."
+  },
+  "errors_script_error": {
+    "message": "An internal error occurred. Try refreshing YouTube."
+  },
+  "errors_attestation_required": {
+    "message": "YouTube requires verification for this video. Open the video directly in your active tab and try again."
+  },
+  "errors_video_unavailable": {
+    "message": "This video is private, removed, or unavailable."
+  },
+  "errors_age_restricted": {
+    "message": "This video is age-restricted. Sign in to YouTube in your browser to view its transcript."
+  },
+  "errors_no_captions_available": {
+    "message": "No captions or transcript exist for this video."
+  }
+}

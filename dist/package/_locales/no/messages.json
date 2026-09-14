@@ -1,0 +1,331 @@
+{
+  "extensionName": {
+    "message": "Kopier YouTube-transkripsjon - Transcript Copier",
+    "description": "Manifest string: extensionName"
+  },
+  "extensionDescription": {
+    "message": "Kopier og eksporter YouTube-transkripsjoner med ett klikk. Tidsstempler, avsnittsmodus og AI-støtte.",
+    "description": "Manifest string: extensionDescription"
+  },
+  "actionTitle": {
+    "message": "Kopier YouTube-transkripsjon",
+    "description": "Manifest string: actionTitle"
+  },
+  "commandCopyTranscript": {
+    "message": "Kopier YouTube-transkripsjon til utklippstavle",
+    "description": "Manifest string: commandCopyTranscript"
+  },
+  "contextMenuCopyTranscript": {
+    "message": "Kopier transkripsjon",
+    "description": "Manifest string: contextMenuCopyTranscript"
+  },
+  "appTitle": {
+    "message": "Transkripsjonskopierer"
+  },
+  "tabSingle": {
+    "message": "Enkeltvideo"
+  },
+  "tabBatch": {
+    "message": "Batch-modus"
+  },
+  "batchNoVideos": {
+    "message": "Ingen videoer funnet"
+  },
+  "batchScanBtn": {
+    "message": "Skann side"
+  },
+  "batchOverlayBtn": {
+    "message": "Sideoverlegg"
+  },
+  "batchSelectAll": {
+    "message": "Velg alle"
+  },
+  "batchSelected": {
+    "message": "valgte"
+  },
+  "batchPlaceholder": {
+    "message": "Klikk på \"Skann side\" for å oppdage videoer på denne YouTube-siden."
+  },
+  "batchFormatOptions": {
+    "message": "Format og alternativer"
+  },
+  "outputStyle": {
+    "message": "Utdatastil"
+  },
+  "btnLines": {
+    "message": "Linjer"
+  },
+  "btnParagraph": {
+    "message": "Avsnitt"
+  },
+  "btnBlocks": {
+    "message": "Blokker"
+  },
+  "toggleTimestamps": {
+    "message": "Inkluder tidsstempler"
+  },
+  "toggleTitle": {
+    "message": "Inkluder videotittel"
+  },
+  "toggleUrl": {
+    "message": "Inkluder video-URL"
+  },
+  "toggleDuplicates": {
+    "message": "Fjern duplikater"
+  },
+  "toggleAutoCopy": {
+    "message": "Automatisk kopiering ved lasting"
+  },
+  "togglePrompt": {
+    "message": "Legg til prompt"
+  },
+  "promptNoneCustom": {
+    "message": "Ingen / Tilpasset..."
+  },
+  "presetSummarize": {
+    "message": "Oppsummer (5 hovedpunkter)"
+  },
+  "presetTakeaways": {
+    "message": "Hovedpunkter"
+  },
+  "presetOutline": {
+    "message": "Kapitteloversikt"
+  },
+  "presetTldr": {
+    "message": "Kort TL;DR sammendrag"
+  },
+  "saveBtn": {
+    "message": "Lagre"
+  },
+  "deleteBtn": {
+    "message": "Slett"
+  },
+  "aiBridgeLabel": {
+    "message": "Send prompt og transkripsjon til AI:"
+  },
+  "previewSection": {
+    "message": "Transkripsjonsarbeidsområde"
+  },
+  "savedBtn": {
+    "message": "Lagrede"
+  },
+  "followBtn": {
+    "message": "Følg"
+  },
+  "notesBtn": {
+    "message": "Notater"
+  },
+  "showAll": {
+    "message": "Vis alle"
+  },
+  "searchPlaceholder": {
+    "message": "Søk i transkripsjon... [/]"
+  },
+  "copyTime": {
+    "message": "Kopier (+tid)"
+  },
+  "copyText": {
+    "message": "Kun tekst"
+  },
+  "markBtn": {
+    "message": "Marker"
+  },
+  "aiBtn": {
+    "message": "AI"
+  },
+  "summarizeSelected": {
+    "message": "Oppsummer markering"
+  },
+  "explainSelected": {
+    "message": "Forklar markering"
+  },
+  "actionItems": {
+    "message": "Gjøremål"
+  },
+  "translateSelected": {
+    "message": "Oversett"
+  },
+  "clearBtn": {
+    "message": "Tøm"
+  },
+  "previewPlaceholder": {
+    "message": "Klikk på Kopier transkripsjon for forhåndsvisning"
+  },
+  "copyBtnText": {
+    "message": "Kopier videotranskripsjon"
+  },
+  "copyBtn": {
+    "message": "Kopier"
+  },
+  "moments": {
+    "message": "markeringer"
+  },
+  "synthesize": {
+    "message": "Syntetiser & oppsummer:"
+  },
+  "savedModalTitle": {
+    "message": "Lagrede arbeidsområder"
+  },
+  "savedSearchPlaceholder": {
+    "message": "Søk i lagrede..."
+  },
+  "savedEmptyPlaceholder": {
+    "message": "Ingen lagrede transkripsjoner ennå."
+  },
+  "clipNotesTitle": {
+    "message": "Klippnotater"
+  },
+  "clipNotesPlaceholder": {
+    "message": "Ingen markerte øyeblikk."
+  },
+  "ratingTitle": {
+    "message": "Liker du utvidelsen?"
+  },
+  "ratingText": {
+    "message": "Hvis YouTube Transcript Copier sparer deg tid, legg igjen en vurdering i Chrome Web Store!"
+  },
+  "ratingBtnYes": {
+    "message": "Ja, gi vurdering"
+  },
+  "ratingBtnNo": {
+    "message": "Ikke nå"
+  },
+  "ratingBtnNever": {
+    "message": "Ikke vis igjen"
+  },
+  "aiTokenTitle": {
+    "message": "Advarsel: Svært lang transkripsjon"
+  },
+  "aiTokenMsg": {
+    "message": "Teksten overstiger 100 000 tegn."
+  },
+  "cancelBtn": {
+    "message": "Avbryt"
+  },
+  "sendAnywayBtn": {
+    "message": "Send likevel"
+  },
+  "feedbackBtn": {
+    "message": "Tilbakemelding / Feilmelding"
+  },
+  "collabBtn": {
+    "message": "Samarbeid"
+  },
+  "batchExtracting": {
+    "message": "Henter transkripsjoner..."
+  },
+  "batchPauseBtn": {
+    "message": "Pause"
+  },
+  "batchResumeBtn": {
+    "message": "Gjenoppta"
+  },
+  "batchFinishBtn": {
+    "message": "Fullfør og eksporter"
+  },
+  "batchExportAs": {
+    "message": "Eksporter som:"
+  },
+  "batchSingleMerged": {
+    "message": "Enkel samlet fil"
+  },
+  "batchSeparateZip": {
+    "message": "Separate filer (ZIP)"
+  },
+  "batchFileType": {
+    "message": "Filtype:"
+  },
+  "batchStartExtract": {
+    "message": "Start uthenting"
+  },
+  "batchPlaylistGroup": {
+    "message": "Spilleliste:"
+  },
+  "batchOtherGroup": {
+    "message": "Andre videoer"
+  },
+  "batchVideos": {
+    "message": "videoer"
+  },
+  "batchScanning": {
+    "message": "Skanner YouTube-side..."
+  },
+  "batchProgressProcessing": {
+    "message": "Behandler video"
+  },
+  "batchNavToYouTube": {
+    "message": "Åpne en YouTube-video eller spilleliste først."
+  },
+  "copiedSuccess": {
+    "message": "$COUNT$ linjer kopiert til utklippstavlen!",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "batchNoVideosFound": {
+    "message": "No videos found on this page. Try scrolling down to load more."
+  },
+  "batchScanFailed": {
+    "message": "Failed to scan page. Try refreshing YouTube."
+  },
+  "batchOverlayInjected": {
+    "message": "Overlay injected! Select videos on the YouTube page."
+  },
+  "idleHint": {
+    "message": "Navigate to any YouTube video and click the button below to copy its transcript."
+  },
+  "loadingText": {
+    "message": "Opening transcript & extracting…"
+  },
+  "formatSection": {
+    "message": "Format"
+  },
+  "promptPlaceholder": {
+    "message": "e.g. Summarize this transcript:"
+  },
+  "errors_not_youtube": {
+    "message": "Navigate to a YouTube video first."
+  },
+  "errors_no_active_tab": {
+    "message": "No active tab found. Click on a YouTube tab and try again."
+  },
+  "errors_tab_query_failed": {
+    "message": "Could not query browser tabs. Try closing and reopening the extension."
+  },
+  "errors_restricted_page": {
+    "message": "Cannot run on this page. Navigate to a youtube.com video."
+  },
+  "errors_no_button": {
+    "message": "Could not find \"Show transcript\" button. Try opening description manually."
+  },
+  "errors_no_transcript": {
+    "message": "No transcript segments found on this video."
+  },
+  "errors_empty_transcript": {
+    "message": "Transcript panel opened but contains no text."
+  },
+  "errors_panel_timeout": {
+    "message": "Clicked transcript button but panel didn't open in time."
+  },
+  "errors_injection_failed": {
+    "message": "Could not access the page. Try refreshing the YouTube tab."
+  },
+  "errors_script_error": {
+    "message": "An internal error occurred. Try refreshing YouTube."
+  },
+  "errors_attestation_required": {
+    "message": "YouTube requires verification for this video. Open the video directly in your active tab and try again."
+  },
+  "errors_video_unavailable": {
+    "message": "This video is private, removed, or unavailable."
+  },
+  "errors_age_restricted": {
+    "message": "This video is age-restricted. Sign in to YouTube in your browser to view its transcript."
+  },
+  "errors_no_captions_available": {
+    "message": "No captions or transcript exist for this video."
+  }
+}

@@ -1,0 +1,331 @@
+{
+  "extensionName": {
+    "message": "Αντιγραφή απομαγνητοφώνησης YouTube - Transcript Copier",
+    "description": "Manifest string: extensionName"
+  },
+  "extensionDescription": {
+    "message": "Αντιγράψτε και εξάγετε απομαγνητοφωνήσεις YouTube με 1 κλικ. Χρονικές σημάνσεις, λειτουργία παραγράφου και σύνδεση AI.",
+    "description": "Manifest string: extensionDescription"
+  },
+  "actionTitle": {
+    "message": "Αντιγραφή απομαγνητοφώνησης YouTube",
+    "description": "Manifest string: actionTitle"
+  },
+  "commandCopyTranscript": {
+    "message": "Αντιγραφή απομαγνητοφώνησης YouTube στο πρόχειρο",
+    "description": "Manifest string: commandCopyTranscript"
+  },
+  "contextMenuCopyTranscript": {
+    "message": "Αντιγραφή απομαγνητοφώνησης",
+    "description": "Manifest string: contextMenuCopyTranscript"
+  },
+  "appTitle": {
+    "message": "Αντιγραφή απομαγνητοφώνησης"
+  },
+  "tabSingle": {
+    "message": "Μεμονωμένο βίντεο"
+  },
+  "tabBatch": {
+    "message": "Μαζική λειτουργία"
+  },
+  "batchNoVideos": {
+    "message": "Δεν εντοπίστηκαν βίντεο"
+  },
+  "batchScanBtn": {
+    "message": "Σάρωση σελίδας"
+  },
+  "batchOverlayBtn": {
+    "message": "Επικάλυψη σελίδας"
+  },
+  "batchSelectAll": {
+    "message": "Επιλογή όλων"
+  },
+  "batchSelected": {
+    "message": "επιλεγμένα"
+  },
+  "batchPlaceholder": {
+    "message": "Κάντε κλικ στο \"Σάρωση σελίδας\" για να εντοπίσετε βίντεο."
+  },
+  "batchFormatOptions": {
+    "message": "Μορφή & Επιλογές"
+  },
+  "outputStyle": {
+    "message": "Στυλ εξόδου"
+  },
+  "btnLines": {
+    "message": "Γραμμές"
+  },
+  "btnParagraph": {
+    "message": "Παράγραφος"
+  },
+  "btnBlocks": {
+    "message": "Μπλοκ"
+  },
+  "toggleTimestamps": {
+    "message": "Συμπερίληψη χρονικών σημάνσεων"
+  },
+  "toggleTitle": {
+    "message": "Συμπερίληψη τίτλου βίντεο"
+  },
+  "toggleUrl": {
+    "message": "Συμπερίληψη συνδέσμου βίντεο"
+  },
+  "toggleDuplicates": {
+    "message": "Εκκαθάριση διπλότυπων"
+  },
+  "toggleAutoCopy": {
+    "message": "Αυτόματη αντιγραφή κατά τη φόρτωση"
+  },
+  "togglePrompt": {
+    "message": "Προσθήκη prompt"
+  },
+  "promptNoneCustom": {
+    "message": "Κανένα / Προσαρμοσμένο..."
+  },
+  "presetSummarize": {
+    "message": "Σύνοψη (5 βασικά σημεία)"
+  },
+  "presetTakeaways": {
+    "message": "Βασικά συμπεράσματα"
+  },
+  "presetOutline": {
+    "message": "Περίγραμμα κεφαλαίων"
+  },
+  "presetTldr": {
+    "message": "Σύντομη περίληψη (TL;DR)"
+  },
+  "saveBtn": {
+    "message": "Αποθήκευση"
+  },
+  "deleteBtn": {
+    "message": "Διαγραφή"
+  },
+  "aiBridgeLabel": {
+    "message": "Αποστολή prompt και κειμένου σε AI:"
+  },
+  "previewSection": {
+    "message": "Χώρος εργασίας κειμένου"
+  },
+  "savedBtn": {
+    "message": "Αποθηκευμένα"
+  },
+  "followBtn": {
+    "message": "Παρακολούθηση"
+  },
+  "notesBtn": {
+    "message": "Σημειώσεις"
+  },
+  "showAll": {
+    "message": "Εμφάνιση όλων"
+  },
+  "searchPlaceholder": {
+    "message": "Αναζήτηση στο κείμενο... [/]"
+  },
+  "copyTime": {
+    "message": "Αντιγραφή (+χρόνος)"
+  },
+  "copyText": {
+    "message": "Μόνο κείμενο"
+  },
+  "markBtn": {
+    "message": "Επισήμανση"
+  },
+  "aiBtn": {
+    "message": "AI"
+  },
+  "summarizeSelected": {
+    "message": "Σύνοψη επιλογής"
+  },
+  "explainSelected": {
+    "message": "Επεξήγηση επιλογής"
+  },
+  "actionItems": {
+    "message": "Στοιχεία δράσης"
+  },
+  "translateSelected": {
+    "message": "Μετάφραση"
+  },
+  "clearBtn": {
+    "message": "Καθαρισμός"
+  },
+  "previewPlaceholder": {
+    "message": "Κάντε κλικ στην Αντιγραφή για προεπισκόπηση"
+  },
+  "copyBtnText": {
+    "message": "Αντιγραφή απομαγνητοφώνησης βίντεο"
+  },
+  "copyBtn": {
+    "message": "Αντιγραφή"
+  },
+  "moments": {
+    "message": "σημεία"
+  },
+  "synthesize": {
+    "message": "Σύνθεση & σύνοψη:"
+  },
+  "savedModalTitle": {
+    "message": "Αποθηκευμένοι χώροι εργασίας"
+  },
+  "savedSearchPlaceholder": {
+    "message": "Αναζήτηση στα αποθηκευμένα..."
+  },
+  "savedEmptyPlaceholder": {
+    "message": "Δεν υπάρχουν αποθηκευμένες απομαγνητοφωνήσεις."
+  },
+  "clipNotesTitle": {
+    "message": "Σημειώσεις κλιπ"
+  },
+  "clipNotesPlaceholder": {
+    "message": "Δεν υπάρχουν επισημάνσεις ακόμα."
+  },
+  "ratingTitle": {
+    "message": "Σας αρέσει το εργαλείο;"
+  },
+  "ratingText": {
+    "message": "Αν σας εξοικονομεί χρόνο, αξιολογήστε μας στο Chrome Web Store!"
+  },
+  "ratingBtnYes": {
+    "message": "Ναι, ευχαρίστως"
+  },
+  "ratingBtnNo": {
+    "message": "Όχι τώρα"
+  },
+  "ratingBtnNever": {
+    "message": "Να μην εμφανιστεί ξανά"
+  },
+  "aiTokenTitle": {
+    "message": "Προειδοποίηση: Πολύ μεγάλο κείμενο"
+  },
+  "aiTokenMsg": {
+    "message": "Το κείμενο υπερβαίνει τους 100.000 χαρακτήρες."
+  },
+  "cancelBtn": {
+    "message": "Ακύρωση"
+  },
+  "sendAnywayBtn": {
+    "message": "Αποστολή όπως είναι"
+  },
+  "feedbackBtn": {
+    "message": "Σχόλια / Αναφορά σφάλματος"
+  },
+  "collabBtn": {
+    "message": "Συνεργασία"
+  },
+  "batchExtracting": {
+    "message": "Εξαγωγή απομαγνητοφωνήσεων..."
+  },
+  "batchPauseBtn": {
+    "message": "Παύση"
+  },
+  "batchResumeBtn": {
+    "message": "Συνέχεια"
+  },
+  "batchFinishBtn": {
+    "message": "Ολοκλήρωση & εξαγωγή"
+  },
+  "batchExportAs": {
+    "message": "Εξαγωγή ως:"
+  },
+  "batchSingleMerged": {
+    "message": "Ενιαίο συγχωνευμένο αρχείο"
+  },
+  "batchSeparateZip": {
+    "message": "Ξεχωριστά αρχεία (ZIP)"
+  },
+  "batchFileType": {
+    "message": "Τύπος αρχείου:"
+  },
+  "batchStartExtract": {
+    "message": "Έναρξη εξαγωγής"
+  },
+  "batchPlaylistGroup": {
+    "message": "Λίστα αναπαραγωγής:"
+  },
+  "batchOtherGroup": {
+    "message": "Άλλα βίντεο"
+  },
+  "batchVideos": {
+    "message": "βίντεο"
+  },
+  "batchScanning": {
+    "message": "Σάρωση σελίδας YouTube..."
+  },
+  "batchProgressProcessing": {
+    "message": "Επεξεργασία βίντεο"
+  },
+  "batchNavToYouTube": {
+    "message": "Ανοίξτε πρώτα ένα βίντεο ή λίστα αναπαραγωγής YouTube."
+  },
+  "copiedSuccess": {
+    "message": "$COUNT$ γραμμές αντιγράφηκαν στο πρόχειρο!",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "batchNoVideosFound": {
+    "message": "No videos found on this page. Try scrolling down to load more."
+  },
+  "batchScanFailed": {
+    "message": "Failed to scan page. Try refreshing YouTube."
+  },
+  "batchOverlayInjected": {
+    "message": "Overlay injected! Select videos on the YouTube page."
+  },
+  "idleHint": {
+    "message": "Navigate to any YouTube video and click the button below to copy its transcript."
+  },
+  "loadingText": {
+    "message": "Opening transcript & extracting…"
+  },
+  "formatSection": {
+    "message": "Format"
+  },
+  "promptPlaceholder": {
+    "message": "e.g. Summarize this transcript:"
+  },
+  "errors_not_youtube": {
+    "message": "Navigate to a YouTube video first."
+  },
+  "errors_no_active_tab": {
+    "message": "No active tab found. Click on a YouTube tab and try again."
+  },
+  "errors_tab_query_failed": {
+    "message": "Could not query browser tabs. Try closing and reopening the extension."
+  },
+  "errors_restricted_page": {
+    "message": "Cannot run on this page. Navigate to a youtube.com video."
+  },
+  "errors_no_button": {
+    "message": "Could not find \"Show transcript\" button. Try opening description manually."
+  },
+  "errors_no_transcript": {
+    "message": "No transcript segments found on this video."
+  },
+  "errors_empty_transcript": {
+    "message": "Transcript panel opened but contains no text."
+  },
+  "errors_panel_timeout": {
+    "message": "Clicked transcript button but panel didn't open in time."
+  },
+  "errors_injection_failed": {
+    "message": "Could not access the page. Try refreshing the YouTube tab."
+  },
+  "errors_script_error": {
+    "message": "An internal error occurred. Try refreshing YouTube."
+  },
+  "errors_attestation_required": {
+    "message": "YouTube requires verification for this video. Open the video directly in your active tab and try again."
+  },
+  "errors_video_unavailable": {
+    "message": "This video is private, removed, or unavailable."
+  },
+  "errors_age_restricted": {
+    "message": "This video is age-restricted. Sign in to YouTube in your browser to view its transcript."
+  },
+  "errors_no_captions_available": {
+    "message": "No captions or transcript exist for this video."
+  }
+}

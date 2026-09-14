@@ -1,0 +1,331 @@
+{
+  "extensionName": {
+    "message": "YouTube 자막 복사기 - YouTube Transcript Copier",
+    "description": "Manifest string: extensionName"
+  },
+  "extensionDescription": {
+    "message": "클릭 한 번으로 YouTube 동영상 자막을 복사하고 내보냅니다. 타임스탬프, 문단 모드, AI 도구 연동 지원.",
+    "description": "Manifest string: extensionDescription"
+  },
+  "actionTitle": {
+    "message": "YouTube 자막 복사",
+    "description": "Manifest string: actionTitle"
+  },
+  "commandCopyTranscript": {
+    "message": "YouTube 자막을 클립보드에 복사",
+    "description": "Manifest string: commandCopyTranscript"
+  },
+  "contextMenuCopyTranscript": {
+    "message": "자막 복사",
+    "description": "Manifest string: contextMenuCopyTranscript"
+  },
+  "appTitle": {
+    "message": "자막 복사기"
+  },
+  "tabSingle": {
+    "message": "단일 동영상"
+  },
+  "tabBatch": {
+    "message": "일괄 추출"
+  },
+  "batchNoVideos": {
+    "message": "감지된 동영상 없음"
+  },
+  "batchScanBtn": {
+    "message": "페이지 스캔"
+  },
+  "batchOverlayBtn": {
+    "message": "페이지 오버레이"
+  },
+  "batchSelectAll": {
+    "message": "전체 선택"
+  },
+  "batchSelected": {
+    "message": "개 선택됨"
+  },
+  "batchPlaceholder": {
+    "message": "이 YouTube 페이지에서 동영상을 감지하려면 \"페이지 스캔\"을 클릭하세요."
+  },
+  "batchFormatOptions": {
+    "message": "형식 및 옵션"
+  },
+  "outputStyle": {
+    "message": "출력 스타일"
+  },
+  "btnLines": {
+    "message": "줄 단위"
+  },
+  "btnParagraph": {
+    "message": "문단"
+  },
+  "btnBlocks": {
+    "message": "블록"
+  },
+  "toggleTimestamps": {
+    "message": "타임스탬프 포함"
+  },
+  "toggleTitle": {
+    "message": "동영상 제목 포함"
+  },
+  "toggleUrl": {
+    "message": "동영상 URL 포함"
+  },
+  "toggleDuplicates": {
+    "message": "중복 문장 제거"
+  },
+  "toggleAutoCopy": {
+    "message": "동영상 로드 시 자동 복사"
+  },
+  "togglePrompt": {
+    "message": "프롬프트 추가"
+  },
+  "promptNoneCustom": {
+    "message": "없음 / 사용자 지정..."
+  },
+  "presetSummarize": {
+    "message": "요약 (5개 핵심 항목)"
+  },
+  "presetTakeaways": {
+    "message": "주요 핵심 요약"
+  },
+  "presetOutline": {
+    "message": "챕터 아웃라인"
+  },
+  "presetTldr": {
+    "message": "2문장 TL;DR 요약"
+  },
+  "saveBtn": {
+    "message": "저장"
+  },
+  "deleteBtn": {
+    "message": "삭제"
+  },
+  "aiBridgeLabel": {
+    "message": "프롬프트와 자막을 AI로 전송:"
+  },
+  "previewSection": {
+    "message": "자막 워크스페이스"
+  },
+  "savedBtn": {
+    "message": "보관함"
+  },
+  "followBtn": {
+    "message": "추적"
+  },
+  "notesBtn": {
+    "message": "메모"
+  },
+  "showAll": {
+    "message": "전체 보기"
+  },
+  "searchPlaceholder": {
+    "message": "자막 검색... [/]"
+  },
+  "copyTime": {
+    "message": "시간 포함 복사"
+  },
+  "copyText": {
+    "message": "텍스트만 복사"
+  },
+  "markBtn": {
+    "message": "표시"
+  },
+  "aiBtn": {
+    "message": "AI"
+  },
+  "summarizeSelected": {
+    "message": "선택 요약"
+  },
+  "explainSelected": {
+    "message": "선택 설명"
+  },
+  "actionItems": {
+    "message": "실행 항목"
+  },
+  "translateSelected": {
+    "message": "번역"
+  },
+  "clearBtn": {
+    "message": "지우기"
+  },
+  "previewPlaceholder": {
+    "message": "미리보기를 보려면 자막 복사를 클릭하세요"
+  },
+  "copyBtnText": {
+    "message": "동영상 자막 복사"
+  },
+  "copyBtn": {
+    "message": "복사"
+  },
+  "moments": {
+    "message": "개 북마크"
+  },
+  "synthesize": {
+    "message": "종합 및 요약:"
+  },
+  "savedModalTitle": {
+    "message": "저장된 워크스페이스"
+  },
+  "savedSearchPlaceholder": {
+    "message": "저장된 자막 검색..."
+  },
+  "savedEmptyPlaceholder": {
+    "message": "저장된 자막이 없습니다.\n\"저장\"을 클릭하여 로컬에 보관하세요."
+  },
+  "clipNotesTitle": {
+    "message": "클립 노트"
+  },
+  "clipNotesPlaceholder": {
+    "message": "아직 하이라이트가 없습니다. 자막을 선택하여 노트를 모아보세요."
+  },
+  "ratingTitle": {
+    "message": "YouTube 자막 복사기가 마음에 드시나요?"
+  },
+  "ratingText": {
+    "message": "시간을 절약하는 데 도움이 되셨다면 Chrome 웹스토어에 별점을 남겨주세요! 큰 힘이 됩니다."
+  },
+  "ratingBtnYes": {
+    "message": "네, 평가할게요"
+  },
+  "ratingBtnNo": {
+    "message": "나중에"
+  },
+  "ratingBtnNever": {
+    "message": "다시 보지 않기"
+  },
+  "aiTokenTitle": {
+    "message": "경고: 자막이 너무 깁니다"
+  },
+  "aiTokenMsg": {
+    "message": "총 문자 수가 100,000자를 초과합니다. AI 모델에서 잘릴 수 있습니다."
+  },
+  "cancelBtn": {
+    "message": "취소"
+  },
+  "sendAnywayBtn": {
+    "message": "그대로 전송"
+  },
+  "feedbackBtn": {
+    "message": "피드백 / 버그 신고"
+  },
+  "collabBtn": {
+    "message": "협업 문의"
+  },
+  "batchExtracting": {
+    "message": "자막 추출 중..."
+  },
+  "batchPauseBtn": {
+    "message": "중지"
+  },
+  "batchResumeBtn": {
+    "message": "계속"
+  },
+  "batchFinishBtn": {
+    "message": "완료 및 내보내기"
+  },
+  "batchExportAs": {
+    "message": "내보내기 방식:"
+  },
+  "batchSingleMerged": {
+    "message": "단일 병합 파일"
+  },
+  "batchSeparateZip": {
+    "message": "개별 파일 (ZIP)"
+  },
+  "batchFileType": {
+    "message": "파일 형식:"
+  },
+  "batchStartExtract": {
+    "message": "추출 시작"
+  },
+  "batchPlaylistGroup": {
+    "message": "재생목록:"
+  },
+  "batchOtherGroup": {
+    "message": "기타 동영상"
+  },
+  "batchVideos": {
+    "message": "개 동영상"
+  },
+  "batchScanning": {
+    "message": "YouTube 페이지를 스캔하는 중..."
+  },
+  "batchProgressProcessing": {
+    "message": "동영상 처리 중"
+  },
+  "batchNavToYouTube": {
+    "message": "먼저 YouTube 동영상, 재생목록 또는 채널로 이동하세요."
+  },
+  "copiedSuccess": {
+    "message": "$COUNT$개 자막 줄이 클립보드에 복사되었습니다!",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "batchNoVideosFound": {
+    "message": "No videos found on this page. Try scrolling down to load more."
+  },
+  "batchScanFailed": {
+    "message": "Failed to scan page. Try refreshing YouTube."
+  },
+  "batchOverlayInjected": {
+    "message": "Overlay injected! Select videos on the YouTube page."
+  },
+  "idleHint": {
+    "message": "Navigate to any YouTube video and click the button below to copy its transcript."
+  },
+  "loadingText": {
+    "message": "Opening transcript & extracting…"
+  },
+  "formatSection": {
+    "message": "Format"
+  },
+  "promptPlaceholder": {
+    "message": "e.g. Summarize this transcript:"
+  },
+  "errors_not_youtube": {
+    "message": "Navigate to a YouTube video first."
+  },
+  "errors_no_active_tab": {
+    "message": "No active tab found. Click on a YouTube tab and try again."
+  },
+  "errors_tab_query_failed": {
+    "message": "Could not query browser tabs. Try closing and reopening the extension."
+  },
+  "errors_restricted_page": {
+    "message": "Cannot run on this page. Navigate to a youtube.com video."
+  },
+  "errors_no_button": {
+    "message": "Could not find \"Show transcript\" button. Try opening description manually."
+  },
+  "errors_no_transcript": {
+    "message": "No transcript segments found on this video."
+  },
+  "errors_empty_transcript": {
+    "message": "Transcript panel opened but contains no text."
+  },
+  "errors_panel_timeout": {
+    "message": "Clicked transcript button but panel didn't open in time."
+  },
+  "errors_injection_failed": {
+    "message": "Could not access the page. Try refreshing the YouTube tab."
+  },
+  "errors_script_error": {
+    "message": "An internal error occurred. Try refreshing YouTube."
+  },
+  "errors_attestation_required": {
+    "message": "YouTube requires verification for this video. Open the video directly in your active tab and try again."
+  },
+  "errors_video_unavailable": {
+    "message": "This video is private, removed, or unavailable."
+  },
+  "errors_age_restricted": {
+    "message": "This video is age-restricted. Sign in to YouTube in your browser to view its transcript."
+  },
+  "errors_no_captions_available": {
+    "message": "No captions or transcript exist for this video."
+  }
+}

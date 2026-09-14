@@ -1,0 +1,331 @@
+{
+  "extensionName": {
+    "message": "Sao chép phụ đề YouTube - Transcript Copier",
+    "description": "Manifest string: extensionName"
+  },
+  "extensionDescription": {
+    "message": "Sao chép và xuất bản chép lời YouTube trong 1 cú nhấp. Hỗ trợ mốc thời gian, đoạn văn và kết nối AI.",
+    "description": "Manifest string: extensionDescription"
+  },
+  "actionTitle": {
+    "message": "Sao chép bản chép lời YouTube",
+    "description": "Manifest string: actionTitle"
+  },
+  "commandCopyTranscript": {
+    "message": "Sao chép bản chép lời YouTube vào khay nhớ tạm",
+    "description": "Manifest string: commandCopyTranscript"
+  },
+  "contextMenuCopyTranscript": {
+    "message": "Sao chép bản chép lời",
+    "description": "Manifest string: contextMenuCopyTranscript"
+  },
+  "appTitle": {
+    "message": "Sao chép bản chép lời"
+  },
+  "tabSingle": {
+    "message": "Một video"
+  },
+  "tabBatch": {
+    "message": "Chế độ hàng loạt"
+  },
+  "batchNoVideos": {
+    "message": "Không tìm thấy video nào"
+  },
+  "batchScanBtn": {
+    "message": "Quét trang"
+  },
+  "batchOverlayBtn": {
+    "message": "Lớp phủ trang"
+  },
+  "batchSelectAll": {
+    "message": "Chọn tất cả"
+  },
+  "batchSelected": {
+    "message": "đã chọn"
+  },
+  "batchPlaceholder": {
+    "message": "Nhấp vào \"Quét trang\" để tìm video trên trang YouTube này."
+  },
+  "batchFormatOptions": {
+    "message": "Định dạng & Tùy chọn"
+  },
+  "outputStyle": {
+    "message": "Kiểu xuất"
+  },
+  "btnLines": {
+    "message": "Theo dòng"
+  },
+  "btnParagraph": {
+    "message": "Đoạn văn"
+  },
+  "btnBlocks": {
+    "message": "Khối"
+  },
+  "toggleTimestamps": {
+    "message": "Kèm mốc thời gian"
+  },
+  "toggleTitle": {
+    "message": "Kèm tiêu đề video"
+  },
+  "toggleUrl": {
+    "message": "Kèm liên kết video"
+  },
+  "toggleDuplicates": {
+    "message": "Lọc trùng lặp"
+  },
+  "toggleAutoCopy": {
+    "message": "Tự động sao chép khi mở video"
+  },
+  "togglePrompt": {
+    "message": "Thêm câu lệnh"
+  },
+  "promptNoneCustom": {
+    "message": "Không có / Tùy chỉnh..."
+  },
+  "presetSummarize": {
+    "message": "Tóm tắt (5 ý chính)"
+  },
+  "presetTakeaways": {
+    "message": "Điểm rút ra cốt lõi"
+  },
+  "presetOutline": {
+    "message": "Dàn ý chương"
+  },
+  "presetTldr": {
+    "message": "Tóm tắt ngắn (TL;DR)"
+  },
+  "saveBtn": {
+    "message": "Lưu"
+  },
+  "deleteBtn": {
+    "message": "Xóa"
+  },
+  "aiBridgeLabel": {
+    "message": "Gửi câu lệnh & bản chép lời tới AI:"
+  },
+  "previewSection": {
+    "message": "Không gian làm việc"
+  },
+  "savedBtn": {
+    "message": "Đã lưu"
+  },
+  "followBtn": {
+    "message": "Cuộn theo"
+  },
+  "notesBtn": {
+    "message": "Ghi chú"
+  },
+  "showAll": {
+    "message": "Hiện tất cả"
+  },
+  "searchPlaceholder": {
+    "message": "Tìm trong bản chép lời... [/]"
+  },
+  "copyTime": {
+    "message": "Sao chép (+thời gian)"
+  },
+  "copyText": {
+    "message": "Chỉ sao chép chữ"
+  },
+  "markBtn": {
+    "message": "Đánh dấu"
+  },
+  "aiBtn": {
+    "message": "AI"
+  },
+  "summarizeSelected": {
+    "message": "Tóm tắt đoạn chọn"
+  },
+  "explainSelected": {
+    "message": "Giải thích đoạn chọn"
+  },
+  "actionItems": {
+    "message": "Hành động cần làm"
+  },
+  "translateSelected": {
+    "message": "Dịch"
+  },
+  "clearBtn": {
+    "message": "Xóa sạch"
+  },
+  "previewPlaceholder": {
+    "message": "Nhấp Sao chép để xem trước tại đây"
+  },
+  "copyBtnText": {
+    "message": "Sao chép bản chép lời video"
+  },
+  "copyBtn": {
+    "message": "Sao chép"
+  },
+  "moments": {
+    "message": "điểm đánh dấu"
+  },
+  "synthesize": {
+    "message": "Tổng hợp & tóm tắt:"
+  },
+  "savedModalTitle": {
+    "message": "Không gian làm việc đã lưu"
+  },
+  "savedSearchPlaceholder": {
+    "message": "Tìm trong bản đã lưu..."
+  },
+  "savedEmptyPlaceholder": {
+    "message": "Chưa có bản chép lời nào được lưu."
+  },
+  "clipNotesTitle": {
+    "message": "Ghi chú video"
+  },
+  "clipNotesPlaceholder": {
+    "message": "Chưa có điểm nổi bật nào."
+  },
+  "ratingTitle": {
+    "message": "Bạn thấy tiện ích thế nào?"
+  },
+  "ratingText": {
+    "message": "Nếu tiện ích giúp bạn tiết kiệm thời gian, hãy đánh giá trên Chrome Web Store nhé!"
+  },
+  "ratingBtnYes": {
+    "message": "Đồng ý đánh giá"
+  },
+  "ratingBtnNo": {
+    "message": "Để sau"
+  },
+  "ratingBtnNever": {
+    "message": "Không nhắc lại"
+  },
+  "aiTokenTitle": {
+    "message": "Cảnh báo: Nội dung quá dài"
+  },
+  "aiTokenMsg": {
+    "message": "Vượt quá 100.000 ký tự và có thể bị cắt bớt trong mô hình AI."
+  },
+  "cancelBtn": {
+    "message": "Hủy"
+  },
+  "sendAnywayBtn": {
+    "message": "Vẫn gửi"
+  },
+  "feedbackBtn": {
+    "message": "Góp ý / Báo lỗi"
+  },
+  "collabBtn": {
+    "message": "Hợp tác"
+  },
+  "batchExtracting": {
+    "message": "Đang trích xuất..."
+  },
+  "batchPauseBtn": {
+    "message": "Tạm dừng"
+  },
+  "batchResumeBtn": {
+    "message": "Tiếp tục"
+  },
+  "batchFinishBtn": {
+    "message": "Hoàn tất & Xuất"
+  },
+  "batchExportAs": {
+    "message": "Xuất dưới dạng:"
+  },
+  "batchSingleMerged": {
+    "message": "Một tệp gộp duy nhất"
+  },
+  "batchSeparateZip": {
+    "message": "Tệp riêng lẻ (ZIP)"
+  },
+  "batchFileType": {
+    "message": "Loại tệp:"
+  },
+  "batchStartExtract": {
+    "message": "Bắt đầu trích xuất"
+  },
+  "batchPlaylistGroup": {
+    "message": "Danh sách phát:"
+  },
+  "batchOtherGroup": {
+    "message": "Video khác"
+  },
+  "batchVideos": {
+    "message": "video"
+  },
+  "batchScanning": {
+    "message": "Đang quét trang YouTube..."
+  },
+  "batchProgressProcessing": {
+    "message": "Đang xử lý video"
+  },
+  "batchNavToYouTube": {
+    "message": "Vui lòng mở video hoặc danh sách phát YouTube trước."
+  },
+  "copiedSuccess": {
+    "message": "Đã sao chép $COUNT$ dòng vào khay nhớ tạm!",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "batchNoVideosFound": {
+    "message": "No videos found on this page. Try scrolling down to load more."
+  },
+  "batchScanFailed": {
+    "message": "Failed to scan page. Try refreshing YouTube."
+  },
+  "batchOverlayInjected": {
+    "message": "Overlay injected! Select videos on the YouTube page."
+  },
+  "idleHint": {
+    "message": "Navigate to any YouTube video and click the button below to copy its transcript."
+  },
+  "loadingText": {
+    "message": "Opening transcript & extracting…"
+  },
+  "formatSection": {
+    "message": "Format"
+  },
+  "promptPlaceholder": {
+    "message": "e.g. Summarize this transcript:"
+  },
+  "errors_not_youtube": {
+    "message": "Navigate to a YouTube video first."
+  },
+  "errors_no_active_tab": {
+    "message": "No active tab found. Click on a YouTube tab and try again."
+  },
+  "errors_tab_query_failed": {
+    "message": "Could not query browser tabs. Try closing and reopening the extension."
+  },
+  "errors_restricted_page": {
+    "message": "Cannot run on this page. Navigate to a youtube.com video."
+  },
+  "errors_no_button": {
+    "message": "Could not find \"Show transcript\" button. Try opening description manually."
+  },
+  "errors_no_transcript": {
+    "message": "No transcript segments found on this video."
+  },
+  "errors_empty_transcript": {
+    "message": "Transcript panel opened but contains no text."
+  },
+  "errors_panel_timeout": {
+    "message": "Clicked transcript button but panel didn't open in time."
+  },
+  "errors_injection_failed": {
+    "message": "Could not access the page. Try refreshing the YouTube tab."
+  },
+  "errors_script_error": {
+    "message": "An internal error occurred. Try refreshing YouTube."
+  },
+  "errors_attestation_required": {
+    "message": "YouTube requires verification for this video. Open the video directly in your active tab and try again."
+  },
+  "errors_video_unavailable": {
+    "message": "This video is private, removed, or unavailable."
+  },
+  "errors_age_restricted": {
+    "message": "This video is age-restricted. Sign in to YouTube in your browser to view its transcript."
+  },
+  "errors_no_captions_available": {
+    "message": "No captions or transcript exist for this video."
+  }
+}

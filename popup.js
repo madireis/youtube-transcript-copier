@@ -957,14 +957,45 @@ const TRANSLATIONS = {
 };
 
 let currentLang = 'en';
+const loadedTranslations = { ...TRANSLATIONS };
+
+async function loadLocaleMessages(lang) {
+  if (loadedTranslations[lang]) return loadedTranslations[lang];
+  try {
+    const url = (typeof chrome !== 'undefined' && chrome.runtime && chrome.runtime.getURL)
+      ? chrome.runtime.getURL(`_locales/${lang}/messages.json`)
+      : `_locales/${lang}/messages.json`;
+    const res = await fetch(url);
+    if (!res.ok) throw new Error('Locale fetch failed');
+    const data = await res.json();
+    const dict = {};
+    for (const [k, v] of Object.entries(data)) {
+      dict[k] = v.message;
+    }
+    loadedTranslations[lang] = dict;
+    return dict;
+  } catch (err) {
+    console.warn('Failed to load locale:', lang, err);
+    return loadedTranslations.en;
+  }
+}
 
 function getTranslation(key, placeholders = []) {
-  const dict = TRANSLATIONS[currentLang] || TRANSLATIONS.en;
+  const dict = loadedTranslations[currentLang] || loadedTranslations.en || TRANSLATIONS.en;
   const val = dict[key];
   if (typeof val === 'function') {
     return val(...placeholders);
   }
-  if (val) return val;
+  if (val) {
+    if (placeholders.length > 0 && typeof val === 'string') {
+      let res = val;
+      placeholders.forEach((p, idx) => {
+        res = res.replace(`$${idx + 1}`, p).replace(`$COUNT$`, p);
+      });
+      return res;
+    }
+    return val;
+  }
 
   // Fallback to chrome.i18n.getMessage
   if (typeof chrome !== 'undefined' && chrome.i18n && typeof chrome.i18n.getMessage === 'function') {
@@ -972,13 +1003,17 @@ function getTranslation(key, placeholders = []) {
     if (msg) return msg;
   }
 
-  return TRANSLATIONS.en[key] || '';
+  return (loadedTranslations.en && loadedTranslations.en[key]) || (TRANSLATIONS.en && TRANSLATIONS.en[key]) || '';
 }
 
-function setLanguage(lang) {
-  if (!TRANSLATIONS[lang]) lang = 'en';
+async function setLanguage(lang) {
   currentLang = lang;
   localStorage.setItem('appLang', lang);
+
+  // Dynamically load locale messages if needed
+  if (!loadedTranslations[lang]) {
+    await loadLocaleMessages(lang);
+  }
 
   // Update HTML text elements
   $$('[data-i18n]').forEach((el) => {
@@ -1007,8 +1042,9 @@ function setLanguage(lang) {
     }
   });
 
-  // Handle RTL for Arabic
-  document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+  // Handle RTL for Arabic, Hebrew, and Persian
+  const isRtl = ['ar', 'he', 'fa'].includes(lang);
+  document.documentElement.dir = isRtl ? 'rtl' : 'ltr';
 
   // Update dynamic batch counters & video list if active
   if (typeof updateBatchSelectedCount === 'function') {
@@ -1026,17 +1062,18 @@ function setLanguage(lang) {
 }
 
 // Auto-detect browser language or load saved setting
-function initLanguage() {
+async function initLanguage() {
   const saved = localStorage.getItem('appLang');
-  if (saved && TRANSLATIONS[saved]) {
+  if (saved) {
     currentLang = saved;
   } else {
     const uiLang = (typeof chrome !== 'undefined' && chrome.i18n && typeof chrome.i18n.getUILanguage === 'function')
       ? chrome.i18n.getUILanguage()
       : (navigator.language || '');
-    const browserLang = (uiLang || '').slice(0, 2).toLowerCase();
-    if (TRANSLATIONS[browserLang]) {
-      currentLang = browserLang;
+    const normalized = uiLang.replace('-', '_');
+    const matchedOption = $(`#lang-select option[value="${normalized}"]`) || $(`#lang-select option[value="${normalized.slice(0, 2).toLowerCase()}"]`);
+    if (matchedOption) {
+      currentLang = matchedOption.value;
     }
   }
 
@@ -1046,7 +1083,7 @@ function initLanguage() {
     langSelect.addEventListener('change', (e) => setLanguage(e.target.value));
   }
 
-  setLanguage(currentLang);
+  await setLanguage(currentLang);
 }
 
 // Initialize i18n on DOM load

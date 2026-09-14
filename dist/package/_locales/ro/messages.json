@@ -1,0 +1,331 @@
+{
+  "extensionName": {
+    "message": "Copiere transcrieri YouTube - Transcript Copier",
+    "description": "Manifest string: extensionName"
+  },
+  "extensionDescription": {
+    "message": "Copiază și exportă transcrieri YouTube dintr-un singur clic. Marcaje temporale, paragrafe și integrare AI.",
+    "description": "Manifest string: extensionDescription"
+  },
+  "actionTitle": {
+    "message": "Copiază transcrierea YouTube",
+    "description": "Manifest string: actionTitle"
+  },
+  "commandCopyTranscript": {
+    "message": "Copiază transcrierea YouTube în clipboard",
+    "description": "Manifest string: commandCopyTranscript"
+  },
+  "contextMenuCopyTranscript": {
+    "message": "Copiază transcrierea",
+    "description": "Manifest string: contextMenuCopyTranscript"
+  },
+  "appTitle": {
+    "message": "Copiere transcrieri"
+  },
+  "tabSingle": {
+    "message": "Video individual"
+  },
+  "tabBatch": {
+    "message": "Mod în serie"
+  },
+  "batchNoVideos": {
+    "message": "Niciun video detectat"
+  },
+  "batchScanBtn": {
+    "message": "Scanează pagina"
+  },
+  "batchOverlayBtn": {
+    "message": "Suprapunere pagină"
+  },
+  "batchSelectAll": {
+    "message": "Selectează tot"
+  },
+  "batchSelected": {
+    "message": "selectate"
+  },
+  "batchPlaceholder": {
+    "message": "Apasă pe \"Scanează pagina\" pentru a detecta videoclipuri."
+  },
+  "batchFormatOptions": {
+    "message": "Format și opțiuni"
+  },
+  "outputStyle": {
+    "message": "Stil rezultat"
+  },
+  "btnLines": {
+    "message": "Linii"
+  },
+  "btnParagraph": {
+    "message": "Paragraf"
+  },
+  "btnBlocks": {
+    "message": "Blocuri"
+  },
+  "toggleTimestamps": {
+    "message": "Include marcaje temporale"
+  },
+  "toggleTitle": {
+    "message": "Include titlul videoclipului"
+  },
+  "toggleUrl": {
+    "message": "Include link-ul videoclipului"
+  },
+  "toggleDuplicates": {
+    "message": "Elimină duplicatele"
+  },
+  "toggleAutoCopy": {
+    "message": "Copiere automată la încărcare"
+  },
+  "togglePrompt": {
+    "message": "Adaugă prompt"
+  },
+  "promptNoneCustom": {
+    "message": "Niciunul / Personalizat..."
+  },
+  "presetSummarize": {
+    "message": "Rezumat (5 puncte cheie)"
+  },
+  "presetTakeaways": {
+    "message": "Idei principale"
+  },
+  "presetOutline": {
+    "message": "Schiță capitole"
+  },
+  "presetTldr": {
+    "message": "Rezumat pe scurt (TL;DR)"
+  },
+  "saveBtn": {
+    "message": "Salvează"
+  },
+  "deleteBtn": {
+    "message": "Șterge"
+  },
+  "aiBridgeLabel": {
+    "message": "Trimite promptul și transcrierea către AI:"
+  },
+  "previewSection": {
+    "message": "Spațiu de lucru transcriere"
+  },
+  "savedBtn": {
+    "message": "Salvate"
+  },
+  "followBtn": {
+    "message": "Urmărește"
+  },
+  "notesBtn": {
+    "message": "Notițe"
+  },
+  "showAll": {
+    "message": "Afișează tot"
+  },
+  "searchPlaceholder": {
+    "message": "Caută în transcriere... [/]"
+  },
+  "copyTime": {
+    "message": "Copiază (+timp)"
+  },
+  "copyText": {
+    "message": "Doar textul"
+  },
+  "markBtn": {
+    "message": "Evidențiază"
+  },
+  "aiBtn": {
+    "message": "AI"
+  },
+  "summarizeSelected": {
+    "message": "Rezumat selecție"
+  },
+  "explainSelected": {
+    "message": "Explică selecția"
+  },
+  "actionItems": {
+    "message": "Puncte de acțiune"
+  },
+  "translateSelected": {
+    "message": "Tradu"
+  },
+  "clearBtn": {
+    "message": "Golește"
+  },
+  "previewPlaceholder": {
+    "message": "Apasă pe Copiază transcrierea pentru previzualizare"
+  },
+  "copyBtnText": {
+    "message": "Copiază transcrierea video"
+  },
+  "copyBtn": {
+    "message": "Copiază"
+  },
+  "moments": {
+    "message": "momente"
+  },
+  "synthesize": {
+    "message": "Sintetizează & rezumă:"
+  },
+  "savedModalTitle": {
+    "message": "Spații de lucru salvate"
+  },
+  "savedSearchPlaceholder": {
+    "message": "Caută în salvate..."
+  },
+  "savedEmptyPlaceholder": {
+    "message": "Nicio transcriere salvată."
+  },
+  "clipNotesTitle": {
+    "message": "Notițe clip"
+  },
+  "clipNotesPlaceholder": {
+    "message": "Niciun moment evidențiat."
+  },
+  "ratingTitle": {
+    "message": "Îți place YouTube Transcript Copier?"
+  },
+  "ratingText": {
+    "message": "Dacă extensia te ajută să economisești timp, lasă-ne o recenzie în Chrome Web Store!"
+  },
+  "ratingBtnYes": {
+    "message": "Da, oferă rating"
+  },
+  "ratingBtnNo": {
+    "message": "Nu acum"
+  },
+  "ratingBtnNever": {
+    "message": "Nu mai afișa"
+  },
+  "aiTokenTitle": {
+    "message": "Atenție: transcriere foarte lungă"
+  },
+  "aiTokenMsg": {
+    "message": "Textul depășește 100.000 de caractere."
+  },
+  "cancelBtn": {
+    "message": "Anulează"
+  },
+  "sendAnywayBtn": {
+    "message": "Trimite oricum"
+  },
+  "feedbackBtn": {
+    "message": "Feedback / Raportează eroare"
+  },
+  "collabBtn": {
+    "message": "Colaborare"
+  },
+  "batchExtracting": {
+    "message": "Se extrag transcrierile..."
+  },
+  "batchPauseBtn": {
+    "message": "Pauză"
+  },
+  "batchResumeBtn": {
+    "message": "Continuă"
+  },
+  "batchFinishBtn": {
+    "message": "Finalizează & exportă"
+  },
+  "batchExportAs": {
+    "message": "Exportă ca:"
+  },
+  "batchSingleMerged": {
+    "message": "Fișier unic combinat"
+  },
+  "batchSeparateZip": {
+    "message": "Fișiere separate (ZIP)"
+  },
+  "batchFileType": {
+    "message": "Tip fișier:"
+  },
+  "batchStartExtract": {
+    "message": "Începe extracția"
+  },
+  "batchPlaylistGroup": {
+    "message": "Playlist:"
+  },
+  "batchOtherGroup": {
+    "message": "Alte videoclipuri"
+  },
+  "batchVideos": {
+    "message": "videoclipuri"
+  },
+  "batchScanning": {
+    "message": "Se scanează pagina YouTube..."
+  },
+  "batchProgressProcessing": {
+    "message": "Se procesează videoclipul"
+  },
+  "batchNavToYouTube": {
+    "message": "Deschide mai întâi un video sau playlist YouTube."
+  },
+  "copiedSuccess": {
+    "message": "$COUNT$ linii copiate în clipboard!",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "batchNoVideosFound": {
+    "message": "No videos found on this page. Try scrolling down to load more."
+  },
+  "batchScanFailed": {
+    "message": "Failed to scan page. Try refreshing YouTube."
+  },
+  "batchOverlayInjected": {
+    "message": "Overlay injected! Select videos on the YouTube page."
+  },
+  "idleHint": {
+    "message": "Navigate to any YouTube video and click the button below to copy its transcript."
+  },
+  "loadingText": {
+    "message": "Opening transcript & extracting…"
+  },
+  "formatSection": {
+    "message": "Format"
+  },
+  "promptPlaceholder": {
+    "message": "e.g. Summarize this transcript:"
+  },
+  "errors_not_youtube": {
+    "message": "Navigate to a YouTube video first."
+  },
+  "errors_no_active_tab": {
+    "message": "No active tab found. Click on a YouTube tab and try again."
+  },
+  "errors_tab_query_failed": {
+    "message": "Could not query browser tabs. Try closing and reopening the extension."
+  },
+  "errors_restricted_page": {
+    "message": "Cannot run on this page. Navigate to a youtube.com video."
+  },
+  "errors_no_button": {
+    "message": "Could not find \"Show transcript\" button. Try opening description manually."
+  },
+  "errors_no_transcript": {
+    "message": "No transcript segments found on this video."
+  },
+  "errors_empty_transcript": {
+    "message": "Transcript panel opened but contains no text."
+  },
+  "errors_panel_timeout": {
+    "message": "Clicked transcript button but panel didn't open in time."
+  },
+  "errors_injection_failed": {
+    "message": "Could not access the page. Try refreshing the YouTube tab."
+  },
+  "errors_script_error": {
+    "message": "An internal error occurred. Try refreshing YouTube."
+  },
+  "errors_attestation_required": {
+    "message": "YouTube requires verification for this video. Open the video directly in your active tab and try again."
+  },
+  "errors_video_unavailable": {
+    "message": "This video is private, removed, or unavailable."
+  },
+  "errors_age_restricted": {
+    "message": "This video is age-restricted. Sign in to YouTube in your browser to view its transcript."
+  },
+  "errors_no_captions_available": {
+    "message": "No captions or transcript exist for this video."
+  }
+}

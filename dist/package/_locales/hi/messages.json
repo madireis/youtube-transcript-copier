@@ -1,0 +1,331 @@
+{
+  "extensionName": {
+    "message": "YouTube ट्रांसक्रिप्ट कॉपीयर - YouTube Transcript Copier",
+    "description": "Manifest string: extensionName"
+  },
+  "extensionDescription": {
+    "message": "1-क्लिक में YouTube वीडियो ट्रांसक्रिप्ट कॉपी और निर्यात करें। टाइमस्टैम्प, पैराग्राफ मोड और AI सपोर्ट।",
+    "description": "Manifest string: extensionDescription"
+  },
+  "actionTitle": {
+    "message": "YouTube ट्रांसक्रिप्ट कॉपी करें",
+    "description": "Manifest string: actionTitle"
+  },
+  "commandCopyTranscript": {
+    "message": "YouTube ट्रांसक्रिप्ट क्लिपबोर्ड में कॉपी करें",
+    "description": "Manifest string: commandCopyTranscript"
+  },
+  "contextMenuCopyTranscript": {
+    "message": "ट्रांसक्रिप्ट कॉपी करें",
+    "description": "Manifest string: contextMenuCopyTranscript"
+  },
+  "appTitle": {
+    "message": "ट्रांसक्रिप्ट कॉपीयर"
+  },
+  "tabSingle": {
+    "message": "एकल वीडियो"
+  },
+  "tabBatch": {
+    "message": "बैच मोड"
+  },
+  "batchNoVideos": {
+    "message": "कोई वीडियो नहीं मिला"
+  },
+  "batchScanBtn": {
+    "message": "पेज स्कैन करें"
+  },
+  "batchOverlayBtn": {
+    "message": "पेज ओवरले"
+  },
+  "batchSelectAll": {
+    "message": "सभी चुनें"
+  },
+  "batchSelected": {
+    "message": "चुने गए"
+  },
+  "batchPlaceholder": {
+    "message": "वीडियो खोजने के लिए \"पेज स्कैन करें\" पर क्लिक करें।"
+  },
+  "batchFormatOptions": {
+    "message": "प्रारूप और विकल्प"
+  },
+  "outputStyle": {
+    "message": "आउटपुट शैली"
+  },
+  "btnLines": {
+    "message": "पंक्तियाँ"
+  },
+  "btnParagraph": {
+    "message": "पैराग्राफ"
+  },
+  "btnBlocks": {
+    "message": "ब्लॉक"
+  },
+  "toggleTimestamps": {
+    "message": "टाइमस्टैम्प शामिल करें"
+  },
+  "toggleTitle": {
+    "message": "वीडियो शीर्षक शामिल करें"
+  },
+  "toggleUrl": {
+    "message": "वीडियो लिंक शामिल करें"
+  },
+  "toggleDuplicates": {
+    "message": "दोहराव हटाएं"
+  },
+  "toggleAutoCopy": {
+    "message": "वीडियो लोड होने पर ऑटो-कॉपी"
+  },
+  "togglePrompt": {
+    "message": "प्रॉम्प्ट जोड़ें"
+  },
+  "promptNoneCustom": {
+    "message": "कोई नहीं / कस्टम..."
+  },
+  "presetSummarize": {
+    "message": "संक्षेप (5 मुख्य बिंदु)"
+  },
+  "presetTakeaways": {
+    "message": "मुख्य निष्कर्ष"
+  },
+  "presetOutline": {
+    "message": "अध्याय रूपरेखा"
+  },
+  "presetTldr": {
+    "message": "संक्षिप्त TL;DR"
+  },
+  "saveBtn": {
+    "message": "सहेजें"
+  },
+  "deleteBtn": {
+    "message": "हटाएं"
+  },
+  "aiBridgeLabel": {
+    "message": "AI को प्रॉम्प्ट और ट्रांसक्रिप्ट भेजें:"
+  },
+  "previewSection": {
+    "message": "ट्रांसक्रिप्ट कार्यक्षेत्र"
+  },
+  "savedBtn": {
+    "message": "सहेजे गए"
+  },
+  "followBtn": {
+    "message": "फॉलो"
+  },
+  "notesBtn": {
+    "message": "नोट्स"
+  },
+  "showAll": {
+    "message": "सभी दिखाएं"
+  },
+  "searchPlaceholder": {
+    "message": "ट्रांसक्रिप्ट में खोजें... [/]"
+  },
+  "copyTime": {
+    "message": "कॉपी (+समय)"
+  },
+  "copyText": {
+    "message": "केवल टेक्स्ट"
+  },
+  "markBtn": {
+    "message": "मार्क"
+  },
+  "aiBtn": {
+    "message": "AI"
+  },
+  "summarizeSelected": {
+    "message": "चयनित सारांश"
+  },
+  "explainSelected": {
+    "message": "चयनित व्याख्या"
+  },
+  "actionItems": {
+    "message": "कार्य सूची"
+  },
+  "translateSelected": {
+    "message": "अनुवाद"
+  },
+  "clearBtn": {
+    "message": "साफ़ करें"
+  },
+  "previewPlaceholder": {
+    "message": "पूर्वावलोकन के लिए कॉपी बटन पर क्लिक करें"
+  },
+  "copyBtnText": {
+    "message": "वीडियो ट्रांसक्रिप्ट कॉपी करें"
+  },
+  "copyBtn": {
+    "message": "कॉपी करें"
+  },
+  "moments": {
+    "message": "हाइलाइट्स"
+  },
+  "synthesize": {
+    "message": "संश्लेषण व सारांश:"
+  },
+  "savedModalTitle": {
+    "message": "सहेजे गए कार्यक्षेत्र"
+  },
+  "savedSearchPlaceholder": {
+    "message": "सहेजे गए ट्रांसक्रिप्ट में खोजें..."
+  },
+  "savedEmptyPlaceholder": {
+    "message": "कोई सहेजा गया ट्रांसक्रिप्ट नहीं है।"
+  },
+  "clipNotesTitle": {
+    "message": "क्लिप नोट्स"
+  },
+  "clipNotesPlaceholder": {
+    "message": "अभी कोई हाइलाइट नहीं है।"
+  },
+  "ratingTitle": {
+    "message": "क्या आपको ट्रांसक्रिप्ट कॉपीयर पसंद आया?"
+  },
+  "ratingText": {
+    "message": "कृपया Chrome Web Store पर हमें रेटिंग दें!"
+  },
+  "ratingBtnYes": {
+    "message": "हाँ, रेटिंग दें"
+  },
+  "ratingBtnNo": {
+    "message": "बाद में"
+  },
+  "ratingBtnNever": {
+    "message": "फिर न दिखाएं"
+  },
+  "aiTokenTitle": {
+    "message": "चेतावनी: बहुत बड़ा ट्रांसक्रिप्ट"
+  },
+  "aiTokenMsg": {
+    "message": "पाठ 100,000 वर्णों से अधिक है।"
+  },
+  "cancelBtn": {
+    "message": "रद्द करें"
+  },
+  "sendAnywayBtn": {
+    "message": "फिर भी भेजें"
+  },
+  "feedbackBtn": {
+    "message": "प्रतिक्रिया / बग रिपोर्ट"
+  },
+  "collabBtn": {
+    "message": "सहयोग"
+  },
+  "batchExtracting": {
+    "message": "ट्रांसक्रिप्ट निकाले जा रहे हैं..."
+  },
+  "batchPauseBtn": {
+    "message": "रोकें"
+  },
+  "batchResumeBtn": {
+    "message": "जारी रखें"
+  },
+  "batchFinishBtn": {
+    "message": "समाप्त व निर्यात"
+  },
+  "batchExportAs": {
+    "message": "के रूप में निर्यात:"
+  },
+  "batchSingleMerged": {
+    "message": "एकल संयुक्त फ़ाइल"
+  },
+  "batchSeparateZip": {
+    "message": "अलग फ़ाइलें (ZIP)"
+  },
+  "batchFileType": {
+    "message": "फ़ाइल प्रकार:"
+  },
+  "batchStartExtract": {
+    "message": "निष्कर्षण शुरू करें"
+  },
+  "batchPlaylistGroup": {
+    "message": "प्लेलिस्ट:"
+  },
+  "batchOtherGroup": {
+    "message": "अन्य वीडियो"
+  },
+  "batchVideos": {
+    "message": "वीडियो"
+  },
+  "batchScanning": {
+    "message": "YouTube पेज स्कैन हो रहा है..."
+  },
+  "batchProgressProcessing": {
+    "message": "प्रोसेसिंग वीडियो"
+  },
+  "batchNavToYouTube": {
+    "message": "पहले YouTube वीडियो या प्लेलिस्ट खोलें।"
+  },
+  "copiedSuccess": {
+    "message": "$COUNT$ पंक्तियाँ क्लिपबोर्ड में कॉपी की गईं!",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "batchNoVideosFound": {
+    "message": "No videos found on this page. Try scrolling down to load more."
+  },
+  "batchScanFailed": {
+    "message": "Failed to scan page. Try refreshing YouTube."
+  },
+  "batchOverlayInjected": {
+    "message": "Overlay injected! Select videos on the YouTube page."
+  },
+  "idleHint": {
+    "message": "Navigate to any YouTube video and click the button below to copy its transcript."
+  },
+  "loadingText": {
+    "message": "Opening transcript & extracting…"
+  },
+  "formatSection": {
+    "message": "Format"
+  },
+  "promptPlaceholder": {
+    "message": "e.g. Summarize this transcript:"
+  },
+  "errors_not_youtube": {
+    "message": "Navigate to a YouTube video first."
+  },
+  "errors_no_active_tab": {
+    "message": "No active tab found. Click on a YouTube tab and try again."
+  },
+  "errors_tab_query_failed": {
+    "message": "Could not query browser tabs. Try closing and reopening the extension."
+  },
+  "errors_restricted_page": {
+    "message": "Cannot run on this page. Navigate to a youtube.com video."
+  },
+  "errors_no_button": {
+    "message": "Could not find \"Show transcript\" button. Try opening description manually."
+  },
+  "errors_no_transcript": {
+    "message": "No transcript segments found on this video."
+  },
+  "errors_empty_transcript": {
+    "message": "Transcript panel opened but contains no text."
+  },
+  "errors_panel_timeout": {
+    "message": "Clicked transcript button but panel didn't open in time."
+  },
+  "errors_injection_failed": {
+    "message": "Could not access the page. Try refreshing the YouTube tab."
+  },
+  "errors_script_error": {
+    "message": "An internal error occurred. Try refreshing YouTube."
+  },
+  "errors_attestation_required": {
+    "message": "YouTube requires verification for this video. Open the video directly in your active tab and try again."
+  },
+  "errors_video_unavailable": {
+    "message": "This video is private, removed, or unavailable."
+  },
+  "errors_age_restricted": {
+    "message": "This video is age-restricted. Sign in to YouTube in your browser to view its transcript."
+  },
+  "errors_no_captions_available": {
+    "message": "No captions or transcript exist for this video."
+  }
+}

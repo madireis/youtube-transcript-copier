@@ -1,0 +1,331 @@
+{
+  "extensionName": {
+    "message": "Kopírování přepisů YouTube - Transcript Copier",
+    "description": "Manifest string: extensionName"
+  },
+  "extensionDescription": {
+    "message": "Kopírujte a exportujte přepisy videí YouTube na 1 kliknutí. Časová razítka, odstavce a integrace s AI.",
+    "description": "Manifest string: extensionDescription"
+  },
+  "actionTitle": {
+    "message": "Kopírovat přepis YouTube",
+    "description": "Manifest string: actionTitle"
+  },
+  "commandCopyTranscript": {
+    "message": "Kopírovat přepis YouTube do schránky",
+    "description": "Manifest string: commandCopyTranscript"
+  },
+  "contextMenuCopyTranscript": {
+    "message": "Kopírovat přepis",
+    "description": "Manifest string: contextMenuCopyTranscript"
+  },
+  "appTitle": {
+    "message": "Kopírování přepisů"
+  },
+  "tabSingle": {
+    "message": "Jedno video"
+  },
+  "tabBatch": {
+    "message": "Dávkový režim"
+  },
+  "batchNoVideos": {
+    "message": "Nebyly nalezeny žádné videoklipy"
+  },
+  "batchScanBtn": {
+    "message": "Skenovat stránku"
+  },
+  "batchOverlayBtn": {
+    "message": "Překrytí stránky"
+  },
+  "batchSelectAll": {
+    "message": "Vybrat vše"
+  },
+  "batchSelected": {
+    "message": "vybráno"
+  },
+  "batchPlaceholder": {
+    "message": "Klikněte na „Skenovat stránku“ pro detekci videí."
+  },
+  "batchFormatOptions": {
+    "message": "Formát a možnosti"
+  },
+  "outputStyle": {
+    "message": "Styl výstupu"
+  },
+  "btnLines": {
+    "message": "Řádky"
+  },
+  "btnParagraph": {
+    "message": "Odstavec"
+  },
+  "btnBlocks": {
+    "message": "Bloky"
+  },
+  "toggleTimestamps": {
+    "message": "Zahrnout časová razítka"
+  },
+  "toggleTitle": {
+    "message": "Zahrnout název videa"
+  },
+  "toggleUrl": {
+    "message": "Zahrnout URL videa"
+  },
+  "toggleDuplicates": {
+    "message": "Vyčistit duplicity"
+  },
+  "toggleAutoCopy": {
+    "message": "Automaticky kopírovat při načtení"
+  },
+  "togglePrompt": {
+    "message": "Přidat prompt"
+  },
+  "promptNoneCustom": {
+    "message": "Žádný / Vlastní..."
+  },
+  "presetSummarize": {
+    "message": "Shrnutí (5 klíčových bodů)"
+  },
+  "presetTakeaways": {
+    "message": "Hlavní poznatky"
+  },
+  "presetOutline": {
+    "message": "Osnova kapitol"
+  },
+  "presetTldr": {
+    "message": "Krátké shrnutí (TL;DR)"
+  },
+  "saveBtn": {
+    "message": "Uložit"
+  },
+  "deleteBtn": {
+    "message": "Smazat"
+  },
+  "aiBridgeLabel": {
+    "message": "Odeslat prompt a přepis do AI:"
+  },
+  "previewSection": {
+    "message": "Pracovní plocha přepisu"
+  },
+  "savedBtn": {
+    "message": "Uložené"
+  },
+  "followBtn": {
+    "message": "Sledovat"
+  },
+  "notesBtn": {
+    "message": "Poznámky"
+  },
+  "showAll": {
+    "message": "Zobrazit vše"
+  },
+  "searchPlaceholder": {
+    "message": "Hledat v přepisu... [/]"
+  },
+  "copyTime": {
+    "message": "Kopírovat (+čas)"
+  },
+  "copyText": {
+    "message": "Pouze text"
+  },
+  "markBtn": {
+    "message": "Označit"
+  },
+  "aiBtn": {
+    "message": "AI"
+  },
+  "summarizeSelected": {
+    "message": "Shrnout výběr"
+  },
+  "explainSelected": {
+    "message": "Vysvětlit výběr"
+  },
+  "actionItems": {
+    "message": "Úkoly"
+  },
+  "translateSelected": {
+    "message": "Přeložit"
+  },
+  "clearBtn": {
+    "message": "Vymazat"
+  },
+  "previewPlaceholder": {
+    "message": "Klikněte na Kopírovat přepis pro náhled"
+  },
+  "copyBtnText": {
+    "message": "Kopírovat přepis videa"
+  },
+  "copyBtn": {
+    "message": "Kopírovat"
+  },
+  "moments": {
+    "message": "označení"
+  },
+  "synthesize": {
+    "message": "Syntéza a shrnutí:"
+  },
+  "savedModalTitle": {
+    "message": "Uložené přepisy"
+  },
+  "savedSearchPlaceholder": {
+    "message": "Hledat v uložených..."
+  },
+  "savedEmptyPlaceholder": {
+    "message": "Zatím žádné uložené přepisy."
+  },
+  "clipNotesTitle": {
+    "message": "Poznámky k videu"
+  },
+  "clipNotesPlaceholder": {
+    "message": "Žádné zvýrazněné momenty."
+  },
+  "ratingTitle": {
+    "message": "Líbí se vám YouTube Transcript Copier?"
+  },
+  "ratingText": {
+    "message": "Pokud vám rozšíření šetří čas, ohodnoťte nás v Internetovém obchodě Chrome!"
+  },
+  "ratingBtnYes": {
+    "message": "Ano, ohodnotit"
+  },
+  "ratingBtnNo": {
+    "message": "Později"
+  },
+  "ratingBtnNever": {
+    "message": "Už nezobrazovat"
+  },
+  "aiTokenTitle": {
+    "message": "Varování: Velmi dlouhý přepis"
+  },
+  "aiTokenMsg": {
+    "message": "Text přesahuje 100 000 znaků."
+  },
+  "cancelBtn": {
+    "message": "Zrušit"
+  },
+  "sendAnywayBtn": {
+    "message": "Přesto odeslat"
+  },
+  "feedbackBtn": {
+    "message": "Zpětná vazba / Hlášení chyb"
+  },
+  "collabBtn": {
+    "message": "Spolupráce"
+  },
+  "batchExtracting": {
+    "message": "Extrahování přepisů..."
+  },
+  "batchPauseBtn": {
+    "message": "Pozastavit"
+  },
+  "batchResumeBtn": {
+    "message": "Pokračovat"
+  },
+  "batchFinishBtn": {
+    "message": "Dokončit a exportovat"
+  },
+  "batchExportAs": {
+    "message": "Exportovat jako:"
+  },
+  "batchSingleMerged": {
+    "message": "Jeden sloučený soubor"
+  },
+  "batchSeparateZip": {
+    "message": "Samostatné soubory (ZIP)"
+  },
+  "batchFileType": {
+    "message": "Typ souboru:"
+  },
+  "batchStartExtract": {
+    "message": "Spustit extrakci"
+  },
+  "batchPlaylistGroup": {
+    "message": "Playlist:"
+  },
+  "batchOtherGroup": {
+    "message": "Další videa"
+  },
+  "batchVideos": {
+    "message": "videí"
+  },
+  "batchScanning": {
+    "message": "Skenování stránky YouTube..."
+  },
+  "batchProgressProcessing": {
+    "message": "Zpracování videa"
+  },
+  "batchNavToYouTube": {
+    "message": "Nejprve otevřete video nebo playlist na YouTube."
+  },
+  "copiedSuccess": {
+    "message": "$COUNT$ řádků zkopírováno do schránky!",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "batchNoVideosFound": {
+    "message": "No videos found on this page. Try scrolling down to load more."
+  },
+  "batchScanFailed": {
+    "message": "Failed to scan page. Try refreshing YouTube."
+  },
+  "batchOverlayInjected": {
+    "message": "Overlay injected! Select videos on the YouTube page."
+  },
+  "idleHint": {
+    "message": "Navigate to any YouTube video and click the button below to copy its transcript."
+  },
+  "loadingText": {
+    "message": "Opening transcript & extracting…"
+  },
+  "formatSection": {
+    "message": "Format"
+  },
+  "promptPlaceholder": {
+    "message": "e.g. Summarize this transcript:"
+  },
+  "errors_not_youtube": {
+    "message": "Navigate to a YouTube video first."
+  },
+  "errors_no_active_tab": {
+    "message": "No active tab found. Click on a YouTube tab and try again."
+  },
+  "errors_tab_query_failed": {
+    "message": "Could not query browser tabs. Try closing and reopening the extension."
+  },
+  "errors_restricted_page": {
+    "message": "Cannot run on this page. Navigate to a youtube.com video."
+  },
+  "errors_no_button": {
+    "message": "Could not find \"Show transcript\" button. Try opening description manually."
+  },
+  "errors_no_transcript": {
+    "message": "No transcript segments found on this video."
+  },
+  "errors_empty_transcript": {
+    "message": "Transcript panel opened but contains no text."
+  },
+  "errors_panel_timeout": {
+    "message": "Clicked transcript button but panel didn't open in time."
+  },
+  "errors_injection_failed": {
+    "message": "Could not access the page. Try refreshing the YouTube tab."
+  },
+  "errors_script_error": {
+    "message": "An internal error occurred. Try refreshing YouTube."
+  },
+  "errors_attestation_required": {
+    "message": "YouTube requires verification for this video. Open the video directly in your active tab and try again."
+  },
+  "errors_video_unavailable": {
+    "message": "This video is private, removed, or unavailable."
+  },
+  "errors_age_restricted": {
+    "message": "This video is age-restricted. Sign in to YouTube in your browser to view its transcript."
+  },
+  "errors_no_captions_available": {
+    "message": "No captions or transcript exist for this video."
+  }
+}

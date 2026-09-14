@@ -1,0 +1,331 @@
+{
+  "extensionName": {
+    "message": "מעתיק תמלול יוטיוב - YouTube Transcript Copier",
+    "description": "Manifest string: extensionName"
+  },
+  "extensionDescription": {
+    "message": "העתקה וייצוא של תמלולי וידאו מיוטיוב בלחיצה אחת. תמיכה בחותמות זמן, מצב פסקאות וחיבור לבינה מלאכותית.",
+    "description": "Manifest string: extensionDescription"
+  },
+  "actionTitle": {
+    "message": "העתק תמלול יוטיוב",
+    "description": "Manifest string: actionTitle"
+  },
+  "commandCopyTranscript": {
+    "message": "העתק תמלול יוטיוב ללוח",
+    "description": "Manifest string: commandCopyTranscript"
+  },
+  "contextMenuCopyTranscript": {
+    "message": "העתק תמלול",
+    "description": "Manifest string: contextMenuCopyTranscript"
+  },
+  "appTitle": {
+    "message": "מעתיק תמלול"
+  },
+  "tabSingle": {
+    "message": "סרטון בודד"
+  },
+  "tabBatch": {
+    "message": "מצב אצווה"
+  },
+  "batchNoVideos": {
+    "message": "לא זוהו סרטונים"
+  },
+  "batchScanBtn": {
+    "message": "סרוק דף"
+  },
+  "batchOverlayBtn": {
+    "message": "שכבת דף"
+  },
+  "batchSelectAll": {
+    "message": "בחר הכל"
+  },
+  "batchSelected": {
+    "message": "נבחרו"
+  },
+  "batchPlaceholder": {
+    "message": "לחץ על \"סרוק דף\" כדי לזהות סרטונים בדף יוטיוב זה."
+  },
+  "batchFormatOptions": {
+    "message": "פורמט ואפשרויות"
+  },
+  "outputStyle": {
+    "message": "סגנון פלט"
+  },
+  "btnLines": {
+    "message": "שורות"
+  },
+  "btnParagraph": {
+    "message": "פסקה"
+  },
+  "btnBlocks": {
+    "message": "בלוקים"
+  },
+  "toggleTimestamps": {
+    "message": "כלול חותמות זמן"
+  },
+  "toggleTitle": {
+    "message": "כלול כותרת סרטון"
+  },
+  "toggleUrl": {
+    "message": "כלול כתובת סרטון"
+  },
+  "toggleDuplicates": {
+    "message": "נקה כפילויות"
+  },
+  "toggleAutoCopy": {
+    "message": "העתקה אוטומטית בטעינת סרטון"
+  },
+  "togglePrompt": {
+    "message": "הוסף פרומפט"
+  },
+  "promptNoneCustom": {
+    "message": "ללא / מותאם אישית..."
+  },
+  "presetSummarize": {
+    "message": "סכם (5 נקודות עיקריות)"
+  },
+  "presetTakeaways": {
+    "message": "תובנות מרכזיות"
+  },
+  "presetOutline": {
+    "message": "מתווה פרקים"
+  },
+  "presetTldr": {
+    "message": "סיכום קצר (TL;DR)"
+  },
+  "saveBtn": {
+    "message": "שמור"
+  },
+  "deleteBtn": {
+    "message": "מחק"
+  },
+  "aiBridgeLabel": {
+    "message": "שלח פרומפט ותמלול לבינה מלאכותית:"
+  },
+  "previewSection": {
+    "message": "סביבת עבודה של תמלול"
+  },
+  "savedBtn": {
+    "message": "שמורים"
+  },
+  "followBtn": {
+    "message": "עקוב"
+  },
+  "notesBtn": {
+    "message": "הערות"
+  },
+  "showAll": {
+    "message": "הצג הכל"
+  },
+  "searchPlaceholder": {
+    "message": "חיפוש בתמלול... [/]"
+  },
+  "copyTime": {
+    "message": "העתק (+זמן)"
+  },
+  "copyText": {
+    "message": "טקסט בלבד"
+  },
+  "markBtn": {
+    "message": "סמן"
+  },
+  "aiBtn": {
+    "message": "AI"
+  },
+  "summarizeSelected": {
+    "message": "סכם בחירה"
+  },
+  "explainSelected": {
+    "message": "הסבר בחירה"
+  },
+  "actionItems": {
+    "message": "משימות לביצוע"
+  },
+  "translateSelected": {
+    "message": "תרגם"
+  },
+  "clearBtn": {
+    "message": "נקה"
+  },
+  "previewPlaceholder": {
+    "message": "לחץ על העתק תמלול לתצוגה מקדימה"
+  },
+  "copyBtnText": {
+    "message": "העתק תמלול סרטון"
+  },
+  "copyBtn": {
+    "message": "העתק"
+  },
+  "moments": {
+    "message": "סימונים"
+  },
+  "synthesize": {
+    "message": "איחוד וסיכום:"
+  },
+  "savedModalTitle": {
+    "message": "סביבות עבודה שמורות"
+  },
+  "savedSearchPlaceholder": {
+    "message": "חיפוש בשמורים..."
+  },
+  "savedEmptyPlaceholder": {
+    "message": "אין תמלולים שמורים עדיין."
+  },
+  "clipNotesTitle": {
+    "message": "הערות קליפ"
+  },
+  "clipNotesPlaceholder": {
+    "message": "אין הדגשות עדיין."
+  },
+  "ratingTitle": {
+    "message": "נהנה ממעתיק התמלול?"
+  },
+  "ratingText": {
+    "message": "אם התוסף חוסך לך זמן, נשמח לדירוג בחנות האינטרנט של Chrome!"
+  },
+  "ratingBtnYes": {
+    "message": "כן, דרג עכשיו"
+  },
+  "ratingBtnNo": {
+    "message": "לא כעת"
+  },
+  "ratingBtnNever": {
+    "message": "אל תציג שוב"
+  },
+  "aiTokenTitle": {
+    "message": "אזהרה: תמלול ארוך במיוחד"
+  },
+  "aiTokenMsg": {
+    "message": "הטקסט מכיל מעל 100,000 תווים."
+  },
+  "cancelBtn": {
+    "message": "ביטול"
+  },
+  "sendAnywayBtn": {
+    "message": "שלח בכל זאת"
+  },
+  "feedbackBtn": {
+    "message": "משוב / דיווח על באג"
+  },
+  "collabBtn": {
+    "message": "שיתוף פעולה"
+  },
+  "batchExtracting": {
+    "message": "מחלץ תמלולים..."
+  },
+  "batchPauseBtn": {
+    "message": "השהה"
+  },
+  "batchResumeBtn": {
+    "message": "המשך"
+  },
+  "batchFinishBtn": {
+    "message": "סיים וייצא"
+  },
+  "batchExportAs": {
+    "message": "ייצא בתור:"
+  },
+  "batchSingleMerged": {
+    "message": "קובץ מאוחד בודד"
+  },
+  "batchSeparateZip": {
+    "message": "קבצים נפרדים (ZIP)"
+  },
+  "batchFileType": {
+    "message": "סוג קובץ:"
+  },
+  "batchStartExtract": {
+    "message": "התחל חילוץ"
+  },
+  "batchPlaylistGroup": {
+    "message": "פלייליסט:"
+  },
+  "batchOtherGroup": {
+    "message": "סרטונים נוספים"
+  },
+  "batchVideos": {
+    "message": "סרטונים"
+  },
+  "batchScanning": {
+    "message": "סורק דף יוטיוב..."
+  },
+  "batchProgressProcessing": {
+    "message": "מעבד סרטון"
+  },
+  "batchNavToYouTube": {
+    "message": "אנא פתח סרטון או פלייליסט ביוטיוב תחילה."
+  },
+  "copiedSuccess": {
+    "message": "$COUNT$ שורות הועתקו ללוח בהצלחה!",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "batchNoVideosFound": {
+    "message": "No videos found on this page. Try scrolling down to load more."
+  },
+  "batchScanFailed": {
+    "message": "Failed to scan page. Try refreshing YouTube."
+  },
+  "batchOverlayInjected": {
+    "message": "Overlay injected! Select videos on the YouTube page."
+  },
+  "idleHint": {
+    "message": "Navigate to any YouTube video and click the button below to copy its transcript."
+  },
+  "loadingText": {
+    "message": "Opening transcript & extracting…"
+  },
+  "formatSection": {
+    "message": "Format"
+  },
+  "promptPlaceholder": {
+    "message": "e.g. Summarize this transcript:"
+  },
+  "errors_not_youtube": {
+    "message": "Navigate to a YouTube video first."
+  },
+  "errors_no_active_tab": {
+    "message": "No active tab found. Click on a YouTube tab and try again."
+  },
+  "errors_tab_query_failed": {
+    "message": "Could not query browser tabs. Try closing and reopening the extension."
+  },
+  "errors_restricted_page": {
+    "message": "Cannot run on this page. Navigate to a youtube.com video."
+  },
+  "errors_no_button": {
+    "message": "Could not find \"Show transcript\" button. Try opening description manually."
+  },
+  "errors_no_transcript": {
+    "message": "No transcript segments found on this video."
+  },
+  "errors_empty_transcript": {
+    "message": "Transcript panel opened but contains no text."
+  },
+  "errors_panel_timeout": {
+    "message": "Clicked transcript button but panel didn't open in time."
+  },
+  "errors_injection_failed": {
+    "message": "Could not access the page. Try refreshing the YouTube tab."
+  },
+  "errors_script_error": {
+    "message": "An internal error occurred. Try refreshing YouTube."
+  },
+  "errors_attestation_required": {
+    "message": "YouTube requires verification for this video. Open the video directly in your active tab and try again."
+  },
+  "errors_video_unavailable": {
+    "message": "This video is private, removed, or unavailable."
+  },
+  "errors_age_restricted": {
+    "message": "This video is age-restricted. Sign in to YouTube in your browser to view its transcript."
+  },
+  "errors_no_captions_available": {
+    "message": "No captions or transcript exist for this video."
+  }
+}

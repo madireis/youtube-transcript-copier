@@ -11,7 +11,7 @@
 <p align="center">
   <a href="https://chromewebstore.google.com/detail/youtube-transcript-copier/khbenieolkkkjjokcfklaokfpdblkgbn"><img src="https://img.shields.io/badge/Chrome%20Web%20Store-v2.7.0-brightgreen?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Chrome Web Store" /></a>
   <img src="https://img.shields.io/badge/Manifest-V3-blue?style=for-the-badge" alt="Manifest V3" />
-  <img src="https://img.shields.io/badge/Languages-7%20Supported-purple?style=for-the-badge" alt="7 Languages" />
+  <img src="https://img.shields.io/badge/Languages-30%20Supported-purple?style=for-the-badge" alt="30 Languages" />
   <img src="https://img.shields.io/badge/Privacy-100%25%20Local-success?style=for-the-badge" alt="100% Local" />
 </p>
 
@@ -86,19 +86,15 @@ Export clean transcriptions formatted for your exact workflow:
 
 ---
 
-### 6. 🌍 7 Languages with Full RTL Support
+### 6. 🌍 30 Languages with Full RTL Support
 <p align="center">
-  <img src="promo/multilingual_feature_graphic_1280x800.jpg" alt="7 Languages & RTL" width="100%" />
+  <img src="promo/multilingual_feature_graphic_1280x800.jpg" alt="30 Languages & RTL" width="100%" />
 </p>
 
-Fully translated interface with instant switching across **7 languages**:
-- 🇺🇸 English
-- 🇪🇸 Spanish (Español)
-- 🇧🇷 Portuguese (Português)
-- 🇹🇷 Turkish (Türkçe)
-- 🇫🇷 French (Français)
-- 🇩🇪 German (Deutsch)
-- 🇸🇦 Arabic (العربية) with native **Right-to-Left (RTL)** layout.
+Fully translated interface and store listings with instant runtime switching across **30 languages**:
+- **Americas & Europe**: English (`en`), Spanish (`es`), Portuguese (`pt_BR`), French (`fr`), German (`de`), Italian (`it`), Dutch (`nl`), Polish (`pl`), Ukrainian (`uk`), Russian (`ru`), Swedish (`sv`), Danish (`da`), Finnish (`fi`), Norwegian (`no`), Czech (`cs`), Romanian (`ro`), Hungarian (`hu`), Greek (`el`)
+- **Asia & Pacific**: Japanese (`ja`), Korean (`ko`), Simplified Chinese (`zh_CN`), Traditional Chinese (`zh_TW`), Hindi (`hi`), Vietnamese (`vi`), Indonesian (`id`), Thai (`th`), Turkish (`tr`)
+- **Middle East (Native RTL)**: Arabic (`ar`), Hebrew (`he`), Persian / Farsi (`fa`) with complete **Right-to-Left (RTL)** layout mirroring.
 
 ---
 

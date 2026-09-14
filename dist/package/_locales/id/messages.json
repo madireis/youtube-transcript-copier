@@ -1,0 +1,331 @@
+{
+  "extensionName": {
+    "message": "Penyalin Transkrip YouTube - Transcript Copier",
+    "description": "Manifest string: extensionName"
+  },
+  "extensionDescription": {
+    "message": "Salin dan ekspor transkrip YouTube dalam 1 klik. Dilengkapi timestamp, mode paragraf, dan integrasi AI.",
+    "description": "Manifest string: extensionDescription"
+  },
+  "actionTitle": {
+    "message": "Salin Transkrip YouTube",
+    "description": "Manifest string: actionTitle"
+  },
+  "commandCopyTranscript": {
+    "message": "Salin transkrip YouTube ke papan klip",
+    "description": "Manifest string: commandCopyTranscript"
+  },
+  "contextMenuCopyTranscript": {
+    "message": "Salin Transkrip",
+    "description": "Manifest string: contextMenuCopyTranscript"
+  },
+  "appTitle": {
+    "message": "Penyalin Transkrip"
+  },
+  "tabSingle": {
+    "message": "Video Tunggal"
+  },
+  "tabBatch": {
+    "message": "Mode Batch"
+  },
+  "batchNoVideos": {
+    "message": "Tidak ada video terdeteksi"
+  },
+  "batchScanBtn": {
+    "message": "Pindai Halaman"
+  },
+  "batchOverlayBtn": {
+    "message": "Overlay Halaman"
+  },
+  "batchSelectAll": {
+    "message": "Pilih Semua"
+  },
+  "batchSelected": {
+    "message": "dipilih"
+  },
+  "batchPlaceholder": {
+    "message": "Klik \"Pindai Halaman\" untuk mendeteksi video di halaman YouTube ini."
+  },
+  "batchFormatOptions": {
+    "message": "Format & Opsi"
+  },
+  "outputStyle": {
+    "message": "Gaya keluaran"
+  },
+  "btnLines": {
+    "message": "Baris"
+  },
+  "btnParagraph": {
+    "message": "Paragraf"
+  },
+  "btnBlocks": {
+    "message": "Blok"
+  },
+  "toggleTimestamps": {
+    "message": "Sertakan timestamp"
+  },
+  "toggleTitle": {
+    "message": "Sertakan judul video"
+  },
+  "toggleUrl": {
+    "message": "Sertakan URL video"
+  },
+  "toggleDuplicates": {
+    "message": "Hapus duplikat"
+  },
+  "toggleAutoCopy": {
+    "message": "Salin otomatis saat video dimuat"
+  },
+  "togglePrompt": {
+    "message": "Tambahkan prompt"
+  },
+  "promptNoneCustom": {
+    "message": "Tidak ada / Kustom..."
+  },
+  "presetSummarize": {
+    "message": "Ringkas (5 poin penting)"
+  },
+  "presetTakeaways": {
+    "message": "Poin-poin utama"
+  },
+  "presetOutline": {
+    "message": "Garis besar bab"
+  },
+  "presetTldr": {
+    "message": "Ringkasan singkat (TL;DR)"
+  },
+  "saveBtn": {
+    "message": "Simpan"
+  },
+  "deleteBtn": {
+    "message": "Hapus"
+  },
+  "aiBridgeLabel": {
+    "message": "Kirim prompt & transkrip ke AI:"
+  },
+  "previewSection": {
+    "message": "Ruang Kerja Transkrip"
+  },
+  "savedBtn": {
+    "message": "Tersimpan"
+  },
+  "followBtn": {
+    "message": "Ikuti"
+  },
+  "notesBtn": {
+    "message": "Catatan"
+  },
+  "showAll": {
+    "message": "Tampilkan Semua"
+  },
+  "searchPlaceholder": {
+    "message": "Cari dalam transkrip... [/]"
+  },
+  "copyTime": {
+    "message": "Salin (+Waktu)"
+  },
+  "copyText": {
+    "message": "Salin Teks Saja"
+  },
+  "markBtn": {
+    "message": "Tandai"
+  },
+  "aiBtn": {
+    "message": "AI"
+  },
+  "summarizeSelected": {
+    "message": "Ringkas Pilihan"
+  },
+  "explainSelected": {
+    "message": "Jelaskan Pilihan"
+  },
+  "actionItems": {
+    "message": "Daftar Tindakan"
+  },
+  "translateSelected": {
+    "message": "Terjemahkan"
+  },
+  "clearBtn": {
+    "message": "Bersihkan"
+  },
+  "previewPlaceholder": {
+    "message": "Klik Salin Transkrip untuk melihat pratinjau di sini"
+  },
+  "copyBtnText": {
+    "message": "Salin Transkrip Video"
+  },
+  "copyBtn": {
+    "message": "Salin"
+  },
+  "moments": {
+    "message": "momen"
+  },
+  "synthesize": {
+    "message": "Sintesis & ringkas:"
+  },
+  "savedModalTitle": {
+    "message": "Ruang Kerja Tersimpan"
+  },
+  "savedSearchPlaceholder": {
+    "message": "Cari transkrip tersimpan..."
+  },
+  "savedEmptyPlaceholder": {
+    "message": "Belum ada transkrip tersimpan."
+  },
+  "clipNotesTitle": {
+    "message": "Catatan Klip"
+  },
+  "clipNotesPlaceholder": {
+    "message": "Belum ada sorotan yang ditandai."
+  },
+  "ratingTitle": {
+    "message": "Suka dengan YouTube Transcript Copier?"
+  },
+  "ratingText": {
+    "message": "Jika ekstensi ini menghemat waktu Anda, beri kami ulasan di Chrome Web Store!"
+  },
+  "ratingBtnYes": {
+    "message": "Ya, beri ulasan"
+  },
+  "ratingBtnNo": {
+    "message": "Nanti saja"
+  },
+  "ratingBtnNever": {
+    "message": "Jangan tampilkan lagi"
+  },
+  "aiTokenTitle": {
+    "message": "Peringatan: Transkrip Terlalu Panjang"
+  },
+  "aiTokenMsg": {
+    "message": "Teks melebihi 100.000 karakter dan mungkin terpotong di AI."
+  },
+  "cancelBtn": {
+    "message": "Batal"
+  },
+  "sendAnywayBtn": {
+    "message": "Tetap Kirim"
+  },
+  "feedbackBtn": {
+    "message": "Umpan Balik / Lapor Bug"
+  },
+  "collabBtn": {
+    "message": "Kolaborasi"
+  },
+  "batchExtracting": {
+    "message": "Mengekstrak transkrip..."
+  },
+  "batchPauseBtn": {
+    "message": "Jeda"
+  },
+  "batchResumeBtn": {
+    "message": "Lanjutkan"
+  },
+  "batchFinishBtn": {
+    "message": "Selesai & Ekspor"
+  },
+  "batchExportAs": {
+    "message": "Ekspor sebagai:"
+  },
+  "batchSingleMerged": {
+    "message": "Satu File Gabungan"
+  },
+  "batchSeparateZip": {
+    "message": "File Terpisah (ZIP)"
+  },
+  "batchFileType": {
+    "message": "Tipe file:"
+  },
+  "batchStartExtract": {
+    "message": "Mulai Ekstraksi"
+  },
+  "batchPlaylistGroup": {
+    "message": "Daftar putar:"
+  },
+  "batchOtherGroup": {
+    "message": "Video lainnya"
+  },
+  "batchVideos": {
+    "message": "video"
+  },
+  "batchScanning": {
+    "message": "Memindai halaman YouTube..."
+  },
+  "batchProgressProcessing": {
+    "message": "Memproses video"
+  },
+  "batchNavToYouTube": {
+    "message": "Buka video atau playlist YouTube terlebih dahulu."
+  },
+  "copiedSuccess": {
+    "message": "$COUNT$ baris disalin ke papan klip!",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "batchNoVideosFound": {
+    "message": "No videos found on this page. Try scrolling down to load more."
+  },
+  "batchScanFailed": {
+    "message": "Failed to scan page. Try refreshing YouTube."
+  },
+  "batchOverlayInjected": {
+    "message": "Overlay injected! Select videos on the YouTube page."
+  },
+  "idleHint": {
+    "message": "Navigate to any YouTube video and click the button below to copy its transcript."
+  },
+  "loadingText": {
+    "message": "Opening transcript & extracting…"
+  },
+  "formatSection": {
+    "message": "Format"
+  },
+  "promptPlaceholder": {
+    "message": "e.g. Summarize this transcript:"
+  },
+  "errors_not_youtube": {
+    "message": "Navigate to a YouTube video first."
+  },
+  "errors_no_active_tab": {
+    "message": "No active tab found. Click on a YouTube tab and try again."
+  },
+  "errors_tab_query_failed": {
+    "message": "Could not query browser tabs. Try closing and reopening the extension."
+  },
+  "errors_restricted_page": {
+    "message": "Cannot run on this page. Navigate to a youtube.com video."
+  },
+  "errors_no_button": {
+    "message": "Could not find \"Show transcript\" button. Try opening description manually."
+  },
+  "errors_no_transcript": {
+    "message": "No transcript segments found on this video."
+  },
+  "errors_empty_transcript": {
+    "message": "Transcript panel opened but contains no text."
+  },
+  "errors_panel_timeout": {
+    "message": "Clicked transcript button but panel didn't open in time."
+  },
+  "errors_injection_failed": {
+    "message": "Could not access the page. Try refreshing the YouTube tab."
+  },
+  "errors_script_error": {
+    "message": "An internal error occurred. Try refreshing YouTube."
+  },
+  "errors_attestation_required": {
+    "message": "YouTube requires verification for this video. Open the video directly in your active tab and try again."
+  },
+  "errors_video_unavailable": {
+    "message": "This video is private, removed, or unavailable."
+  },
+  "errors_age_restricted": {
+    "message": "This video is age-restricted. Sign in to YouTube in your browser to view its transcript."
+  },
+  "errors_no_captions_available": {
+    "message": "No captions or transcript exist for this video."
+  }
+}

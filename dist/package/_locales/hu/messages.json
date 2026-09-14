@@ -1,0 +1,331 @@
+{
+  "extensionName": {
+    "message": "YouTube átirat másoló - Transcript Copier",
+    "description": "Manifest string: extensionName"
+  },
+  "extensionDescription": {
+    "message": "YouTube videók átiratainak másolása és exportálása 1 kattintással. Időbélyegek, bekezdés mód és AI integráció.",
+    "description": "Manifest string: extensionDescription"
+  },
+  "actionTitle": {
+    "message": "YouTube átirat másolása",
+    "description": "Manifest string: actionTitle"
+  },
+  "commandCopyTranscript": {
+    "message": "YouTube átirat másolása a vágólapra",
+    "description": "Manifest string: commandCopyTranscript"
+  },
+  "contextMenuCopyTranscript": {
+    "message": "Átirat másolása",
+    "description": "Manifest string: contextMenuCopyTranscript"
+  },
+  "appTitle": {
+    "message": "Átirat másoló"
+  },
+  "tabSingle": {
+    "message": "Egyetlen videó"
+  },
+  "tabBatch": {
+    "message": "Kötegelt mód"
+  },
+  "batchNoVideos": {
+    "message": "Nem található videó"
+  },
+  "batchScanBtn": {
+    "message": "Oldal beolvasása"
+  },
+  "batchOverlayBtn": {
+    "message": "Oldalátfedés"
+  },
+  "batchSelectAll": {
+    "message": "Összes kijelölése"
+  },
+  "batchSelected": {
+    "message": "kijelölve"
+  },
+  "batchPlaceholder": {
+    "message": "Kattintson az \"Oldal beolvasása\" gombra a videók észleléséhez."
+  },
+  "batchFormatOptions": {
+    "message": "Formátum és beállítások"
+  },
+  "outputStyle": {
+    "message": "Kimeneti stílus"
+  },
+  "btnLines": {
+    "message": "Sorok"
+  },
+  "btnParagraph": {
+    "message": "Bekezdés"
+  },
+  "btnBlocks": {
+    "message": "Blokkok"
+  },
+  "toggleTimestamps": {
+    "message": "Időbélyegekkel"
+  },
+  "toggleTitle": {
+    "message": "Videó címe"
+  },
+  "toggleUrl": {
+    "message": "Videó linkje"
+  },
+  "toggleDuplicates": {
+    "message": "Ismétlődések tisztítása"
+  },
+  "toggleAutoCopy": {
+    "message": "Automatikus másolás betöltéskor"
+  },
+  "togglePrompt": {
+    "message": "Prompt hozzáadása"
+  },
+  "promptNoneCustom": {
+    "message": "Nincs / Egyéni..."
+  },
+  "presetSummarize": {
+    "message": "Összegzés (5 fő pont)"
+  },
+  "presetTakeaways": {
+    "message": "Legfontosabb tanulságok"
+  },
+  "presetOutline": {
+    "message": "Fejezet vázlat"
+  },
+  "presetTldr": {
+    "message": "Rövid TL;DR összefoglaló"
+  },
+  "saveBtn": {
+    "message": "Mentés"
+  },
+  "deleteBtn": {
+    "message": "Törlés"
+  },
+  "aiBridgeLabel": {
+    "message": "Prompt és átirat küldése az AI-nak:"
+  },
+  "previewSection": {
+    "message": "Átirat munkaterület"
+  },
+  "savedBtn": {
+    "message": "Mentettek"
+  },
+  "followBtn": {
+    "message": "Követés"
+  },
+  "notesBtn": {
+    "message": "Jegyzetek"
+  },
+  "showAll": {
+    "message": "Összes mutatása"
+  },
+  "searchPlaceholder": {
+    "message": "Keresés az átiratban... [/]"
+  },
+  "copyTime": {
+    "message": "Másolás (+idő)"
+  },
+  "copyText": {
+    "message": "Csak szöveg"
+  },
+  "markBtn": {
+    "message": "Kijelölés"
+  },
+  "aiBtn": {
+    "message": "AI"
+  },
+  "summarizeSelected": {
+    "message": "Kijelölés összegzése"
+  },
+  "explainSelected": {
+    "message": "Kijelölés magyarázata"
+  },
+  "actionItems": {
+    "message": "Teendők"
+  },
+  "translateSelected": {
+    "message": "Fordítás"
+  },
+  "clearBtn": {
+    "message": "Törlés"
+  },
+  "previewPlaceholder": {
+    "message": "Kattintson az Átirat másolása gombra az előnézethez"
+  },
+  "copyBtnText": {
+    "message": "Videó átirat másolása"
+  },
+  "copyBtn": {
+    "message": "Másolás"
+  },
+  "moments": {
+    "message": "kiemelés"
+  },
+  "synthesize": {
+    "message": "Szintetizálás & összegzés:"
+  },
+  "savedModalTitle": {
+    "message": "Mentett munkaterületek"
+  },
+  "savedSearchPlaceholder": {
+    "message": "Keresés a mentettekben..."
+  },
+  "savedEmptyPlaceholder": {
+    "message": "Nincsenek mentett átiratok."
+  },
+  "clipNotesTitle": {
+    "message": "Klip jegyzetek"
+  },
+  "clipNotesPlaceholder": {
+    "message": "Nincsenek kiemelt pillanatok."
+  },
+  "ratingTitle": {
+    "message": "Tetszik a YouTube Transcript Copier?"
+  },
+  "ratingText": {
+    "message": "Ha a bővítmény időt takarít meg Önnek, kérjük, értékeljen minket a Chrome Web Store-ban!"
+  },
+  "ratingBtnYes": {
+    "message": "Igen, értékelem"
+  },
+  "ratingBtnNo": {
+    "message": "Később"
+  },
+  "ratingBtnNever": {
+    "message": "Ne mutassa többet"
+  },
+  "aiTokenTitle": {
+    "message": "Figyelem: Túl hosszú átirat"
+  },
+  "aiTokenMsg": {
+    "message": "A szöveg meghaladja a 100 000 karaktert."
+  },
+  "cancelBtn": {
+    "message": "Mégse"
+  },
+  "sendAnywayBtn": {
+    "message": "Küldés mindenképp"
+  },
+  "feedbackBtn": {
+    "message": "Visszajelzés / Hibajelentés"
+  },
+  "collabBtn": {
+    "message": "Együttműködés"
+  },
+  "batchExtracting": {
+    "message": "Átiratok kinyerése..."
+  },
+  "batchPauseBtn": {
+    "message": "Szünet"
+  },
+  "batchResumeBtn": {
+    "message": "Folytatás"
+  },
+  "batchFinishBtn": {
+    "message": "Befejezés és exportálás"
+  },
+  "batchExportAs": {
+    "message": "Exportálás mint:"
+  },
+  "batchSingleMerged": {
+    "message": "Egyetlen egyesített fájl"
+  },
+  "batchSeparateZip": {
+    "message": "Különálló fájlok (ZIP)"
+  },
+  "batchFileType": {
+    "message": "Fájltípus:"
+  },
+  "batchStartExtract": {
+    "message": "Kinyerés indítása"
+  },
+  "batchPlaylistGroup": {
+    "message": "Lejátszási lista:"
+  },
+  "batchOtherGroup": {
+    "message": "Egyéb videók"
+  },
+  "batchVideos": {
+    "message": "videó"
+  },
+  "batchScanning": {
+    "message": "YouTube oldal beolvasása..."
+  },
+  "batchProgressProcessing": {
+    "message": "Videó feldolgozása"
+  },
+  "batchNavToYouTube": {
+    "message": "Először nyisson meg egy YouTube videót vagy lejátszási listát."
+  },
+  "copiedSuccess": {
+    "message": "$COUNT$ sor átmásolva a vágólapra!",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "batchNoVideosFound": {
+    "message": "No videos found on this page. Try scrolling down to load more."
+  },
+  "batchScanFailed": {
+    "message": "Failed to scan page. Try refreshing YouTube."
+  },
+  "batchOverlayInjected": {
+    "message": "Overlay injected! Select videos on the YouTube page."
+  },
+  "idleHint": {
+    "message": "Navigate to any YouTube video and click the button below to copy its transcript."
+  },
+  "loadingText": {
+    "message": "Opening transcript & extracting…"
+  },
+  "formatSection": {
+    "message": "Format"
+  },
+  "promptPlaceholder": {
+    "message": "e.g. Summarize this transcript:"
+  },
+  "errors_not_youtube": {
+    "message": "Navigate to a YouTube video first."
+  },
+  "errors_no_active_tab": {
+    "message": "No active tab found. Click on a YouTube tab and try again."
+  },
+  "errors_tab_query_failed": {
+    "message": "Could not query browser tabs. Try closing and reopening the extension."
+  },
+  "errors_restricted_page": {
+    "message": "Cannot run on this page. Navigate to a youtube.com video."
+  },
+  "errors_no_button": {
+    "message": "Could not find \"Show transcript\" button. Try opening description manually."
+  },
+  "errors_no_transcript": {
+    "message": "No transcript segments found on this video."
+  },
+  "errors_empty_transcript": {
+    "message": "Transcript panel opened but contains no text."
+  },
+  "errors_panel_timeout": {
+    "message": "Clicked transcript button but panel didn't open in time."
+  },
+  "errors_injection_failed": {
+    "message": "Could not access the page. Try refreshing the YouTube tab."
+  },
+  "errors_script_error": {
+    "message": "An internal error occurred. Try refreshing YouTube."
+  },
+  "errors_attestation_required": {
+    "message": "YouTube requires verification for this video. Open the video directly in your active tab and try again."
+  },
+  "errors_video_unavailable": {
+    "message": "This video is private, removed, or unavailable."
+  },
+  "errors_age_restricted": {
+    "message": "This video is age-restricted. Sign in to YouTube in your browser to view its transcript."
+  },
+  "errors_no_captions_available": {
+    "message": "No captions or transcript exist for this video."
+  }
+}

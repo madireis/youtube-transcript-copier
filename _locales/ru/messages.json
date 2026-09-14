@@ -1,0 +1,331 @@
+{
+  "extensionName": {
+    "message": "Копирование субтитров YouTube - Transcript Copier",
+    "description": "Manifest string: extensionName"
+  },
+  "extensionDescription": {
+    "message": "Быстрое копирование и экспорт субтитров YouTube в один клик. Таймкоды, режим абзацев и передача в ИИ.",
+    "description": "Manifest string: extensionDescription"
+  },
+  "actionTitle": {
+    "message": "Скопировать субтитры YouTube",
+    "description": "Manifest string: actionTitle"
+  },
+  "commandCopyTranscript": {
+    "message": "Скопировать субтитры YouTube в буфер обмена",
+    "description": "Manifest string: commandCopyTranscript"
+  },
+  "contextMenuCopyTranscript": {
+    "message": "Скопировать субтитры",
+    "description": "Manifest string: contextMenuCopyTranscript"
+  },
+  "appTitle": {
+    "message": "Копирование субтитров"
+  },
+  "tabSingle": {
+    "message": "Одно видео"
+  },
+  "tabBatch": {
+    "message": "Пакетный режим"
+  },
+  "batchNoVideos": {
+    "message": "Видео не обнаружены"
+  },
+  "batchScanBtn": {
+    "message": "Сканировать"
+  },
+  "batchOverlayBtn": {
+    "message": "Оверлей"
+  },
+  "batchSelectAll": {
+    "message": "Выбрать все"
+  },
+  "batchSelected": {
+    "message": "выбрано"
+  },
+  "batchPlaceholder": {
+    "message": "Нажмите \"Сканировать\", чтобы найти видео на этой странице YouTube."
+  },
+  "batchFormatOptions": {
+    "message": "Формат и параметры"
+  },
+  "outputStyle": {
+    "message": "Формат вывода"
+  },
+  "btnLines": {
+    "message": "По строкам"
+  },
+  "btnParagraph": {
+    "message": "Абзац"
+  },
+  "btnBlocks": {
+    "message": "Блоки"
+  },
+  "toggleTimestamps": {
+    "message": "Включать таймкоды"
+  },
+  "toggleTitle": {
+    "message": "Включать название видео"
+  },
+  "toggleUrl": {
+    "message": "Включать ссылку на видео"
+  },
+  "toggleDuplicates": {
+    "message": "Удалять дубликаты"
+  },
+  "toggleAutoCopy": {
+    "message": "Автокопирование при загрузке видео"
+  },
+  "togglePrompt": {
+    "message": "Добавить промпт"
+  },
+  "promptNoneCustom": {
+    "message": "Нет / Свой вариант..."
+  },
+  "presetSummarize": {
+    "message": "Краткое резюме (5 пунктов)"
+  },
+  "presetTakeaways": {
+    "message": "Главные выводы"
+  },
+  "presetOutline": {
+    "message": "Структура по главам"
+  },
+  "presetTldr": {
+    "message": "Кратко в двух словах (TL;DR)"
+  },
+  "saveBtn": {
+    "message": "Сохранить"
+  },
+  "deleteBtn": {
+    "message": "Удалить"
+  },
+  "aiBridgeLabel": {
+    "message": "Отправить промпт и текст в ИИ:"
+  },
+  "previewSection": {
+    "message": "Рабочая область субтитров"
+  },
+  "savedBtn": {
+    "message": "Сохраненные"
+  },
+  "followBtn": {
+    "message": "Следить"
+  },
+  "notesBtn": {
+    "message": "Заметки"
+  },
+  "showAll": {
+    "message": "Показать все"
+  },
+  "searchPlaceholder": {
+    "message": "Поиск по субтитрам... [/]"
+  },
+  "copyTime": {
+    "message": "Копировать (+время)"
+  },
+  "copyText": {
+    "message": "Только текст"
+  },
+  "markBtn": {
+    "message": "Выделить"
+  },
+  "aiBtn": {
+    "message": "ИИ"
+  },
+  "summarizeSelected": {
+    "message": "Резюмировать выделение"
+  },
+  "explainSelected": {
+    "message": "Объяснить выделение"
+  },
+  "actionItems": {
+    "message": "Список задач"
+  },
+  "translateSelected": {
+    "message": "Перевести"
+  },
+  "clearBtn": {
+    "message": "Очистить"
+  },
+  "previewPlaceholder": {
+    "message": "Нажмите \"Скопировать субтитры\", чтобы увидеть текст"
+  },
+  "copyBtnText": {
+    "message": "Скопировать субтитры"
+  },
+  "copyBtn": {
+    "message": "Копировать"
+  },
+  "moments": {
+    "message": "отметок"
+  },
+  "synthesize": {
+    "message": "Синтез и выжимка:"
+  },
+  "savedModalTitle": {
+    "message": "Сохраненные субтитры"
+  },
+  "savedSearchPlaceholder": {
+    "message": "Поиск в сохраненных..."
+  },
+  "savedEmptyPlaceholder": {
+    "message": "Нет сохраненных субтитров.\nНажмите \"Сохранить\", чтобы добавить текст."
+  },
+  "clipNotesTitle": {
+    "message": "Заметки к видео"
+  },
+  "clipNotesPlaceholder": {
+    "message": "Пока нет выделенных фрагментов."
+  },
+  "ratingTitle": {
+    "message": "Нравится расширение?"
+  },
+  "ratingText": {
+    "message": "Если YouTube Transcript Copier экономит ваше время, оставьте отзыв в Chrome Web Store!"
+  },
+  "ratingBtnYes": {
+    "message": "Да, оценить"
+  },
+  "ratingBtnNo": {
+    "message": "Позже"
+  },
+  "ratingBtnNever": {
+    "message": "Больше не показывать"
+  },
+  "aiTokenTitle": {
+    "message": "Внимание: слишком длинный текст"
+  },
+  "aiTokenMsg": {
+    "message": "Объем превышает 100 000 знаков. ИИ-модель может обрезать ответ."
+  },
+  "cancelBtn": {
+    "message": "Отмена"
+  },
+  "sendAnywayBtn": {
+    "message": "Все равно отправить"
+  },
+  "feedbackBtn": {
+    "message": "Отзыв / Ошибка"
+  },
+  "collabBtn": {
+    "message": "Сотрудничество"
+  },
+  "batchExtracting": {
+    "message": "Извлечение субтитров..."
+  },
+  "batchPauseBtn": {
+    "message": "Пауза"
+  },
+  "batchResumeBtn": {
+    "message": "Продолжить"
+  },
+  "batchFinishBtn": {
+    "message": "Готово и экспорт"
+  },
+  "batchExportAs": {
+    "message": "Экспорт как:"
+  },
+  "batchSingleMerged": {
+    "message": "Один объединенный файл"
+  },
+  "batchSeparateZip": {
+    "message": "Отдельные файлы (ZIP)"
+  },
+  "batchFileType": {
+    "message": "Тип файла:"
+  },
+  "batchStartExtract": {
+    "message": "Начать извлечение"
+  },
+  "batchPlaylistGroup": {
+    "message": "Плейлист:"
+  },
+  "batchOtherGroup": {
+    "message": "Другие видео"
+  },
+  "batchVideos": {
+    "message": "видео"
+  },
+  "batchScanning": {
+    "message": "Сканирование страницы YouTube..."
+  },
+  "batchProgressProcessing": {
+    "message": "Обработка видео"
+  },
+  "batchNavToYouTube": {
+    "message": "Сначала откройте страницу YouTube с видео или плейлистом."
+  },
+  "copiedSuccess": {
+    "message": "$COUNT$ строк субтитров скопировано в буфер обмена!",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "batchNoVideosFound": {
+    "message": "No videos found on this page. Try scrolling down to load more."
+  },
+  "batchScanFailed": {
+    "message": "Failed to scan page. Try refreshing YouTube."
+  },
+  "batchOverlayInjected": {
+    "message": "Overlay injected! Select videos on the YouTube page."
+  },
+  "idleHint": {
+    "message": "Navigate to any YouTube video and click the button below to copy its transcript."
+  },
+  "loadingText": {
+    "message": "Opening transcript & extracting…"
+  },
+  "formatSection": {
+    "message": "Format"
+  },
+  "promptPlaceholder": {
+    "message": "e.g. Summarize this transcript:"
+  },
+  "errors_not_youtube": {
+    "message": "Navigate to a YouTube video first."
+  },
+  "errors_no_active_tab": {
+    "message": "No active tab found. Click on a YouTube tab and try again."
+  },
+  "errors_tab_query_failed": {
+    "message": "Could not query browser tabs. Try closing and reopening the extension."
+  },
+  "errors_restricted_page": {
+    "message": "Cannot run on this page. Navigate to a youtube.com video."
+  },
+  "errors_no_button": {
+    "message": "Could not find \"Show transcript\" button. Try opening description manually."
+  },
+  "errors_no_transcript": {
+    "message": "No transcript segments found on this video."
+  },
+  "errors_empty_transcript": {
+    "message": "Transcript panel opened but contains no text."
+  },
+  "errors_panel_timeout": {
+    "message": "Clicked transcript button but panel didn't open in time."
+  },
+  "errors_injection_failed": {
+    "message": "Could not access the page. Try refreshing the YouTube tab."
+  },
+  "errors_script_error": {
+    "message": "An internal error occurred. Try refreshing YouTube."
+  },
+  "errors_attestation_required": {
+    "message": "YouTube requires verification for this video. Open the video directly in your active tab and try again."
+  },
+  "errors_video_unavailable": {
+    "message": "This video is private, removed, or unavailable."
+  },
+  "errors_age_restricted": {
+    "message": "This video is age-restricted. Sign in to YouTube in your browser to view its transcript."
+  },
+  "errors_no_captions_available": {
+    "message": "No captions or transcript exist for this video."
+  }
+}

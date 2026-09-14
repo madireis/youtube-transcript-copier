@@ -1,0 +1,331 @@
+{
+  "extensionName": {
+    "message": "คัดลอกคำบรรยาย YouTube - Transcript Copier",
+    "description": "Manifest string: extensionName"
+  },
+  "extensionDescription": {
+    "message": "คัดลอกและส่งออกคำบรรยาย YouTube ในคลิกเดียว พร้อมไทม์สแตมป์ โหมดย่อหน้า และเชื่อมต่อ AI.",
+    "description": "Manifest string: extensionDescription"
+  },
+  "actionTitle": {
+    "message": "คัดลอกคำบรรยาย YouTube",
+    "description": "Manifest string: actionTitle"
+  },
+  "commandCopyTranscript": {
+    "message": "คัดลอกคำบรรยาย YouTube ไปยังคลิปบอร์ด",
+    "description": "Manifest string: commandCopyTranscript"
+  },
+  "contextMenuCopyTranscript": {
+    "message": "คัดลอกคำบรรยาย",
+    "description": "Manifest string: contextMenuCopyTranscript"
+  },
+  "appTitle": {
+    "message": "คัดลอกคำบรรยาย"
+  },
+  "tabSingle": {
+    "message": "วิดีโอเดี่ยว"
+  },
+  "tabBatch": {
+    "message": "โหมดกลุ่ม"
+  },
+  "batchNoVideos": {
+    "message": "ตรวจไม่พบวิดีโอ"
+  },
+  "batchScanBtn": {
+    "message": "สแกนหน้า"
+  },
+  "batchOverlayBtn": {
+    "message": "โอเวอร์เลย์หน้า"
+  },
+  "batchSelectAll": {
+    "message": "เลือกทั้งหมด"
+  },
+  "batchSelected": {
+    "message": "เลือกแล้ว"
+  },
+  "batchPlaceholder": {
+    "message": "คลิก \"สแกนหน้า\" เพื่อตรวจหาวิดีโอบนหน้านี้"
+  },
+  "batchFormatOptions": {
+    "message": "รูปแบบและตัวเลือก"
+  },
+  "outputStyle": {
+    "message": "รูปแบบผลลัพธ์"
+  },
+  "btnLines": {
+    "message": "ตามบรรทัด"
+  },
+  "btnParagraph": {
+    "message": "ย่อหน้า"
+  },
+  "btnBlocks": {
+    "message": "บล็อก"
+  },
+  "toggleTimestamps": {
+    "message": "ใส่ไทม์สแตมป์"
+  },
+  "toggleTitle": {
+    "message": "ใส่ชื่อวิดีโอ"
+  },
+  "toggleUrl": {
+    "message": "ใส่ลิงก์วิดีโอ"
+  },
+  "toggleDuplicates": {
+    "message": "ลบข้อความซ้ำ"
+  },
+  "toggleAutoCopy": {
+    "message": "คัดลอกอัตโนมัติเมื่อโหลดวิดีโอ"
+  },
+  "togglePrompt": {
+    "message": "เพิ่มพรอมต์"
+  },
+  "promptNoneCustom": {
+    "message": "ไม่มี / กำหนดเอง..."
+  },
+  "presetSummarize": {
+    "message": "สรุปประเด็น (5 ข้อสำคัญ)"
+  },
+  "presetTakeaways": {
+    "message": "ประเด็นสำคัญที่ได้"
+  },
+  "presetOutline": {
+    "message": "โครงร่างบท"
+  },
+  "presetTldr": {
+    "message": "สรุปสั้นๆ (TL;DR)"
+  },
+  "saveBtn": {
+    "message": "บันทึก"
+  },
+  "deleteBtn": {
+    "message": "ลบ"
+  },
+  "aiBridgeLabel": {
+    "message": "ส่งพรอมต์และคำบรรยายไปยัง AI:"
+  },
+  "previewSection": {
+    "message": "พื้นที่ทำงานคำบรรยาย"
+  },
+  "savedBtn": {
+    "message": "บันทึกแล้ว"
+  },
+  "followBtn": {
+    "message": "เลื่อนตาม"
+  },
+  "notesBtn": {
+    "message": "โน้ต"
+  },
+  "showAll": {
+    "message": "แสดงทั้งหมด"
+  },
+  "searchPlaceholder": {
+    "message": "ค้นหาในคำบรรยาย... [/]"
+  },
+  "copyTime": {
+    "message": "คัดลอก (+เวลา)"
+  },
+  "copyText": {
+    "message": "คัดลอกเฉพาะข้อความ"
+  },
+  "markBtn": {
+    "message": "ทำเครื่องหมาย"
+  },
+  "aiBtn": {
+    "message": "AI"
+  },
+  "summarizeSelected": {
+    "message": "สรุปที่เลือก"
+  },
+  "explainSelected": {
+    "message": "อธิบายที่เลือก"
+  },
+  "actionItems": {
+    "message": "สิ่งที่ต้องทำ"
+  },
+  "translateSelected": {
+    "message": "แปลภาษา"
+  },
+  "clearBtn": {
+    "message": "ล้าง"
+  },
+  "previewPlaceholder": {
+    "message": "คลิกคัดลอกคำบรรยายเพื่อดูตัวอย่างที่นี่"
+  },
+  "copyBtnText": {
+    "message": "คัดลอกคำบรรยายวิดีโอ"
+  },
+  "copyBtn": {
+    "message": "คัดลอก"
+  },
+  "moments": {
+    "message": "จุดที่ทำเครื่องหมาย"
+  },
+  "synthesize": {
+    "message": "รวบรวมและสรุป:"
+  },
+  "savedModalTitle": {
+    "message": "พื้นที่ทำงานที่บันทึกไว้"
+  },
+  "savedSearchPlaceholder": {
+    "message": "ค้นหาในที่บันทึกไว้..."
+  },
+  "savedEmptyPlaceholder": {
+    "message": "ยังไม่มีคำบรรยายที่บันทึกไว้"
+  },
+  "clipNotesTitle": {
+    "message": "โน้ตคลิป"
+  },
+  "clipNotesPlaceholder": {
+    "message": "ยังไม่มีไฮไลท์"
+  },
+  "ratingTitle": {
+    "message": "ชอบโปรแกรมคัดลอกคำบรรยายไหม?"
+  },
+  "ratingText": {
+    "message": "ถ้าช่วยประหยัดเวลา โปรดให้คะแนนเราใน Chrome Web Store!"
+  },
+  "ratingBtnYes": {
+    "message": "ให้คะแนนทันที"
+  },
+  "ratingBtnNo": {
+    "message": "ไว้คราวหน้า"
+  },
+  "ratingBtnNever": {
+    "message": "ไม่ต้องแสดงอีก"
+  },
+  "aiTokenTitle": {
+    "message": "คำเตือน: ข้อความยาวเกินไป"
+  },
+  "aiTokenMsg": {
+    "message": "ข้อความยาวเกิน 100,000 ตัวอักษร อาจถูกตัดทอนใน AI"
+  },
+  "cancelBtn": {
+    "message": "ยกเลิก"
+  },
+  "sendAnywayBtn": {
+    "message": "ส่งต่อไป"
+  },
+  "feedbackBtn": {
+    "message": "ข้อเสนอแนะ / รายงานปัญหา"
+  },
+  "collabBtn": {
+    "message": "ติดต่อร่วมงาน"
+  },
+  "batchExtracting": {
+    "message": "กำลังดึงคำบรรยาย..."
+  },
+  "batchPauseBtn": {
+    "message": "หยุดชั่วคราว"
+  },
+  "batchResumeBtn": {
+    "message": "ดำเนินการต่อ"
+  },
+  "batchFinishBtn": {
+    "message": "เสร็จสิ้นและส่งออก"
+  },
+  "batchExportAs": {
+    "message": "ส่งออกเป็น:"
+  },
+  "batchSingleMerged": {
+    "message": "ไฟล์รวมไฟล์เดียว"
+  },
+  "batchSeparateZip": {
+    "message": "แยกไฟล์ (ZIP)"
+  },
+  "batchFileType": {
+    "message": "ประเภทไฟล์:"
+  },
+  "batchStartExtract": {
+    "message": "เริ่มดึงคำบรรยาย"
+  },
+  "batchPlaylistGroup": {
+    "message": "เพลย์ลิสต์:"
+  },
+  "batchOtherGroup": {
+    "message": "วิดีโออื่นๆ"
+  },
+  "batchVideos": {
+    "message": "วิดีโอ"
+  },
+  "batchScanning": {
+    "message": "กำลังสแกนหน้า YouTube..."
+  },
+  "batchProgressProcessing": {
+    "message": "กำลังประมวลผลวิดีโอ"
+  },
+  "batchNavToYouTube": {
+    "message": "โปรดเปิดวิดีโอหรือเพลย์ลิสต์ YouTube ก่อน"
+  },
+  "copiedSuccess": {
+    "message": "คัดลอก $COUNT$ บรรทัดไปยังคลิปบอร์ดแล้ว!",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "batchNoVideosFound": {
+    "message": "No videos found on this page. Try scrolling down to load more."
+  },
+  "batchScanFailed": {
+    "message": "Failed to scan page. Try refreshing YouTube."
+  },
+  "batchOverlayInjected": {
+    "message": "Overlay injected! Select videos on the YouTube page."
+  },
+  "idleHint": {
+    "message": "Navigate to any YouTube video and click the button below to copy its transcript."
+  },
+  "loadingText": {
+    "message": "Opening transcript & extracting…"
+  },
+  "formatSection": {
+    "message": "Format"
+  },
+  "promptPlaceholder": {
+    "message": "e.g. Summarize this transcript:"
+  },
+  "errors_not_youtube": {
+    "message": "Navigate to a YouTube video first."
+  },
+  "errors_no_active_tab": {
+    "message": "No active tab found. Click on a YouTube tab and try again."
+  },
+  "errors_tab_query_failed": {
+    "message": "Could not query browser tabs. Try closing and reopening the extension."
+  },
+  "errors_restricted_page": {
+    "message": "Cannot run on this page. Navigate to a youtube.com video."
+  },
+  "errors_no_button": {
+    "message": "Could not find \"Show transcript\" button. Try opening description manually."
+  },
+  "errors_no_transcript": {
+    "message": "No transcript segments found on this video."
+  },
+  "errors_empty_transcript": {
+    "message": "Transcript panel opened but contains no text."
+  },
+  "errors_panel_timeout": {
+    "message": "Clicked transcript button but panel didn't open in time."
+  },
+  "errors_injection_failed": {
+    "message": "Could not access the page. Try refreshing the YouTube tab."
+  },
+  "errors_script_error": {
+    "message": "An internal error occurred. Try refreshing YouTube."
+  },
+  "errors_attestation_required": {
+    "message": "YouTube requires verification for this video. Open the video directly in your active tab and try again."
+  },
+  "errors_video_unavailable": {
+    "message": "This video is private, removed, or unavailable."
+  },
+  "errors_age_restricted": {
+    "message": "This video is age-restricted. Sign in to YouTube in your browser to view its transcript."
+  },
+  "errors_no_captions_available": {
+    "message": "No captions or transcript exist for this video."
+  }
+}

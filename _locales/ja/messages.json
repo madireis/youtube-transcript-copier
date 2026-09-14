@@ -1,0 +1,331 @@
+{
+  "extensionName": {
+    "message": "YouTube 文字起こしコピー - YouTube Transcript Copier",
+    "description": "Manifest string: extensionName"
+  },
+  "extensionDescription": {
+    "message": "1クリックでYouTubeの文字起こしをコピー＆エクスポート。タイムスタンプ、段落モード、AI連携に対応。",
+    "description": "Manifest string: extensionDescription"
+  },
+  "actionTitle": {
+    "message": "YouTube文字起こしをコピー",
+    "description": "Manifest string: actionTitle"
+  },
+  "commandCopyTranscript": {
+    "message": "YouTube文字起こしをクリップボードにコピー",
+    "description": "Manifest string: commandCopyTranscript"
+  },
+  "contextMenuCopyTranscript": {
+    "message": "文字起こしをコピー",
+    "description": "Manifest string: contextMenuCopyTranscript"
+  },
+  "appTitle": {
+    "message": "文字起こしコピー"
+  },
+  "tabSingle": {
+    "message": "個別動画"
+  },
+  "tabBatch": {
+    "message": "一括モード"
+  },
+  "batchNoVideos": {
+    "message": "動画が検出されません"
+  },
+  "batchScanBtn": {
+    "message": "ページをスキャン"
+  },
+  "batchOverlayBtn": {
+    "message": "ページオーバーレイ"
+  },
+  "batchSelectAll": {
+    "message": "すべて選択"
+  },
+  "batchSelected": {
+    "message": "件選択中"
+  },
+  "batchPlaceholder": {
+    "message": "「ページをスキャン」をクリックして動画を検出します。"
+  },
+  "batchFormatOptions": {
+    "message": "フォーマットと設定"
+  },
+  "outputStyle": {
+    "message": "出力形式"
+  },
+  "btnLines": {
+    "message": "行ごと"
+  },
+  "btnParagraph": {
+    "message": "段落"
+  },
+  "btnBlocks": {
+    "message": "ブロック"
+  },
+  "toggleTimestamps": {
+    "message": "タイムスタンプを含める"
+  },
+  "toggleTitle": {
+    "message": "動画タイトルを含める"
+  },
+  "toggleUrl": {
+    "message": "動画URLを含める"
+  },
+  "toggleDuplicates": {
+    "message": "重複を削除"
+  },
+  "toggleAutoCopy": {
+    "message": "動画読み込み時に自動コピー"
+  },
+  "togglePrompt": {
+    "message": "プロンプト前置"
+  },
+  "promptNoneCustom": {
+    "message": "なし / カスタム..."
+  },
+  "presetSummarize": {
+    "message": "要約 (5つの要点)"
+  },
+  "presetTakeaways": {
+    "message": "主要なポイント"
+  },
+  "presetOutline": {
+    "message": "チャプターアウトライン"
+  },
+  "presetTldr": {
+    "message": "2行TL;DR要約"
+  },
+  "saveBtn": {
+    "message": "保存"
+  },
+  "deleteBtn": {
+    "message": "削除"
+  },
+  "aiBridgeLabel": {
+    "message": "プロンプトと文字起こしをAIに送信:"
+  },
+  "previewSection": {
+    "message": "文字起こしワークスペース"
+  },
+  "savedBtn": {
+    "message": "保存済み"
+  },
+  "followBtn": {
+    "message": "追従"
+  },
+  "notesBtn": {
+    "message": "ノート"
+  },
+  "showAll": {
+    "message": "すべて表示"
+  },
+  "searchPlaceholder": {
+    "message": "文字起こし内を検索... [/]"
+  },
+  "copyTime": {
+    "message": "時間付きコピー"
+  },
+  "copyText": {
+    "message": "テキストのみコピー"
+  },
+  "markBtn": {
+    "message": "マーク"
+  },
+  "aiBtn": {
+    "message": "AI"
+  },
+  "summarizeSelected": {
+    "message": "選択範囲を要約"
+  },
+  "explainSelected": {
+    "message": "選択範囲を解説"
+  },
+  "actionItems": {
+    "message": "アクションアイテム"
+  },
+  "translateSelected": {
+    "message": "翻訳"
+  },
+  "clearBtn": {
+    "message": "クリア"
+  },
+  "previewPlaceholder": {
+    "message": "「文字起こしをコピー」をクリックするとここにプレビューが表示されます"
+  },
+  "copyBtnText": {
+    "message": "文字起こしをコピー"
+  },
+  "copyBtn": {
+    "message": "コピー"
+  },
+  "moments": {
+    "message": "件のマーク"
+  },
+  "synthesize": {
+    "message": "統合・要約:"
+  },
+  "savedModalTitle": {
+    "message": "保存済みワークスペース"
+  },
+  "savedSearchPlaceholder": {
+    "message": "保存済み文字起こしを検索..."
+  },
+  "savedEmptyPlaceholder": {
+    "message": "保存された文字起こしはまだありません。\n「保存」をクリックしてローカルに保管できます。"
+  },
+  "clipNotesTitle": {
+    "message": "クリップノート"
+  },
+  "clipNotesPlaceholder": {
+    "message": "まだハイライトがありません。テキストをマークしてノートを収集してください。"
+  },
+  "ratingTitle": {
+    "message": "YouTube文字起こしコピーはいかがですか？"
+  },
+  "ratingText": {
+    "message": "この拡張機能がお役に立ちましたら、Chromeウェブストアで評価をお願いします！皆様のフィードバックが開発の励みになります。"
+  },
+  "ratingBtnYes": {
+    "message": "はい、評価します"
+  },
+  "ratingBtnNo": {
+    "message": "後で"
+  },
+  "ratingBtnNever": {
+    "message": "今後表示しない"
+  },
+  "aiTokenTitle": {
+    "message": "警告: 文字起こしが長すぎます"
+  },
+  "aiTokenMsg": {
+    "message": "合計文字数が100,000文字を超えています。AIモデルで途切れる可能性があります。"
+  },
+  "cancelBtn": {
+    "message": "キャンセル"
+  },
+  "sendAnywayBtn": {
+    "message": "そのまま送信"
+  },
+  "feedbackBtn": {
+    "message": "フィードバック / バグ報告"
+  },
+  "collabBtn": {
+    "message": "連携・コラボ"
+  },
+  "batchExtracting": {
+    "message": "文字起こしを抽出中..."
+  },
+  "batchPauseBtn": {
+    "message": "一時停止"
+  },
+  "batchResumeBtn": {
+    "message": "再開"
+  },
+  "batchFinishBtn": {
+    "message": "完了してエクスポート"
+  },
+  "batchExportAs": {
+    "message": "エクスポート形式:"
+  },
+  "batchSingleMerged": {
+    "message": "単一の結合ファイル"
+  },
+  "batchSeparateZip": {
+    "message": "個別ファイル (ZIP)"
+  },
+  "batchFileType": {
+    "message": "ファイル形式:"
+  },
+  "batchStartExtract": {
+    "message": "抽出を開始"
+  },
+  "batchPlaylistGroup": {
+    "message": "プレイリスト:"
+  },
+  "batchOtherGroup": {
+    "message": "その他の動画"
+  },
+  "batchVideos": {
+    "message": "動画"
+  },
+  "batchScanning": {
+    "message": "YouTubeページをスキャン中..."
+  },
+  "batchProgressProcessing": {
+    "message": "処理中の動画"
+  },
+  "batchNavToYouTube": {
+    "message": "YouTubeの動画、チャンネル、またはプレイリストを開いてください。"
+  },
+  "copiedSuccess": {
+    "message": "$COUNT$行をクリップボードにコピーしました！",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "batchNoVideosFound": {
+    "message": "No videos found on this page. Try scrolling down to load more."
+  },
+  "batchScanFailed": {
+    "message": "Failed to scan page. Try refreshing YouTube."
+  },
+  "batchOverlayInjected": {
+    "message": "Overlay injected! Select videos on the YouTube page."
+  },
+  "idleHint": {
+    "message": "Navigate to any YouTube video and click the button below to copy its transcript."
+  },
+  "loadingText": {
+    "message": "Opening transcript & extracting…"
+  },
+  "formatSection": {
+    "message": "Format"
+  },
+  "promptPlaceholder": {
+    "message": "e.g. Summarize this transcript:"
+  },
+  "errors_not_youtube": {
+    "message": "Navigate to a YouTube video first."
+  },
+  "errors_no_active_tab": {
+    "message": "No active tab found. Click on a YouTube tab and try again."
+  },
+  "errors_tab_query_failed": {
+    "message": "Could not query browser tabs. Try closing and reopening the extension."
+  },
+  "errors_restricted_page": {
+    "message": "Cannot run on this page. Navigate to a youtube.com video."
+  },
+  "errors_no_button": {
+    "message": "Could not find \"Show transcript\" button. Try opening description manually."
+  },
+  "errors_no_transcript": {
+    "message": "No transcript segments found on this video."
+  },
+  "errors_empty_transcript": {
+    "message": "Transcript panel opened but contains no text."
+  },
+  "errors_panel_timeout": {
+    "message": "Clicked transcript button but panel didn't open in time."
+  },
+  "errors_injection_failed": {
+    "message": "Could not access the page. Try refreshing the YouTube tab."
+  },
+  "errors_script_error": {
+    "message": "An internal error occurred. Try refreshing YouTube."
+  },
+  "errors_attestation_required": {
+    "message": "YouTube requires verification for this video. Open the video directly in your active tab and try again."
+  },
+  "errors_video_unavailable": {
+    "message": "This video is private, removed, or unavailable."
+  },
+  "errors_age_restricted": {
+    "message": "This video is age-restricted. Sign in to YouTube in your browser to view its transcript."
+  },
+  "errors_no_captions_available": {
+    "message": "No captions or transcript exist for this video."
+  }
+}

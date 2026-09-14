@@ -1,0 +1,331 @@
+{
+  "extensionName": {
+    "message": "کپی‌کننده زیرنویس یوتیوب - Transcript Copier",
+    "description": "Manifest string: extensionName"
+  },
+  "extensionDescription": {
+    "message": "استخراج و کپی آسان متن و زیرنویس یوتیوب با ۱ کلیک. همراه با برچسب زمان، حالت پاراگراف و اتصال به هوش مصنوعی.",
+    "description": "Manifest string: extensionDescription"
+  },
+  "actionTitle": {
+    "message": "کپی متن زیرنویس یوتیوب",
+    "description": "Manifest string: actionTitle"
+  },
+  "commandCopyTranscript": {
+    "message": "کپی زیرنویس یوتیوب در کلیپ‌بورد",
+    "description": "Manifest string: commandCopyTranscript"
+  },
+  "contextMenuCopyTranscript": {
+    "message": "کپی زیرنویس",
+    "description": "Manifest string: contextMenuCopyTranscript"
+  },
+  "appTitle": {
+    "message": "کپی‌کننده زیرنویس"
+  },
+  "tabSingle": {
+    "message": "ویدیو تکی"
+  },
+  "tabBatch": {
+    "message": "حالت دسته‌ای"
+  },
+  "batchNoVideos": {
+    "message": "ویدیویی شناسایی نشد"
+  },
+  "batchScanBtn": {
+    "message": "اسکن صفحه"
+  },
+  "batchOverlayBtn": {
+    "message": "پوشش صفحه"
+  },
+  "batchSelectAll": {
+    "message": "انتخاب همه"
+  },
+  "batchSelected": {
+    "message": "انتخاب شده"
+  },
+  "batchPlaceholder": {
+    "message": "روی \"اسکن صفحه\" کلیک کنید تا ویدیوهای این صفحه شناسایی شوند."
+  },
+  "batchFormatOptions": {
+    "message": "فرمت و تنظیمات"
+  },
+  "outputStyle": {
+    "message": "سبک خروجی"
+  },
+  "btnLines": {
+    "message": "خطی"
+  },
+  "btnParagraph": {
+    "message": "پاراگراف"
+  },
+  "btnBlocks": {
+    "message": "بلوک"
+  },
+  "toggleTimestamps": {
+    "message": "شامل برچسب زمان"
+  },
+  "toggleTitle": {
+    "message": "شامل عنوان ویدیو"
+  },
+  "toggleUrl": {
+    "message": "شامل لینک ویدیو"
+  },
+  "toggleDuplicates": {
+    "message": "حذف تکرارها"
+  },
+  "toggleAutoCopy": {
+    "message": "کپی خودکار هنگام باز شدن ویدیو"
+  },
+  "togglePrompt": {
+    "message": "افزودن پرامپت"
+  },
+  "promptNoneCustom": {
+    "message": "هیچ / سفارشی..."
+  },
+  "presetSummarize": {
+    "message": "خلاصه (۵ نکته کلیدی)"
+  },
+  "presetTakeaways": {
+    "message": "نکات برجسته و مهم"
+  },
+  "presetOutline": {
+    "message": "طرح کلی فصل‌ها"
+  },
+  "presetTldr": {
+    "message": "خلاصه دو خطی (TL;DR)"
+  },
+  "saveBtn": {
+    "message": "ذخیره"
+  },
+  "deleteBtn": {
+    "message": "حذف"
+  },
+  "aiBridgeLabel": {
+    "message": "ارسال پرامپت و متن به هوش مصنوعی:"
+  },
+  "previewSection": {
+    "message": "میز کار زیرنویس"
+  },
+  "savedBtn": {
+    "message": "ذخیره‌شده‌ها"
+  },
+  "followBtn": {
+    "message": "دنبال کردن"
+  },
+  "notesBtn": {
+    "message": "یادداشت‌ها"
+  },
+  "showAll": {
+    "message": "نمایش همه"
+  },
+  "searchPlaceholder": {
+    "message": "جستجو در متن... [/]"
+  },
+  "copyTime": {
+    "message": "کپی (+زمان)"
+  },
+  "copyText": {
+    "message": "فقط متن"
+  },
+  "markBtn": {
+    "message": "علامت‌گذاری"
+  },
+  "aiBtn": {
+    "message": "هوش مصنوعی"
+  },
+  "summarizeSelected": {
+    "message": "خلاصه بخش انتخابی"
+  },
+  "explainSelected": {
+    "message": "توضیح بخش انتخابی"
+  },
+  "actionItems": {
+    "message": "اقدامات لازم"
+  },
+  "translateSelected": {
+    "message": "ترجمه"
+  },
+  "clearBtn": {
+    "message": "پاک کردن"
+  },
+  "previewPlaceholder": {
+    "message": "برای مشاهده پیش‌نمایش، روی کپی کلیک کنید"
+  },
+  "copyBtnText": {
+    "message": "کپی زیرنویس ویدیو"
+  },
+  "copyBtn": {
+    "message": "کپی"
+  },
+  "moments": {
+    "message": "نشانه‌گذاری"
+  },
+  "synthesize": {
+    "message": "ترکیب و خلاصه‌سازی:"
+  },
+  "savedModalTitle": {
+    "message": "فضاهای کاری ذخیره‌شده"
+  },
+  "savedSearchPlaceholder": {
+    "message": "جستجو در موارد ذخیره‌شده..."
+  },
+  "savedEmptyPlaceholder": {
+    "message": "هنوز هیچ زیرنویسی ذخیره نشده است."
+  },
+  "clipNotesTitle": {
+    "message": "یادداشت‌های کلیپ"
+  },
+  "clipNotesPlaceholder": {
+    "message": "هنوز هیچ بخشی علامت‌گذاری نشده است."
+  },
+  "ratingTitle": {
+    "message": "از این برنامه راضی هستید؟"
+  },
+  "ratingText": {
+    "message": "اگر این افزونه به شما کمک کرده، لطفا در فروشگاه کروم به ما امتیاز دهید!"
+  },
+  "ratingBtnYes": {
+    "message": "بله، حتماً"
+  },
+  "ratingBtnNo": {
+    "message": "فعلاً نه"
+  },
+  "ratingBtnNever": {
+    "message": "دیگر نشان نده"
+  },
+  "aiTokenTitle": {
+    "message": "هشدار: متن بسیار طولانی است"
+  },
+  "aiTokenMsg": {
+    "message": "طول متن بیش از ۱۰۰,۰۰۰ کاراکتر است."
+  },
+  "cancelBtn": {
+    "message": "انصراف"
+  },
+  "sendAnywayBtn": {
+    "message": "در هر صورت ارسال شود"
+  },
+  "feedbackBtn": {
+    "message": "بازخورد / گزارش اشکال"
+  },
+  "collabBtn": {
+    "message": "همکاری با ما"
+  },
+  "batchExtracting": {
+    "message": "در حال استخراج زیرنویس‌ها..."
+  },
+  "batchPauseBtn": {
+    "message": "توقف"
+  },
+  "batchResumeBtn": {
+    "message": "ادامه"
+  },
+  "batchFinishBtn": {
+    "message": "پایان و خروجی"
+  },
+  "batchExportAs": {
+    "message": "خروجی به صورت:"
+  },
+  "batchSingleMerged": {
+    "message": "یک فایل ادغام شده"
+  },
+  "batchSeparateZip": {
+    "message": "فایل‌های مجزا (ZIP)"
+  },
+  "batchFileType": {
+    "message": "نوع فایل:"
+  },
+  "batchStartExtract": {
+    "message": "شروع استخراج"
+  },
+  "batchPlaylistGroup": {
+    "message": "پلی‌لیست:"
+  },
+  "batchOtherGroup": {
+    "message": "سایر ویدیوها"
+  },
+  "batchVideos": {
+    "message": "ویدیو"
+  },
+  "batchScanning": {
+    "message": "در حال اسکن صفحه یوتیوب..."
+  },
+  "batchProgressProcessing": {
+    "message": "در حال پردازش ویدیو"
+  },
+  "batchNavToYouTube": {
+    "message": "لطفاً ابتدا یک ویدیو یا پلی‌لیست یوتیوب را باز کنید."
+  },
+  "copiedSuccess": {
+    "message": "$COUNT$ خط با موفقیت کپی شد!",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "batchNoVideosFound": {
+    "message": "No videos found on this page. Try scrolling down to load more."
+  },
+  "batchScanFailed": {
+    "message": "Failed to scan page. Try refreshing YouTube."
+  },
+  "batchOverlayInjected": {
+    "message": "Overlay injected! Select videos on the YouTube page."
+  },
+  "idleHint": {
+    "message": "Navigate to any YouTube video and click the button below to copy its transcript."
+  },
+  "loadingText": {
+    "message": "Opening transcript & extracting…"
+  },
+  "formatSection": {
+    "message": "Format"
+  },
+  "promptPlaceholder": {
+    "message": "e.g. Summarize this transcript:"
+  },
+  "errors_not_youtube": {
+    "message": "Navigate to a YouTube video first."
+  },
+  "errors_no_active_tab": {
+    "message": "No active tab found. Click on a YouTube tab and try again."
+  },
+  "errors_tab_query_failed": {
+    "message": "Could not query browser tabs. Try closing and reopening the extension."
+  },
+  "errors_restricted_page": {
+    "message": "Cannot run on this page. Navigate to a youtube.com video."
+  },
+  "errors_no_button": {
+    "message": "Could not find \"Show transcript\" button. Try opening description manually."
+  },
+  "errors_no_transcript": {
+    "message": "No transcript segments found on this video."
+  },
+  "errors_empty_transcript": {
+    "message": "Transcript panel opened but contains no text."
+  },
+  "errors_panel_timeout": {
+    "message": "Clicked transcript button but panel didn't open in time."
+  },
+  "errors_injection_failed": {
+    "message": "Could not access the page. Try refreshing the YouTube tab."
+  },
+  "errors_script_error": {
+    "message": "An internal error occurred. Try refreshing YouTube."
+  },
+  "errors_attestation_required": {
+    "message": "YouTube requires verification for this video. Open the video directly in your active tab and try again."
+  },
+  "errors_video_unavailable": {
+    "message": "This video is private, removed, or unavailable."
+  },
+  "errors_age_restricted": {
+    "message": "This video is age-restricted. Sign in to YouTube in your browser to view its transcript."
+  },
+  "errors_no_captions_available": {
+    "message": "No captions or transcript exist for this video."
+  }
+}

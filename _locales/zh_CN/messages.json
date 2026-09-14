@@ -1,0 +1,331 @@
+{
+  "extensionName": {
+    "message": "YouTube 字幕复制器 - YouTube Transcript Copier",
+    "description": "Manifest string: extensionName"
+  },
+  "extensionDescription": {
+    "message": "一键提取并导出 YouTube 视频字幕。支持时间戳、段落排版及主流 AI 工具一键对接。",
+    "description": "Manifest string: extensionDescription"
+  },
+  "actionTitle": {
+    "message": "复制 YouTube 字幕",
+    "description": "Manifest string: actionTitle"
+  },
+  "commandCopyTranscript": {
+    "message": "复制 YouTube 字幕到剪贴板",
+    "description": "Manifest string: commandCopyTranscript"
+  },
+  "contextMenuCopyTranscript": {
+    "message": "复制字幕",
+    "description": "Manifest string: contextMenuCopyTranscript"
+  },
+  "appTitle": {
+    "message": "字幕复制器"
+  },
+  "tabSingle": {
+    "message": "单个视频"
+  },
+  "tabBatch": {
+    "message": "批量模式"
+  },
+  "batchNoVideos": {
+    "message": "未检测到视频"
+  },
+  "batchScanBtn": {
+    "message": "扫描页面"
+  },
+  "batchOverlayBtn": {
+    "message": "页面浮层"
+  },
+  "batchSelectAll": {
+    "message": "全选"
+  },
+  "batchSelected": {
+    "message": "已选"
+  },
+  "batchPlaceholder": {
+    "message": "点击“扫描页面”检测此 YouTube 页面上的视频。"
+  },
+  "batchFormatOptions": {
+    "message": "格式与选项"
+  },
+  "outputStyle": {
+    "message": "输出格式"
+  },
+  "btnLines": {
+    "message": "按行"
+  },
+  "btnParagraph": {
+    "message": "段落"
+  },
+  "btnBlocks": {
+    "message": "文本块"
+  },
+  "toggleTimestamps": {
+    "message": "包含时间戳"
+  },
+  "toggleTitle": {
+    "message": "包含视频标题"
+  },
+  "toggleUrl": {
+    "message": "包含视频链接"
+  },
+  "toggleDuplicates": {
+    "message": "清理重复文本"
+  },
+  "toggleAutoCopy": {
+    "message": "视频加载时自动复制"
+  },
+  "togglePrompt": {
+    "message": "预置提示词"
+  },
+  "promptNoneCustom": {
+    "message": "无 / 自定义..."
+  },
+  "presetSummarize": {
+    "message": "精炼摘要 (5点总结)"
+  },
+  "presetTakeaways": {
+    "message": "提炼核心要点"
+  },
+  "presetOutline": {
+    "message": "章节结构大纲"
+  },
+  "presetTldr": {
+    "message": "两句话简短概括"
+  },
+  "saveBtn": {
+    "message": "保存"
+  },
+  "deleteBtn": {
+    "message": "删除"
+  },
+  "aiBridgeLabel": {
+    "message": "一键发送提示词和字幕至 AI:"
+  },
+  "previewSection": {
+    "message": "字幕工作区"
+  },
+  "savedBtn": {
+    "message": "收藏库"
+  },
+  "followBtn": {
+    "message": "跟读"
+  },
+  "notesBtn": {
+    "message": "笔记"
+  },
+  "showAll": {
+    "message": "显示全部"
+  },
+  "searchPlaceholder": {
+    "message": "在字幕中搜索... [/]"
+  },
+  "copyTime": {
+    "message": "复制 (+时间戳)"
+  },
+  "copyText": {
+    "message": "仅复制文本"
+  },
+  "markBtn": {
+    "message": "高亮"
+  },
+  "aiBtn": {
+    "message": "AI"
+  },
+  "summarizeSelected": {
+    "message": "总结所选"
+  },
+  "explainSelected": {
+    "message": "解释所选"
+  },
+  "actionItems": {
+    "message": "行动项"
+  },
+  "translateSelected": {
+    "message": "翻译"
+  },
+  "clearBtn": {
+    "message": "清除"
+  },
+  "previewPlaceholder": {
+    "message": "点击复制字幕后在此预览内容"
+  },
+  "copyBtnText": {
+    "message": "复制视频字幕"
+  },
+  "copyBtn": {
+    "message": "复制"
+  },
+  "moments": {
+    "message": "个高亮"
+  },
+  "synthesize": {
+    "message": "综合与提炼:"
+  },
+  "savedModalTitle": {
+    "message": "已保存的工作区"
+  },
+  "savedSearchPlaceholder": {
+    "message": "搜索已保存的字幕..."
+  },
+  "savedEmptyPlaceholder": {
+    "message": "暂无保存的字幕。\n点击“保存”即可在本地离线存储。"
+  },
+  "clipNotesTitle": {
+    "message": "片段笔记"
+  },
+  "clipNotesPlaceholder": {
+    "message": "暂无高亮片段。标记字幕以生成笔记。"
+  },
+  "ratingTitle": {
+    "message": "喜欢这款字幕复制器吗？"
+  },
+  "ratingText": {
+    "message": "如果它帮您节省了时间，请在 Chrome 网上应用店为我们留下好评！非常感谢您的支持。"
+  },
+  "ratingBtnYes": {
+    "message": "好的，去评价"
+  },
+  "ratingBtnNo": {
+    "message": "稍后再说"
+  },
+  "ratingBtnNever": {
+    "message": "不再提示"
+  },
+  "aiTokenTitle": {
+    "message": "提示：字幕内容过长"
+  },
+  "aiTokenMsg": {
+    "message": "字幕总字符数已超过 100,000 字，发送给 AI 模型时可能被截断。"
+  },
+  "cancelBtn": {
+    "message": "取消"
+  },
+  "sendAnywayBtn": {
+    "message": "仍然发送"
+  },
+  "feedbackBtn": {
+    "message": "问题反馈 / 建议"
+  },
+  "collabBtn": {
+    "message": "合作交流"
+  },
+  "batchExtracting": {
+    "message": "正在提取字幕..."
+  },
+  "batchPauseBtn": {
+    "message": "暂停"
+  },
+  "batchResumeBtn": {
+    "message": "继续"
+  },
+  "batchFinishBtn": {
+    "message": "完成并导出"
+  },
+  "batchExportAs": {
+    "message": "导出方式:"
+  },
+  "batchSingleMerged": {
+    "message": "单个合并文件"
+  },
+  "batchSeparateZip": {
+    "message": "独立文件 (ZIP)"
+  },
+  "batchFileType": {
+    "message": "文件格式:"
+  },
+  "batchStartExtract": {
+    "message": "开始批量提取"
+  },
+  "batchPlaylistGroup": {
+    "message": "播放列表:"
+  },
+  "batchOtherGroup": {
+    "message": "其他视频"
+  },
+  "batchVideos": {
+    "message": "个视频"
+  },
+  "batchScanning": {
+    "message": "正在扫描 YouTube 页面..."
+  },
+  "batchProgressProcessing": {
+    "message": "正在处理视频"
+  },
+  "batchNavToYouTube": {
+    "message": "请先打开 YouTube 视频、播放列表或频道页面。"
+  },
+  "copiedSuccess": {
+    "message": "已成功复制 $COUNT$ 行字幕到剪贴板！",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "batchNoVideosFound": {
+    "message": "No videos found on this page. Try scrolling down to load more."
+  },
+  "batchScanFailed": {
+    "message": "Failed to scan page. Try refreshing YouTube."
+  },
+  "batchOverlayInjected": {
+    "message": "Overlay injected! Select videos on the YouTube page."
+  },
+  "idleHint": {
+    "message": "Navigate to any YouTube video and click the button below to copy its transcript."
+  },
+  "loadingText": {
+    "message": "Opening transcript & extracting…"
+  },
+  "formatSection": {
+    "message": "Format"
+  },
+  "promptPlaceholder": {
+    "message": "e.g. Summarize this transcript:"
+  },
+  "errors_not_youtube": {
+    "message": "Navigate to a YouTube video first."
+  },
+  "errors_no_active_tab": {
+    "message": "No active tab found. Click on a YouTube tab and try again."
+  },
+  "errors_tab_query_failed": {
+    "message": "Could not query browser tabs. Try closing and reopening the extension."
+  },
+  "errors_restricted_page": {
+    "message": "Cannot run on this page. Navigate to a youtube.com video."
+  },
+  "errors_no_button": {
+    "message": "Could not find \"Show transcript\" button. Try opening description manually."
+  },
+  "errors_no_transcript": {
+    "message": "No transcript segments found on this video."
+  },
+  "errors_empty_transcript": {
+    "message": "Transcript panel opened but contains no text."
+  },
+  "errors_panel_timeout": {
+    "message": "Clicked transcript button but panel didn't open in time."
+  },
+  "errors_injection_failed": {
+    "message": "Could not access the page. Try refreshing the YouTube tab."
+  },
+  "errors_script_error": {
+    "message": "An internal error occurred. Try refreshing YouTube."
+  },
+  "errors_attestation_required": {
+    "message": "YouTube requires verification for this video. Open the video directly in your active tab and try again."
+  },
+  "errors_video_unavailable": {
+    "message": "This video is private, removed, or unavailable."
+  },
+  "errors_age_restricted": {
+    "message": "This video is age-restricted. Sign in to YouTube in your browser to view its transcript."
+  },
+  "errors_no_captions_available": {
+    "message": "No captions or transcript exist for this video."
+  }
+}
