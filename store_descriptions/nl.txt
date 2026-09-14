@@ -1,0 +1,41 @@
+Extraheer, doorzoek, markeer en exporteer transcripties van YouTube-video's en Shorts.
+
+YouTube Transcript Copier biedt snelle toegang tot beschikbare YouTube-transcripties zonder handmatig het transcriptiepaneel te hoeven openen en kopiëren. Doorzoek transcriptietekst, spring naar tijdstempels, sla belangrijke momenten op, exporteer transcripties of stuur ze naar een AI-dienst voor analyse.
+
+Functies
+
+Snelle Toegang tot Transcripties
+
+* Extraheer beschikbare transcripties uit YouTube-video's en Shorts.
+* Krijg direct toegang tot transcripties vanuit de YouTube-interface of de extensie.
+* Kopieer het volledige transcript met één klik.
+* Gebruik beschikbare ondertitel- en transcriptiesporen.
+
+Zoeken en Tijdstempels
+
+* Doorzoek de transcriptietekst tijdens het kijken.
+* Markeer overeenkomende resultaten.
+* Spring direct naar het overeenkomstige punt in de video.
+* Bekijk het aantal overeenkomende resultaten.
+
+Bladwijzers en Notities
+
+* Sla belangrijke momenten uit een transcriptie op.
+* Voeg notities toe aan opgeslagen momenten.
+* Bekijk opgeslagen momenten vanuit de extensie.
+* Maak een gestructureerd Markdown-document van opgeslagen momenten.
+
+Exporteren en Delen
+
+* Exporteer transcripties in TXT-, Markdown-, JSON-, CSV-, SRT- of VTT-formaat.
+* Kies tussen opgemaakte tekst of platte tekst.
+* Voeg tijdstempels toe of sluit ze uit.
+* Stuur transcripties rechtstreeks naar AI-tools zoals ChatGPT, Claude en Gemini.
+
+Batchverwerking
+
+* Extraheer transcripties van afspeellijsten en meerdere geopende tabbladen.
+* Zoek over meerdere transcripties tegelijk.
+* Exporteer meerdere transcripties tegelijkertijd.
+
+Ontworpen voor studie, onderzoek, contentcreatie, het maken van notities en video-analyse.

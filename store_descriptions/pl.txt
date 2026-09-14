@@ -1,0 +1,41 @@
+Wyodrębniaj, przeszukuj, dodawaj zakładki i eksportuj transkrypcje z filmów i Shorts na YouTube.
+
+YouTube Transcript Copier zapewnia szybki dostęp do dostępnych transkrypcji YouTube bez konieczności ręcznego otwierania i kopiowania panelu transkrypcji. Przeszukuj tekst transkrypcji, przechodź do znaczników czasu, zapisuj ważne momenty, eksportuj transkrypcje lub wysyłaj je do narzędzi AI w celu analizy.
+
+Funkcje
+
+Szybki Dostęp do Transkrypcji
+
+* Wyodrębniaj dostępne transkrypcje z filmów i Shorts na YouTube.
+* Uzyskaj dostęp do transkrypcji bezpośrednio z interfejsu YouTube lub rozszerzenia.
+* Kopiuj kompletną transkrypcję jednym kliknięciem.
+* Korzystaj z dostępnych ścieżek napisów i transkrypcji.
+
+Wyszukiwanie i Znaczniki Czasu
+
+* Przeszukuj tekst transkrypcji podczas oglądania.
+* Wyróżniaj pasujące wyniki.
+* Przechodź do odpowiedniego momentu w filmie.
+* Sprawdzaj liczbę znalezionych wyników.
+
+Zakładki i Notatki
+
+* Zapisuj ważne momenty z transkrypcji.
+* Dodawaj notatki do zapisanych momentów.
+* Przeglądaj zapisane momenty z poziomu rozszerzenia.
+* Twórz ustrukturyzowany dokument Markdown z zapisanych momentów.
+
+Eksport i Udostępnianie
+
+* Eksportuj transkrypcje w formatach TXT, Markdown, JSON, CSV, SRT lub VTT.
+* Wybieraj między sformatowanym tekstem a zwykłym tekstem.
+* Dołączaj lub wykluczaj znaczniki czasu.
+* Wysyłaj transkrypcje bezpośrednio do narzędzi AI, takich jak ChatGPT, Claude i Gemini.
+
+Przetwarzanie Wsadowe
+
+* Wyodrębniaj transkrypcje z playlist i wielu otwartych kart.
+* Przeszukuj wiele transkrypcji jednocześnie.
+* Eksportuj wiele transkrypcji naraz.
+
+Zaprojektowane do nauki, badań naukowych, tworzenia treści, robienia notatek i analizy wideo.

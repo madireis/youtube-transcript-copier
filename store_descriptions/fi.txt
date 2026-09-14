@@ -1,0 +1,41 @@
+Pura, hae, merkitse kirjanmerkkeihin ja vie transkriptioita YouTube-videoista ja Shorts-videoista.
+
+YouTube Transcript Copier tarjoaa nopean pääsyn saatavilla oleviin YouTube-transkriptioihin ilman transkriptiopaneelin manuaalista avaamista ja kopiointia. Hae transkriptiotekstistä, siirry aikaleimoihin, tallenna tärkeitä hetkiä, vie transkriptioita tai lähetä ne tekoälypalveluun analysoitavaksi.
+
+Ominaisuudet
+
+Nopea Pääsy Transkriptioihin
+
+* Pura saatavilla olevat transkriptiot YouTube-videoista ja Shorts-videoista.
+* Käytä transkriptioita suoraan YouTube-käyttöliittymästä tai laajennuksesta.
+* Kopioi koko transkriptio yhdellä napsautuksella.
+* Käytä saatavilla olevia tekstitys- ja transkriptioraitoja.
+
+Haku ja Aikaleimat
+
+* Etsi transkriptiotekstistä katselun aikana.
+* Korosta vastaavat tulokset.
+* Siirry vastaavaan kohtaan videossa.
+* Näe vastaavien tulosten määrä.
+
+Kirjanmerkit ja Muistiinpanot
+
+* Tallenna tärkeitä hetkiä transkriptiosta.
+* Lisää muistiinpanoja tallennettuihin hetkiin.
+* Tarkastele tallennettuja hetkiä laajennuksesta.
+* Luo jäsennelty Markdown-asiakirja tallennetuista hetkistä.
+
+Vienti ja Jakaminen
+
+* Vie transkriptiot TXT-, Markdown-, JSON-, CSV-, SRT- tai VTT-muodoissa.
+* Valitse muotoillun tekstin tai pelkän tekstin välillä.
+* Sisällytä tai jätä pois aikaleimat.
+* Lähetä transkriptiot suoraan tekoälytyökaluihin, kuten ChatGPT, Claude ja Gemini.
+
+Eräkäsittely (Batch)
+
+* Pura transkriptioita soittolistoista ja useista avoimista välilehdistä.
+* Etsi useista transkriptioista samanaikaisesti.
+* Vie useita transkriptioita kerralla.
+
+Suunniteltu opiskeluun, tutkimukseen, sisällöntuotantoon, muistiinpanojen tekemiseen ja videoanalyysiin.

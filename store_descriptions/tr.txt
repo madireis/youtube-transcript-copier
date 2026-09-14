@@ -1,0 +1,41 @@
+YouTube videolarından ve Shorts içeriklerinden transkriptleri çıkarın, arayın, yer işareti ekleyin ve dışa aktarın.
+
+YouTube Transcript Copier, transkript panelini manuel olarak açıp kopyalamaya gerek kalmadan mevcut YouTube transkriptlerine hızlı erişim sağlar. Transkript metninde arama yapın, zaman damgalarına atlayın, önemli anları kaydedin, transkriptleri dışa aktarın veya analiz için bir yapay zeka hizmetine gönderin.
+
+Özellikler
+
+Hızlı Transkript Erişimi
+
+* YouTube videolarından ve Shorts içeriklerinden mevcut transkriptleri çıkarın.
+* Transkriptlere doğrudan YouTube arayüzünden veya uzantıdan erişin.
+* Tek tıkla tam transkripti kopyalayın.
+* Mevcut altyazı ve transkript parçalarını kullanın.
+
+Arama ve Zaman Damgaları
+
+* İzlerken transkript metninde arama yapın.
+* Eşleşen sonuçları vurgulayın.
+* Videoda ilgili noktaya atlayın.
+* Eşleşen sonuç sayısını görün.
+
+Yer İşaretleri ve Notlar
+
+* Transkriptten önemli anları kaydedin.
+* Kaydedilen anlara notlar ekleyin.
+* Kaydedilen anları uzantıdan inceleyin.
+* Kaydedilen anlardan yapılandırılmış bir Markdown belgesi oluşturun.
+
+Dışa Aktarma ve Paylaşma
+
+* Transkriptleri TXT, Markdown, JSON, CSV, SRT veya VTT formatlarında dışa aktarın.
+* Biçimlendirilmiş metin veya düz metin çıktısı arasında seçim yapın.
+* Zaman damgalarını dahil edin veya hariç tutun.
+* Transkriptleri doğrudan ChatGPT, Claude ve Gemini gibi yapay zeka araçlarına gönderin.
+
+Toplu İşleme
+
+* Oynatma listelerinden ve açık birden fazla sekmeden transkript çıkarın.
+* Birden fazla transkript arasında arama yapın.
+* Aynı anda birden fazla transkripti dışa aktarın.
+
+Ders çalışma, araştırma, içerik üretimi, not alma ve video analizi için tasarlandı.

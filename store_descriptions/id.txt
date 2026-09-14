@@ -1,0 +1,41 @@
+Ekstrak, cari, tandai, dan ekspor transkrip dari video dan Shorts YouTube.
+
+YouTube Transcript Copier memberikan akses cepat ke transkrip YouTube yang tersedia tanpa perlu membuka dan menyalin panel transkrip secara manual. Cari teks transkrip, lompat ke penanda waktu (timestamp), simpan momen penting, ekspor transkrip, atau kirimkan ke layanan AI untuk dianalisis.
+
+Fitur
+
+Akses Transkrip Cepat
+
+* Ekstrak transkrip yang tersedia dari video dan Shorts YouTube.
+* Akses transkrip langsung dari antarmuka YouTube atau ekstensi.
+* Salin transkrip lengkap hanya dengan satu klik.
+* Gunakan trek teks dan transkrip yang tersedia.
+
+Pencarian dan Penanda Waktu
+
+* Cari teks transkrip saat menonton video.
+* Sorot hasil yang cocok.
+* Lompat ke bagian video yang sesuai.
+* Lihat jumlah hasil yang cocok.
+
+Bookmark dan Catatan
+
+* Simpan momen penting dari transkrip.
+* Tambahkan catatan ke momen yang disimpan.
+* Tinjau momen yang disimpan dari ekstensi.
+* Buat dokumen Markdown terstruktur dari momen yang disimpan.
+
+Ekspor dan Bagikan
+
+* Ekspor transkrip dalam format TXT, Markdown, JSON, CSV, SRT, atau VTT.
+* Pilih antara keluaran teks terformat atau teks biasa.
+* Sertakan atau kecualikan penanda waktu.
+* Kirim transkrip langsung ke alat AI seperti ChatGPT, Claude, dan Gemini.
+
+Pemrosesan Batch
+
+* Ekstrak transkrip dari daftar putar (playlist) dan beberapa tab yang terbuka.
+* Cari di beberapa transkrip sekaligus.
+* Ekspor beberapa transkrip sekaligus.
+
+Dirancang untuk belajar, riset, pembuatan konten, pencatatan, dan analisis video.

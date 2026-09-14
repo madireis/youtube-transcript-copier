@@ -1,0 +1,41 @@
+Extrahujte, vyhledávejte, ukládejte do záložek a exportujte přepisy z videí a Shorts na YouTube.
+
+YouTube Transcript Copier poskytuje rychlý přístup k dostupným přepisům YouTube bez nutnosti ručně otevírat a kopírovat panel přepisu. Vyhledávejte v textu přepisu, přeskakujte na časová razítka, ukládejte důležité momenty, exportujte přepisy nebo je odešlete službě AI k analýze.
+
+Funkce
+
+Rychlý Přístup k Přepisům
+
+* Extrahujte dostupné přepisy z videí a Shorts na YouTube.
+* Získejte přístup k přepisům přímo z rozhraní YouTube nebo z rozšíření.
+* Zkopírujte kompletní přepis jedním kliknutím.
+* Využívejte dostupné stopy titulků a přepisů.
+
+Vyhledávání a Časová Razítka
+
+* Vyhledávejte v textu přepisu během sledování.
+* Zvýrazněte odpovídající výsledky.
+* Přeskočte na odpovídající místo ve videu.
+* Podívejte se na počet nalezených výsledků.
+
+Záložky a Poznámky
+
+* Ukládejte důležité momenty z přepisu.
+* Přidávejte poznámky k uloženým momentům.
+* Procházejte uložené momenty přímo v rozšíření.
+* Vytvořte strukturovaný dokument Markdown z uložených momentů.
+
+Export a Sdílení
+
+* Exportujte přepisy ve formátech TXT, Markdown, JSON, CSV, SRT nebo VTT.
+* Vyberte si mezi formátovaným textem nebo prostým textem.
+* Zahrňte nebo vylučte časová razítka.
+* Odešlete přepisy přímo do nástrojů AI, jako jsou ChatGPT, Claude a Gemini.
+
+Dávkové Zpracování
+
+* Extrahujte přepisy ze seznamů skladeb a více otevřených karet.
+* Vyhledávejte napříč několika přepisy současně.
+* Exportujte více přepisů najednou.
+
+Navrženo pro studium, výzkum, tvorbu obsahu, psaní poznámek a analýzu videa.

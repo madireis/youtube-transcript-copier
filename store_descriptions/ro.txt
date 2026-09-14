@@ -1,0 +1,41 @@
+Extrageți, căutați, adăugați marcaje și exportați transcrieri din videoclipuri și Shorts de pe YouTube.
+
+YouTube Transcript Copier oferă acces rapid la transcrierile disponibile de pe YouTube fără a deschide și copia manual panoul de transcriere. Căutați text în transcriere, săriți la marcaje temporale, salvați momente importante, exportați transcrieri sau trimiteți-le către un serviciu AI pentru analiză.
+
+Caracteristici
+
+Acces Rapid la Transcrieri
+
+* Extrageți transcrierile disponibile din videoclipuri și Shorts de pe YouTube.
+* Accesați transcrierile direct din interfața YouTube sau din extensie.
+* Copiați transcrierea completă cu un singur clic.
+* Utilizați pistele de subtitrări și transcrieri disponibile.
+
+Căutare și Marcaje Temporale
+
+* Căutați text în transcriere în timp ce vizionați videoclipul.
+* Evidențiați rezultatele potrivite.
+* Săriți direct la punctul corespunzător din videoclip.
+* Vedeți numărul de rezultate găsite.
+
+Marcaje și Notițe
+
+* Salvați momente importante dintr-o transcriere.
+* Adăugați notițe momentelor salvate.
+* Examinați momentele salvate direct din extensie.
+* Creați un document Markdown structurat din momentele salvate.
+
+Export și Distribuire
+
+* Exportați transcrierile în formate TXT, Markdown, JSON, CSV, SRT sau VTT.
+* Alegeți între text formatat sau text simplu.
+* Includeți sau excludeți marcajele temporale.
+* Trimiteți transcrierile direct către instrumente AI precum ChatGPT, Claude și Gemini.
+
+Procesare în Lot (Batch)
+
+* Extrageți transcrieri din liste de redare și file multiple deschise.
+* Căutați în mai multe transcrieri simultan.
+* Exportați mai multe transcrieri simultan.
+
+Conceput pentru studiu, cercetare, creare de conținut, luare de notițe și analiză video.

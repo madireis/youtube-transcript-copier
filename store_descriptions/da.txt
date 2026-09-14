@@ -1,0 +1,41 @@
+Udtræk, søg, bogmærk og eksporter transskriptioner fra YouTube-videoer og Shorts.
+
+YouTube Transcript Copier giver hurtig adgang til tilgængelige YouTube-transskriptioner uden manuelt at skulle åbne og kopiere transskriptionspanelet. Søg i transskriptionstekst, hop til tidsstempler, gem vigtige øjeblikke, eksporter transskriptioner, eller send dem til en AI-tjeneste til analyse.
+
+Funktioner
+
+Hurtig Adgang til Transskriptioner
+
+* Udtræk tilgængelige transskriptioner fra YouTube-videoer og Shorts.
+* Få adgang til transskriptioner direkte fra YouTube-grænsefladen eller udvidelsen.
+* Kopiér hele transskriptionen med et enkelt klik.
+* Brug tilgængelige undertekst- og transskriptionsspor.
+
+Søgning og Tidsstempler
+
+* Søg i transskriptionsteksten, mens du ser videoen.
+* Fremhæv matchende resultater.
+* Hop til det tilsvarende punkt i videoen.
+* Se antallet af matchende resultater.
+
+Bogmærker og Noter
+
+* Gem vigtige øjeblikke fra en transskription.
+* Tilføj noter til gemte øjeblikke.
+* Gennemgå gemte øjeblikke fra udvidelsen.
+* Opret et struktureret Markdown-dokument fra gemte øjeblikke.
+
+Eksporter og Del
+
+* Eksporter transskriptioner i formaterne TXT, Markdown, JSON, CSV, SRT eller VTT.
+* Vælg mellem formateret tekst eller ren tekst.
+* Inkluder eller udeluk tidsstempler.
+* Send transskriptioner direkte til AI-værktøjer såsom ChatGPT, Claude og Gemini.
+
+Batchbehandling
+
+* Udtræk transskriptioner fra playlister og flere åbne faner.
+* Søg på tværs af flere transskriptioner.
+* Eksporter flere transskriptioner på én gang.
+
+Designet til studier, forskning, indholdsskabelse, notetagning og videoanalyse.

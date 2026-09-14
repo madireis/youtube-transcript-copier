@@ -1,0 +1,41 @@
+Estrai, cerca, aggiungi ai segnalibri ed esporta trascrizioni da video e Shorts di YouTube.
+
+YouTube Transcript Copier offre un accesso rapido alle trascrizioni disponibili di YouTube senza dover aprire e copiare manualmente il pannello della trascrizione. Cerca nel testo della trascrizione, salta ai timestamp, salva i momenti importanti, esporta le trascrizioni o inviale a un servizio di intelligenza artificiale per l'analisi.
+
+Caratteristiche
+
+Accesso Rapido alle Trascrizioni
+
+* Estrai le trascrizioni disponibili da video e Shorts di YouTube.
+* Accedi alle trascrizioni direttamente dall'interfaccia di YouTube o dall'estensione.
+* Copia la trascrizione completa con un clic.
+* Utilizza le tracce di sottotitoli e trascrizioni disponibili.
+
+Ricerca e Timestamp
+
+* Cerca nel testo della trascrizione durante la visione.
+* Evidenzia i risultati corrispondenti.
+* Salta al punto corrispondente nel video.
+* Visualizza il numero di risultati corrispondenti.
+
+Segnalibri e Note
+
+* Salva i momenti importanti da una trascrizione.
+* Aggiungi note ai momenti salvati.
+* Rivedi i momenti salvati dall'estensione.
+* Crea un documento Markdown strutturato dai momenti salvati.
+
+Esportazione e Condivisione
+
+* Esporta trascrizioni nei formati TXT, Markdown, JSON, CSV, SRT o VTT.
+* Scegli tra testo formattato o testo normale.
+* Includi o escludi i timestamp.
+* Invia le trascrizioni direttamente a strumenti IA come ChatGPT, Claude e Gemini.
+
+Elaborazione in Batch
+
+* Estrai trascrizioni da playlist e schede multiple aperte.
+* Cerca su più trascrizioni contemporaneamente.
+* Esporta più trascrizioni contemporaneamente.
+
+Progettato per studio, ricerca, creazione di contenuti, annotazioni e analisi video.

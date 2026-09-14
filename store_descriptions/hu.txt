@@ -1,0 +1,41 @@
+Kivonatoljon, keressen, könyvjelzőzzön és exportáljon átiratokat YouTube-videókból és Shorts-tartalmakból.
+
+A YouTube Transcript Copier gyors hozzáférést biztosít az elérhető YouTube-átiratokhoz anélkül, hogy manuálisan meg kellene nyitnia és másolnia az átirat panelt. Keressen az átirat szövegében, ugorjon időbélyegekre, mentsen el fontos pillanatokat, exportáljon átiratokat, vagy küldje el őket egy MI-szolgáltatásnak elemzésre.
+
+Jellemzők
+
+Gyors Hozzáférés az Átiratokhoz
+
+* Elérhető átiratok kinyerése YouTube-videókból és Shorts-tartalmakból.
+* Hozzáférés az átiratokhoz közvetlenül a YouTube felületéről vagy a bővítményből.
+* A teljes átirat másolása egyetlen kattintással.
+* Elérhető felirat- és átiratsávok használata.
+
+Keresés és Időbélyegek
+
+* Keresés az átirat szövegében videónézés közben.
+* Egyező találatok kiemelése.
+* Ugrás a megfelelő pontra a videóban.
+* Találatok számának megtekintése.
+
+Könyvjelzők és Jegyzetek
+
+* Fontos pillanatok mentése egy átiratból.
+* Jegyzetek hozzáadása a mentett pillanatokhoz.
+* Mentett pillanatok áttekintése a bővítményből.
+* Strukturált Markdown dokumentum létrehozása a mentett pillanatokból.
+
+Exportálás és Megosztás
+
+* Átiratok exportálása TXT, Markdown, JSON, CSV, SRT vagy VTT formátumban.
+* Választás a formázott szöveg vagy egyszerű szöveges kimenet között.
+* Időbélyegek beillesztése vagy kizárása.
+* Átiratok közvetlen küldése olyan MI-eszközöknek, mint a ChatGPT, a Claude és a Gemini.
+
+Kötegelt Feldolgozás
+
+* Átiratok kinyerése lejátszási listákból és több nyitott lapról.
+* Keresés egyszerre több átiratban.
+* Több átirat exportálása egyszerre.
+
+Tanuláshoz, kutatáshoz, tartalomkészítéshez, jegyzeteléshez és videóelemzéshez tervezve.

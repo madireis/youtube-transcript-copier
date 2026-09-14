@@ -1,0 +1,41 @@
+Extract, search, bookmark, and export transcripts from YouTube videos and Shorts.
+
+YouTube Transcript Copier provides quick access to available YouTube transcripts without manually opening and copying the transcript panel. Search transcript text, jump to timestamps, save important moments, export transcripts, or send them to an AI service for analysis.
+
+Features
+
+Quick Transcript Access
+
+* Extract available transcripts from YouTube videos and Shorts.
+* Access transcripts directly from the YouTube interface or the extension.
+* Copy the complete transcript with one click.
+* Use available caption and transcript tracks.
+
+Search and Timestamps
+
+* Search transcript text while watching.
+* Highlight matching results.
+* Jump to the corresponding point in the video.
+* See the number of matching results.
+
+Bookmarks and Notes
+
+* Save important moments from a transcript.
+* Add notes to saved moments.
+* Review saved moments from the extension.
+* Create a structured Markdown document from saved moments.
+
+Export and Share
+
+* Export transcripts in TXT, Markdown, JSON, CSV, SRT, or VTT formats.
+* Choose between formatted text or plain text output.
+* Include or exclude timestamps.
+* Send transcripts directly to AI tools such as ChatGPT, Claude, and Gemini.
+
+Batch Processing
+
+* Extract transcripts from playlists and multiple open tabs.
+* Search across multiple transcripts.
+* Export multiple transcripts at once.
+
+Designed for studying, research, content creation, note-taking, and video analysis.

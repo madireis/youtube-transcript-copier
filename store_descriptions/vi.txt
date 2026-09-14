@@ -1,0 +1,41 @@
+Trích xuất, tìm kiếm, đánh dấu và xuất bản ghi chép lời thoại từ video và Shorts trên YouTube.
+
+YouTube Transcript Copier cung cấp quyền truy cập nhanh vào bản ghi chép lời thoại có sẵn trên YouTube mà không cần mở và sao chép thủ công từ bảng bản chép lời. Tìm kiếm nội dung bản ghi, chuyển đến mốc thời gian, lưu các khoảnh khắc quan trọng, xuất bản ghi hoặc gửi tới dịch vụ AI để phân tích.
+
+Tính năng
+
+Truy Cập Bản Ghi Lời Thoại Nhanh Chóng
+
+* Trích xuất bản ghi chép có sẵn từ video và Shorts trên YouTube.
+* Truy cập bản ghi trực tiếp từ giao diện YouTube hoặc tiện ích mở rộng.
+* Sao chép toàn bộ bản ghi lời thoại chỉ với một cú nhấp chuột.
+* Sử dụng các bản phụ đề và bản chép lời có sẵn.
+
+Tìm Kiếm và Mốc Thời Gian
+
+* Tìm kiếm nội dung bản ghi trong khi xem video.
+* Làm nổi bật các kết quả trùng khớp.
+* Chuyển ngay đến đoạn tương ứng trong video.
+* Xem số lượng kết quả trùng khớp.
+
+Dấu Trang và Ghi Chú
+
+* Lưu lại những khoảnh khắc quan trọng từ bản ghi.
+* Thêm ghi chú vào các khoảnh khắc đã lưu.
+* Xem lại các khoảnh khắc đã lưu ngay trên tiện ích mở rộng.
+* Tạo tài liệu Markdown có cấu trúc từ các khoảnh khắc đã lưu.
+
+Xuất và Chia Sẻ
+
+* Xuất bản ghi ở các định dạng TXT, Markdown, JSON, CSV, SRT hoặc VTT.
+* Chọn giữa định dạng văn bản có cấu trúc hoặc văn bản thuần.
+* Tùy chọn bao gồm hoặc loại trừ mốc thời gian.
+* Gửi trực tiếp bản ghi đến các công cụ AI như ChatGPT, Claude và Gemini.
+
+Xử Lý Hàng Loạt
+
+* Trích xuất bản ghi từ danh sách phát và nhiều tab đang mở.
+* Tìm kiếm trên nhiều bản ghi cùng lúc.
+* Xuất nhiều bản ghi cùng một lúc.
+
+Được thiết kế phục vụ học tập, nghiên cứu, sáng tạo nội dung, ghi chú và phân tích video.
