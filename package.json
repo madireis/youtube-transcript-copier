@@ -1,6 +1,6 @@
 {
   "name": "youtube-transcript-copier",
-  "version": "2.7.0",
+  "version": "2.8.0",
   "description": "YouTube Transcript Copier Chrome Extension with DOM-resistant multi-strategy extraction and offline test suite",
   "private": true,
   "scripts": {

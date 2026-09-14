@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://chromewebstore.google.com/detail/youtube-transcript-copier/khbenieolkkkjjokcfklaokfpdblkgbn"><img src="https://img.shields.io/badge/Chrome%20Web%20Store-v2.7.0-brightgreen?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Chrome Web Store" /></a>
+  <a href="https://chromewebstore.google.com/detail/youtube-transcript-copier/khbenieolkkkjjokcfklaokfpdblkgbn"><img src="https://img.shields.io/badge/Chrome%20Web%20Store-v2.8.0-brightgreen?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Chrome Web Store" /></a>
   <img src="https://img.shields.io/badge/Manifest-V3-blue?style=for-the-badge" alt="Manifest V3" />
   <img src="https://img.shields.io/badge/Languages-30%20Supported-purple?style=for-the-badge" alt="30 Languages" />
   <img src="https://img.shields.io/badge/Privacy-100%25%20Local-success?style=for-the-badge" alt="100% Local" />

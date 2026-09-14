@@ -65,7 +65,7 @@
    "side_panel": {
       "default_path": "popup.html"
    },
-   "version": "2.7.0",
+   "version": "2.8.0",
    "web_accessible_resources": [
       {
          "resources": ["batch_content.js", "batch_overlay.js", "youtube_button.js"],
