@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://chromewebstore.google.com/detail/youtube-transcript-copier/khbenieolkkkjjokcfklaokfpdblkgbn"><img src="https://img.shields.io/badge/Chrome%20Web%20Store-v2.8.0-brightgreen?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Chrome Web Store" /></a>
+  <a href="https://chromewebstore.google.com/detail/youtube-transcript-copier/khbenieolkkkjjokcfklaokfpdblkgbn"><img src="https://img.shields.io/badge/Chrome%20Web%20Store-v2.8.2-brightgreen?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Chrome Web Store" /></a>
   <img src="https://img.shields.io/badge/Manifest-V3-blue?style=for-the-badge" alt="Manifest V3" />
   <img src="https://img.shields.io/badge/Languages-30%20Supported-purple?style=for-the-badge" alt="30 Languages" />
   <img src="https://img.shields.io/badge/Privacy-100%25%20Local-success?style=for-the-badge" alt="100% Local" />
@@ -108,6 +108,14 @@ Fully translated interface and store listings with instant runtime switching acr
 
 ---
 
+### 8. 🛠️ Smart In-App Diagnostics & Feedback Loop
+- **Instant Error Reporting**: "Report Issue with Video" button appears directly on extraction failures, pre-populating diagnostics.
+- **Automatic YouTube Language & Context Detection**: Captures active video title, URL, current error message, and the YouTube webpage's active language attribute (`document.documentElement.lang`).
+- **Flexible Submission**: Submit via Google Forms (auto-copies diagnostic report to clipboard) or send a pre-filled direct email.
+- **Uninstall Survey Integration**: Registered automatic uninstall feedback survey to understand user needs and resolve issues swiftly.
+
+---
+
 ## 🔒 Privacy First
 
 - **100% Client-Side**: All transcript processing, formatting, and storage happens entirely on your machine.
@@ -128,7 +136,7 @@ Install with one click from the [Chrome Web Store](https://chromewebstore.google
    ```
 2. Navigate to `chrome://extensions/` in your browser.
 3. Enable **Developer mode** in the upper-right corner.
-4. Click **Load unpacked** and select the extension folder.
+4. Click **Load unpacked** and select the extension folder (or the `dist/package` folder).
 
 ---
 
@@ -138,6 +146,16 @@ Install with one click from the [Chrome Web Store](https://chromewebstore.google
 | :--- | :--- |
 | `Ctrl + Shift + Y` (Windows/Linux) | Copy formatted transcript to clipboard |
 | `Cmd + Shift + Y` (macOS) | Copy formatted transcript to clipboard |
+
+---
+
+## 📋 Release Notes
+
+### v2.8.2
+- **Feedback & Diagnostic Modal**: Added dedicated in-popup modal with category selection and optional notes.
+- **YouTube Website Language Detection**: Automatically retrieves YouTube's DOM language setting (`document.documentElement.lang`) to debug language-specific caption issues.
+- **Uninstall Survey**: Configured `chrome.runtime.setUninstallURL` with a dedicated Google Form to capture exit feedback.
+- **1-Click Form & Email Support**: Open the Google Form with diagnostics copied to clipboard, or compose a pre-filled email.
 
 ---
 
