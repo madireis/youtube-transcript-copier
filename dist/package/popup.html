@@ -311,6 +311,16 @@
           </svg>
         </div>
         <p id="error-msg" class="error-msg"></p>
+        <div class="error-actions-row">
+          <button id="error-report-btn" class="error-report-btn" type="button" title="Report this video or send feedback">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+              <line x1="12" y1="8" x2="12" y2="12"/>
+              <line x1="12" y1="16" x2="12.01" y2="16"/>
+            </svg>
+            <span data-i18n="reportVideoIssueBtn">Report Problem with Video</span>
+          </button>
+        </div>
       </div>
     </div>
 
@@ -733,6 +743,63 @@
             <button id="clip-ai-claude" class="ai-mini-btn claude" title="Synthesize in Claude">Claude</button>
             <button id="clip-ai-gemini" class="ai-mini-btn gemini" title="Synthesize in Gemini">Gemini</button>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Report Problem / Feedback Modal -->
+    <div id="report-modal" class="modal-overlay hidden">
+      <div class="saved-modal-content report-modal-content">
+        <div class="saved-modal-header">
+          <div style="display:flex; align-items:center; gap:6px;">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+              <line x1="12" y1="8" x2="12" y2="12"/>
+              <line x1="12" y1="16" x2="12.01" y2="16"/>
+            </svg>
+            <span style="font-size:12.5px; font-weight:700; color:var(--text);" data-i18n="reportModalTitle">Report an Issue / Feedback</span>
+          </div>
+          <button id="report-modal-close" class="saved-close-btn" title="Close">&times;</button>
+        </div>
+        <div class="report-modal-body">
+          <div class="report-field">
+            <label class="report-label" data-i18n="reportIssueType">What happened?</label>
+            <select id="report-issue-type" class="report-select">
+              <option value="No transcript / captions available" data-i18n="issueNoTranscript">Video has no transcript / captions</option>
+              <option value="1-Click button did not appear" data-i18n="issueButtonMissing">1-Click button did not appear</option>
+              <option value="Extraction failed or threw error" data-i18n="issueExtractFailed">Extraction failed or threw an error</option>
+              <option value="Timestamps or formatting issue" data-i18n="issueTimestamps">Timestamps or formatting issue</option>
+              <option value="Feature request / suggestion" data-i18n="issueFeature">Feature request / Suggestion</option>
+              <option value="Other" data-i18n="issueOther">Other</option>
+            </select>
+          </div>
+
+          <div class="report-field">
+            <label class="report-label" data-i18n="reportDescription">Details / Notes (optional):</label>
+            <textarea id="report-details" class="report-textarea" data-i18n-placeholder="reportPlaceholder" placeholder="Tell us what happened or what could be improved..."></textarea>
+          </div>
+
+          <!-- Auto-detected diagnostics card -->
+          <div class="report-diagnostics-card">
+            <div class="report-diag-header">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+              <span data-i18n="reportAutoDiag">Auto-detected diagnostic info:</span>
+            </div>
+            <div class="report-diag-item"><span data-i18n="reportDiagVideo">Video:</span> <strong id="report-diag-video">Loading...</strong></div>
+            <div class="report-diag-item"><span data-i18n="reportDiagLang">YouTube Language:</span> <strong id="report-diag-lang">Auto</strong></div>
+            <div class="report-diag-item"><span data-i18n="reportDiagStatus">Status / Error:</span> <strong id="report-diag-status">None</strong></div>
+          </div>
+        </div>
+
+        <div class="report-modal-footer">
+          <button id="report-send-form-btn" class="report-btn primary" title="Open Google Form with details">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            <span data-i18n="openFeedbackFormBtn">Open Feedback Form</span>
+          </button>
+          <button id="report-send-email-btn" class="report-btn secondary" title="Send details via email">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span data-i18n="sendViaEmailBtn">Send via Email</span>
+          </button>
         </div>
       </div>
     </div>

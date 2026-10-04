@@ -327,5 +327,56 @@
   },
   "errors_no_captions_available": {
     "message": "No captions or transcript exist for this video."
+  },
+  "reportProblemBtn": {
+    "message": "Report Issue with Video"
+  },
+  "reportModalTitle": {
+    "message": "Report an Issue / Feedback"
+  },
+  "reportIssueType": {
+    "message": "What happened?"
+  },
+  "issueNoTranscript": {
+    "message": "Video has no transcript / captions"
+  },
+  "issueButtonMissing": {
+    "message": "1-Click button did not appear"
+  },
+  "issueExtractFailed": {
+    "message": "Extraction failed or threw an error"
+  },
+  "issueTimestamps": {
+    "message": "Timestamps or formatting issue"
+  },
+  "issueFeature": {
+    "message": "Feature request / Suggestion"
+  },
+  "issueOther": {
+    "message": "Other"
+  },
+  "reportDescription": {
+    "message": "Details / Notes (optional):"
+  },
+  "reportPlaceholder": {
+    "message": "Tell us what happened or what could be improved..."
+  },
+  "reportAutoDiag": {
+    "message": "Auto-detected diagnostic info:"
+  },
+  "reportDiagVideo": {
+    "message": "Video:"
+  },
+  "reportDiagLang": {
+    "message": "YouTube Language:"
+  },
+  "reportDiagStatus": {
+    "message": "Status / Error:"
+  },
+  "openFeedbackFormBtn": {
+    "message": "Open Feedback Form"
+  },
+  "sendViaEmailBtn": {
+    "message": "Send via Email"
   }
 }

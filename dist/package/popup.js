@@ -98,14 +98,21 @@ async function loadSettings() {
 }
 
 // ---- UI helpers ----
+let lastReportedError = '';
+let currentDetectedDiagnostics = { videoTitle: '', videoUrl: '', ytLang: '', errorStatus: '' };
+
 function showState(name, message) {
   Object.values(states).forEach((el) => el.classList.add('hidden'));
   if (states[name]) states[name].classList.remove('hidden');
 
-  if (name === 'success' && $('#success-msg'))
-    $('#success-msg').textContent = message || '';
-  if (name === 'error' && $('#error-msg'))
-    $('#error-msg').textContent = message || '';
+  if (name === 'success') {
+    if ($('#success-msg')) $('#success-msg').textContent = message || '';
+    lastReportedError = '';
+  }
+  if (name === 'error') {
+    if ($('#error-msg')) $('#error-msg').textContent = message || '';
+    lastReportedError = message || 'Error occurred';
+  }
 }
 
 // ---- Segmented control ----
@@ -1089,20 +1096,174 @@ async function initLanguage() {
 // Initialize i18n on DOM load
 document.addEventListener('DOMContentLoaded', initLanguage);
 
-// ---- Feedback / Collaborate links ----
-function buildMailtoLink(subject) {
+// ---- Feedback, Diagnostics & Report Modal ----
+const UNINSTALL_SURVEY_URL = 'https://docs.google.com/forms/d/e/1FAIpQLScUkNL-LQmilyQQXexS_lqodGtjQZ7XtHYeqXVd88_rs0yPMw/viewform';
+
+function buildMailtoLink(subject, extraBody = '') {
   const s = encodeURIComponent(subject);
   const b = encodeURIComponent(
-    `\n\n---\nExtension: YouTube Transcript Copier v${EXT_VERSION}\nBrowser: ${navigator.userAgent}\n`
+    `${extraBody ? extraBody + '\n\n' : ''}---\nExtension: YouTube Transcript Copier v${EXT_VERSION}\nBrowser: ${navigator.userAgent}\n`
   );
   return `https://mail.google.com/mail/?view=cm&fs=1&to=${FEEDBACK_EMAIL}&su=${s}&body=${b}`;
+}
+
+async function detectYouTubeDiagnostics() {
+  let videoTitle = cachedData?.videoTitle || '';
+  let videoUrl = cachedData?.videoUrl || '';
+  let ytLang = 'Unknown';
+  let errorStatus = lastReportedError || 'None';
+
+  try {
+    const tabs = await chrome.tabs.query({ active: true, currentWindow: true });
+    const tab = tabs?.[0];
+    if (tab) {
+      if (!videoUrl) videoUrl = tab.url || '';
+      if (!videoTitle && tab.title) {
+        videoTitle = tab.title.replace(/ - YouTube$/, '').trim();
+      }
+
+      if (tab.url && tab.url.includes('youtube.com') && tab.id) {
+        try {
+          const injectionResults = await chrome.scripting.executeScript({
+            target: { tabId: tab.id },
+            func: () => {
+              const lang = document.documentElement.lang || document.querySelector('html')?.getAttribute('lang') || navigator.language || 'en';
+              const titleEl = document.querySelector('h1.ytd-watch-metadata yt-formatted-string, #title h1 yt-formatted-string');
+              const domTitle = titleEl ? titleEl.textContent.trim() : '';
+              return { lang, domTitle };
+            }
+          });
+          if (injectionResults?.[0]?.result) {
+            const res = injectionResults[0].result;
+            if (res.lang) ytLang = res.lang;
+            if (res.domTitle && !videoTitle) videoTitle = res.domTitle;
+          }
+        } catch {
+          ytLang = navigator.language || 'auto';
+        }
+      }
+    }
+  } catch (err) {
+    console.warn('Diagnostics detection failed:', err);
+  }
+
+  return {
+    videoTitle: videoTitle || 'Not a YouTube video page',
+    videoUrl: videoUrl || 'N/A',
+    ytLang: ytLang || 'en',
+    errorStatus: errorStatus
+  };
+}
+
+async function openReportModal(initialReason = '', initialDetails = '') {
+  const modal = $('#report-modal');
+  if (!modal) return;
+
+  const issueSelect = $('#report-issue-type');
+  const detailsInput = $('#report-details');
+  const diagVideoEl = $('#report-diag-video');
+  const diagLangEl = $('#report-diag-lang');
+  const diagStatusEl = $('#report-diag-status');
+
+  if (issueSelect && initialReason) {
+    const foundOpt = Array.from(issueSelect.options).find(o => o.value === initialReason || o.textContent.includes(initialReason));
+    if (foundOpt) issueSelect.value = foundOpt.value;
+  }
+  if (detailsInput) {
+    detailsInput.value = initialDetails || '';
+  }
+
+  if (diagVideoEl) diagVideoEl.textContent = 'Detecting...';
+  if (diagLangEl) diagLangEl.textContent = 'Detecting...';
+  if (diagStatusEl) diagStatusEl.textContent = lastReportedError || 'None';
+
+  modal.classList.remove('hidden');
+
+  const diag = await detectYouTubeDiagnostics();
+  currentDetectedDiagnostics = diag;
+
+  if (diagVideoEl) {
+    const dispTitle = diag.videoTitle.length > 40 ? diag.videoTitle.slice(0, 38) + '...' : diag.videoTitle;
+    diagVideoEl.textContent = dispTitle;
+    diagVideoEl.title = `${diag.videoTitle} (${diag.videoUrl})`;
+  }
+  if (diagLangEl) {
+    diagLangEl.textContent = diag.ytLang;
+  }
+  if (diagStatusEl) {
+    diagStatusEl.textContent = diag.errorStatus;
+  }
+}
+
+function closeReportModal() {
+  const modal = $('#report-modal');
+  if (modal) modal.classList.add('hidden');
+}
+
+// Modal event listeners
+const reportModalCloseBtn = $('#report-modal-close');
+if (reportModalCloseBtn) {
+  reportModalCloseBtn.addEventListener('click', closeReportModal);
+}
+
+const reportModal = $('#report-modal');
+if (reportModal) {
+  reportModal.addEventListener('click', (e) => {
+    if (e.target === reportModal) closeReportModal();
+  });
+}
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeReportModal();
+});
+
+const reportSendFormBtn = $('#report-send-form-btn');
+if (reportSendFormBtn) {
+  reportSendFormBtn.addEventListener('click', async () => {
+    const issue = $('#report-issue-type')?.value || 'Issue';
+    const notes = $('#report-details')?.value?.trim() || '';
+    const diagSummary = `[YT Transcript Copier Diagnostics]\nIssue: ${issue}\nNotes: ${notes}\nVideo Title: ${currentDetectedDiagnostics.videoTitle}\nVideo URL: ${currentDetectedDiagnostics.videoUrl}\nYouTube Language: ${currentDetectedDiagnostics.ytLang}\nStatus / Error: ${currentDetectedDiagnostics.errorStatus}\nVersion: v${EXT_VERSION}`;
+
+    try {
+      await navigator.clipboard.writeText(diagSummary);
+    } catch { /* ignore clipboard error */ }
+
+    chrome.tabs.create({ url: UNINSTALL_SURVEY_URL });
+    closeReportModal();
+  });
+}
+
+const reportSendEmailBtn = $('#report-send-email-btn');
+if (reportSendEmailBtn) {
+  reportSendEmailBtn.addEventListener('click', () => {
+    const issue = $('#report-issue-type')?.value || 'Issue';
+    const notes = $('#report-details')?.value?.trim() || '';
+    const subject = `[YT Transcript Copier v${EXT_VERSION}] ${issue}`;
+    const extraBody = `${notes ? notes + '\n\n' : ''}--- Auto-detected Diagnostics ---
+Issue Type: ${issue}
+Video: ${currentDetectedDiagnostics.videoTitle}
+URL: ${currentDetectedDiagnostics.videoUrl}
+YouTube Website Language: ${currentDetectedDiagnostics.ytLang}
+Status / Error: ${currentDetectedDiagnostics.errorStatus}`;
+
+    chrome.tabs.create({ url: buildMailtoLink(subject, extraBody) });
+    closeReportModal();
+  });
 }
 
 const feedbackLink = $('#feedback-link');
 if (feedbackLink) {
   feedbackLink.addEventListener('click', (e) => {
     e.preventDefault();
-    chrome.tabs.create({ url: buildMailtoLink('Bug Report / Feedback — YT Transcript Copier') });
+    openReportModal();
+  });
+}
+
+const errorReportBtn = $('#error-report-btn');
+if (errorReportBtn) {
+  errorReportBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    openReportModal('Extraction failed or threw error', lastReportedError ? `Error: ${lastReportedError}` : '');
   });
 }
 

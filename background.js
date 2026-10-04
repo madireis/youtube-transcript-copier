@@ -11,8 +11,23 @@
 
 'use strict';
 
-// ---- Side Panel & Context Menu Setup ----
+// ---- Uninstall Feedback Survey & Context Menu Setup ----
+const UNINSTALL_SURVEY_URL = 'https://docs.google.com/forms/d/e/1FAIpQLScUkNL-LQmilyQQXexS_lqodGtjQZ7XtHYeqXVd88_rs0yPMw/viewform';
+
+function setupUninstallURL() {
+  if (typeof chrome !== 'undefined' && chrome.runtime && typeof chrome.runtime.setUninstallURL === 'function') {
+    try {
+      chrome.runtime.setUninstallURL(UNINSTALL_SURVEY_URL);
+    } catch {}
+  }
+}
+
+// Ensure uninstall URL is registered whenever service worker boots
+setupUninstallURL();
+
 chrome.runtime.onInstalled.addListener(() => {
+  setupUninstallURL();
+
   chrome.contextMenus.create({
     id: 'copy-transcript',
     title: (typeof chrome !== 'undefined' && chrome.i18n && chrome.i18n.getMessage('contextMenuCopyTranscript')) || 'Copy Transcript',
