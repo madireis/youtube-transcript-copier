@@ -420,14 +420,47 @@
     }
   }
 
-  // ---- 6. Find Action Bar Container ----
+  // ---- 6. Find Action Bar Container & Watch Like Button ----
+  function isInsidePlaylistOrPanel(el) {
+    if (!el || !el.isConnected) return false;
+    return Boolean(
+      el.closest(
+        'ytd-playlist-panel-renderer, ytd-playlist-panel-video-renderer, #playlist, ' +
+        '[class*="playlist" i], [class*="ytd-playlist" i], ' +
+        '#header-top-row, #end-actions-in-header, #overflow-menu-top-row, #publisher-container, ' +
+        '#panels, ytd-engagement-panel-section-list-renderer, ytd-miniplayer, ' +
+        '#chat, #chat-container, ytd-live-chat-frame, #secondary, #secondary-inner'
+      )
+    );
+  }
+
+  function findWatchLikeButton() {
+    const selectors = [
+      'ytd-watch-metadata segmented-like-dislike-button-view-model',
+      'ytd-watch-metadata ytd-segmented-like-dislike-button-renderer',
+      '#above-the-fold segmented-like-dislike-button-view-model',
+      '#above-the-fold ytd-segmented-like-dislike-button-renderer',
+      '#actions-inner segmented-like-dislike-button-view-model',
+      '#actions segmented-like-dislike-button-view-model',
+      'ytd-watch-flexy #primary segmented-like-dislike-button-view-model',
+      'segmented-like-dislike-button-view-model',
+      'ytd-segmented-like-dislike-button-renderer'
+    ];
+
+    for (const sel of selectors) {
+      const els = document.querySelectorAll(sel);
+      for (const el of els) {
+        if (!el || !el.isConnected) continue;
+        if (isInsidePlaylistOrPanel(el)) continue;
+        return el;
+      }
+    }
+    return null;
+  }
+
   function isValidWatchActionBar(el) {
     if (!el || !el.isConnected) return false;
-
-    // Strictly forbid playlists, side panels, comments, chat, engagement panels, or miniplayers
-    if (el.closest('ytd-playlist-panel-renderer, #playlist, ytd-playlist-panel-video-renderer, #panels, ytd-engagement-panel-section-list-renderer, ytd-miniplayer, #chat, #chat-container, ytd-live-chat-frame')) {
-      return false;
-    }
+    if (isInsidePlaylistOrPanel(el)) return false;
 
     // Must be inside the main video's watch metadata / actions area
     const watchParent = el.closest('ytd-watch-metadata, #above-the-fold, ytd-watch-flexy #primary, #primary-inner #actions');
@@ -439,13 +472,18 @@
   }
 
   function findActionBarContainer() {
-    // Specifically target the primary video action bar in ytd-watch-metadata
+    // Priority 1: Direct parent container of the watch video's Like/Dislike button
+    const likeBtn = findWatchLikeButton();
+    if (likeBtn && likeBtn.parentElement && isValidWatchActionBar(likeBtn.parentElement)) {
+      return likeBtn.parentElement;
+    }
+
+    // Priority 2: Candidates strictly scoped to watch metadata
     const candidates = [
       'ytd-watch-metadata ytd-menu-renderer #top-level-buttons-computed',
       'ytd-watch-metadata #top-level-buttons-computed',
       '#above-the-fold ytd-menu-renderer #top-level-buttons-computed',
       '#above-the-fold #top-level-buttons-computed',
-      'ytd-watch-flexy #primary #top-level-buttons-computed',
       '#actions.ytd-watch-metadata #top-level-buttons-computed',
       '#actions-inner.ytd-watch-metadata #top-level-buttons-computed',
       'ytd-watch-metadata #actions #top-level-buttons-computed'
@@ -683,15 +721,18 @@
     const container = findActionBarContainer();
     if (!container) return false;
 
-    // Check if button already exists in the DOM
-    const existing = document.getElementById(BUTTON_ID);
-    if (existing) {
-      // If the existing button is placed in playlist panel or not in current container, clean it up!
-      if (!isValidWatchActionBar(existing.parentElement) || existing.parentElement !== container) {
-        existing.remove();
-      } else if (existing.isConnected) {
-        return true;
+    // Purge any button erroneously injected into playlists or invalid containers
+    const allButtons = document.querySelectorAll('#' + BUTTON_ID);
+    for (const btnEl of allButtons) {
+      if (isInsidePlaylistOrPanel(btnEl) || btnEl.parentElement !== container) {
+        btnEl.remove();
       }
+    }
+
+    // If button is already properly connected in this container, we are done
+    const existing = document.getElementById(BUTTON_ID);
+    if (existing && existing.isConnected && existing.parentElement === container) {
+      return true;
     }
 
     injectStyles();
@@ -729,33 +770,37 @@
       button.addEventListener('click', (e) => handleButtonClick(e, button));
     }
 
-    // Precise squeeze placement:
-    // 1. Try to find the Share button first
-    let targetSibling = null;
-    const children = Array.from(container.children);
-    const shareBtn = children.find(child => {
-      if (child.id === BUTTON_ID) return false;
-      const aria = child.querySelector('button')?.getAttribute('aria-label') || '';
-      const text = child.textContent || '';
-      return /share/i.test(aria) || /share/i.test(text);
-    });
-
-    if (shareBtn && shareBtn.parentNode === container) {
-      targetSibling = shareBtn;
-    } else {
-      // 2. Fall back to segmented like/dislike button
-      const likeDislike = container.querySelector(
-        'segmented-like-dislike-button-view-model, ytd-segmented-like-dislike-button-renderer'
-      );
-      if (likeDislike && likeDislike.parentNode === container) {
-        targetSibling = likeDislike;
-      }
+    // Targeted placement: ALWAYS place immediately next to the Like/Dislike button
+    let likeBtn = container.querySelector(
+      'segmented-like-dislike-button-view-model, ytd-segmented-like-dislike-button-renderer'
+    );
+    if (!likeBtn) {
+      likeBtn = findWatchLikeButton();
     }
 
-    if (targetSibling && targetSibling.nextSibling) {
-      container.insertBefore(wrapper, targetSibling.nextSibling);
+    if (likeBtn && likeBtn.parentNode === container) {
+      if (likeBtn.nextSibling) {
+        container.insertBefore(wrapper, likeBtn.nextSibling);
+      } else {
+        container.appendChild(wrapper);
+      }
     } else {
-      container.appendChild(wrapper);
+      // Fallback: place before Share if present, or at start of container
+      const children = Array.from(container.children);
+      const shareBtn = children.find(child => {
+        if (child.id === BUTTON_ID) return false;
+        const aria = child.querySelector('button')?.getAttribute('aria-label') || '';
+        const text = child.textContent || '';
+        return /share/i.test(aria) || /share/i.test(text);
+      });
+
+      if (shareBtn && shareBtn.parentNode === container) {
+        container.insertBefore(wrapper, shareBtn);
+      } else if (container.firstChild) {
+        container.insertBefore(wrapper, container.firstChild);
+      } else {
+        container.appendChild(wrapper);
+      }
     }
 
     return true;
