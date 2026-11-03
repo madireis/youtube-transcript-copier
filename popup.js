@@ -1016,6 +1016,11 @@ function getTranslation(key, placeholders = []) {
 async function setLanguage(lang) {
   currentLang = lang;
   localStorage.setItem('appLang', lang);
+  try {
+    if (typeof chrome !== 'undefined' && chrome.storage && chrome.storage.local) {
+      chrome.storage.local.set({ appLang: lang });
+    }
+  } catch {}
 
   // Dynamically load locale messages if needed
   if (!loadedTranslations[lang]) {

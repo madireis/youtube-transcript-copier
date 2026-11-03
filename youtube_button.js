@@ -17,6 +17,97 @@
   let isExtracting = false;
   let toastTimeout = null;
 
+  // ---- Multi-Language Localization Dictionary for In-Page Buttons ----
+  const BUTTON_TRANSLATIONS = {
+    ar: "نسخ نص الفيديو",
+    cs: "Kopírovat přepis videa",
+    da: "Kopier videotransskription",
+    de: "Transkript kopieren",
+    el: "Αντιγραφή απομαγνητοφώνησης βίντεο",
+    en: "Copy Transcript",
+    es: "Copiar Transcripción",
+    fa: "کپی زیرنویس ویدیو",
+    fi: "Kopioi videon tekstitys",
+    fr: "Copier la Transcription",
+    he: "העתק תמלול סרטון",
+    hi: "वीडियो ट्रांसक्रिप्ट कॉपी करें",
+    hu: "Videó átirat másolása",
+    id: "Salin Transkrip Video",
+    it: "Copia Trascrizione Video",
+    ja: "文字起こしをコピー",
+    ko: "동영상 자막 복사",
+    nl: "Videotranscriptie kopiëren",
+    no: "Kopier videotranskripsjon",
+    pl: "Kopiuj transkrypcję wideo",
+    pt: "Copiar Transcrição",
+    pt_BR: "Copiar Transcrição",
+    ro: "Copiază transcrierea video",
+    ru: "Скопировать субтитры",
+    sv: "Kopiera videotranskription",
+    th: "คัดลอกคำบรรยายวิดีโอ",
+    tr: "Transkripti Kopyala",
+    uk: "Скопіювати субтитри відео",
+    vi: "Sao chép bản chép lời video",
+    zh_CN: "复制视频字幕",
+    zh_TW: "複製影片字幕"
+  };
+
+  let activeLocale = 'en';
+
+  function getButtonLabel() {
+    return BUTTON_TRANSLATIONS[activeLocale] ||
+           (typeof chrome !== 'undefined' && chrome.i18n && chrome.i18n.getMessage('copyBtnText')) ||
+           'Copy Transcript';
+  }
+
+  function updateButtonLabelsInDOM() {
+    const label = getButtonLabel();
+    const mainBtnText = document.querySelector('#' + BUTTON_ID + ' .ytc-btn-text');
+    if (mainBtnText && !isExtracting) {
+      mainBtnText.textContent = label;
+    }
+    const shortsLabels = document.querySelectorAll('.ytc-shorts-btn-label');
+    shortsLabels.forEach(el => {
+      if (!isExtracting) el.textContent = label;
+    });
+  }
+
+  // Load configured language from storage or browser UI
+  function initButtonLocale() {
+    try {
+      if (typeof chrome !== 'undefined' && chrome.storage && chrome.storage.local) {
+        chrome.storage.local.get(['appLang', 'userSettings'], (res) => {
+          if (res?.appLang && BUTTON_TRANSLATIONS[res.appLang]) {
+            activeLocale = res.appLang;
+          } else {
+            const browserUiLang = (typeof chrome !== 'undefined' && chrome.i18n && chrome.i18n.getUILanguage && chrome.i18n.getUILanguage()) || navigator.language || 'en';
+            const normalized = browserUiLang.replace('-', '_');
+            if (BUTTON_TRANSLATIONS[normalized]) {
+              activeLocale = normalized;
+            } else {
+              const base = normalized.split('_')[0];
+              activeLocale = BUTTON_TRANSLATIONS[base] ? base : 'en';
+            }
+          }
+          updateButtonLabelsInDOM();
+        });
+
+        // Listen for realtime language switches from popup
+        chrome.storage.onChanged.addListener((changes, area) => {
+          if (area === 'local' && changes.appLang) {
+            const newLang = changes.appLang.newValue;
+            if (newLang && BUTTON_TRANSLATIONS[newLang]) {
+              activeLocale = newLang;
+              updateButtonLabelsInDOM();
+            }
+          }
+        });
+      }
+    } catch {}
+  }
+
+  initButtonLocale();
+
   // ---- 1. Native Styles Injection ----
   function injectStyles() {
     if (document.getElementById(STYLE_ID)) return;
@@ -343,7 +434,7 @@
     } else {
       // Idle
       if (iconEl) iconEl.innerHTML = TRANSCRIPT_ICON_SVG;
-      if (textEl) textEl.textContent = text || 'Copy Transcript';
+      if (textEl) textEl.textContent = text || getButtonLabel();
     }
   }
 
@@ -396,7 +487,7 @@
               : 'Could not extract transcript (Try playing the video first)',
             true
           );
-          setTimeout(() => setButtonState(btn, 'idle', 'Copy Transcript'), 2600);
+          setTimeout(() => setButtonState(btn, 'idle', getButtonLabel()), 2600);
           return;
         }
 
@@ -410,13 +501,13 @@
         showToast(`Transcript copied to clipboard${lineCountStr}!`, false);
         incrementRatingUsageCount();
 
-        setTimeout(() => setButtonState(btn, 'idle', 'Copy Transcript'), 2600);
+        setTimeout(() => setButtonState(btn, 'idle', getButtonLabel()), 2600);
       });
     } catch (err) {
       isExtracting = false;
       setButtonState(btn, 'error', 'Error');
       showToast('Extension communication error', true);
-      setTimeout(() => setButtonState(btn, 'idle', 'Copy Transcript'), 2600);
+      setTimeout(() => setButtonState(btn, 'idle', getButtonLabel()), 2600);
     }
   }
 
@@ -532,7 +623,7 @@
     } else {
       // idle
       if (iconEl) iconEl.innerHTML = TRANSCRIPT_ICON_SVG;
-      if (labelEl) labelEl.textContent = labelText || 'Copy Transcript';
+      if (labelEl) labelEl.textContent = labelText || getButtonLabel();
     }
   }
 
@@ -603,7 +694,7 @@
               : 'Could not extract transcript for Short',
             true
           );
-          setTimeout(() => setShortsButtonState(container, 'idle', 'Copy Transcript'), 2600);
+          setTimeout(() => setShortsButtonState(container, 'idle', getButtonLabel()), 2600);
           return;
         }
 
@@ -617,13 +708,13 @@
         showToast(`Shorts transcript copied to clipboard${lineCountStr}!`, false);
         incrementRatingUsageCount();
 
-        setTimeout(() => setShortsButtonState(container, 'idle', 'Copy Transcript'), 2600);
+        setTimeout(() => setShortsButtonState(container, 'idle', getButtonLabel()), 2600);
       });
     } catch (err) {
       isExtracting = false;
       setShortsButtonState(container, 'error', 'Error');
       showToast('Extension communication error', true);
-      setTimeout(() => setShortsButtonState(container, 'idle', 'Copy Transcript'), 2600);
+      setTimeout(() => setShortsButtonState(container, 'idle', getButtonLabel()), 2600);
     }
   }
 
@@ -653,7 +744,7 @@
           </yt-touch-feedback-shape>
         </button>
         <div class="ytSpecButtonShapeWithLabelLabel ytc-shorts-label-box">
-          <span class="ytAttributedStringHost ytAttributedStringWhiteSpacePreWrap ytAttributedStringTextAlignmentCenter ytAttributedStringWordWrapping ytc-shorts-btn-label">Copy Transcript</span>
+          <span class="ytAttributedStringHost ytAttributedStringWhiteSpacePreWrap ytAttributedStringTextAlignmentCenter ytAttributedStringWordWrapping ytc-shorts-btn-label">${getButtonLabel()}</span>
         </div>
       </label>
     `;
@@ -756,7 +847,7 @@
               </span>
             </span>
           </div>
-          <div class="ytSpecButtonShapeNextButtonTextContent ytc-btn-text">Copy Transcript</div>
+          <div class="ytSpecButtonShapeNextButtonTextContent ytc-btn-text">${getButtonLabel()}</div>
           <yt-touch-feedback-shape aria-hidden="true" class="ytSpecTouchFeedbackShapeHost ytSpecTouchFeedbackShapeTouchResponse">
             <div class="ytSpecTouchFeedbackShapeStroke"></div>
             <div class="ytSpecTouchFeedbackShapeFill"></div>
