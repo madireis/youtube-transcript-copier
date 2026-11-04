@@ -27,7 +27,7 @@ Záložky a Poznámky
 
 Export a Sdílení
 
-* Exportujte přepisy ve formátech TXT, Markdown, JSON, CSV, SRT nebo VTT.
+* Exportujte přepisy v různých formátech dokumentů a titulků.
 * Vyberte si mezi formátovaným textem nebo prostým textem.
 * Zahrňte nebo vylučte časová razítka.
 * Odešlete přepisy přímo do nástrojů AI, jako jsou ChatGPT, Claude a Gemini.

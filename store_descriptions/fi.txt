@@ -27,7 +27,7 @@ Kirjanmerkit ja Muistiinpanot
 
 Vienti ja Jakaminen
 
-* Vie transkriptiot TXT-, Markdown-, JSON-, CSV-, SRT- tai VTT-muodoissa.
+* Vie transkriptiot useissa asiakirja- ja tekstitysmuodoissa.
 * Valitse muotoillun tekstin tai pelkän tekstin välillä.
 * Sisällytä tai jätä pois aikaleimat.
 * Lähetä transkriptiot suoraan tekoälytyökaluihin, kuten ChatGPT, Claude ja Gemini.

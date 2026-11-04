@@ -40,10 +40,10 @@ YouTube Transcript Copier is a fast, privacy-first Chrome extension built for re
 • Auto-opens your preferred AI assistant with your transcript ready to analyze.
 
 📁 MULTIPLE EXPORT FORMATS
-• Plain Text (.txt) — clean text with or without timestamps.
-• Subtitles (.srt & .vtt) — ready for video editing software like Premiere, DaVinci, or CapCut.
-• Markdown (.md) — structured headings and clickable timestamps for Obsidian, Notion, and Bear.
-• Developer Formats (.json & .csv) — raw data for analytics, translation, and NLP workflows.
+• Plain Text — clean text with or without timestamps.
+• Subtitles — standard subtitle tracks ready for video editing.
+• Markdown — structured headings and clickable timestamps for note-taking apps.
+• Data Formats — structured export for analytics, translation, and custom workflows.
 
 🌐 MULTILINGUAL TRANSCRIPT SUPPORT
 • Switch between all available video languages with an instant dropdown.

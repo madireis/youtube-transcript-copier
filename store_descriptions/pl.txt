@@ -27,7 +27,7 @@ Zakładki i Notatki
 
 Eksport i Udostępnianie
 
-* Eksportuj transkrypcje w formatach TXT, Markdown, JSON, CSV, SRT lub VTT.
+* Eksportuj transkrypcje w wielu formatach dokumentów i napisów.
 * Wybieraj między sformatowanym tekstem a zwykłym tekstem.
 * Dołączaj lub wykluczaj znaczniki czasu.
 * Wysyłaj transkrypcje bezpośrednio do narzędzi AI, takich jak ChatGPT, Claude i Gemini.

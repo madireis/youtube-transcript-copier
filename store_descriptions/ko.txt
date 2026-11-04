@@ -27,7 +27,7 @@ YouTube Transcript Copier는 대본 창을 수동으로 열고 복사할 필요 
 
 내보내기 및 공유
 
-* TXT, Markdown, JSON, CSV, SRT, VTT 형식으로 대본 내보내기.
+* 다양한 문서 및 자막 형식으로 대본 내보내기.
 * 서식 있는 텍스트 또는 일반 텍스트 출력 선택.
 * 타임스탬프 포함 또는 제외 설정.
 * ChatGPT, Claude, Gemini와 같은 AI 도구로 대본 직접 전송.

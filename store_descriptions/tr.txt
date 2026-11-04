@@ -27,7 +27,7 @@ Yer İşaretleri ve Notlar
 
 Dışa Aktarma ve Paylaşma
 
-* Transkriptleri TXT, Markdown, JSON, CSV, SRT veya VTT formatlarında dışa aktarın.
+* Transkriptleri çeşitli belge ve altyazı formatlarında dışa aktarın.
 * Biçimlendirilmiş metin veya düz metin çıktısı arasında seçim yapın.
 * Zaman damgalarını dahil edin veya hariç tutun.
 * Transkriptleri doğrudan ChatGPT, Claude ve Gemini gibi yapay zeka araçlarına gönderin.

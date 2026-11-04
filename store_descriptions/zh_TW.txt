@@ -27,7 +27,7 @@ YouTube Transcript Copier 讓您無需手動開啟並複製逐字稿面板，即
 
 匯出與分享
 
-* 支援匯出為 TXT、Markdown、JSON、CSV、SRT 或 VTT 格式。
+* 支援匯出為多種文件與字幕格式。
 * 可自由選擇格式化文字或純文字輸出。
 * 自訂包含或排除時間戳記。
 * 直接將逐字稿傳送至 ChatGPT、Claude 與 Gemini 等 AI 工具。

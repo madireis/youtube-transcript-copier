@@ -32,7 +32,7 @@ Bookmarks and Notes
 
 Export and Share
 
-* Export transcripts in TXT, Markdown, JSON, CSV, SRT, or VTT formats.
+* Export transcripts in multiple document and subtitle formats.
 * Choose between formatted text or plain text output.
 * Include or exclude timestamps.
 * Send transcripts directly to AI tools such as ChatGPT, Claude, and Gemini.
@@ -80,7 +80,7 @@ Marcadores y Notas
 
 Exportar y Compartir
 
-* Exporte transcripciones en formatos TXT, Markdown, JSON, CSV, SRT o VTT.
+* Exporte transcripciones en múltiples formatos de documento y subtítulos.
 * Elija entre salida de texto con formato o texto plano.
 * Incluya o excluya marcas de tiempo.
 * Envíe transcripciones directamente a herramientas de IA como ChatGPT, Claude y Gemini.
@@ -128,7 +128,7 @@ Favoritos e Anotações
 
 Exportação e Compartilhamento
 
-* Exporte transcrições nos formatos TXT, Markdown, JSON, CSV, SRT ou VTT.
+* Exporte transcrições em diversos formatos de documento e legendas.
 * Escolha entre texto formatado ou texto simples.
 * Inclua ou exclua marcações de tempo.
 * Envie transcrições diretamente para ferramentas de IA como ChatGPT, Claude e Gemini.
@@ -176,7 +176,7 @@ Yer İşaretleri ve Notlar
 
 Dışa Aktarma ve Paylaşma
 
-* Transkriptleri TXT, Markdown, JSON, CSV, SRT veya VTT formatlarında dışa aktarın.
+* Transkriptleri çeşitli belge ve altyazı formatlarında dışa aktarın.
 * Biçimlendirilmiş metin veya düz metin çıktısı arasında seçim yapın.
 * Zaman damgalarını dahil edin veya hariç tutun.
 * Transkriptleri doğrudan ChatGPT, Claude ve Gemini gibi yapay zeka araçlarına gönderin.
@@ -224,7 +224,7 @@ Signets et Notes
 
 Exportation et Partage
 
-* Exportez les transcriptions aux formats TXT, Markdown, JSON, CSV, SRT ou VTT.
+* Exportez les transcriptions dans plusieurs formats de document et de sous-titres.
 * Choisissez entre texte formaté ou texte brut.
 * Incluez ou excluez les repères temporels.
 * Envoyez directement les transcriptions à des outils d'IA tels que ChatGPT, Claude et Gemini.
@@ -272,7 +272,7 @@ Lesezeichen und Notizen
 
 Exportieren und Teilen
 
-* Transkripte in den Formaten TXT, Markdown, JSON, CSV, SRT oder VTT exportieren.
+* Transkripte in verschiedenen Dokument- und Untertitelformaten exportieren.
 * Zwischen formatiertem Text oder reinem Text wählen.
 * Zeitstempel ein- oder ausschließen.
 * Transkripte direkt an KI-Tools wie ChatGPT, Claude und Gemini senden.
@@ -320,7 +320,7 @@ Entwickelt für Studium, Recherche, Inhaltserstellung, Notizen und Videoanalyse.
 
 التصدير والمشاركة
 
-* تصدير النصوص بتنسيقات TXT أو Markdown أو JSON أو CSV أو SRT أو VTT.
+* تصدير النصوص بتنسيقات متعددة للمستندات والترجمة.
 * الاختيار بين النص المنسق أو النص العادي.
 * تضمين أو استبعاد الطوابع الزمنية.
 * إرسال النصوص مباشرة إلى أدوات الذكاء الاصطناعي مثل ChatGPT وClaude وGemini.
@@ -368,7 +368,7 @@ YouTube Transcript Copierを使用すると、文字起こしパネルを手動�
 
 エクスポートと共有
 
-* TXT、Markdown、JSON、CSV、SRT、VTT形式で文字起こしをエクスポート。
+* さまざまなドキュメント形式や字幕形式で文字起こしをエクスポート。
 * 書式設定付きテキストまたはプレーンテキスト出力を選択。
 * タイムスタンプの有無を選択。
 * ChatGPT、Claude、GeminiなどのAIツールに文字起こしを直接送信。
@@ -416,7 +416,7 @@ YouTube Transcript Copier는 대본 창을 수동으로 열고 복사할 필요 
 
 내보내기 및 공유
 
-* TXT, Markdown, JSON, CSV, SRT, VTT 형식으로 대본 내보내기.
+* 다양한 문서 및 자막 형식으로 대본 내보내기.
 * 서식 있는 텍스트 또는 일반 텍스트 출력 선택.
 * 타임스탬프 포함 또는 제외 설정.
 * ChatGPT, Claude, Gemini와 같은 AI 도구로 대본 직접 전송.
@@ -464,7 +464,7 @@ YouTube Transcript Copier 让您无需手动打开并复制文稿面板，即可
 
 导出与分享
 
-* 支持导出为 TXT、Markdown、JSON、CSV、SRT 或 VTT 格式。
+* 支持导出为多种文档与字幕格式。
 * 可自由选择带格式文本或纯文本输出。
 * 自定义包含或排除时间戳。
 * 直接将文稿发送到 ChatGPT、Claude 和 Gemini 等 AI 工具。
@@ -512,7 +512,7 @@ YouTube Transcript Copier 讓您無需手動開啟並複製逐字稿面板，即
 
 匯出與分享
 
-* 支援匯出為 TXT、Markdown、JSON、CSV、SRT 或 VTT 格式。
+* 支援匯出為多種文件與字幕格式。
 * 可自由選擇格式化文字或純文字輸出。
 * 自訂包含或排除時間戳記。
 * 直接將逐字稿傳送至 ChatGPT、Claude 與 Gemini 等 AI 工具。
@@ -560,7 +560,7 @@ YouTube Transcript Copier обеспечивает быстрый доступ �
 
 Экспорт и отправка
 
-* Экспорт транскриптов в форматы TXT, Markdown, JSON, CSV, SRT или VTT.
+* Экспорт транскриптов в различные текстовые форматы и форматы субтитров.
 * Выбор между форматированным текстом и простым текстом.
 * Включение или исключение таймкодов.
 * Прямая отправка транскриптов в инструменты ИИ, такие как ChatGPT, Claude и Gemini.
@@ -608,7 +608,7 @@ Segnalibri e Note
 
 Esportazione e Condivisione
 
-* Esporta trascrizioni nei formati TXT, Markdown, JSON, CSV, SRT o VTT.
+* Esporta le trascrizioni in vari formati di documento e sottotitoli.
 * Scegli tra testo formattato o testo normale.
 * Includi o escludi i timestamp.
 * Invia le trascrizioni direttamente a strumenti IA come ChatGPT, Claude e Gemini.
@@ -656,7 +656,7 @@ YouTube Transcript Copier आपको ट्रांसक्रिप्ट �
 
 निर्यात और साझा करें
 
-* TXT, Markdown, JSON, CSV, SRT या VTT प्रारूपों में ट्रांसक्रिप्ट निर्यात करें।
+* विभिन्न दस्तावेज़ और उपशीर्षक प्रारूपों में ट्रांसक्रिप्ट निर्यात करें।
 * स्वरूपित टेक्स्ट (formatted text) या सादे टेक्स्ट (plain text) आउटपुट के बीच चयन करें।
 * टाइमस्टैम्प शामिल करें या बाहर रखें।
 * ट्रांसक्रिप्ट को सीधे ChatGPT, Claude और Gemini जैसे AI टूल्स पर भेजें।
@@ -704,7 +704,7 @@ Bookmark dan Catatan
 
 Ekspor dan Bagikan
 
-* Ekspor transkrip dalam format TXT, Markdown, JSON, CSV, SRT, atau VTT.
+* Ekspor transkrip dalam berbagai format dokumen dan subtitle.
 * Pilih antara keluaran teks terformat atau teks biasa.
 * Sertakan atau kecualikan penanda waktu.
 * Kirim transkrip langsung ke alat AI seperti ChatGPT, Claude, dan Gemini.
@@ -752,7 +752,7 @@ Dấu Trang và Ghi Chú
 
 Xuất và Chia Sẻ
 
-* Xuất bản ghi ở các định dạng TXT, Markdown, JSON, CSV, SRT hoặc VTT.
+* Xuất bản ghi ở nhiều định dạng tài liệu và phụ đề khác nhau.
 * Chọn giữa định dạng văn bản có cấu trúc hoặc văn bản thuần.
 * Tùy chọn bao gồm hoặc loại trừ mốc thời gian.
 * Gửi trực tiếp bản ghi đến các công cụ AI như ChatGPT, Claude và Gemini.
@@ -800,7 +800,7 @@ Zakładki i Notatki
 
 Eksport i Udostępnianie
 
-* Eksportuj transkrypcje w formatach TXT, Markdown, JSON, CSV, SRT lub VTT.
+* Eksportuj transkrypcje w wielu formatach dokumentów i napisów.
 * Wybieraj między sformatowanym tekstem a zwykłym tekstem.
 * Dołączaj lub wykluczaj znaczniki czasu.
 * Wysyłaj transkrypcje bezpośrednio do narzędzi AI, takich jak ChatGPT, Claude i Gemini.
@@ -848,7 +848,7 @@ Bladwijzers en Notities
 
 Exporteren en Delen
 
-* Exporteer transcripties in TXT-, Markdown-, JSON-, CSV-, SRT- of VTT-formaat.
+* Exporteer transcripties in verschillende document- en ondertitelformaten.
 * Kies tussen opgemaakte tekst of platte tekst.
 * Voeg tijdstempels toe of sluit ze uit.
 * Stuur transcripties rechtstreeks naar AI-tools zoals ChatGPT, Claude en Gemini.
@@ -896,7 +896,7 @@ YouTube Transcript Copier забезпечує швидкий доступ до 
 
 Експорт та Поширення
 
-* Експортуйте транскрипти у форматах TXT, Markdown, JSON, CSV, SRT або VTT.
+* Експортуйте транскрипти у різних текстових форматах та форматах субтитрів.
 * Обирайте між форматованим або звичайним текстом.
 * Включайте або виключайте часові позначки.
 * Надсилайте транскрипти безпосередньо до інструментів ШІ, таких як ChatGPT, Claude та Gemini.
@@ -944,7 +944,7 @@ YouTube Transcript Copier ช่วยให้เข้าถึงคำบร
 
 การส่งออกและการแชร์
 
-* ส่งออกทรานสคริปต์ในรูปแบบ TXT, Markdown, JSON, CSV, SRT หรือ VTT
+* ส่งออกทรานสคริปต์ในรูปแบบเอกสารและคำบรรยายที่หลากหลาย
 * เลือกระหว่างข้อความที่มีการจัดรูปแบบหรือข้อความธรรมดา
 * เลือกรวมหรือไม่รวมจุดเวลาได้
 * ส่งทรานสคริปต์ไปยังเครื่องมือ AI เช่น ChatGPT, Claude และ Gemini ได้โดยตรง
@@ -992,7 +992,7 @@ Bokmärken och Anteckningar
 
 Exportera och Dela
 
-* Exportera transkriptioner i formaten TXT, Markdown, JSON, CSV, SRT eller VTT.
+* Exportera transkriptioner i flera dokument- och undertextformat.
 * Välj mellan formaterad text eller ren text.
 * Inkludera eller exkludera tidsstämplar.
 * Skicka transkriptioner direkt till AI-verktyg som ChatGPT, Claude och Gemini.
@@ -1040,7 +1040,7 @@ Designad för studier, forskning, innehållsskapande, anteckningar och videoanal
 
 Εξαγωγή και Κοινοποίηση
 
-* Εξαγωγή απομαγνητοφωνήσεων σε μορφές TXT, Markdown, JSON, CSV, SRT ή VTT.
+* Εξαγωγή απομαγνητοφωνήσεων σε διάφορες μορφές εγγράφων και υποτίτλων.
 * Επιλογή μεταξύ μορφοποιημένου κειμένου ή απλού κειμένου.
 * Συμπερίληψη ή εξαίρεση χρονικών σημάνσεων.
 * Απευθείας αποστολή απομαγνητοφωνήσεων σε εργαλεία τεχνητής νοημοσύνης όπως ChatGPT, Claude και Gemini.
@@ -1088,7 +1088,7 @@ Záložky a Poznámky
 
 Export a Sdílení
 
-* Exportujte přepisy ve formátech TXT, Markdown, JSON, CSV, SRT nebo VTT.
+* Exportujte přepisy v různých formátech dokumentů a titulků.
 * Vyberte si mezi formátovaným textem nebo prostým textem.
 * Zahrňte nebo vylučte časová razítka.
 * Odešlete přepisy přímo do nástrojů AI, jako jsou ChatGPT, Claude a Gemini.
@@ -1136,7 +1136,7 @@ Marcaje și Notițe
 
 Export și Distribuire
 
-* Exportați transcrierile în formate TXT, Markdown, JSON, CSV, SRT sau VTT.
+* Exportați transcrierile în diverse formate de documente și subtitrări.
 * Alegeți între text formatat sau text simplu.
 * Includeți sau excludeți marcajele temporale.
 * Trimiteți transcrierile direct către instrumente AI precum ChatGPT, Claude și Gemini.
@@ -1184,7 +1184,7 @@ Könyvjelzők és Jegyzetek
 
 Exportálás és Megosztás
 
-* Átiratok exportálása TXT, Markdown, JSON, CSV, SRT vagy VTT formátumban.
+* Átiratok exportálása többféle dokumentum- és feliratformátumban.
 * Választás a formázott szöveg vagy egyszerű szöveges kimenet között.
 * Időbélyegek beillesztése vagy kizárása.
 * Átiratok közvetlen küldése olyan MI-eszközöknek, mint a ChatGPT, a Claude és a Gemini.
@@ -1232,7 +1232,7 @@ Bogmærker og Noter
 
 Eksporter og Del
 
-* Eksporter transskriptioner i formaterne TXT, Markdown, JSON, CSV, SRT eller VTT.
+* Eksporter transskriptioner i flere dokument- og undertekstformater.
 * Vælg mellem formateret tekst eller ren tekst.
 * Inkluder eller udeluk tidsstempler.
 * Send transskriptioner direkte til AI-værktøjer såsom ChatGPT, Claude og Gemini.
@@ -1280,7 +1280,7 @@ Kirjanmerkit ja Muistiinpanot
 
 Vienti ja Jakaminen
 
-* Vie transkriptiot TXT-, Markdown-, JSON-, CSV-, SRT- tai VTT-muodoissa.
+* Vie transkriptiot useissa asiakirja- ja tekstitysmuodoissa.
 * Valitse muotoillun tekstin tai pelkän tekstin välillä.
 * Sisällytä tai jätä pois aikaleimat.
 * Lähetä transkriptiot suoraan tekoälytyökaluihin, kuten ChatGPT, Claude ja Gemini.
@@ -1328,7 +1328,7 @@ Bokmerker og Notater
 
 Eksporter og Del
 
-* Eksporter transkripsjoner i TXT-, Markdown-, JSON-, CSV-, SRT- eller VTT-formater.
+* Eksporter transkripsjoner i flere dokument- og undertekstformater.
 * Velg mellom formatert tekst eller ren tekst.
 * Inkluder eller utelat tidsstempler.
 * Send transkripsjoner direkte til AI-verktøy som ChatGPT, Claude og Gemini.
@@ -1376,7 +1376,7 @@ YouTube Transcript Copier מספק גישה מהירה לתמלילי YouTube ז
 
 ייצוא ושיתוף
 
-* ייצוא תמלילים בפורמטים TXT, Markdown, JSON, CSV, SRT או VTT.
+* ייצוא תמלילים במגוון פורמטים של מסמכים וכתוביות.
 * בחירה בין פלט טקסט מעוצב לטקסט רגיל.
 * הכללה או אי-הכללה של חותמות זמן.
 * שליחת תמלילים ישירות לכלי AI כגון ChatGPT, Claude ו-Gemini.
@@ -1424,7 +1424,7 @@ YouTube Transcript Copier دسترسی سریع به رونوشت‌های مو�
 
 خروجی گرفتن و اشتراک‌گذاری
 
-* خروجی گرفتن از رونوشت‌ها در فرمت‌های TXT، Markdown، JSON، CSV، SRT یا VTT.
+* خروجی گرفتن از رونوشت‌ها در قالب‌های متنی و زیرنویس متنوع.
 * انتخاب بین خروجی متن فرمت‌شده یا متن ساده.
 * درج یا عدم درج نشانه‌های زمانی.
 * ارسال مستقیم رونوشت‌ها به ابزارهای هوش مصنوعی مانند ChatGPT، Claude و Gemini.

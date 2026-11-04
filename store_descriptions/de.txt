@@ -27,7 +27,7 @@ Lesezeichen und Notizen
 
 Exportieren und Teilen
 
-* Transkripte in den Formaten TXT, Markdown, JSON, CSV, SRT oder VTT exportieren.
+* Transkripte in verschiedenen Dokument- und Untertitelformaten exportieren.
 * Zwischen formatiertem Text oder reinem Text wählen.
 * Zeitstempel ein- oder ausschließen.
 * Transkripte direkt an KI-Tools wie ChatGPT, Claude und Gemini senden.

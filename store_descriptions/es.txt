@@ -27,7 +27,7 @@ Marcadores y Notas
 
 Exportar y Compartir
 
-* Exporte transcripciones en formatos TXT, Markdown, JSON, CSV, SRT o VTT.
+* Exporte transcripciones en múltiples formatos de documento y subtítulos.
 * Elija entre salida de texto con formato o texto plano.
 * Incluya o excluya marcas de tiempo.
 * Envíe transcripciones directamente a herramientas de IA como ChatGPT, Claude y Gemini.

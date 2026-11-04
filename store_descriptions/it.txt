@@ -27,7 +27,7 @@ Segnalibri e Note
 
 Esportazione e Condivisione
 
-* Esporta trascrizioni nei formati TXT, Markdown, JSON, CSV, SRT o VTT.
+* Esporta le trascrizioni in vari formati di documento e sottotitoli.
 * Scegli tra testo formattato o testo normale.
 * Includi o escludi i timestamp.
 * Invia le trascrizioni direttamente a strumenti IA come ChatGPT, Claude e Gemini.

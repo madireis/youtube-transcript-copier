@@ -27,7 +27,7 @@ Marcaje și Notițe
 
 Export și Distribuire
 
-* Exportați transcrierile în formate TXT, Markdown, JSON, CSV, SRT sau VTT.
+* Exportați transcrierile în diverse formate de documente și subtitrări.
 * Alegeți între text formatat sau text simplu.
 * Includeți sau excludeți marcajele temporale.
 * Trimiteți transcrierile direct către instrumente AI precum ChatGPT, Claude și Gemini.

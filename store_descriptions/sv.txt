@@ -27,7 +27,7 @@ Bokmärken och Anteckningar
 
 Exportera och Dela
 
-* Exportera transkriptioner i formaten TXT, Markdown, JSON, CSV, SRT eller VTT.
+* Exportera transkriptioner i flera dokument- och undertextformat.
 * Välj mellan formaterad text eller ren text.
 * Inkludera eller exkludera tidsstämplar.
 * Skicka transkriptioner direkt till AI-verktyg som ChatGPT, Claude och Gemini.

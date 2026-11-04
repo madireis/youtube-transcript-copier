@@ -27,7 +27,7 @@ Favoritos e Anotações
 
 Exportação e Compartilhamento
 
-* Exporte transcrições nos formatos TXT, Markdown, JSON, CSV, SRT ou VTT.
+* Exporte transcrições em diversos formatos de documento e legendas.
 * Escolha entre texto formatado ou texto simples.
 * Inclua ou exclua marcações de tempo.
 * Envie transcrições diretamente para ferramentas de IA como ChatGPT, Claude e Gemini.

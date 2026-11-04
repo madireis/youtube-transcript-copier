@@ -27,7 +27,7 @@ Signets et Notes
 
 Exportation et Partage
 
-* Exportez les transcriptions aux formats TXT, Markdown, JSON, CSV, SRT ou VTT.
+* Exportez les transcriptions dans plusieurs formats de document et de sous-titres.
 * Choisissez entre texte formaté ou texte brut.
 * Incluez ou excluez les repères temporels.
 * Envoyez directement les transcriptions à des outils d'IA tels que ChatGPT, Claude et Gemini.

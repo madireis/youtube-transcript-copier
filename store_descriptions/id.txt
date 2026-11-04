@@ -27,7 +27,7 @@ Bookmark dan Catatan
 
 Ekspor dan Bagikan
 
-* Ekspor transkrip dalam format TXT, Markdown, JSON, CSV, SRT, atau VTT.
+* Ekspor transkrip dalam berbagai format dokumen dan subtitle.
 * Pilih antara keluaran teks terformat atau teks biasa.
 * Sertakan atau kecualikan penanda waktu.
 * Kirim transkrip langsung ke alat AI seperti ChatGPT, Claude, dan Gemini.

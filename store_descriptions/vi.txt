@@ -27,7 +27,7 @@ Dấu Trang và Ghi Chú
 
 Xuất và Chia Sẻ
 
-* Xuất bản ghi ở các định dạng TXT, Markdown, JSON, CSV, SRT hoặc VTT.
+* Xuất bản ghi ở nhiều định dạng tài liệu và phụ đề khác nhau.
 * Chọn giữa định dạng văn bản có cấu trúc hoặc văn bản thuần.
 * Tùy chọn bao gồm hoặc loại trừ mốc thời gian.
 * Gửi trực tiếp bản ghi đến các công cụ AI như ChatGPT, Claude và Gemini.

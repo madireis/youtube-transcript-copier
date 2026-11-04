@@ -27,7 +27,7 @@ Könyvjelzők és Jegyzetek
 
 Exportálás és Megosztás
 
-* Átiratok exportálása TXT, Markdown, JSON, CSV, SRT vagy VTT formátumban.
+* Átiratok exportálása többféle dokumentum- és feliratformátumban.
 * Választás a formázott szöveg vagy egyszerű szöveges kimenet között.
 * Időbélyegek beillesztése vagy kizárása.
 * Átiratok közvetlen küldése olyan MI-eszközöknek, mint a ChatGPT, a Claude és a Gemini.

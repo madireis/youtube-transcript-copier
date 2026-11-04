@@ -27,7 +27,7 @@ Bladwijzers en Notities
 
 Exporteren en Delen
 
-* Exporteer transcripties in TXT-, Markdown-, JSON-, CSV-, SRT- of VTT-formaat.
+* Exporteer transcripties in verschillende document- en ondertitelformaten.
 * Kies tussen opgemaakte tekst of platte tekst.
 * Voeg tijdstempels toe of sluit ze uit.
 * Stuur transcripties rechtstreeks naar AI-tools zoals ChatGPT, Claude en Gemini.

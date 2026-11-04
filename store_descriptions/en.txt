@@ -27,7 +27,7 @@ Bookmarks and Notes
 
 Export and Share
 
-* Export transcripts in TXT, Markdown, JSON, CSV, SRT, or VTT formats.
+* Export transcripts in multiple document and subtitle formats.
 * Choose between formatted text or plain text output.
 * Include or exclude timestamps.
 * Send transcripts directly to AI tools such as ChatGPT, Claude, and Gemini.
