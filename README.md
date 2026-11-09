@@ -9,7 +9,8 @@
 </p>
 
 <p align="center">
-  <a href="https://chromewebstore.google.com/detail/youtube-transcript-copier/khbenieolkkkjjokcfklaokfpdblkgbn"><img src="https://img.shields.io/badge/Chrome%20Web%20Store-v2.8.2-brightgreen?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Chrome Web Store" /></a>
+  <a href="https://chromewebstore.google.com/detail/youtube-transcript-copier/khbenieolkkkjjokcfklaokfpdblkgbn"><img src="https://img.shields.io/badge/Chrome%20Web%20Store-v2.8.3-brightgreen?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Chrome Web Store" /></a>
+  <a href="https://madireis.github.io/youtube-transcript-copier/"><img src="https://img.shields.io/badge/Website-GitHub%20Pages-blue?style=for-the-badge&logo=githubpages&logoColor=white" alt="Website" /></a>
   <img src="https://img.shields.io/badge/Manifest-V3-blue?style=for-the-badge" alt="Manifest V3" />
   <img src="https://img.shields.io/badge/Languages-30%20Supported-purple?style=for-the-badge" alt="30 Languages" />
   <img src="https://img.shields.io/badge/Privacy-100%25%20Local-success?style=for-the-badge" alt="100% Local" />
@@ -18,6 +19,16 @@
 <p align="center">
   <img src="promo/feature_graphic_1280x800.jpg" alt="YouTube Transcript Copier Banner" width="100%" />
 </p>
+
+---
+
+## 🌐 Official Website & Landing Page
+
+Visit our live landing page and documentation:
+👉 **[https://madireis.github.io/youtube-transcript-copier/](https://madireis.github.io/youtube-transcript-copier/)**
+
+* **Privacy Policy**: [https://madireis.github.io/youtube-transcript-copier/privacy.html](https://madireis.github.io/youtube-transcript-copier/privacy.html)
+* **Chrome Web Store**: [Install YouTube Transcript Copier](https://chromewebstore.google.com/detail/youtube-transcript-copier/khbenieolkkkjjokcfklaokfpdblkgbn)
 
 ---
 
@@ -136,7 +147,7 @@ Install with one click from the [Chrome Web Store](https://chromewebstore.google
    ```
 2. Navigate to `chrome://extensions/` in your browser.
 3. Enable **Developer mode** in the upper-right corner.
-4. Click **Load unpacked** and select the extension folder (or the `dist/package` folder).
+4. Click **Load unpacked** and select the extension folder.
 
 ---
 
@@ -150,6 +161,12 @@ Install with one click from the [Chrome Web Store](https://chromewebstore.google
 ---
 
 ## 📋 Release Notes
+
+### v2.8.3
+- **Official GitHub Pages Landing Page**: Deployed modern, responsive SEO landing page with rich schema (`SoftwareApplication`, `FAQPage`), Google robots/sitemap support, and live Chrome Web Store direct install.
+- **In-Page Button Localization**: Fully localized in-page watch and Shorts buttons across 30 languages with realtime popup synchronization.
+- **Targeted Button Placement**: Optimized transcript button injection next to the Like button while preventing duplicate injections on playlist headers.
+- **CWS Policy Alignment**: Cleaned store descriptions to resolve metadata policies and ensure full compliance.
 
 ### v2.8.2
 - **Feedback & Diagnostic Modal**: Added dedicated in-popup modal with category selection and optional notes.
