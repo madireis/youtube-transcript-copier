@@ -4544,4 +4544,4 @@ window.__getTranscriptData = () => cachedData;
 window.__setTranscriptData = (newData) => {
   cachedData = newData;
   if (typeof updatePreview === 'function') updatePreview();
-;
+};
