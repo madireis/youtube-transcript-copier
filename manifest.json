@@ -1,9 +1,9 @@
 {
    "action": {
       "default_icon": {
-         "128": "icons/icon128.png",
          "16": "icons/icon16.png",
-         "48": "icons/icon48.png"
+         "48": "icons/icon48.png",
+         "128": "icons/icon128.png"
       },
       "default_popup": "popup.html",
       "default_title": "__MSG_actionTitle__"
@@ -35,7 +35,8 @@
       "*://*.youtube.com/*",
       "https://chatgpt.com/*",
       "https://claude.ai/*",
-      "https://gemini.google.com/*"
+      "https://gemini.google.com/*",
+      "https://translate.googleapis.com/*"
    ],
    "content_scripts": [
       {
@@ -44,33 +45,52 @@
             "https://claude.ai/*",
             "https://gemini.google.com/*"
          ],
-         "js": ["ai_autopaste.js"],
+         "js": [
+            "ai_autopaste.js"
+         ],
          "run_at": "document_idle"
       },
       {
-         "matches": ["*://*.youtube.com/*"],
-         "js": ["youtube_button.js"],
+         "matches": [
+            "*://*.youtube.com/*"
+         ],
+         "js": [
+            "youtube_button.js"
+         ],
          "run_at": "document_idle"
       }
    ],
    "icons": {
-      "128": "icons/icon128.png",
       "16": "icons/icon16.png",
-      "48": "icons/icon48.png"
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
    },
    "manifest_version": 3,
    "minimum_chrome_version": "102",
    "name": "__MSG_extensionName__",
-   "permissions": [ "activeTab", "scripting", "contextMenus", "storage", "sidePanel", "downloads", "clipboardWrite" ],
+   "permissions": [
+      "activeTab",
+      "scripting",
+      "contextMenus",
+      "storage",
+      "sidePanel",
+      "downloads",
+      "clipboardWrite"
+   ],
    "side_panel": {
       "default_path": "popup.html"
    },
-   "version": "2.8.3",
+   "version": "2.8.4",
    "web_accessible_resources": [
       {
-         "resources": ["batch_content.js", "batch_overlay.js", "youtube_button.js"],
-         "matches": ["*://*.youtube.com/*"]
+         "resources": [
+            "batch_content.js",
+            "batch_overlay.js",
+            "youtube_button.js"
+         ],
+         "matches": [
+            "*://*.youtube.com/*"
+         ]
       }
    ]
 }
-

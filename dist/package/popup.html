@@ -64,7 +64,7 @@
             <option value="fa">فارسی (FA)</option>
           </select>
         </div>
-        <span class="version-badge">v2.8.3</span>
+        <span class="version-badge">v2.8.4</span>
       </div>
     </header>
 
@@ -492,6 +492,20 @@
           <span data-i18n="previewSection">Transcript Workspace</span>
         </div>
         <div class="workspace-header-right" style="display: flex; align-items: center; gap: 6px;">
+                    <div id="workspace-translate-picker" class="transcript-translate-picker hidden" title="Translate transcript to another language">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m5 8 6 6"/>
+              <path d="m4 14 6-6 2-3"/>
+              <path d="M2 5h12"/>
+              <path d="M7 2h1"/>
+              <path d="m22 22-5-10-5 10"/>
+              <path d="M14 18h6"/>
+            </svg>
+            <select id="workspace-translate-select" class="workspace-translate-select" aria-label="Translate transcript">
+              <option value="" disabled selected>Translate...</option>
+            </select>
+            <button id="btn-revert-translation" class="revert-trans-btn hidden" title="Revert to original transcript">✕</button>
+          </div>
           <div id="transcript-lang-container" class="transcript-lang-container hidden" title="Transcript Language">
             <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="12" cy="12" r="10"/>
@@ -535,6 +549,13 @@
         <span>Playing <b id="playback-hidden-time">00:00</b> (hidden by filter)</span>
       </div>
       <span class="pill-action" data-i18n="showAll">Show All</span>
+    </div>
+
+        <!-- In-Popup Translation Progress Banner -->
+    <div id="translation-progress-banner" class="translation-progress-banner hidden">
+      <span id="translation-progress-text">Translating transcript... 0%</span>
+      <span id="translation-engine-badge" class="trans-engine-tag">Local</span>
+      <div id="translation-progress-bar" class="translation-progress-bar" style="width: 0%;"></div>
     </div>
 
     <div class="search-bar">
@@ -807,6 +828,8 @@
 
   <script src="storage_vault.js"></script>
   <script src="ai_workspace_engine.js"></script>
+  <script src="translator_engine.js"></script>
+  <script src="popup_translator.js"></script>
   <script src="popup.js"></script>
 </body>
 

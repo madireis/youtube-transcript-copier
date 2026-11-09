@@ -1923,10 +1923,12 @@ function updatePreview() {
     updateMarksBadge();
     updateHiddenPlaybackPill();
     updateTranscriptLanguagePicker();
+    if (typeof window !== 'undefined') window.dispatchEvent(new CustomEvent('transcript-data-updated', { detail: null }));
     return;
   }
 
   updateTranscriptLanguagePicker();
+  if (typeof window !== 'undefined') window.dispatchEvent(new CustomEvent('transcript-data-updated', { detail: cachedData }));
 
   const settings = getSettings();
   const rawQuery = ($('#search-input')?.value || '').trim();
@@ -4535,3 +4537,11 @@ function showBatchSuccess(msg) {
   }
 }
 
+
+
+// ---- Local Translator Hook Integration (v2.8.4) ----
+window.__getTranscriptData = () => cachedData;
+window.__setTranscriptData = (newData) => {
+  cachedData = newData;
+  if (typeof updatePreview === 'function') updatePreview();
+;

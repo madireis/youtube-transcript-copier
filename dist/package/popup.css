@@ -1779,3 +1779,115 @@ select option {
   background: rgba(255, 255, 255, 0.14);
 }
 
+
+
+/* ==========================================================================
+   Local Transcript Translator (v2.8.4)
+   ========================================================================== */
+.transcript-translate-picker {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--surface, #1e1e2d);
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.12));
+  border-radius: var(--radius-sm, 6px);
+  padding: 2px 6px;
+  color: var(--text-muted, #94a3b8);
+  transition: all 120ms ease;
+  max-width: 135px;
+  position: relative;
+}
+
+.transcript-translate-picker:hover {
+  border-color: var(--accent, #6366f1);
+  color: var(--text, #f8fafc);
+}
+
+.transcript-translate-picker.active {
+  border-color: #10b981;
+  background: rgba(16, 185, 129, 0.12);
+  color: #10b981;
+}
+
+.transcript-translate-picker svg {
+  flex-shrink: 0;
+  color: var(--accent, #6366f1);
+}
+
+.transcript-translate-picker.active svg {
+  color: #10b981;
+}
+
+.workspace-translate-select {
+  background: transparent;
+  color: var(--text, #f8fafc);
+  border: none;
+  font-family: inherit;
+  font-size: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.workspace-translate-select option {
+  background: #1a1a2e;
+  color: #e4e4e8;
+}
+
+.revert-trans-btn {
+  background: transparent;
+  border: none;
+  color: #ef4444;
+  font-size: 11px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0 2px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 3px;
+  transition: transform 120ms ease;
+}
+
+.revert-trans-btn:hover {
+  transform: scale(1.2);
+}
+
+.translation-progress-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+  font-size: 11px;
+  font-weight: 600;
+  background: rgba(99, 102, 241, 0.15);
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  border-radius: var(--radius-sm, 6px);
+  margin: 6px 0;
+  color: var(--text, #f8fafc);
+  position: relative;
+  overflow: hidden;
+}
+
+.translation-progress-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #6366f1, #10b981);
+  transition: width 150ms ease;
+}
+
+.trans-engine-tag {
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1px 5px;
+  border-radius: 4px;
+  background: rgba(99, 102, 241, 0.25);
+  color: #a5b4fc;
+}
