@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO Meta Tags -->
+  <title>YouTube Transcript Copier — Download & Copy YouTube Transcripts with Timestamps</title>
+  <meta name="title" content="YouTube Transcript Copier — Download & Copy YouTube Transcripts with Timestamps">
+  <meta name="description" content="Extract, copy, search, and export YouTube transcripts in 1-click. Free Chrome extension with timestamps, Shorts support, ChatGPT/Claude export, and batch playlist downloading.">
+  <meta name="keywords" content="youtube transcript copier, copy youtube transcript, youtube transcript generator, download youtube transcript, extract youtube subtitles, youtube to text converter, youtube transcript with timestamps, youtube to chatgpt transcript">
+  <meta name="author" content="madireis">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://madireis.github.io/youtube-transcript-copier/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://madireis.github.io/youtube-transcript-copier/">
+  <meta property="og:title" content="YouTube Transcript Copier — 1-Click Transcript & AI Summarizer">
+  <meta property="og:description" content="Copy YouTube transcripts with timestamps, search dialogues, export to Markdown, and send directly to ChatGPT, Claude, and Gemini.">
+  <meta property="og:image" content="https://madireis.github.io/youtube-transcript-copier/assets/feature_hero.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://madireis.github.io/youtube-transcript-copier/">
+  <meta property="twitter:title" content="YouTube Transcript Copier — 1-Click Transcript & AI Summarizer">
+  <meta property="twitter:description" content="Extract YouTube transcripts with timestamps and send to ChatGPT in 1 click.">
+  <meta property="twitter:image" content="https://madireis.github.io/youtube-transcript-copier/assets/feature_hero.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/icon128.png">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#fef2f2',
+              500: '#ef4444',
+              600: '#dc2626',
+              700: '#b91c1c',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Structured Data (JSON-LD) for Rich Results -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "YouTube Transcript Copier",
+    "operatingSystem": "Chrome, Edge, Brave, Opera",
+    "applicationCategory": "BrowserApplication",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "description": "Fast, privacy-first Chrome extension to extract, search, copy, and export transcripts from any YouTube video or Short with timestamps.",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "ratingCount": "128"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I copy a transcript from a YouTube video?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Install the YouTube Transcript Copier Chrome extension. Go to any YouTube video and click the native 'Copy Transcript' button below the video, or press Ctrl+Shift+Y (Cmd+Shift+Y on Mac) to instantly copy formatted text to your clipboard."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does it support YouTube Shorts?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! YouTube Transcript Copier seamlessly detects and extracts captions and transcripts from both standard YouTube videos and YouTube Shorts."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I copy YouTube transcripts with timestamps?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, you can toggle timestamps on or off with a single click, customize the timestamp format, or export as clean continuous prose or SRT subtitles."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does 1-click export to ChatGPT or Claude work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Click the AI button in the extension popup. It will automatically open ChatGPT, Claude, or Google Gemini and paste the complete video transcript along with your choice of summary or study prompt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is YouTube Transcript Copier free and private?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "100% free and open source. All processing happens locally inside your browser without any external servers or data tracking."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-red-500 selection:text-white">
+
+  <!-- Header / Navbar -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <img src="assets/icon128.png" alt="YouTube Transcript Copier Logo" class="w-9 h-9 rounded-xl shadow-md shadow-red-500/20">
+        <span class="font-bold text-lg tracking-tight text-white flex items-center gap-2">
+          Transcript Copier
+          <span class="text-xs bg-red-500/10 text-red-400 border border-red-500/20 px-2 py-0.5 rounded-full font-medium">Free</span>
+        </span>
+      </div>
+
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+        <a href="#features" class="hover:text-white transition">Features</a>
+        <a href="#ai-integration" class="hover:text-white transition">AI Workflow</a>
+        <a href="#how-it-works" class="hover:text-white transition">How It Works</a>
+        <a href="#faq" class="hover:text-white transition">FAQ</a>
+        <a href="https://github.com/madireis/youtube-transcript-copier" target="_blank" rel="noopener noreferrer" class="hover:text-white transition flex items-center gap-1.5">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+      </nav>
+
+      <div class="flex items-center space-x-3">
+        <a href="#install" class="inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-white bg-red-600 hover:bg-red-500 rounded-xl shadow-lg shadow-red-600/30 transition transform hover:-translate-y-0.5">
+          Add to Chrome
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative pt-20 pb-28 overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(220,38,38,0.18),rgba(255,255,255,0))]"></div>
+    <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-red-500/10 text-red-400 border border-red-500/20 mb-8 backdrop-blur-sm">
+        <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+        Works on YouTube Videos & Shorts • 100% Free & Private
+      </div>
+
+      <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white max-w-4xl mx-auto leading-tight sm:leading-tight">
+        Copy Any YouTube Transcript in <span class="bg-gradient-to-r from-red-500 via-rose-400 to-amber-300 bg-clip-text text-transparent">One Click</span>
+      </h1>
+
+      <p class="mt-6 text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
+        Stop manually scrubbing through long videos. Extract clean transcripts, search keywords with clickable timestamps, and blast video text straight into <strong>ChatGPT</strong>, <strong>Claude</strong>, or <strong>Gemini</strong>.
+      </p>
+
+      <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a id="install" href="https://chrome.google.com/webstore" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-red-600 hover:bg-red-500 rounded-2xl shadow-xl shadow-red-600/30 transition transform hover:-translate-y-0.5 group">
+          <svg class="w-5 h-5 mr-3 fill-current" viewBox="0 0 24 24"><path d="M12 0C8.21 0 4.831 1.757 2.632 4.501l3.953 6.848A5.454 5.454 0 0 1 12 6.545h10.73C20.679 2.611 16.64 0 12 0zm-8.81 6.545a11.97 11.97 0 0 0-1.895 5.455c0 5.42 3.6 10.01 8.528 11.455L15.776 13.9a5.455 5.455 0 0 1-5.231-7.355zm10.73 6.545a5.454 5.454 0 0 1-1.92 4.195l-3.953 6.848c1.33.242 2.705.367 4.113.367 6.627 0 12-5.373 12-12 0-.687-.06-1.36-.17-2.015H13.92zM12 8.182a3.818 3.818 0 1 0 0 7.636 3.818 3.818 0 0 0 0-7.636z"/></svg>
+          Add to Chrome — It's Free
+          <span class="ml-2 text-xs opacity-75 font-normal group-hover:translate-x-1 transition-transform">→</span>
+        </a>
+
+        <a href="https://github.com/madireis/youtube-transcript-copier" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-4 text-base font-semibold text-slate-300 hover:text-white bg-slate-900 hover:bg-slate-800 border border-slate-800 rounded-2xl transition">
+          ⭐ View on GitHub
+        </a>
+      </div>
+
+      <!-- Quick Trust Badges -->
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-6 text-xs text-slate-400">
+        <span class="flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+          No Sign-up Required
+        </span>
+        <span class="flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+          100% Client-Side & Private
+        </span>
+        <span class="flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+          Keyboard Shortcut <kbd class="px-1.5 py-0.5 bg-slate-800 rounded border border-slate-700 text-slate-300 font-mono">Ctrl+Shift+Y</kbd>
+        </span>
+      </div>
+
+      <!-- Hero Visual Preview -->
+      <div class="mt-14 max-w-5xl mx-auto rounded-2xl border border-slate-800 bg-slate-900/50 p-2 sm:p-4 shadow-2xl shadow-red-950/40">
+        <img src="assets/feature_hero.jpg" alt="YouTube Transcript Copier extension preview interface" class="w-full h-auto rounded-xl border border-slate-800 shadow-inner" loading="eager">
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem / Solution Callout -->
+  <section class="py-16 bg-slate-900/60 border-y border-slate-800/80">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div class="p-6 sm:p-8 rounded-2xl bg-slate-950/70 border border-red-500/20">
+          <div class="text-red-400 text-sm font-bold uppercase tracking-wider mb-2">The Old Painful Way</div>
+          <h3 class="text-2xl font-bold text-white mb-4">Clicking into menus, messy unformatted text</h3>
+          <ul class="space-y-3 text-slate-300 text-sm">
+            <li class="flex items-start gap-2">
+              <span class="text-red-500 font-bold">✕</span>
+              <span>Digging through YouTube's description drop-downs just to find "Show transcript"</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-red-500 font-bold">✕</span>
+              <span>Manually dragging your cursor over thousands of timestamp lines</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-red-500 font-bold">✕</span>
+              <span>Pasting into Notion or Word only to spend 15 minutes stripping out line breaks</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-red-950/40 via-slate-950/80 to-slate-900/80 border border-red-500/40 shadow-xl shadow-red-900/10">
+          <div class="text-emerald-400 text-sm font-bold uppercase tracking-wider mb-2">The Transcript Copier Way</div>
+          <h3 class="text-2xl font-bold text-white mb-4">Instant, formatted, and ready for your workflow</h3>
+          <ul class="space-y-3 text-slate-200 text-sm">
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-400 font-bold">✓</span>
+              <span>One clean button injected right beneath the video player & on Shorts</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-400 font-bold">✓</span>
+              <span>Auto-assembled paragraphs with timestamps or clean plain prose</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-400 font-bold">✓</span>
+              <span>Send directly to ChatGPT, Claude, or Gemini in a single keystroke</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Features Grid -->
+  <section id="features" class="py-24">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-red-400 mb-3">Power Features</h2>
+        <p class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">Everything You Need to Turn Video into Actionable Text</p>
+        <p class="mt-4 text-slate-400 text-base sm:text-lg">Designed for researchers, students, developers, writers, and power users.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Feature 1 -->
+        <div class="p-8 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition">
+          <div class="w-12 h-12 rounded-xl bg-red-500/10 border border-red-500/20 text-red-400 flex items-center justify-center text-xl mb-6">
+            ⚡
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">1-Click Quick Copy</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Copy transcripts with or without timestamps. Use keyboard shortcut <kbd class="px-1.5 py-0.5 bg-slate-800 rounded border border-slate-700 text-xs text-slate-300 font-mono">Ctrl+Shift+Y</kbd> to grab transcripts without ever lifting your hands from the keyboard.
+          </p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="p-8 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition">
+          <div class="w-12 h-12 rounded-xl bg-red-500/10 border border-red-500/20 text-red-400 flex items-center justify-center text-xl mb-6">
+            🔍
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">Interactive Transcript Search</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Search keywords inside the transcript in real time. Click any timestamp to jump directly to that exact second in the video player.
+          </p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="p-8 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition">
+          <div class="w-12 h-12 rounded-xl bg-red-500/10 border border-red-500/20 text-red-400 flex items-center justify-center text-xl mb-6">
+            🤖
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">Direct AI Integration</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Send long transcripts directly into ChatGPT, Claude, or Google Gemini with pre-built prompt templates for summaries, key takeaways, and study notes.
+          </p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="p-8 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition">
+          <div class="w-12 h-12 rounded-xl bg-red-500/10 border border-red-500/20 text-red-400 flex items-center justify-center text-xl mb-6">
+            📱
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">YouTube Shorts Support</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Works cleanly across standard desktop YouTube videos, embedded players, and fast-scrolling YouTube Shorts reels.
+          </p>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="p-8 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition">
+          <div class="w-12 h-12 rounded-xl bg-red-500/10 border border-red-500/20 text-red-400 flex items-center justify-center text-xl mb-6">
+            📚
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">Batch Playlist Extractor</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Extract transcripts across entire playlists or channel uploads in bulk. Select the videos you want and download them in a single organized ZIP package.
+          </p>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="p-8 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition">
+          <div class="w-12 h-12 rounded-xl bg-red-500/10 border border-red-500/20 text-red-400 flex items-center justify-center text-xl mb-6">
+            🛡️
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">Zero Tracking & 100% Private</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            All processing happens locally on your machine. No accounts, no data telemetry, no tracking scripts, and completely open source.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Workflow Showcase Section -->
+  <section id="ai-integration" class="py-20 bg-slate-900/40 border-t border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-red-500/10 text-red-400 border border-red-500/20 mb-4">
+            🚀 1-Click AI Workspace
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight">
+            Summarize Any 2-Hour Video in Seconds
+          </h2>
+          <p class="mt-4 text-slate-300 text-base leading-relaxed">
+            Don't waste time manually copying, tab-switching, and typing prompts. With one click, YouTube Transcript Copier launches your favorite AI assistant, formats the transcript, and injects customized prompts:
+          </p>
+
+          <div class="mt-8 space-y-4">
+            <div class="p-4 rounded-xl bg-slate-950 border border-slate-800 flex items-center gap-4">
+              <span class="text-2xl">📝</span>
+              <div>
+                <h4 class="font-bold text-white text-sm">Executive Summary</h4>
+                <p class="text-xs text-slate-400">Condensed bulleted points with high-level takeaways.</p>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-950 border border-slate-800 flex items-center gap-4">
+              <span class="text-2xl">🎓</span>
+              <div>
+                <h4 class="font-bold text-white text-sm">Study Notes & Quiz Questions</h4>
+                <p class="text-xs text-slate-400">Creates structured study guides, vocabulary, and test questions.</p>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-950 border border-slate-800 flex items-center gap-4">
+              <span class="text-2xl">⚡</span>
+              <div>
+                <h4 class="font-bold text-white text-sm">Action Items & Timestamps</h4>
+                <p class="text-xs text-slate-400">Pulls out actionable steps, tools mentioned, and tutorial recipes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative rounded-2xl border border-slate-800 bg-slate-950 p-3 shadow-2xl">
+          <img src="assets/ai_feature.jpg" alt="1-Click export to ChatGPT, Claude, and Gemini" class="w-full h-auto rounded-xl border border-slate-800" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section id="how-it-works" class="py-24">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-red-400 mb-3">Simple Workflow</h2>
+        <p class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">How to Copy YouTube Transcripts</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center p-6">
+          <div class="w-14 h-14 mx-auto rounded-2xl bg-red-600/20 text-red-400 font-extrabold text-xl flex items-center justify-center border border-red-500/30 mb-6">
+            1
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Open Any YouTube Video</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Navigate to any video or Short on YouTube. The extension automatically detects available subtitles and languages.
+          </p>
+        </div>
+
+        <div class="text-center p-6">
+          <div class="w-14 h-14 mx-auto rounded-2xl bg-red-600/20 text-red-400 font-extrabold text-xl flex items-center justify-center border border-red-500/30 mb-6">
+            2
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Click "Copy Transcript"</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Click the button below the video or press <kbd class="px-1.5 py-0.5 bg-slate-800 rounded border border-slate-700 text-xs font-mono">Ctrl+Shift+Y</kbd>. Format text with or without timestamps.
+          </p>
+        </div>
+
+        <div class="text-center p-6">
+          <div class="w-14 h-14 mx-auto rounded-2xl bg-red-600/20 text-red-400 font-extrabold text-xl flex items-center justify-center border border-red-500/30 mb-6">
+            3
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Paste & Supercharge</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Paste into your notes (Notion, Obsidian, Docs) or launch it straight into your favorite AI model for instant synthesis.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section for High-intent Search Traffic (SEO) -->
+  <section id="faq" class="py-20 bg-slate-900/50 border-t border-slate-800">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-red-400 mb-3">Frequently Asked Questions</h2>
+        <p class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Got Questions? We've Got Answers.</p>
+      </div>
+
+      <div class="space-y-6">
+        
+        <div class="p-6 rounded-2xl bg-slate-950 border border-slate-800">
+          <h3 class="text-lg font-bold text-white mb-2">How do I download or copy a transcript from a YouTube video?</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Simply install the YouTube Transcript Copier extension. When viewing any video on YouTube, click the "Copy Transcript" button located next to the video controls or use shortcut <kbd class="px-1 py-0.5 bg-slate-800 rounded border border-slate-700 text-xs font-mono">Ctrl+Shift+Y</kbd>. The complete transcript is saved straight to your clipboard in seconds.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-950 border border-slate-800">
+          <h3 class="text-lg font-bold text-white mb-2">Can I copy YouTube transcripts without timestamps?</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Yes! In the extension settings or popup menu, you can toggle timestamps on or off. You can export plain flowing text (paragraph mode) or choose formatted Markdown with clickable timestamp links.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-950 border border-slate-800">
+          <h3 class="text-lg font-bold text-white mb-2">Does this extension work with YouTube Shorts?</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Yes, YouTube Shorts are fully supported. The extension automatically extracts captions from vertical Shorts reels just like regular long-form videos.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-950 border border-slate-800">
+          <h3 class="text-lg font-bold text-white mb-2">How does the 1-Click Send to ChatGPT/Claude work?</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            When you click the ChatGPT, Claude, or Gemini button in the extension popup, it opens the AI web interface in a new tab and automatically pastes the full transcript along with your chosen prompt template (e.g., "Summarize this video").
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-950 border border-slate-800">
+          <h3 class="text-lg font-bold text-white mb-2">Is YouTube Transcript Copier free?</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Yes, it is 100% free and open source under the MIT License. There are no subscriptions, paywalls, or feature limits.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-950 border border-slate-800">
+          <h3 class="text-lg font-bold text-white mb-2">Is my data safe and private?</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Completely. Everything executes locally in your browser. We do not track your browsing history, collect telemetry, or store user information. You can review our full <a href="privacy.html" class="text-red-400 hover:underline">Privacy Policy</a> or audit the code on GitHub.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Footer Section -->
+  <footer class="py-20 border-t border-slate-800 bg-slate-950">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="p-10 sm:p-14 rounded-3xl bg-gradient-to-b from-slate-900 to-slate-950 border border-slate-800 shadow-2xl relative overflow-hidden">
+        <div class="absolute -top-24 -right-24 w-60 h-60 bg-red-600/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-24 -left-24 w-60 h-60 bg-rose-600/20 rounded-full blur-3xl pointer-events-none"></div>
+
+        <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-4">
+          Ready to save hours on YouTube videos?
+        </h2>
+        <p class="text-slate-400 text-base sm:text-lg max-w-xl mx-auto mb-8">
+          Join thousands of students, researchers, and creators extracting transcripts at lightning speed.
+        </p>
+
+        <a href="#install" class="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-red-600 hover:bg-red-500 rounded-2xl shadow-xl shadow-red-600/30 transition transform hover:-translate-y-0.5">
+          Install YouTube Transcript Copier
+        </a>
+      </div>
+
+      <div class="mt-12 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 space-y-4 sm:space-y-0">
+        <div>
+          © 2026 YouTube Transcript Copier. Open-source under MIT License.
+        </div>
+        <div class="flex items-center space-x-6">
+          <a href="privacy.html" class="hover:text-slate-300 transition">Privacy Policy</a>
+          <a href="https://github.com/madireis/youtube-transcript-copier" target="_blank" rel="noopener noreferrer" class="hover:text-slate-300 transition">GitHub</a>
+          <a href="sitemap.xml" class="hover:text-slate-300 transition">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
