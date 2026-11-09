@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://madireis.github.io/youtube-transcript-copier/sitemap.xml

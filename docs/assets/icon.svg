@@ -1,0 +1,23 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer Dark Squircle Container -->
+  <rect x="4" y="4" width="120" height="120" rx="30" fill="#18181f" stroke="#2a2a38" stroke-width="2"/>
+
+  <!-- Video Screen Card with Coral/Red Gradient -->
+  <rect x="20" y="24" width="88" height="58" rx="18" fill="url(#video-grad)"/>
+
+  <!-- Play Button Triangle -->
+  <polygon points="54,41 80,53 54,65" fill="#ffffff"/>
+
+  <!-- Subtitle Lines (Transcript Representation) -->
+  <rect x="28" y="90" width="72" height="6" rx="3" fill="#e2e8f0"/>
+  <rect x="28" y="100" width="52" height="6" rx="3" fill="#94a3b8"/>
+
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="video-grad" x1="20" y1="24" x2="108" y2="82" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ff5252"/>
+      <stop offset="0.5" stop-color="#ff3b47"/>
+      <stop offset="1" stop-color="#e11d48"/>
+    </linearGradient>
+  </defs>
+</svg>
