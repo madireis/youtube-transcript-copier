@@ -481,6 +481,45 @@
       </div>
     </div>
 
+        <!-- Prominent Local Translation Bar (v2.8.4) -->
+    <div id="workspace-translate-bar" class="workspace-translate-bar">
+      <div class="trans-bar-left">
+        <div class="trans-icon-bubble">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m5 8 6 6"/>
+            <path d="m4 14 6-6 2-3"/>
+            <path d="M2 5h12"/>
+            <path d="M7 2h1"/>
+            <path d="m22 22-5-10-5 10"/>
+            <path d="M14 18h6"/>
+          </svg>
+        </div>
+        <div class="trans-label-group">
+          <span class="trans-title">Translate Transcript</span>
+          <span id="trans-status-desc" class="trans-subtitle">Instant local translation (30 languages)</span>
+        </div>
+      </div>
+      <div class="trans-bar-right">
+        <select id="workspace-translate-select" class="workspace-translate-select" aria-label="Target language">
+          <option value="" disabled selected>Choose Language...</option>
+        </select>
+        <button id="btn-revert-translation" class="btn-revert-translation hidden" title="Revert to original language">
+          <span>Revert</span>
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Live Translation Progress Banner -->
+    <div id="translation-progress-banner" class="translation-progress-banner hidden">
+      <div style="display:flex; align-items:center; gap:6px;">
+        <span class="trans-spinner"></span>
+        <span id="translation-progress-text">Translating transcript... 0%</span>
+      </div>
+      <span id="translation-engine-badge" class="trans-engine-tag">Local Engine</span>
+      <div id="translation-progress-bar" class="translation-progress-bar" style="width: 0%;"></div>
+    </div>
+
     <!-- Transcript Search & Navigation Workspace -->
     <div class="workspace-header-bar">
       <div class="workspace-title-row">
@@ -492,21 +531,7 @@
           <span data-i18n="previewSection">Transcript Workspace</span>
         </div>
         <div class="workspace-header-right" style="display: flex; align-items: center; gap: 6px;">
-                    <div id="workspace-translate-picker" class="transcript-translate-picker hidden" title="Translate transcript to another language">
-            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="m5 8 6 6"/>
-              <path d="m4 14 6-6 2-3"/>
-              <path d="M2 5h12"/>
-              <path d="M7 2h1"/>
-              <path d="m22 22-5-10-5 10"/>
-              <path d="M14 18h6"/>
-            </svg>
-            <select id="workspace-translate-select" class="workspace-translate-select" aria-label="Translate transcript">
-              <option value="" disabled selected>Translate...</option>
-            </select>
-            <button id="btn-revert-translation" class="revert-trans-btn hidden" title="Revert to original transcript">✕</button>
-          </div>
-          <div id="transcript-lang-container" class="transcript-lang-container hidden" title="Transcript Language">
+                    <div id="transcript-lang-container" class="transcript-lang-container hidden" title="Transcript Language">
             <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="12" cy="12" r="10"/>
               <line x1="2" y1="12" x2="22" y2="12"/>
@@ -551,14 +576,7 @@
       <span class="pill-action" data-i18n="showAll">Show All</span>
     </div>
 
-        <!-- In-Popup Translation Progress Banner -->
-    <div id="translation-progress-banner" class="translation-progress-banner hidden">
-      <span id="translation-progress-text">Translating transcript... 0%</span>
-      <span id="translation-engine-badge" class="trans-engine-tag">Local</span>
-      <div id="translation-progress-bar" class="translation-progress-bar" style="width: 0%;"></div>
-    </div>
-
-    <div class="search-bar">
+        <div class="search-bar">
       <svg class="search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none">
         <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="1.8"/>
         <path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>

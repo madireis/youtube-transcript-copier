@@ -3185,18 +3185,24 @@ async function handleCopy() {
   showState('loading');
 
   try {
-    const langSelect = $('#transcript-lang-select');
-    const selectedLangName = (langSelect && !langSelect.closest('.hidden') && langSelect.options[langSelect.selectedIndex]?.text) || cachedData?.captionLanguage || null;
-    const data = await extractTranscript(selectedLangName);
+    let data;
+    // If transcript was translated locally, preserve and copy the translated transcript!
+    if (cachedData && Array.isArray(cachedData.lines) && cachedData.lines.length > 0 && (cachedData.translatedLanguage || cachedData.translatedLangCode)) {
+      data = cachedData;
+    } else {
+      const langSelect = $('#transcript-lang-select');
+      const selectedLangName = (langSelect && !langSelect.closest('.hidden') && langSelect.options[langSelect.selectedIndex]?.text) || cachedData?.captionLanguage || null;
+      data = await extractTranscript(selectedLangName);
 
-    if (!data || !data.success) {
-      const code = data?.error || 'unknown';
-      const msg = getErrorMessage(code);
-      showState('error', msg);
-      return;
+      if (!data || !data.success) {
+        const code = data?.error || 'unknown';
+        const msg = getErrorMessage(code);
+        showState('error', msg);
+        return;
+      }
+
+      cachedData = data;
     }
-
-    cachedData = data;
 
     const settings = getSettings();
     const text = formatTranscript(data, settings);

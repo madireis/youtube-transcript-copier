@@ -2,10 +2,10 @@
  * YouTube Transcript Copier — Popup Translator Controller (v2.8.4)
  * 
  * Manages the UI interactions for in-popup local translation:
- * - Populates the language picker with 30 supported languages.
+ * - Populates the prominent language picker with 30 supported languages.
  * - Bridges TranslatorEngine with popup workspace without modifying legacy extraction logic.
  * - Preserves original segments for instantaneous one-click reverting.
- * - Displays an interactive progress banner during batch translation.
+ * - Updates the main Copy button text to reflect the translated state.
  */
 
 (function () {
@@ -15,19 +15,21 @@
   let activeAbortController = null;
 
   function initTranslatorUI() {
+    const bar = document.getElementById('workspace-translate-bar');
     const select = document.getElementById('workspace-translate-select');
     const revertBtn = document.getElementById('btn-revert-translation');
-    const container = document.getElementById('workspace-translate-picker');
+    const statusDesc = document.getElementById('trans-status-desc');
     const progressBanner = document.getElementById('translation-progress-banner');
     const progressText = document.getElementById('translation-progress-text');
     const progressBar = document.getElementById('translation-progress-bar');
     const engineBadge = document.getElementById('translation-engine-badge');
+    const copyBtnText = document.getElementById('copy-btn-text');
 
     if (!select || !window.TranslatorEngine) return;
 
     // Populate target languages
     if (select.options.length <= 1) {
-      select.innerHTML = '<option value="" disabled selected>Translate to...</option>';
+      select.innerHTML = '<option value="" disabled selected>Choose Language...</option>';
       window.TranslatorEngine.SUPPORTED_LANGUAGES.forEach((lang) => {
         const opt = document.createElement('option');
         opt.value = lang.code;
@@ -47,19 +49,19 @@
         return;
       }
 
-      // Preserve original lines if first translation
+      // Preserve original lines before translating
       if (!data.originalLines) {
         data.originalLines = data.lines.map((l) => ({ ...l }));
         data.originalCaptionLang = data.captionLanguage || 'Original';
       }
 
-      // If user selected original language, revert
+      // If user selected original, revert
       if (targetLang === 'original') {
         revertToOriginal();
         return;
       }
 
-      // Abort any ongoing translation
+      // Abort previous in-flight translation
       if (activeAbortController) {
         activeAbortController.abort();
       }
@@ -73,7 +75,7 @@
         progressBanner.classList.remove('hidden');
         if (progressText) progressText.textContent = `Translating to ${langName}... 0%`;
         if (progressBar) progressBar.style.width = '0%';
-        if (engineBadge) engineBadge.textContent = 'Preparing...';
+        if (engineBadge) engineBadge.textContent = 'Translating...';
       }
       select.disabled = true;
 
@@ -98,17 +100,14 @@
             window.__setTranscriptData(data);
           }
 
-          if (revertBtn) {
-            revertBtn.classList.remove('hidden');
-            revertBtn.title = `Revert from ${langName} back to original`;
-          }
-          if (container) {
-            container.classList.add('active');
-          }
+          // Update UI States
+          if (bar) bar.classList.add('active');
+          if (revertBtn) revertBtn.classList.remove('hidden');
+          if (statusDesc) statusDesc.textContent = `Translated to ${langName} (${result.engine})`;
+          if (copyBtnText) copyBtnText.textContent = `Copy Translated (${langName})`;
 
-          // Update toast or state message if available
           if (typeof window.showToast === 'function') {
-            window.showToast(`Translated to ${langName} (${result.cached ? 'cached' : result.engine})`, false);
+            window.showToast(`Translated to ${langName} successfully!`, false);
           }
         }
       } catch (err) {
@@ -151,8 +150,10 @@
 
       currentTargetLang = null;
       select.selectedIndex = 0;
+      if (bar) bar.classList.remove('active');
       if (revertBtn) revertBtn.classList.add('hidden');
-      if (container) container.classList.remove('active');
+      if (statusDesc) statusDesc.textContent = 'Instant local translation (30 languages)';
+      if (copyBtnText) copyBtnText.textContent = 'Copy Transcript';
       if (progressBanner) progressBanner.classList.add('hidden');
 
       if (typeof window.showToast === 'function') {
@@ -163,11 +164,7 @@
     // Expose reset API for when a new video is loaded
     window.PopupTranslator = {
       reset() {
-        currentTargetLang = null;
-        if (select) select.selectedIndex = 0;
-        if (revertBtn) revertBtn.classList.add('hidden');
-        if (container) container.classList.remove('active');
-        if (progressBanner) progressBanner.classList.add('hidden');
+        revertToOriginal();
       },
       getCurrentTargetLang() {
         return currentTargetLang;
@@ -185,12 +182,12 @@
   // Listen for transcript updates from popup
   window.addEventListener('transcript-data-updated', (e) => {
     const data = e.detail;
-    const picker = document.getElementById('workspace-translate-picker');
-    if (picker) {
+    const bar = document.getElementById('workspace-translate-bar');
+    if (bar) {
       if (data && Array.isArray(data.lines) && data.lines.length > 0) {
-        picker.classList.remove('hidden');
+        bar.style.display = 'flex';
       } else {
-        picker.classList.add('hidden');
+        bar.style.display = 'none';
       }
     }
   });
